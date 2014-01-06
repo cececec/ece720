@@ -1,0 +1,15 @@
+Private Repository for NCSU ECE720: Electronic System-Level & Physiscal Design
+
+==== Git Hints ====
+
+git pull           - Pull latest assignments from github.ncsu.edu to this repo
+git add [filename] - Adds a file to the "stage" for commiting to this repo
+git commit         - Commits all "staged" files to this repo
+git push           - Push the commits from this repo to github.ncsu.edu
+
+Remember that your assignment is not "submitted" until it is "pushed" 
+to github.ncsu.edu!!! 
+
+==== Repository Contents ====
+
+(directories will be listed here as they are created)
