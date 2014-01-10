@@ -1,0 +1,8 @@
+module adder
+FAX1 U0
+FAX1 U1
+FAX1 U2
+FAXI U3
+module top
+adder add0
+adder add1
