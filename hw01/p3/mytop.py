@@ -1,6 +1,6 @@
 import mymonths
 
-m=mymonths.monthlist()
+m=mymonths.mymonthlist()
 
 m.add('January',31)
 m.add('February',28)
