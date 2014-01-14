@@ -11,5 +11,3 @@ for line in subdirs:
 
 if not hassubdir:
     os.mkdir('subdir')
-
-

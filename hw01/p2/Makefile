@@ -3,19 +3,16 @@
 all: createsubdir 
 
 createsubdir: clean	
-	@echo ""
 	ls
-	@echo "===not subdir here==="
 	@echo ""
 	python myScript.py
 	ls
-	@echo "===subdir created==="
 	@echo ""
 	python myScript.py
-	@echo "No error flag showing when subdir exists"
-	@echo "p2 done"
 	@echo ""
+	@echo "No error flag showing even subdir exists"
 
 clean: 
+	@echo ""
 	@echo "remove dir subdir"
 	rm -rf subdir

@@ -11,8 +11,11 @@ SUBDIRS = p1 p2 p3 p4 p5
 subdirs: $(SUBDIRS)
 
 $(SUBDIRS):
+	@echo "============== $@ ==================="
 	$(MAKE) -C $@
-
+	@echo "==============$@ Done================"
+	@echo ""
+	@echo ""
 # The following ensures that the problems will be executed in order
 
 p5: p4
