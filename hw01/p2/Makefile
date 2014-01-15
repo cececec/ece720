@@ -9,8 +9,8 @@ createsubdir: clean
 	ls
 	@echo ""
 	python myScript.py
-	@echo ""
 	@echo "No error flag showing even subdir exists"
+	@echo ""
 
 clean: 
 	@echo ""
