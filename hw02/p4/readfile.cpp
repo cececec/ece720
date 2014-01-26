@@ -1,7 +1,7 @@
 
 #include <systemc.h>
 #include "reader.h"
-
+//#include "reader.cpp"
 using namespace std;
 
 int sc_main(int argc, char* argv[])

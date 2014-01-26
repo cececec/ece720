@@ -1,7 +1,7 @@
 CXXFLAGS=-Wall -DSC_INCLUDE_DYNAMIC_PROCESSES
-EXE_NAME=readfile
+EXE_NAME=instcount
 
-all: clean
+all: sim
 
 rel: OPTFLAGS = -O3
 
@@ -40,7 +40,7 @@ $(EXE_NAME): $(OBJ)
 %.o : %.cpp
 	g++ $(CXXFLAGS) $(INCLUDES) -o $@ -c $<
 
-clean: sim
+clean: 
 	-rm -f $(REBUILDABLES) *.dep
 
 sim: rel

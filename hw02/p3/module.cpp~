@@ -8,7 +8,8 @@ void module::print() {
           cout << *it << endl;
 }
 
-Dict module::count(Dict big_counters) { 
+Dict module::count(Dict big_counters) {
+	//map<string,int> counters;
 	
 	vector<string>::iterator it;
 	for (it=instances.begin(); it < instances.end(); it++) {

@@ -1,7 +1,7 @@
 CXXFLAGS=-Wall -DSC_INCLUDE_DYNAMIC_PROCESSES
 EXE_NAME=instcount
 
-all: rel
+all: clean
 
 rel: OPTFLAGS = -O3
 
@@ -40,10 +40,10 @@ $(EXE_NAME): $(OBJ)
 %.o : %.cpp
 	g++ $(CXXFLAGS) $(INCLUDES) -o $@ -c $<
 
-clean: 
+clean: sim 
 	-rm -f $(REBUILDABLES) *.dep
 
-sim:
+sim: rel
 	./$(EXE_NAME)
 
 gdb:

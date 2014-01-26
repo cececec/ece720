@@ -1,7 +1,7 @@
 CXXFLAGS=-Wall -DSC_INCLUDE_DYNAMIC_PROCESSES
 EXE_NAME=readfile
 
-all: clean
+all: rel
 
 rel: OPTFLAGS = -O3
 
@@ -40,10 +40,10 @@ $(EXE_NAME): $(OBJ)
 %.o : %.cpp
 	g++ $(CXXFLAGS) $(INCLUDES) -o $@ -c $<
 
-clean: sim
+clean: 
 	-rm -f $(REBUILDABLES) *.dep
 
-sim: rel
+sim:
 	./$(EXE_NAME)
 
 gdb:
