@@ -1,1 +1,2 @@
-(put your answer here)
+Common dependency: member variables of type tlm::tlm_generic_payload, namely,
+"tran" in SimpleBusAt and transaction_ptr in traffic_generator
