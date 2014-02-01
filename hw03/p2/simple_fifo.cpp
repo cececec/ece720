@@ -4,30 +4,55 @@
 // by T. Groetker, S. Liao, G. Martin, and S. Swan, Kluwer, 2002.
 
 #include <systemc.h>
+#include <list>
 
 using namespace std;
 
-class producer : public sc_module
+ 
+class producer : public sc_module, sc_fifo_in_if<char>
 {
 public:
-  sc_port<sc_fifo_out_if<char> > out;
+  sc_port<sc_fifo_in_if<char> > out;
+  sc_event read_event, write_event;
+  list<char> fifo;
+  int fifo_max;
 
   SC_HAS_PROCESS(producer);
-
-  producer(sc_module_name name) : sc_module(name) {
+ 
+  producer(sc_module_name name, int size) : sc_module(name) {
     SC_THREAD(main);
+    out.bind(*this);
+    fifo_max = size;
   }
 
+  bool nb_read(char&) { return true; } //Notimplemented
+ // bool sc_fifo_blocking_in_if(const char &c) {return true;} //Not implemented
+  const sc_event &data_written_event() const { return read_event; }
+  int num_available() const { return fifo.size();}
+
+  void read(char &c){
+      while( num_available() == 0 ){
+	wait ( write_event );
+      }
+      c=fifo.front();
+      fifo.pop_front();
+      read_event.notify(SC_ZERO_TIME);
+  }
+
+  char read(){}
   void main () {
     const char *str = "Hello, World!\n";
     const char *p = str;
 
     while (true) {
       if (rand()%3==0) {  // 1-in-3 chance of executing
-        cout << sc_time_stamp().to_string() << " (" << out->num_free() ;
+        cout << sc_time_stamp().to_string() << " (" <<(fifo_max-fifo.size());
         cout << " free) producer writing " << *p << " to fifo\n";
-        out->write(*p++);
-        cout << sc_time_stamp().to_string() << " (" << out->num_free() ;
+        if (fifo_max-fifo.size() == 0)
+	  wait ( read_event);
+        fifo.push_back(*p++);
+	write_event.notify(SC_ZERO_TIME);
+        cout << sc_time_stamp().to_string() << " (" << (fifo_max-fifo.size()) ;
         cout << " free) producer wrote to fifo\n";
         if (!*p) p=str;
       }
@@ -69,18 +94,15 @@ public:
 class top : public sc_module
 {
 public:
-  sc_fifo<char> fifo_inst;
   producer prod_inst;
   consumer cons_inst;
 
   top(sc_module_name name, int size) : 
     sc_module(name),
-    fifo_inst("Fifo1",size),
-    prod_inst("Producer1"),
+    prod_inst("Producer1", size),
     cons_inst("Consumer1")
   {
-    prod_inst.out(fifo_inst);
-    cons_inst.in(fifo_inst);
+    cons_inst.in(prod_inst.out);
   }
 };
 

@@ -85,7 +85,7 @@ public:
 int sc_main(int i, char* argv[])
 {
 	top top1("Top1");	
-	sc_start(2000,SC_NS);
+	sc_start(1000,SC_NS);
 	cout << endl << endl; 
         return 0;
 
