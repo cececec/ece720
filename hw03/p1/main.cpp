@@ -21,21 +21,21 @@ public:
 
   void read( int addr, char& data){
    // char c;
-   cout << sc_time_stamp().to_string();
+   // cout << sc_time_stamp().to_string();
      if (addr==0){
 	if (fifo.size()==0){
           data=0; 
-          cout << " return 0" <<endl;
+         // cout << " return 0" <<endl;
 	}
 	else {
 	  data=1;
-          cout << " return 1" <<endl;
+         // cout << " return 1" <<endl;
 	}
      }
      else if (addr==1){
 	data=fifo.front();
 	fifo.pop_front();
-        cout << " return data " << data <<endl;
+       // cout << " return data " << data <<endl;
      }
   }
 
@@ -50,14 +50,7 @@ public:
 	c=*p;
 	fifo.push_back(*p++);
 
-	cout << sc_time_stamp().to_string() << " UART writing " <<  c << " from 'Hello, World!' " << " " << endl;
-    /*  if (rand()%3<2) {  // 2-in-3 chance of executing
-        cout << sc_time_stamp().to_string() << " (";// << fifo.size();
-        cout << " available) consumer reading from fifo\n" ;
-         // wait(write_event);
-        cout << sc_time_stamp().to_string() << " (";// << fifo.size() ;
-        cout << " available) consumer read " << c << " from fifo\n";
-      }*/
+	cout << sc_time_stamp().to_string() << " UART writing " <<  c << " of string 'Hello, World!' " << " " << endl;
 
       wait(100, SC_NS);
 
