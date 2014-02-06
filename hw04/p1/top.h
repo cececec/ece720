@@ -21,11 +21,12 @@ public:
 
   private:
 
-  SimpleBusLT<2, 2> bus;
+  SimpleBusLT<3, 2> bus;
   mem mem0;
   mem mem1;
   stub stub0;
   stub stub1;
+  stub stub2;
 };
 
 #endif /* __TOP_H__ */

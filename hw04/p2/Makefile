@@ -1,11 +1,11 @@
 CXXFLAGS=-Wall -DSC_INCLUDE_DYNAMIC_PROCESSES
 EXE_NAME=main.x
 
-all: rel
+all: sim
 
 rel: OPTFLAGS = -O3
 
-rel: $(EXE_NAME)
+rel: clean $(EXE_NAME)
 
 dbg: OPTFLAGS = -O0 -g
 
@@ -43,7 +43,7 @@ $(EXE_NAME): $(OBJ)
 clean: 
 	-rm -f $(REBUILDABLES) *.dep
 
-sim:
+sim: rel
 	./$(EXE_NAME)
 
 gdb:
