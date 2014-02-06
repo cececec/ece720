@@ -30,6 +30,7 @@ void stub::main(void)
   string time_unit;
   sc_core::sc_time start_time;
   string cmd;
+  unsigned char *dp;
 
   // Skip the first line, assume it is a comment
   if (f.good())
@@ -77,10 +78,16 @@ void stub::main(void)
     if (gp.get_response_status() != tlm::TLM_OK_RESPONSE)
     cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
          << " ERROR Response Status " << gp.get_response_status() << endl;
+ 
+  dp = gp.get_data_ptr();
+  cout << " ====== " << "Bus speed is " << int(*dp) << " " << endl;
   }
    
+  
   cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
        << " Completed" << endl;
+  //dp = gp.get_data_ptr();
+  cout << " ====== " << "Bus speed is " << *dp << " " << endl;
 } // end main
 
 

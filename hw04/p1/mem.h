@@ -25,7 +25,9 @@ class mem: public sc_core::sc_module
   private:
 	    
   sc_dt::uint64 m_memory_size;
-
+  unsigned long total_bytes; 
+  unsigned long* data;
+  unsigned long data_length;
   void custom_b_transport
   ( tlm::tlm_generic_payload &gp, sc_core::sc_time &delay );
 

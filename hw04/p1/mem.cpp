@@ -16,6 +16,7 @@ mem::mem( sc_core::sc_module_name module_name, sc_dt::uint64 memory_size )
 {
   
   slave.register_b_transport(this, &mem::custom_b_transport);
+  total_bytes=0;
 
 }
 
@@ -26,7 +27,11 @@ mem::custom_b_transport
   sc_dt::uint64    address   = gp.get_address();
   tlm::tlm_command command   = gp.get_command();
   sc_core::sc_time mem_delay(10,sc_core::SC_NS);
-
+  data_length= gp.get_data_length();
+  	
+  cout << sc_core::sc_time_stamp() << " " << sc_object::name() << " data_length "<< data_length << " total_bytes " << total_bytes<< endl;
+  total_bytes+= data_length;
+  cout << " new total_bytes " << total_bytes <<  endl;
   wait(delay+mem_delay);
   cout << sc_core::sc_time_stamp() << " " << sc_object::name();
   if (address < m_memory_size) {
@@ -55,6 +60,9 @@ mem::custom_b_transport
     gp.set_response_status( tlm::TLM_ADDRESS_ERROR_RESPONSE );
   }  
 
+  data=&total_bytes;
+ cout << "total bytes" << total_bytes << endl;
+  gp.set_data_ptr((unsigned char*)(data));
   return;     
 }
 
