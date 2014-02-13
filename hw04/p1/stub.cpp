@@ -22,6 +22,7 @@ void stub::main(void)
   tlm::tlm_generic_payload  gp;                 // Payload
   gp.set_streaming_width  ( 4 );                // Assume 4-byte bus width
   unsigned long length;                         // Transaction length (bytes)
+  
   sc_dt::uint64 addr;                           // Transaction address
 
   // Variables for reading transaction file
@@ -69,25 +70,26 @@ void stub::main(void)
 
     // Wait until the transaction start-time is reached
     if (sc_core::sc_time_stamp() < start_time)
-      wait( start_time-sc_core::sc_time_stamp() );
+{// cout << sc_core::sc_time_stamp() << " " << sc_object::name() << " is waiting for starting time " << endl;
+      wait( start_time-sc_core::sc_time_stamp() );}
 
     // Perform the transaction
-    cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
-         << " " << cmd << " " << hex << length << " " << addr << endl;
+  ////  cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
+  ////      << " " << cmd << " " << hex << length << " " << addr << endl;
+
     master->b_transport(gp, delay);
+
     if (gp.get_response_status() != tlm::TLM_OK_RESPONSE)
     cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
          << " ERROR Response Status " << gp.get_response_status() << endl;
  
   dp = gp.get_data_ptr();
-  cout << " ====== " << "Bus speed is " << int(*dp) << " " << endl;
   }
    
   
   cout << sc_core::sc_time_stamp() << " " << sc_object::name() 
        << " Completed" << endl;
-  //dp = gp.get_data_ptr();
-  cout << " ====== " << "Bus speed is " << *dp << " " << endl;
+  total_trans_time_stub=sc_core::sc_time_stamp().value();
 } // end main
 
 

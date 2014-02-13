@@ -21,7 +21,8 @@ class stub
 
   tlm::tlm_initiator_socket<> master;
   const char *filename;
-
+  //sc_event comp_event;  
+  double total_trans_time_stub;
   void main(void);
 private: 
 

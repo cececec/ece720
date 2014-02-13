@@ -39,10 +39,26 @@ public:
   initiator_socket_type initiator_socket[NR_OF_TARGETS];
 
 public:
+  // The number of transaction through bus
+  unsigned int read_num_bus;
+  unsigned int read_length_bus;
+  unsigned int write_num_bus;
+  unsigned int write_length_bus;
+  double bus_wr_speed;
+  double bus_rd_speed;
+  double total_trans_time;
+
+public:
   SC_HAS_PROCESS(SimpleBusLT);
   SimpleBusLT(sc_core::sc_module_name name) :
     sc_core::sc_module(name)
   {
+    read_num_bus=0;
+    write_num_bus=0;
+    read_length_bus=0;
+    write_length_bus=0;
+    bus_wr_speed=0;
+    bus_rd_speed=0;
     for (unsigned int i = 0; i < NR_OF_INITIATORS; ++i) {
       target_socket[i].register_b_transport(this, &SimpleBusLT::initiatorBTransport, i);
       target_socket[i].register_transport_dbg(this, &SimpleBusLT::transportDebug, i);
@@ -52,7 +68,20 @@ public:
       initiator_socket[i].register_invalidate_direct_mem_ptr(this, &SimpleBusLT::invalidateDMIPointers, i);
     }
   }
+  ~SimpleBusLT()
+  {
+//	total_trans_time=sc_core::sc_time_stamp().to_double();
+//	std::cout << "time is " << total_trans_time << std::endl;
 
+//	while(stub::flag_complete){
+//	stub::flag_complete=0;
+	total_trans_time= sc_core::sc_time_stamp().to_seconds();
+	bus_wr_speed=double(write_length_bus/total_trans_time);
+	bus_rd_speed=double(read_length_bus/total_trans_time);
+	std::cout << " average write speed of " << sc_object::name() << "  is " << bus_wr_speed <<  " Bytes per second "  << std::endl; 
+	std::cout << " average read  speed of " << sc_object::name() << "  is " << bus_rd_speed <<  " Bytes per second " <<  std::endl; 
+//}
+  }; 
   //
   // Dummy decoder:
   // - address[31-28]: portId
@@ -99,9 +128,29 @@ public:
     assert(portId < NR_OF_TARGETS);
     decodeSocket = &initiator_socket[portId];
     trans.set_address(trans.get_address() & getAddressMask(portId));
+    tlm::tlm_command command = trans.get_command();
+    
 
     (*decodeSocket)->b_transport(trans, t);
-  }
+
+     switch(command){
+       case tlm::TLM_READ_COMMAND:
+       {
+        read_num_bus++;
+        read_length_bus+=trans.get_data_length();
+ //     std::cout << sc_core::sc_time_stamp() << "READ " << read_num_bus << " " << read_length_bus  << " READ " << std::endl; 
+	break;
+       }
+       case tlm::TLM_WRITE_COMMAND:
+       {		
+  	write_num_bus++;
+        write_length_bus+=trans.get_data_length();
+//	std::cout << sc_core::sc_time_stamp() <<  write_num_bus << " " << write_num_bus << " WRITE "  << std::endl; 
+	break;
+       } 
+       default :{}
+      }
+}
 
   unsigned int transportDebug(int SocketId,
                               transaction_type& trans)
@@ -180,7 +229,6 @@ public:
       // Range does not fall into address range of target
       return;
     }
-    
     for (unsigned int i = 0; i < NR_OF_INITIATORS; ++i) {
       (target_socket[i])->invalidate_direct_mem_ptr(start_range, end_range);
     }

@@ -13,7 +13,7 @@ top::top(sc_core::sc_module_name name)
   , mem1("mem1", 4*1024)
   , stub0("stub0","xact0.txt")
   , stub1("stub1","xact1.txt")
-  , stub2("stub2","xact1.txt")
+  , stub2("stub2","xact2.txt")
 
 {
   stub0.master(bus.target_socket[0]);
