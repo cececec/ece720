@@ -1,5 +1,5 @@
 # time command bytes address
-  0 ns WRITE   0x4   0x00000100
+ 0 ns WRITE   0x4   0x00000100
  40 ns WRITE   0x4   0x00000104
  80 ns READ    0x4   0x00000100
 140 ns READ    0x4   0x00000104

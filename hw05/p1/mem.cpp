@@ -148,7 +148,7 @@ mem::scheduler
           wait (CAS) ;  
 	}
 	if (begin_of_burst.value() > sc_core::sc_time_stamp().value()){
-	  cout << sc_core::sc_time_stamp() << " CAS Delay..." << endl;
+	  //cout << sc_core::sc_time_stamp() << " CAS Delay..." << endl;
 	  wait(begin_of_burst-sc_core::sc_time_stamp());
 	}
         for(int i=0;i<8;i++){
@@ -162,7 +162,7 @@ mem::scheduler
 	  data_sent+=2;
           last_address=address;
 	  address+=1;
-          cout << sc_core::sc_time_stamp() << " @ 0x" << hex << last_address << " " << "unhandled burst read" << dec << i+1 << "     " << data_sent << " bytes data sent" << endl;
+          cout << sc_core::sc_time_stamp() << " " << "unhandled sequential burst-read " << dec << i+1 << " @ 0x" << hex << last_address << "     " << dec << data_sent << " bytes data sent" << endl;
 	  wait(cycle_length/2); 
         }
         break;

@@ -23,6 +23,7 @@
 
 #include "tlm_utils/simple_target_socket.h"
 #include "tlm_utils/simple_initiator_socket.h"
+#include "tlm_utils/peq_with_get.h"
 
 template <int NR_OF_INITIATORS, int NR_OF_TARGETS>
 class SimpleBusLT : public sc_core::sc_module
@@ -33,15 +34,19 @@ public:
   typedef tlm::tlm_sync_enum                       sync_enum_type;
   typedef tlm_utils::simple_target_socket_tagged<SimpleBusLT>    target_socket_type;
   typedef tlm_utils::simple_initiator_socket_tagged<SimpleBusLT> initiator_socket_type;
+  typedef tlm_utils::peq_with_get<transaction_type> peq_type;
 
 public:
   target_socket_type target_socket[NR_OF_INITIATORS];
   initiator_socket_type initiator_socket[NR_OF_TARGETS];
+  peq_type peq;
+  int init_flag;
 
 public:
   SC_HAS_PROCESS(SimpleBusLT);
   SimpleBusLT(sc_core::sc_module_name name) :
     sc_core::sc_module(name)
+    , peq("my_peq"), init_flag(0)
   {
     for (unsigned int i = 0; i < NR_OF_INITIATORS; ++i) {
       target_socket[i].register_b_transport(this, &SimpleBusLT::initiatorBTransport, i);
@@ -95,12 +100,51 @@ public:
                            sc_core::sc_time& t)
   {
     initiator_socket_type* decodeSocket;
+    transaction_type* my_gp;
     unsigned int portId = decode(trans.get_address());
+    sc_core::sc_time delay(10, sc_core::SC_NS);
+    sc_core::sc_time delay_0(0, sc_core::SC_NS);
+    //std::cout << "portId is " << portId << std::endl;
     assert(portId < NR_OF_TARGETS);
     decodeSocket = &initiator_socket[portId];
     trans.set_address(trans.get_address() & getAddressMask(portId));
+    init_flag=1-init_flag;
+   /*  Alternative 
+    my_gp=peq.get_next_transaction();
+    if(!my_gp){ 
+      //std::cout<< my_gp << " gp.." <<std::endl; 
+      peq.notify(trans, delay_0);
+      //std::cout<< my_gp << " gp2.." <<std::endl; 
+      (*decodeSocket)->b_transport(trans, t);
+      peq.notify(trans, delay_0);
+     }
+     else{
+       //std::cout<< my_gp << " gp3.." <<std::endl; 
+       wait(peq.get_event());
+       wait(peq.get_event());
+       my_gp=peq.get_next_transaction();
+       //std::cout<< my_gp << " gp4.." <<std::endl; 
+       (*decodeSocket)->b_transport(trans, t);
+       //peq.notify(trans, delay_0);
+     } 
+   */     
+    
 
-    (*decodeSocket)->b_transport(trans, t);
+   
+    if(!init_flag){//second instruction
+      //std::cout << "Next Xacts " << peq.get_next_transaction() << std::endl;
+      //std::cout << "Another xacts in paralle...waiting... " << std::endl;
+      wait(peq.get_event());	    
+      (*decodeSocket)->b_transport(trans, t);
+     // std::cout << "Other xacts...Done " << std::endl;
+      //peq.notify(*my_gp, delay);
+    }
+    else {//first instruction
+      //std::cout << "One xacts... " << std::endl;
+      (*decodeSocket)->b_transport(trans, t);
+     //std::cout << "Next Xacts 2 " << peq.get_next_transaction() << std::endl;
+      peq.notify(*my_gp, delay_0 );
+    }
   }
 
   unsigned int transportDebug(int SocketId,
