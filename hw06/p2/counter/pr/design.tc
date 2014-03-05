@@ -1,0 +1,1 @@
+create_clock -name clock -period 10 find(port,"clock")
