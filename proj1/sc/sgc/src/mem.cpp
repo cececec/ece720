@@ -7,7 +7,7 @@ LT Memory Model
 #include "mem.h"
 
 // Uncomment the following line to enable transaction-dumpint to stdout
-//#define XACT_DUMP
+#define XACT_DUMP
 
 using namespace  std;
 
@@ -62,6 +62,7 @@ mem::custom_b_transport
     switch (command) {
       case tlm::TLM_WRITE_COMMAND:
       {
+        //cout << "Write cmd.." << endl;
         middle.log(address,true); upper.log(address,true); lower.log(address,true);
 #ifdef XACT_DUMP
         cout << sc_core::sc_time_stamp() << " " << sc_object::name()
@@ -88,10 +89,12 @@ mem::custom_b_transport
           m_array[address++] = data[i];
         }
         gp.set_response_status( tlm::TLM_OK_RESPONSE );
+        //cout << "Write cmd Done..." << endl;
         break;
       }
       case tlm::TLM_READ_COMMAND:
       {
+        //cout << "Read cmd.." << endl;
         middle.log(address,false); upper.log(address,false); lower.log(address,false);
 #ifdef XACT_DUMP
         cout << sc_core::sc_time_stamp() << " " << sc_object::name()
@@ -105,9 +108,10 @@ mem::custom_b_transport
         cout  << dec << endl;
 #endif
         for (unsigned int i = 0; i < length; i++) {
-          data[i] = m_array[address++];
+         data[i] =  m_array[address++];
         }
         gp.set_response_status( tlm::TLM_OK_RESPONSE );
+        //cout << "Read cmd Done..." << endl;
         break;
       }
       default:

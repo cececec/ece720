@@ -71,7 +71,7 @@ class mem: public sc_core::sc_module
        sc_dt::uint64  memory_size  // memory size (bytes)
       );
 
-  tlm_utils::simple_target_socket<mem,64,tlm::tlm_base_protocol_types>  slave;
+  tlm_utils::simple_target_socket<mem> slave ;//,64,tlm::tlm_base_protocol_types>  slave;
  
   private:
 	    

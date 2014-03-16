@@ -28,7 +28,7 @@
 // Cortex-M0 DesignStart testbench example
 //------------------------------------------------------------------------------
 
-//`define XACT_DUMP
+`define XACT_DUMP
 
 module tb ();
 
@@ -36,7 +36,7 @@ module tb ();
 // Define parameters for clock period and power-on reset delay
 //------------------------------------------------------------------------------
 
-localparam clk_period = 100;            // Simulation cycles per clock period
+localparam clk_period = 10;            // Simulation cycles per clock period
 localparam clk2_period = clk_period / 2;
 localparam por_delay  = 1001;           // Simulation cycles of power-on-reset
 localparam ram_log2   = 18;             // Power of two of RAM words

@@ -33,7 +33,7 @@ sim:	$(VERILOGSRC) $(SVERILOGSRC) $(TBENCHSRC) $(STDCELLSRC) ram.bin
 	vlib work
 	vlog $(STDCELLSRC) $(VERILOGSRC) $(SVERILOGSRC) $(TBENCHSRC)
 	vopt $(VERILOGTOP) -o $(VERILOGTOP)_opt
-	vsim $(VERILOGTOP)_opt -c -do "run -all"
+	time vsim $(VERILOGTOP)_opt -c -do "run -all"
 
 gui:	$(VERILOGSRC) $(SVERILOGSRC) $(TBENCHSRC) $(STDCELLSRC) ram.bin
 	vlib work

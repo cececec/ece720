@@ -7,28 +7,36 @@ SystemC / TLM 2.0 Simulation with ARM Fast Models
 // Note: For documentation on the functions defined in the
 // scx:: namespace, refer to the comments in the header
 // files in $PVLIB_HOME/include/fmruntime/scx
-
+#define USE_STUB
 
 #include <cstring>
 #include <cstdlib>
-#include <amba_pv.h>
-
-#include <scx_evs_Cortex.h>
+#ifndef USE_STUB
+  #include <amba_pv.h>
+  #include <scx_evs_Cortex.h>
+#endif
+#include "stub.h"
+#include "ahb_lite.h"
 #include "mem.h"
 
 int sc_main(int argc , char * argv[]) {
 
-    // Initialize simulation 
-    scx::scx_initialize("Cortex");
 
-    // Components
-    amba_pv::amba_pv_to_tlm_bridge<64> amba2tlm("amba2tlm");
+    // Components  
     mem s("Memory", 0x60000000);
-    scx_evs_Cortex cpu("Cortex");
+    #ifndef USE_STUB
+      // Initialize simulation 
+      scx::scx_initialize("Cortex");
+      scx_evs_Cortex cpu("Cortex");
+      amba_pv::amba_pv_to_tlm_bridge<64> amba2tlm("amba2tlm");
+    #else
+      stub stub("stub","xact0.txt");
+      AHBlite<1, 1> bus("bus");
+    #endif
 
+    #ifndef USE_STUB
     // Simulation configuration
-    scx::scx_parse_and_configure(argc, argv);
-   
+      scx::scx_parse_and_configure(argc, argv);
     // Uncomment the following lines to set the simulation quantum, 
     // i.e. simulation time to run before synchronizing modules 
     //double instructions_per_quantum = 10000.0;
@@ -36,9 +44,14 @@ int sc_main(int argc , char * argv[]) {
     //    sc_core::sc_time(instructions_per_quantum/100000000,sc_core::SC_SEC));
 
     // Bindings
-    cpu.amba_pv_m.bind(amba2tlm.amba_pv_s);
-    amba2tlm.tlm_m.bind(s.slave);
-
+    //cpu.amba_pv_m.bind(bus.target_socket[0]);
+      cpu.amba_pv_m.bind(amba2tlm.amba_pv_s);
+      amba2tlm.tlm_m.bind(s.slave);
+    #else
+      stub.master(bus.target_socket[0]);
+      bus.initiator_socket[0](s.slave);
+    #endif
+  
     // Start of simulation
     sc_core::sc_start();
     std::cout << "Simulation Time: " << sc_core::sc_time_stamp() << std::endl;
