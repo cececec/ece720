@@ -1,0 +1,23 @@
+
+ECE 720
+Homework #1 Grading Sheet
+
+Grader Intructions: Insert the score for each problem in the
+right-most column, but otherwise leave each line unchanged.  You may
+insert comments/feedback to students in this file by adding lines as
+needed after each row.
+
+Git commit: 
+
+Problem   Description                                                  Score
+-------   ----------------------------------------------------------   -------
+1a        Did the command return the correct number of files?          (5/ 5)
+1b        Did the command return the correct number of occurences?     (3/ 5)
+Script did not count occurrences correctly
+2         Did the script create the directory and flag no error?       (5/ 5)
+3         Did the monthlist listall method work correctly?             (10/10)
+4         Were the average transaction times calculated correctly?     (40/40)
+5         Was the tree depth calculated correctly on the sample file?  (20/20)
+
+penalty                                                                (0/ 0)
+total                                                                  (83/85)
