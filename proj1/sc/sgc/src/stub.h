@@ -19,7 +19,7 @@ class stub
   SC_HAS_PROCESS(stub);
   stub(sc_core::sc_module_name name, const char *xactfile);
 
-  tlm::tlm_initiator_socket<> master;
+  tlm::tlm_initiator_socket<64,tlm::tlm_base_protocol_types> master;
   const char *filename;
 
   void main(void);

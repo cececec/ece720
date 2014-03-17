@@ -7,7 +7,7 @@ SystemC / TLM 2.0 Simulation with ARM Fast Models
 // Note: For documentation on the functions defined in the
 // scx:: namespace, refer to the comments in the header
 // files in $PVLIB_HOME/include/fmruntime/scx
-#define USE_STUB
+//#define USE_STUB
 
 #include <cstring>
 #include <cstdlib>
@@ -18,6 +18,7 @@ SystemC / TLM 2.0 Simulation with ARM Fast Models
 #include "stub.h"
 #include "ahb_lite.h"
 #include "mem.h"
+#include "DW_memctl.h"
 
 int sc_main(int argc , char * argv[]) {
 
@@ -31,29 +32,36 @@ int sc_main(int argc , char * argv[]) {
       amba_pv::amba_pv_to_tlm_bridge<64> amba2tlm("amba2tlm");
     #else
       stub stub("stub","xact0.txt");
-      AHBlite<1, 1> bus("bus");
     #endif
+      AHBlite<1, 1> bus("bus");
+      DWmemctl<1, 1> dw("memctl");
 
+    // Uncomment the following lines to set the simulation quantum, 
+    // i.e. simulation time to run before synchronizing mxodules 
+    //double instructions_per_quantum = 10000.0;
+    //tlm::tlm_global_quantum::instance().set(
+    //sc_core::sc_time(instructions_per_quantum/100000000,sc_core::SC_SEC));
+    
+    
     #ifndef USE_STUB
     // Simulation configuration
       scx::scx_parse_and_configure(argc, argv);
-    // Uncomment the following lines to set the simulation quantum, 
-    // i.e. simulation time to run before synchronizing modules 
-    //double instructions_per_quantum = 10000.0;
-    //tlm::tlm_global_quantum::instance().set(
-    //    sc_core::sc_time(instructions_per_quantum/100000000,sc_core::SC_SEC));
-
+    #endif
+    
+    #ifndef USE_STUB    
     // Bindings
-    //cpu.amba_pv_m.bind(bus.target_socket[0]);
       cpu.amba_pv_m.bind(amba2tlm.amba_pv_s);
-      amba2tlm.tlm_m.bind(s.slave);
+      amba2tlm.tlm_m.bind(bus.target_socket[0]);//mem,64,prot
     #else
       stub.master(bus.target_socket[0]);
-      bus.initiator_socket[0](s.slave);
     #endif
-  
+      bus.initiator_socket[0](dw.target_socket[0]);
+      dw.initiator_socket[0](s.slave);//
+      
     // Start of simulation
     sc_core::sc_start();
     std::cout << "Simulation Time: " << sc_core::sc_time_stamp() << std::endl;
     return EXIT_SUCCESS;
 }
+
+

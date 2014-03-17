@@ -30,12 +30,12 @@ void stub::main(void)
   string time_unit;
   sc_core::sc_time start_time;
   string cmd;
-  const char *str;
-
-
+  int random_data;
+  
   // Skip the first line, assume it is a comment
-  if (f.good())
+  if (f.good()){
     getline(f,cmd);
+  }
   else {cout << "notok" << endl;}
 
   while (f.good()) {
@@ -48,8 +48,12 @@ void stub::main(void)
     if (cmd=="WRITE")
       {
         gp.set_command(tlm::TLM_WRITE_COMMAND);
-        str="00000000";
-        data=(unsigned char *)str;
+        
+        for (unsigned int i = 0; i < length; i++) {
+        	random_data  = rand();
+		random_data  = random_data & 0xff;  
+		data[i]=random_data;   
+        }             
       }
     else if (cmd=="READ")
       {
@@ -84,12 +88,15 @@ void stub::main(void)
       wait( start_time-sc_core::sc_time_stamp() );
 
     // Perform the transaction
-    cout << sc_core::sc_time_stamp() << " " << sc_object::name()
-         << " " << cmd << " " << hex << length << " " << addr << endl;
+    // cout << sc_core::sc_time_stamp() << " " << sc_object::name()
+    //      << " " << cmd << " " << hex << length << " " << addr << endl;
+         
     master->b_transport(gp, delay);
+    
     if (gp.get_response_status() != tlm::TLM_OK_RESPONSE)
     cout << sc_core::sc_time_stamp() << " " << sc_object::name()
          << " ERROR Response Status " << gp.get_response_status() << endl;
+     delete [] data;
   }
    
   cout << sc_core::sc_time_stamp() << " " << sc_object::name()

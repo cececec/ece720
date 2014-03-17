@@ -52,11 +52,19 @@ mem::custom_b_transport
  ( tlm::tlm_generic_payload &gp, sc_core::sc_time &delay )
 {
   sc_dt::uint64    address   = gp.get_address();
+  sc_core::sc_time finish_time(122825,sc_core::SC_NS);//112825
   tlm::tlm_command command   = gp.get_command();
   unsigned char    *data     = gp.get_data_ptr();    // data pointer
   unsigned  int     length   = gp.get_data_length(); // data length
   sc_core::sc_time mem_delay(10,sc_core::SC_NS);
-
+  if (sc_core::sc_time_stamp()==sc_core::SC_ZERO_TIME){
+  // Simulate reset
+    sc_core::wait(1005,sc_core::SC_NS);
+    cout << sc_core::sc_time_stamp() << ": Memory Controller leaving startup..." << endl;
+    sc_core::wait(10,sc_core::SC_NS);
+    cout << sc_core::sc_time_stamp() << ": Simulation leaving reset" << endl;
+  }
+  
   wait(delay+mem_delay);
   if (address < m_memory_size) {
     switch (command) {
@@ -76,8 +84,10 @@ mem::custom_b_transport
         cout  << dec << endl; 
 #endif
         if (address == 0x40000000) {
-          if (data[0]==0x0D)
+          cout << "to console.." << endl;
+          if (data[0]==0x0D){
             sc_core::sc_stop();
+          }
           else
 #ifdef XACT_DUMP
             cout << "To console: " << data[0] << endl;
@@ -86,7 +96,7 @@ mem::custom_b_transport
 #endif
         }
         for (unsigned int i = 0; i < length; i++) {
-          m_array[address++] = data[i];
+          m_array[address++] = data[i];          
         }
         gp.set_response_status( tlm::TLM_OK_RESPONSE );
         //cout << "Write cmd Done..." << endl;
@@ -109,7 +119,8 @@ mem::custom_b_transport
 #endif
         for (unsigned int i = 0; i < length; i++) {
          data[i] =  m_array[address++];
-        }
+        } 
+         if (sc_core::sc_time_stamp()>=finish_time)  sc_core::sc_stop();
         gp.set_response_status( tlm::TLM_OK_RESPONSE );
         //cout << "Read cmd Done..." << endl;
         break;
