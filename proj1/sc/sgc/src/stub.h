@@ -30,7 +30,6 @@ private:
     (sc_dt::uint64 start_range, sc_dt::uint64 end_range);
   tlm::tlm_sync_enum nb_transport_bw (tlm::tlm_generic_payload &gp,
      tlm::tlm_phase &phase, sc_core::sc_time &delay);
-
 };
 
 

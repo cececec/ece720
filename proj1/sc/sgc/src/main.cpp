@@ -41,8 +41,7 @@ int sc_main(int argc , char * argv[]) {
     //double instructions_per_quantum = 10000.0;
     //tlm::tlm_global_quantum::instance().set(
     //sc_core::sc_time(instructions_per_quantum/100000000,sc_core::SC_SEC));
-    
-    
+            
     #ifndef USE_STUB
     // Simulation configuration
       scx::scx_parse_and_configure(argc, argv);
@@ -61,7 +60,46 @@ int sc_main(int argc , char * argv[]) {
     // Start of simulation
     sc_core::sc_start();
     std::cout << "Simulation Time: " << sc_core::sc_time_stamp() << std::endl;
+    
+ 
     return EXIT_SUCCESS;
 }
 
-
+/*
+ 
+Enable Static Memory Controller: No
+Number of Chip Selects: 1 
+AHB:
+- AHB Data Width: 32
+Controller:
+- Add pipeline to address decoder outputs: No
+- Address FIFO Depth: 4
+- Write FIFO Depth: 8
+- Enable EBI Interface: No
+- Hard Wire SDRAM Parameters: No
+- Hard Wire Chip-Select Parameters: No
+SDRAM:
+- Write Pipe for SDRAM: 0
+- Read Pipe for SDRAM: 2
+- Number of Clock Cycles between SDRAM refresh: 1040
+- SDRAM INIT Cycles after power up: 8
+- SDRAM Data Bus Width (Maximum): 16
+- SDRAM Data Bus Width (Default Value): 16
+- SDRAM Address Width (Maximum): 16
+- Bank Address Width (Maximum): 2
+- Use Higher AHB Address-bits for SDRAM Bank: No
+- Number of Data Strobes for DDR SDRAM: 2
+- Extended Mode Register Value: 0x0
+- Row Address Width: 13
+- Column Address Width: 12
+- DDR-SDRAM Precharge Bit: A10
+- Bank Address Width: 2
+- Number of Banks to be kept open at any time: 4
+- Set s_dout_valid signal to be deasserted when controller is idle: No
+- Enable Ready Mode Read Operation (Use s_rd_ready): No
+Controller ChipSelects:
+- ChipSelect0
+-- Block Size for ChipSelect0: 256 MB
+-- Enable Remap for Chipselect0: No
+-- Enable Aliasing for Chipselect0: No
+*/

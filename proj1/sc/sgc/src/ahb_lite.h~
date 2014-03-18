@@ -44,7 +44,7 @@ public:
   {
     for (unsigned int i = 0; i < NR_OF_INITIATORS; ++i) {
       target_socket[i].register_b_transport(this, &AHBlite::initiatorBTransport, i);
-     // target_socket[i].register_transport_dbg(this, &AHBlite::transportDebug, i);
+      target_socket[i].register_transport_dbg(this, &AHBlite::transportDebug, i);
      // target_socket[i].register_get_direct_mem_ptr(this, &AHBlite::getDMIPointer, i);
     }
     for (unsigned int i = 0; i < NR_OF_TARGETS; ++i) {
@@ -97,11 +97,11 @@ public:
   {
     initiator_socket_type* decodeSocket;
     unsigned int portId = 0;//decode(trans.get_address());
-     std::cout << "===1.In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
+    //std::cout << "===1.In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
     assert(portId < NR_OF_TARGETS);
     decodeSocket = &initiator_socket[portId];
      if (trans.get_address()!=0x40000000) trans.set_address(trans.get_address() & getAddressMask(portId));
-    std::cout << "===In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
+    //std::cout << "===In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
     (*decodeSocket)->b_transport(trans, t);
   }
 

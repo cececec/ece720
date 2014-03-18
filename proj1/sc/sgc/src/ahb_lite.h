@@ -72,7 +72,7 @@ public:
 
   sc_dt::uint64 getAddressMask(unsigned int portId)
   {
-    return 0xfffffff;
+    return 0xffffffff;
   }
 
   unsigned int decode(const sc_dt::uint64& address)
@@ -97,11 +97,11 @@ public:
   {
     initiator_socket_type* decodeSocket;
     unsigned int portId = 0;//decode(trans.get_address());
-     std::cout << "===1.In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
+    //std::cout << "===1.In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
     assert(portId < NR_OF_TARGETS);
     decodeSocket = &initiator_socket[portId];
      if (trans.get_address()!=0x40000000) trans.set_address(trans.get_address() & getAddressMask(portId));
-    std::cout << "===In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
+    //std::cout << "===In AHB portId is " << portId << " === addr is "<< std::hex <<trans.get_address()<< std::endl;
     (*decodeSocket)->b_transport(trans, t);
   }
 
