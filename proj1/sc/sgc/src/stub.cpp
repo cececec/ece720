@@ -40,7 +40,7 @@ void stub::main(void)
 
   while (f.good()) {
     f >> time_val >> time_unit >> cmd >> hex >> length >> addr;
-    //cout << "ok" << endl;
+    //cout << "ok "<< cmd << " " << hex <<addr << " "<< " 0x"<< dec <<length << endl;
     unsigned char *data= new unsigned char[length];
     if (!f.good())
       continue;
@@ -51,7 +51,7 @@ void stub::main(void)
         
         for (unsigned int i = 0; i < length; i++) {
         	random_data  = rand();
-		random_data  = random_data & 0xff;  
+		random_data  = random_data & 0x00;  
 		data[i]=random_data;   
         }             
       }
@@ -101,6 +101,7 @@ void stub::main(void)
    
   cout << sc_core::sc_time_stamp() << " " << sc_object::name()
        << " Completed" << endl;
+   sc_core::sc_stop();
 } // end main
 
 

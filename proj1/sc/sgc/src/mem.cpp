@@ -7,7 +7,7 @@ LT Memory Model
 #include "mem.h"
 
 // Uncomment the following line to enable transaction-dumpint to stdout
-#define XACT_DUMP
+//#define XACT_DUMP
 
 using namespace  std;
 
@@ -56,7 +56,7 @@ mem::custom_b_transport
   tlm::tlm_command command   = gp.get_command();
   unsigned char    *data     = gp.get_data_ptr();    // data pointer
   unsigned  int     length   = gp.get_data_length(); // data length
-  sc_core::sc_time mem_delay(0,sc_core::SC_NS);
+  sc_core::sc_time mem_delay(10,sc_core::SC_NS);
 
   
   wait(delay+mem_delay);

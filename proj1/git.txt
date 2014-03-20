@@ -1,0 +1,1121 @@
+# On branch master
+# Your branch is ahead of 'origin/master' by 2 commits.
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   sc/image/coretex_sc_iter_10.out
+#	new file:   sc/image/coretex_sc_iter_20.out
+#	new file:   sc/image/coretex_sc_iter_6.out
+#	new file:   sc/image/fibonacci.axf
+#	modified:   sc/image/fibonacci.c
+#	new file:   sc/image/fibonacci.c~
+#	new file:   sc/sgc/Cortex-M3.x
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/Cortex_Linux-Release-GCC-4.1_Makefile.sg
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Component__Cortex_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Component__PVBus2AMBAPV_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Component__TZSwitch_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Components.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_DSO.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVACE_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVACE_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignalState_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignalState_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignal_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignal_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPV_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPV_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalCallback_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalCallback_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AudioControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AudioControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__AddressablePortProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__AddressablePortProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__BUSProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__BUSProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__ControlProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__ControlProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__MxDIExecutionControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__MxDIExecutionControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__SIGNALProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__SIGNALProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIDisassemblerProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIDisassemblerProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CCIInterconnectControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CCIInterconnectControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockRateControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockRateControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockSignal_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockSignal_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CompoundPortLisa_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CompoundPortLisa_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CounterInterface_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CounterInterface_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__DVMMessage_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__DVMMessage_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__EventBus_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__EventBus_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Feature_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Feature_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__FlashLoaderPort_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__FlashLoaderPort_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GICv3Comms_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GICv3Comms_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GUIPollCallback_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GUIPollCallback_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ICS307Configuration_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ICS307Configuration_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__InstructionCount_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__InstructionCount_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__KeyboardStatus_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__KeyboardStatus_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__LCD_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__LCD_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMC_Protocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMC_Protocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_BASE_IDENTIFY_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_BASE_IDENTIFY_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_Internals_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_Internals_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MouseStatus_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MouseStatus_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL080_DMAC_DmaPortProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL080_DMAC_DmaPortProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330CppToLISA_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330CppToLISA_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330_DMAC_DmaPortProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330_DMAC_DmaPortProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PMUEvent_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PMUEvent_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PS2Data_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PS2Data_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheDevice_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheDevice_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusMapperControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusMapperControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusRouterControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusRouterControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusSlaveControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusSlaveControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBus_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBus_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheDebugRam_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheDebugRam_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheMaintenance_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheMaintenance_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVDevice_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVDevice_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVTransactionMaster_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVTransactionMaster_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerInterfaceControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerInterfaceControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadEventControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadEventControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SerialData_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SerialData_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Signal_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Signal_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__StateSignal_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__StateSignal_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZFilterControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZFilterControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZSwitchControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZSwitchControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICComponentTraceExport_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICComponentTraceExport_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICReportingProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICReportingProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_64_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_64_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VirtualEthernet_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VirtualEthernet_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VisEventRecorderProtocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VisEventRecorderProtocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v7_VGIC_Configuration_Protocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v7_VGIC_Configuration_Protocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v8EmbeddedCrossTrigger_controlprotocol_ClassDecl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v8EmbeddedCrossTrigger_controlprotocol_ClassDef.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/GlobalDefs.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPV2PVBus.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVACE2PVBus.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVACEProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignal2SGSignal.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignalProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignalState2SGStateSignal.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue2SGValue.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue2SGValue64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue64Protocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueState2SGValueState.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueState2SGValueState64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM1136CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM1176CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM926CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM968CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPCT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPx1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPx4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA8CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9UPCT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexM3CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexM4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR4CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR5x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR5x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR7x1CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR7x2CT.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignal.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignalCallbackProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignalControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioOut_File.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioOut_SDL.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP135TZSwitchControl.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP135_AXI2APB.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP141_TZMA.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP147_TZPC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Builtin__Protocols.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CADIDisassemblerProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CADIProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CCI400.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CCIRegisters.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockDivider.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockRateControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockSignalProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimer.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimer64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimerThread.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimerThread64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CompoundPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Cortex-M3.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CounterInterface.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CounterModule.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DMC_400.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DVMProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DebugAccessPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ElfLoader.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_EventBus.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Feature.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_FlashLoader.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_FlashLoaderPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GIC_400.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3Comms.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3CommsPVBus.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3Distributor.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GUIPoll.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GUIPollCallbackPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Gate.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_HostBridge.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ICS307.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ICS307ConfigurationPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_InstructionCountProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_KeyboardStatusProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_LCDPort.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Labeller.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_LabellerForDMA330.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MMC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MMC_Protocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MasterClock.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MemoryMappedCounterModule.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MemoryMappedCounterSocket.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MouseStatusProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL011_Uart.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL022_SSP.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL030_RTC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL031_RTC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL041_AACI.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL050_KMI.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL061_GPIO.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL080_DMAC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL080_DMAC_DmaPortProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL110_CLCD.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL111_CLCD.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL11x_CLCD.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL180_MCI.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL192_VIC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL310_L2CC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL330_DMAC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL330_DMAC_DmaPortProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL340_DMC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL350_SMC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL350_SMC_NAND_FLASH.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL370_HDLCD.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL390_GIC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2DataProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2Keyboard.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2Mouse.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBus2AMBAPV.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBus2AMBAPVACE.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusCache.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusDecoder.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusLogger.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusMapper.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusMaster.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusRange.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusRouter.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusSlave.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusSlaveControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCache.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCacheMaintenance.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCache_DebugRamProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVDeviceProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVTransactionMasterProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_RAMDevice.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_RealtimeClockTimer_Linux.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGSignal2AMBAPVSignal.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGSignalBuffer.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGStateSignal2AMBAPVSignalState.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValue2AMBAPVValue.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValue2AMBAPVValue64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValueState2AMBAPVValueState.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValueState2AMBAPVValueState64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMMU_400.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMMU_400_BASE.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMSC_91C111.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP804_Timer.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP805_Watchdog.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP810_SysCtrl.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerInterface.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerInterfaceControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThread.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadEvent.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadEventControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SerialCrossover.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SerialData.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SignalProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZC_400.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZFilterUnit.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZIC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZSwitch.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TelnetTerminal.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerCallbackProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerCallbackProtocol64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerControlProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerControlProtocol64.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_UnusedPrimeCell.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VGIC_Component.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Value64Protocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ValueProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtioBlockDevice.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetCrossover.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetHub3.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VisEventRecorder.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VisEventRecorderProtocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_WarningMemory.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v7_VGIC.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v7_VGIC_Configuration_Protocol.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v8EmbeddedCrossTrigger.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/MaxCoreVersion.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/SimGenTplMacros.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPV.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVACE.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVSignal.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVSignalState.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValue.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValue64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValueState.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValueState64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AsyncSignalCallback.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AsyncSignalControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AudioControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__AddressablePortProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__BUSProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__ControlProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__MxDIExecutionControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__SIGNALProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CADIDisassemblerProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CADIProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CCIInterconnectControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ClockRateControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ClockSignal.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CompoundPortLisa.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CounterInterface.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_DVMMessage.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_EventBus.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Feature.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_FlashLoaderPort.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_GICv3Comms.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_GUIPollCallback.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ICS307Configuration.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_InstructionCount.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_KeyboardStatus.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_LCD.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMC_Protocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMU_400_BASE_IDENTIFY.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMU_400_Internals.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MouseStatus.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL080_DMAC_DmaPortProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL330CppToLISA.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL330_DMAC_DmaPortProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PMUEvent.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PS2Data.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBus.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusCacheControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusCacheDevice.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusMapperControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusRouterControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusSlaveControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVCacheDebugRam.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVCacheMaintenance.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVDevice.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVTransactionMaster.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerInterfaceControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerThreadControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerThreadEventControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SerialData.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Signal.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_StateSignal.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TZFilterControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TZSwitchControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerCallback.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerCallback64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerControl.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerControl64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VGICComponentTraceExport.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VGICReportingProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Value.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ValueState.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ValueState_64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Value_64.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VirtualEthernet.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VisEventRecorderProtocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_v7_VGIC_Configuration_Protocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/protocol_v8EmbeddedCrossTrigger_controlprotocol.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.cpp
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.d
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.h
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.o
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/libCortex-Linux-Release-GCC-4.1.so
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/libscx-Cortex-Linux-Release-GCC-4.1.a
+#	new file:   sc/sgc/Linux-Release-GCC-4.1/libscx.a
+#	new file:   sc/sgc/autocortex.tcl
+#	new file:   sc/sgc/coretex_sc_iter_10.out
+#	new file:   sc/sgc/coretex_sc_iter_12.out
+#	new file:   sc/sgc/coretex_sc_iter_12.out~
+#	new file:   sc/sgc/coretex_sc_iter_15.out
+#	new file:   sc/sgc/coretex_sc_iter_18.out
+#	new file:   sc/sgc/coretex_sc_iter_18.out~
+#	new file:   sc/sgc/coretex_sc_iter_20.out
+#	new file:   sc/sgc/coretex_sc_iter_21.out
+#	new file:   sc/sgc/coretex_sc_iter_6.out
+#	new file:   sc/sgc/coretex_sc_iter_9.out
+#	new file:   sc/sgc/coretex_sc_iter_test.out
+#	new file:   sc/sgc/latenight_10.out
+#	new file:   sc/sgc/latenight_15.out
+#	new file:   sc/sgc/latenight_20.out
+#	new file:   sc/sgc/latenight_6.out
+#	new file:   sc/sgc/libCortex-Linux-Release-GCC-4.1.so
+#	new file:   sc/sgc/libMAXCOREInitSimulationEngine.so.2
+#	new file:   sc/sgc/libSDL-1.2.so.0.11.2
+#	new file:   sc/sgc/libarmctmodel.so
+#	modified:   sc/sgc/src/DW_memctl.h
+#	copied:     sc/sgc/src/DW_memctl.h -> sc/sgc/src/DW_memctl.h~
+#	modified:   sc/sgc/src/main.cpp
+#	modified:   sc/sgc/src/main.cpp~
+#	modified:   sc/sgc/src/main.o
+#	modified:   sc/sgc/src/mem.cpp
+#	modified:   sc/sgc/src/mem.cpp~
+#	modified:   sc/sgc/src/mem.o
+#	new file:   sc/sgc/src/simpleout.out
+#	modified:   sc/sgc/src/stub.cpp
+#	modified:   sc/sgc/src/stub.cpp~
+#	modified:   sc/sgc/src/xact0.txt
+#	new file:   sc/sgc/stub_10k.out
+#	new file:   sc/sgc/stub_1k.out
+#	new file:   sc/sgc/stub_3k.out
+#	new file:   sc/sgc/stub_6k.out
+#	new file:   sc/sgc/wtf.out
+#	new file:   sc/sgc/wtf.out~
+#	new file:   sc/sgc/xact_10k.out
+#	new file:   sc/sgc/xact_1k.out
+#	new file:   sc/sgc/xact_3k.out
+#	new file:   sc/sgc/xact_6k.out
+#	modified:   v/sim/fibonacci.c
+#	modified:   v/sim/fibonacci.c~
+#	new file:   v/sim/org_cor_12.out
+#	new file:   v/sim/org_cor_18.out
+#	new file:   v/sim/org_cor_21.out
+#	new file:   v/sim/org_cor_22.out
+#	new file:   v/sim/org_cor_9.out
+#	modified:   v/sim/tb.v
+#	new file:   v/sim/tb.v~
+#	new file:   v/src/rtl/AHBlite_stub.sv~
+#	new file:   v/src/rtl/CORTEXM0DS.v~
+#	modified:   v/src/rtl/cortex_soc.v
+#	modified:   v/src/rtl/cortex_soc.v~
+#	new file:   v/src/rtl/cortexm0ds_logic.v~
+#
+# Changed but not updated:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	deleted:    sc/image/coretex_sc_iter_10.out
+#	deleted:    sc/image/coretex_sc_iter_20.out
+#	deleted:    sc/image/coretex_sc_iter_6.out
+#	deleted:    sc/image/fibonacci.axf
+#	deleted:    sc/image/fibonacci.c~
+#	deleted:    sc/sgc/Cortex-M3.x
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/Cortex_Linux-Release-GCC-4.1_Makefile.sg
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_DSO.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/CADI_Ctors_NonDSO.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_1.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Comp_NonDSO.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Component__Cortex_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Component__PVBus2AMBAPV_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Component__TZSwitch_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Components.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_DSO.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex_Utils.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVACE_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVACE_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignalState_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignalState_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignal_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVSignal_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValueState_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPVValue_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPV_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AMBAPV_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalCallback_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalCallback_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AsyncSignalControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AudioControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__AudioControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__AddressablePortProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__AddressablePortProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__BUSProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__BUSProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__ControlProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__ControlProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__MxDIExecutionControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__MxDIExecutionControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__SIGNALProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Builtin__SIGNALProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIDisassemblerProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIDisassemblerProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CADIProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CCIInterconnectControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CCIInterconnectControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockRateControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockRateControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockSignal_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ClockSignal_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CompoundPortLisa_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CompoundPortLisa_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CounterInterface_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__CounterInterface_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__DVMMessage_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__DVMMessage_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__EventBus_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__EventBus_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Feature_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Feature_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__FlashLoaderPort_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__FlashLoaderPort_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GICv3Comms_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GICv3Comms_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GUIPollCallback_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__GUIPollCallback_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ICS307Configuration_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ICS307Configuration_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__InstructionCount_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__InstructionCount_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__KeyboardStatus_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__KeyboardStatus_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__LCD_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__LCD_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMC_Protocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMC_Protocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_BASE_IDENTIFY_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_BASE_IDENTIFY_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_Internals_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MMU_400_Internals_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MouseStatus_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__MouseStatus_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL080_DMAC_DmaPortProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL080_DMAC_DmaPortProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330CppToLISA_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330CppToLISA_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330_DMAC_DmaPortProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PL330_DMAC_DmaPortProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PMUEvent_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PMUEvent_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PS2Data_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PS2Data_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheDevice_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusCacheDevice_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusMapperControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusMapperControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusRouterControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusRouterControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusSlaveControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBusSlaveControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBus_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVBus_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheDebugRam_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheDebugRam_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheMaintenance_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVCacheMaintenance_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVDevice_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVDevice_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVTransactionMaster_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__PVTransactionMaster_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerInterfaceControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerInterfaceControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadEventControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SchedulerThreadEventControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SerialData_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__SerialData_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Signal_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Signal_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__StateSignal_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__StateSignal_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZFilterControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZFilterControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZSwitchControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TZSwitchControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerCallback_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__TimerControl_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICComponentTraceExport_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICComponentTraceExport_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICReportingProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VGICReportingProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__ValueState_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_64_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_64_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__Value_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VirtualEthernet_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VirtualEthernet_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VisEventRecorderProtocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__VisEventRecorderProtocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v7_VGIC_Configuration_Protocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v7_VGIC_Configuration_Protocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v8EmbeddedCrossTrigger_controlprotocol_ClassDecl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/Cortex__v8EmbeddedCrossTrigger_controlprotocol_ClassDef.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/GlobalDefs.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPV2PVBus.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVACE2PVBus.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVACEProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignal2SGSignal.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignalProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVSignalState2SGStateSignal.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue2SGValue.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue2SGValue64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValue64Protocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueState2SGValueState.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AMBAPVValueState2SGValueState64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM1136CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM1176CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM926CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARM968CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPCT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPx1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMAEMv8AMPx4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA12x4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA15x4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA53x4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA57x4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA5MPx4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA7x4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA8CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9MPx4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexA9UPCT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexM3CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexM4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR4CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR5x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR5x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR7x1CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ARMCortexR7x2CT.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignal.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignalCallbackProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AsyncSignalControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioOut_File.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_AudioOut_SDL.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP135TZSwitchControl.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP135_AXI2APB.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP141_TZMA.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_BP147_TZPC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Builtin__Protocols.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CADIDisassemblerProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CADIProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CCI400.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CCIRegisters.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockDivider.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockRateControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockSignalProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimer.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimer64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimerThread.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ClockTimerThread64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CompoundPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Cortex-M3.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CounterInterface.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_CounterModule.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DMC_400.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DVMProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_DebugAccessPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ElfLoader.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_EventBus.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Feature.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_FlashLoader.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_FlashLoaderPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GIC_400.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3Comms.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3CommsPVBus.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GICv3Distributor.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GUIPoll.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_GUIPollCallbackPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Gate.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_HostBridge.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ICS307.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ICS307ConfigurationPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_InstructionCountProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_KeyboardStatusProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_LCDPort.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Labeller.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_LabellerForDMA330.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MMC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MMC_Protocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MasterClock.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MemoryMappedCounterModule.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MemoryMappedCounterSocket.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_MouseStatusProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL011_Uart.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL022_SSP.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL030_RTC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL031_RTC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL041_AACI.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL050_KMI.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL061_GPIO.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL080_DMAC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL080_DMAC_DmaPortProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL110_CLCD.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL111_CLCD.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL11x_CLCD.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL180_MCI.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL192_VIC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL310_L2CC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL330_DMAC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL330_DMAC_DmaPortProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL340_DMC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL350_SMC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL350_SMC_NAND_FLASH.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL370_HDLCD.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PL390_GIC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2DataProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2Keyboard.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PS2Mouse.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBus2AMBAPV.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBus2AMBAPVACE.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusCache.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusDecoder.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusLogger.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusMapper.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusMaster.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusRange.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusRouter.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusSlave.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVBusSlaveControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCache.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCacheMaintenance.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVCache_DebugRamProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVDeviceProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_PVTransactionMasterProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_RAMDevice.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_RealtimeClockTimer_Linux.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGSignal2AMBAPVSignal.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGSignalBuffer.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGStateSignal2AMBAPVSignalState.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValue2AMBAPVValue.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValue2AMBAPVValue64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValueState2AMBAPVValueState.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SGValueState2AMBAPVValueState64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMMU_400.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMMU_400_BASE.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SMSC_91C111.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP804_Timer.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP805_Watchdog.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SP810_SysCtrl.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerInterface.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerInterfaceControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThread.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadEvent.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SchedulerThreadEventControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SerialCrossover.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SerialData.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_SignalProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZC_400.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZFilterUnit.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZIC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TZSwitch.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TelnetTerminal.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerCallbackProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerCallbackProtocol64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerControlProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_TimerControlProtocol64.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_UnusedPrimeCell.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VGIC_Component.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_Value64Protocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_ValueProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtioBlockDevice.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetCrossover.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetHub3.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VirtualEthernetProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VisEventRecorder.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_VisEventRecorderProtocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_WarningMemory.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v7_VGIC.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v7_VGIC_Configuration_Protocol.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/LISA_v8EmbeddedCrossTrigger.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/MaxCoreVersion.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/SimGenTplMacros.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPV.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVACE.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVSignal.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVSignalState.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValue.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValue64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValueState.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AMBAPVValueState64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AsyncSignalCallback.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AsyncSignalControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_AudioControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__AddressablePortProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__BUSProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__ControlProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__MxDIExecutionControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Builtin__SIGNALProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CADIDisassemblerProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CADIProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CCIInterconnectControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ClockRateControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ClockSignal.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CompoundPortLisa.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_CounterInterface.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_DVMMessage.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_EventBus.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Feature.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_FlashLoaderPort.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_GICv3Comms.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_GUIPollCallback.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ICS307Configuration.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_InstructionCount.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_KeyboardStatus.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_LCD.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMC_Protocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMU_400_BASE_IDENTIFY.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MMU_400_Internals.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_MouseStatus.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL080_DMAC_DmaPortProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL330CppToLISA.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PL330_DMAC_DmaPortProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PMUEvent.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PS2Data.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBus.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusCacheControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusCacheDevice.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusMapperControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusRouterControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVBusSlaveControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVCacheDebugRam.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVCacheMaintenance.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVDevice.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_PVTransactionMaster.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerInterfaceControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerThreadControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SchedulerThreadEventControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_SerialData.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Signal.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_StateSignal.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TZFilterControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TZSwitchControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerCallback.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerCallback64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerControl.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_TimerControl64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VGICComponentTraceExport.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VGICReportingProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Value.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ValueState.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_ValueState_64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_Value_64.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VirtualEthernet.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_VisEventRecorderProtocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_v7_VGIC_Configuration_Protocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/protocol_v8EmbeddedCrossTrigger_controlprotocol.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_evs_Cortex.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_ids.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_report_handler.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_scheduler_mapping.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.cpp
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.d
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.h
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/gen/scx_simcontroller.o
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/libCortex-Linux-Release-GCC-4.1.so
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/libscx-Cortex-Linux-Release-GCC-4.1.a
+#	deleted:    sc/sgc/Linux-Release-GCC-4.1/libscx.a
+#	deleted:    sc/sgc/autocortex.tcl
+#	deleted:    sc/sgc/coretex_sc_iter_10.out
+#	deleted:    sc/sgc/coretex_sc_iter_12.out
+#	deleted:    sc/sgc/coretex_sc_iter_12.out~
+#	deleted:    sc/sgc/coretex_sc_iter_15.out
+#	deleted:    sc/sgc/coretex_sc_iter_18.out
+#	deleted:    sc/sgc/coretex_sc_iter_18.out~
+#	deleted:    sc/sgc/coretex_sc_iter_20.out
+#	deleted:    sc/sgc/coretex_sc_iter_21.out
+#	deleted:    sc/sgc/coretex_sc_iter_6.out
+#	deleted:    sc/sgc/coretex_sc_iter_9.out
+#	deleted:    sc/sgc/coretex_sc_iter_test.out
+#	deleted:    sc/sgc/latenight_10.out
+#	deleted:    sc/sgc/latenight_15.out
+#	deleted:    sc/sgc/latenight_20.out
+#	deleted:    sc/sgc/latenight_6.out
+#	deleted:    sc/sgc/libCortex-Linux-Release-GCC-4.1.so
+#	deleted:    sc/sgc/libMAXCOREInitSimulationEngine.so.2
+#	deleted:    sc/sgc/libSDL-1.2.so.0.11.2
+#	deleted:    sc/sgc/libarmctmodel.so
+#	deleted:    sc/sgc/org_testoutput.txt
+#	deleted:    sc/sgc/src/DW_memctl.cpp~
+#	deleted:    sc/sgc/src/DW_memctl.h~
+#	deleted:    sc/sgc/src/DW_memctl.o
+#	deleted:    sc/sgc/src/Makefile
+#	deleted:    sc/sgc/src/ahb_lite.h~
+#	deleted:    sc/sgc/src/main.cpp~
+#	deleted:    sc/sgc/src/main.o
+#	deleted:    sc/sgc/src/main.x
+#	deleted:    sc/sgc/src/makefile.include
+#	deleted:    sc/sgc/src/mem.cpp~
+#	deleted:    sc/sgc/src/mem.h~
+#	deleted:    sc/sgc/src/mem.o
+#	deleted:    sc/sgc/src/setup.csh
+#	deleted:    sc/sgc/src/simpleout.out
+#	deleted:    sc/sgc/src/stub.cpp~
+#	deleted:    sc/sgc/src/stub.h~
+#	deleted:    sc/sgc/src/stub.o
+#	deleted:    sc/sgc/src/xact0.txt
+#	deleted:    sc/sgc/src/xact0_tmp.txt
+#	deleted:    sc/sgc/src/xact0_tmp.txt~
+#	deleted:    sc/sgc/src/xact2.txt
+#	deleted:    sc/sgc/stub_10k.out
+#	deleted:    sc/sgc/stub_1k.out
+#	deleted:    sc/sgc/stub_3k.out
+#	deleted:    sc/sgc/stub_6k.out
+#	deleted:    sc/sgc/t1.txt~
+#	deleted:    sc/sgc/wtf.out
+#	deleted:    sc/sgc/wtf.out~
+#	deleted:    sc/sgc/xact_10k.out
+#	deleted:    sc/sgc/xact_1k.out
+#	deleted:    sc/sgc/xact_3k.out
+#	deleted:    sc/sgc/xact_6k.out
+#	deleted:    stdout/DW_mem_param~
+#	deleted:    stdout/interation_10.out~
+#	deleted:    stdout/myscript_opti_v_out.py
+#	deleted:    stdout/myscript_opti_v_out.py~
+#	deleted:    stdout/opti_iter_10.out~
+#	deleted:    stdout/opti_v_dump.out~
+#	deleted:    stdout/optimize.py~
+#	deleted:    stdout/optimize_v_out.py~
+#	deleted:    stdout/overall.out
+#	deleted:    stdout/overall.out~
+#	deleted:    stdout/rtl_opti/cpu/opti_v_iter_10.out
+#	deleted:    stdout/rtl_opti/cpu/opti_v_iter_15.out
+#	deleted:    stdout/rtl_opti/cpu/opti_v_iter_20.out
+#	deleted:    stdout/rtl_opti/cpu/opti_v_iter_6.out
+#	deleted:    stdout/rtl_opti/stub/opti_sc_stub.out
+#	deleted:    stdout/src/org_v_iter_10.out
+#	deleted:    stdout/src/org_v_iter_15.out
+#	deleted:    stdout/src/org_v_iter_20.out
+#	deleted:    stdout/src/org_v_iter_6.out
+#	deleted:    stdout/src/org_v_stub.out
+#	deleted:    stdout/src/org_v_stub.out~
+#	deleted:    stdout/src/org_v_stub_iter_6.out
+#	deleted:    stdout/tlm_opti/cpu/my_out_10.out
+#	deleted:    stdout/tlm_opti/cpu/my_out_15.out
+#	deleted:    stdout/tlm_opti/cpu/my_out_20.out
+#	deleted:    stdout/tlm_opti/cpu/my_out_6.out
+#	deleted:    stdout/v_dump.out~
+#	deleted:    stdout/xact_file/myscript.py
+#	deleted:    stdout/xact_file/xact0.txt
+#	deleted:    stdout/xact_file/xact1.txt
+#	deleted:    stdout/xact_file/xact2.txt
+#	deleted:    v/sim/fibonacci.c~
+#	deleted:    v/sim/org_cor_12.out
+#	deleted:    v/sim/org_cor_18.out
+#	deleted:    v/sim/org_cor_21.out
+#	deleted:    v/sim/org_cor_22.out
+#	deleted:    v/sim/org_cor_9.out
+#	deleted:    v/sim/pythontest.out
+#	deleted:    v/sim/stub_dump_sim.out
+#	deleted:    v/sim/tb.v~
+#	deleted:    v/sim/v_iter_15.out~
+#	deleted:    v/src/rtl/AHBlite_stub.sv~
+#	deleted:    v/src/rtl/CORTEXM0DS.v~
+#	deleted:    v/src/rtl/cortex_soc.v~
+#	deleted:    v/src/rtl/cortexm0ds_logic.v~
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	../hw05/p1/.Makefile.swp
+#	git.txt
+#	../stdout/

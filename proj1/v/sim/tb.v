@@ -28,7 +28,7 @@
 // Cortex-M0 DesignStart testbench example
 //------------------------------------------------------------------------------
 
-`define XACT_DUMP
+//`define XACT_DUMP
 
 module tb ();
 
