@@ -7,7 +7,7 @@ SystemC / TLM 2.0 Simulation with ARM Fast Models
 // Note: For documentation on the functions defined in the
 // scx:: namespace, refer to the comments in the header
 // files in $PVLIB_HOME/include/fmruntime/scx
-//#define USE_STUB
+#define USE_STUB
 
 #include <cstring>
 #include <cstdlib>

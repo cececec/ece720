@@ -82,7 +82,7 @@ public:
     //MRD(load mode register);INT(internal delay)
     WTR=CLK; INT=CAS=RCD=WR=DQSS=MRD=2*CLK;RP=AUTOREF=3*CLK;//RAS_MIN
     RAS=XP=5*CLK;RC=7*CLK;NUM_INIT_REF=SRAM_INIT=RCAR=8*CLK;reset_time=102*CLK;
-    XSR =200*CLK;SRAMREF=1040*CLK;INT;   
+    XSR =200*CLK;SRAMREF=1040*CLK;   
     sr_delay=CAS;//same row delay or //different bank delay and same active row
     dr_delay_rp=RCD+CAS;//different row delay when rp_flag=high
     dr_delay=RAS+RP+RCD;//different row delay 
