@@ -31,7 +31,7 @@ int sc_main(int argc , char * argv[]) {
       scx_evs_Cortex cpu("Cortex");
       amba_pv::amba_pv_to_tlm_bridge<64> amba2tlm("amba2tlm");
     #else
-      stub stub("stub","xact_6k.out");
+      stub stub("stub","xact_10k.out");
     #endif
       AHBlite<1, 1> bus("bus");
       DWmemctl<1, 1> dw("memctl");

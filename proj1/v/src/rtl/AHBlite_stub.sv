@@ -2,7 +2,7 @@
 
 /* `include "AHB_defines.v" */
 
-`define ITERATIONS 1000
+`define ITERATIONS 10000
 
 module AHBlite_stub (
 

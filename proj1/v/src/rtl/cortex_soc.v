@@ -1,5 +1,5 @@
 
-//`define USE_STUB
+`define USE_STUB
 
 module cortex_soc (
   HCLK,
