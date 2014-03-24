@@ -2,7 +2,7 @@
 set modname xbar
 
 # set variable "topmetal" to the highest usable metal layer
-set topmetal 6
+set topmetal 10
 
 # set variable "holdslack" to the difference btw. Encounter & PrimeTime hold-times
 set holdslack 0.15
