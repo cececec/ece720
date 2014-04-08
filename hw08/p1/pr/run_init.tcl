@@ -15,7 +15,7 @@ loadConfig design.conf
 
 # Create Initial Floorplan
 #floorplan -s 10 10 40 40 40 40
-floorplan -su 1.0 0.95 40 40 40 40
+floorplan -su 1.0 0.3 40 40 40 40
 
 # Create Power structures
 

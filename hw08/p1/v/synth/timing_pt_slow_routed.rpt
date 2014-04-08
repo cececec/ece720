@@ -1,0 +1,1152 @@
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00669298  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00669298  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[31] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00859978  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[31] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00859978  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[30] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103642  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[30] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103642  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00770214  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00770214  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[27] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0079227  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[27] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0079227  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[26] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00756441  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[26] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00756441  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[28] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00714231  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[28] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00714231  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[25] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00756956  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[25] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00756956  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00718983  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00718983  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[21] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00882045  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[24] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00857148  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[24] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00857148  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00900866  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00900866  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[18] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00604721  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[18] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00604721  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[21] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00882045  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[19] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00573227  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[19] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00573227  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[20] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0109284  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[20] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0109284  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[15] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00957441  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[15] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00957441  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[17] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00878669  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[17] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00878669  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[14] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.010217  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[16] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00761993  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[16] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00761993  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[13] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00521944  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00757762  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00757762  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00784614  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00784614  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[14] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.010217  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[9] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00517158  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[13] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00521944  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[10] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00789078  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[10] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00789078  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00792083  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[7] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00792083  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[8] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00495678  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[8] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00495678  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[9] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00517158  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[5] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00644612  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[6] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00805673  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[6] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00805673  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[3] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0083122  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[3] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0083122  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[2] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00673365  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[2] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00673365  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[5] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00644612  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[4] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00697506  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[4] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00697506  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HREADY (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00761142  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HREADY (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00761142  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[1] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00614329  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[1] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00614329  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[0] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00680792  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[0] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00680792  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00525458  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00525458  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESP (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00980757  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESP (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00980757  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00776459  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00776459  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0145177  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0145177  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00744748  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[12] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00744748  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[11] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00932652  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[10] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0109646  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00533138  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00533138  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00727761  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00727761  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[11] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00932652  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[10] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0109646  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00457144  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00900875  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00900875  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[6] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00554875  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[4] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0100631  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[4] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0100631  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[5] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649358  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[5] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649358  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00457144  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[2] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00542523  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[6] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00554875  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[3] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00573009  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[3] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00573009  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[0] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0117214  (lib units)]
+ (RC-004)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NOR2_X1) u_logic/U3936/A2-->ZN (max negative_unate)
+	 [fall slew = 0.669893, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NOR2_X1) u_logic/U3936/A2-->ZN (min negative_unate)
+	 [fall slew = 0.661545, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OR2_X1) u_logic/U3978/A1-->ZN (max positive_unate)
+	 [rise slew = 0.714296, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OR2_X1) u_logic/U3978/A1-->ZN (min positive_unate)
+	 [rise slew = 0.70617, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X2) u_logic/U4371/A1-->ZN (max negative_unate)
+	 [fall slew = 0.677608, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X2) u_logic/U4371/A1-->ZN (min negative_unate)
+	 [fall slew = 0.672416, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U5640/B2-->ZN (max negative_unate)
+	 [fall slew = 0.682414, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U5640/B2-->ZN (min negative_unate)
+	 [fall slew = 0.679783, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (max negative_unate)
+	 [fall slew = 0.791252, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (min negative_unate)
+	 [fall slew = 0.788291, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (max negative_unate)
+	 [fall slew = 0.791252, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (min negative_unate)
+	 [fall slew = 0.788291, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (max negative_unate)
+	 [fall slew = 0.791252, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3865/B-->ZN (min negative_unate)
+	 [fall slew = 0.788291, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->CO (max positive_unate)
+	 [rise slew = 0.820292, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->CO (min positive_unate)
+	 [rise slew = 0.786967, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X2) u_logic/U4609/A2-->ZN (max negative_unate)
+	 [fall slew = 0.677608, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X2) u_logic/U4609/A2-->ZN (min negative_unate)
+	 [fall slew = 0.672416, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->S (max negative_unate)
+	 [fall slew = 0.820292, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->S (min negative_unate)
+	 [fall slew = 0.786967, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->S (max positive_unate)
+	 [rise slew = 0.820292, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/HA_X1) u_logic/add_2071_U1_1_1/A-->S (min positive_unate)
+	 [rise slew = 0.786967, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/INV_X1) u_logic/U3572/A-->ZN (max negative_unate)
+	 [fall slew = 0.704234, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/INV_X1) u_logic/U3572/A-->ZN (min negative_unate)
+	 [fall slew = 0.683793, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3901/B-->ZN (max negative_unate)
+	 [fall slew = 0.667059, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3901/B-->ZN (max negative_unate)
+	 [fall slew = 0.667059, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI211_X1) u_logic/U3901/B-->ZN (max negative_unate)
+	 [fall slew = 0.667059, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI21_X1) u_logic/U551/B2-->ZN (max negative_unate)
+	 [fall slew = 0.704272, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI21_X1) u_logic/U551/B2-->ZN (min negative_unate)
+	 [fall slew = 0.683854, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NOR2_X1) u_logic/U1231/A1-->ZN (max negative_unate)
+	 [fall slew = 0.704131, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NOR2_X1) u_logic/U1231/A1-->ZN (min negative_unate)
+	 [fall slew = 0.68361, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3974/B1-->ZN (max negative_unate)
+	 [fall slew = 0.714296, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3974/B1-->ZN (min negative_unate)
+	 [fall slew = 0.70617, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND3_X1) u_logic/U4760/A3-->ZN (max negative_unate)
+	 [fall slew = 0.727243, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND3_X1) u_logic/U4760/A3-->ZN (min negative_unate)
+	 [fall slew = 0.702648, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/INV_X1) u_logic/U4873/A-->ZN (max negative_unate)
+	 [fall slew = 0.727243, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/INV_X1) u_logic/U4873/A-->ZN (min negative_unate)
+	 [fall slew = 0.702648, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/INV_X4) u_logic/U1796/A-->ZN (max negative_unate)
+	 [fall slew = 0.661841, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (max negative_unate)
+	 [fall slew = 0.704287, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (min negative_unate)
+	 [fall slew = 0.683877, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (max negative_unate)
+	 [fall slew = 0.704287, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (min negative_unate)
+	 [fall slew = 0.683877, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (max negative_unate)
+	 [fall slew = 0.704287, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U431/A-->ZN (min negative_unate)
+	 [fall slew = 0.683877, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND4_X1) u_logic/U441/A2-->ZN (max negative_unate)
+	 [fall slew = 0.766327, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND4_X1) u_logic/U441/A2-->ZN (min negative_unate)
+	 [fall slew = 0.762751, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3856/B2-->ZN (max negative_unate)
+	 [fall slew = 0.791252, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3856/B2-->ZN (min negative_unate)
+	 [fall slew = 0.788291, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3926/B2-->ZN (max negative_unate)
+	 [fall slew = 0.669893, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI21_X1) u_logic/U3926/B2-->ZN (min negative_unate)
+	 [fall slew = 0.661545, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X1) u_logic/U589/A1-->ZN (max negative_unate)
+	 [fall slew = 0.766327, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND2_X1) u_logic/U589/A1-->ZN (min negative_unate)
+	 [fall slew = 0.762749, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X1) u_logic/U5267/A1-->ZN (max negative_unate)
+	 [fall slew = 0.665003, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X1) u_logic/U5267/A1-->ZN (max negative_unate)
+	 [fall slew = 0.665003, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X1) u_logic/U5267/A1-->ZN (max negative_unate)
+	 [fall slew = 0.665003, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X1) u_logic/U5267/A1-->ZN (max negative_unate)
+	 [fall slew = 0.665003, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X2) u_logic/U5286/A1-->ZN (max negative_unate)
+	 [fall slew = 0.662362, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X2) u_logic/U5286/A1-->ZN (max negative_unate)
+	 [fall slew = 0.662362, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X2) u_logic/U5286/A1-->ZN (max negative_unate)
+	 [fall slew = 0.662362, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/OAI222_X2) u_logic/U5286/A1-->ZN (max negative_unate)
+	 [fall slew = 0.662362, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND3_X1) u_logic/U408/A1-->ZN (max negative_unate)
+	 [fall slew = 0.840823, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/NAND3_X1) u_logic/U408/A1-->ZN (min negative_unate)
+	 [fall slew = 0.838877, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670973, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668319, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670973, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668319, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670973, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3772/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668319, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670962, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (min negative_unate)
+	 [fall slew = 0.6683, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (min negative_unate)
+	 [fall slew = 0.66836, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (min negative_unate)
+	 [fall slew = 0.66836, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3764/B1-->ZN (min negative_unate)
+	 [fall slew = 0.66836, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670962, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (min negative_unate)
+	 [fall slew = 0.6683, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670962, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3781/B1-->ZN (min negative_unate)
+	 [fall slew = 0.6683, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (max negative_unate)
+	 [fall slew = 0.686305, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (min negative_unate)
+	 [fall slew = 0.680441, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (max negative_unate)
+	 [fall slew = 0.686305, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (min negative_unate)
+	 [fall slew = 0.680441, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (max negative_unate)
+	 [fall slew = 0.686305, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U448/B2-->ZN (min negative_unate)
+	 [fall slew = 0.680441, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668361, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668361, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670998, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U3790/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668361, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670919, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668236, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670919, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668236, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670919, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4009/B1-->ZN (min negative_unate)
+	 [fall slew = 0.668236, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4017/B1-->ZN (max negative_unate)
+	 [fall slew = 0.670948, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/AOI221_X1) u_logic/U4017/B1-->ZN (min negative_unate)
+	 [fall slew = 0.66828, lib_range = [0.0075 0.6](nS)]
+ (RC-011)
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type min_max
+	-input_pins
+	-max_paths 1
+	-transition_time
+	-sort_by slack
+Design : CORTEXM0DS
+Version: H-2013.06-SP1
+Date   : Mon Apr  7 20:26:56 2014
+****************************************
+
+
+  Startpoint: u_logic/L8m2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic/L8m2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                          Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock HCLK (rise edge)                                   0.0000     0.0000
+  clock source latency                                     0.0000     0.0000
+  HCLK (in)                                     0.0000     0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                       0.0012     0.0010 &   0.0010 r
+  HCLK__L1_I0/ZN (INV_X32)                      0.0110     0.0145 &   0.0156 f
+  HCLK__L2_I0/A (INV_X32)                       0.0111     0.0030 &   0.0186 f
+  HCLK__L2_I0/ZN (INV_X32)                      0.0881     0.0966 &   0.1152 r
+  HCLK__L3_I2/A (INV_X32)                       0.0885     0.0026 &   0.1178 r
+  HCLK__L3_I2/ZN (INV_X32)                      0.0352     0.0704 &   0.1882 f
+  HCLK__L4_I12/A (INV_X32)                      0.0357     0.0039 &   0.1921 f
+  HCLK__L4_I12/ZN (INV_X32)                     0.1089     0.1267 &   0.3187 r
+  u_logic/HCLK__L4_N12 (cortexm0ds_logic)       0.0000     0.0000 &   0.3187 r
+  u_logic/L8m2z4_reg/CK (DFFS_X1)               0.1104     0.0095 &   0.3282 r
+  u_logic/L8m2z4_reg/QN (DFFS_X1)               0.0749     0.4217 &   0.7499 r
+  u_logic/FE_PHC1846_n5034/A (CLKBUF_X1)        0.0749     0.0000 &   0.7500 r
+  u_logic/FE_PHC1846_n5034/Z (CLKBUF_X1)        0.0482     0.1224 &   0.8724 r
+  u_logic/FE_PHC627_n5034/A (BUF_X32)           0.0482     0.0000 &   0.8724 r
+  u_logic/FE_PHC627_n5034/Z (BUF_X32)           0.0541     0.2280 &   1.1003 r
+  u_logic/U775/B1 (OAI22_X1)                    0.0541     0.0001 &   1.1004 r
+  u_logic/U775/ZN (OAI22_X1)                    0.0415     0.0951 &   1.1955 f
+  u_logic/L8m2z4_reg/D (DFFS_X1)                0.0415     0.0000 &   1.1956 f
+  data arrival time                                                   1.1956
+
+  clock HCLK (rise edge)                                   0.0000     0.0000
+  clock source latency                                     0.0000     0.0000
+  HCLK (in)                                     0.0000     0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                       0.0012     0.0010 &   0.0010 r
+  HCLK__L1_I0/ZN (INV_X32)                      0.0110     0.0145 &   0.0156 f
+  HCLK__L2_I0/A (INV_X32)                       0.0111     0.0030 &   0.0186 f
+  HCLK__L2_I0/ZN (INV_X32)                      0.0903     0.0967 &   0.1153 r
+  HCLK__L3_I2/A (INV_X32)                       0.0908     0.0026 &   0.1180 r
+  HCLK__L3_I2/ZN (INV_X32)                      0.0356     0.0712 &   0.1892 f
+  HCLK__L4_I12/A (INV_X32)                      0.0361     0.0039 &   0.1931 f
+  HCLK__L4_I12/ZN (INV_X32)                     0.1127     0.1272 &   0.3203 r
+  u_logic/HCLK__L4_N12 (cortexm0ds_logic)       0.0000     0.0000 &   0.3203 r
+  u_logic/L8m2z4_reg/CK (DFFS_X1)               0.1150     0.0096 &   0.3299 r
+  library hold time                                        0.3267     0.6566
+  data required time                                                  0.6566
+  -----------------------------------------------------------------------------
+  data required time                                                  0.6566
+  data arrival time                                                  -1.1956
+  -----------------------------------------------------------------------------
+  slack (MET)                                                         0.5390
+
+
+
+  Startpoint: u_logic/Nsk2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic/Tki2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                          Trans       Incr       Path
+  -----------------------------------------------------------------------------
+  clock HCLK (rise edge)                                   0.0000     0.0000
+  clock source latency                                     0.0000     0.0000
+  HCLK (in)                                     0.0000     0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                       0.0012     0.0010 &   0.0010 r
+  HCLK__L1_I0/ZN (INV_X32)                      0.0110     0.0145 &   0.0156 f
+  HCLK__L2_I0/A (INV_X32)                       0.0111     0.0030 &   0.0186 f
+  HCLK__L2_I0/ZN (INV_X32)                      0.0903     0.0967 &   0.1153 r
+  HCLK__L3_I0/A (INV_X32)                       0.0910     0.0034 &   0.1188 r
+  HCLK__L3_I0/ZN (INV_X32)                      0.0368     0.0741 &   0.1928 f
+  HCLK__L4_I1/A (INV_X32)                       0.0373     0.0048 &   0.1976 f
+  HCLK__L4_I1/ZN (INV_X32)                      0.0924     0.1128 &   0.3104 r
+  u_logic/HCLK__L4_N1 (cortexm0ds_logic)        0.0000     0.0000 &   0.3104 r
+  u_logic/Nsk2z4_reg/CK (DFFR_X1)               0.0929     0.0041 &   0.3145 r
+  u_logic/Nsk2z4_reg/QN (DFFR_X1)               0.1637     0.4964 &   0.8109 r
+  u_logic/U4281/A (INV_X8)                      0.1637     0.0000 &   0.8110 r
+  u_logic/U4281/ZN (INV_X8)                     0.1050     0.1878 &   0.9988 f
+  u_logic/U3722/A (INV_X4)                      0.1060     0.0039 &   1.0027 f
+  u_logic/U3722/ZN (INV_X4)                     0.4118     0.4770 &   1.4797 r
+  u_logic/U3297/A1 (NAND2_X4)                   0.4119     0.0037 &   1.4835 r
+  u_logic/U3297/ZN (NAND2_X4)                   0.1679     0.2996 &   1.7831 f
+  u_logic/U5607/A (INV_X1)                      0.1679     0.0001 &   1.7831 f
+  u_logic/U5607/ZN (INV_X1)                     0.4772     0.5724 &   2.3555 r
+  u_logic/U4972/A1 (NAND2_X1)                   0.4772     0.0009 &   2.3564 r
+  u_logic/U4972/ZN (NAND2_X1)                   0.1635     0.2720 &   2.6284 f
+  u_logic/U3678/B1 (OAI221_X2)                  0.1635     0.0001 &   2.6285 f
+  u_logic/U3678/ZN (OAI221_X2)                  0.3057     0.4481 &   3.0766 r
+  u_logic/U3677/A4 (NOR4_X1)                    0.3057     0.0002 &   3.0768 r
+  u_logic/U3677/ZN (NOR4_X1)                    0.1074     0.1837 &   3.2605 f
+  u_logic/FE_OFC76_n3602/A (BUF_X4)             0.1074     0.0000 &   3.2605 f
+  u_logic/FE_OFC76_n3602/Z (BUF_X4)             0.0646     0.2687 &   3.5292 f
+  u_logic/U3671/A2 (NAND2_X2)                   0.0646     0.0005 &   3.5297 f
+  u_logic/U3671/ZN (NAND2_X2)                   0.1904     0.2411 &   3.7708 r
+  u_logic/U3669/A3 (NOR3_X1)                    0.1904     0.0001 &   3.7709 r
+  u_logic/U3669/ZN (NOR3_X1)                    0.0717     0.1610 &   3.9319 f
+  u_logic/U3662/A3 (NAND3_X1)                   0.0717     0.0000 &   3.9320 f
+  u_logic/U3662/ZN (NAND3_X1)                   0.3412     0.3986 &   4.3306 r
+  u_logic/U1903/B2 (OAI22_X1)                   0.3412     0.0001 &   4.3307 r
+  u_logic/U1903/ZN (OAI22_X1)                   0.0841     0.2076 &   4.5383 f
+  u_logic/U1902/A (AOI221_X1)                   0.0841     0.0000 &   4.5384 f
+  u_logic/U1902/ZN (AOI221_X1)                  0.3000     0.4976 &   5.0359 r
+  u_logic/U1898/A1 (NAND2_X1)                   0.3000     0.0000 &   5.0359 r
+  u_logic/U1898/ZN (NAND2_X1)                   0.1895     0.3530 &   5.3889 f
+  u_logic/U1897/A (INV_X1)                      0.1895     0.0004 &   5.3894 f
+  u_logic/U1897/ZN (INV_X1)                     0.2180     0.3256 &   5.7149 r
+  u_logic/U1357/A2 (NOR2_X1)                    0.2180     0.0001 &   5.7150 r
+  u_logic/U1357/ZN (NOR2_X1)                    0.0938     0.1848 &   5.8998 f
+  u_logic/U850/A2 (AND2_X4)                     0.0938     0.0001 &   5.8999 f
+  u_logic/U850/ZN (AND2_X4)                     0.0373     0.2451 &   6.1449 f
+  u_logic/add_2082_U1_2/CI (FA_X1)              0.0373     0.0000 &   6.1449 f
+  u_logic/add_2082_U1_2/CO (FA_X1)              0.0906     0.3850 &   6.5300 f
+  u_logic/add_2082_U1_3/CI (FA_X1)              0.0906     0.0000 &   6.5300 f
+  u_logic/add_2082_U1_3/CO (FA_X1)              0.0966     0.4211 &   6.9511 f
+  u_logic/add_2082_U1_4/CI (FA_X1)              0.0966     0.0001 &   6.9512 f
+  u_logic/add_2082_U1_4/CO (FA_X1)              0.1026     0.4334 &   7.3846 f
+  u_logic/add_2082_U1_5/CI (FA_X1)              0.1026     0.0001 &   7.3846 f
+  u_logic/add_2082_U1_5/CO (FA_X1)              0.0993     0.4315 &   7.8161 f
+  u_logic/add_2082_U1_6/CI (FA_X1)              0.0993     0.0001 &   7.8162 f
+  u_logic/add_2082_U1_6/CO (FA_X1)              0.1018     0.4336 &   8.2498 f
+  u_logic/add_2082_U1_7/CI (FA_X1)              0.1018     0.0001 &   8.2498 f
+  u_logic/add_2082_U1_7/CO (FA_X1)              0.0857     0.4105 &   8.6603 f
+  u_logic/add_2082_U1_8/CI (FA_X1)              0.0857     0.0000 &   8.6603 f
+  u_logic/add_2082_U1_8/CO (FA_X1)              0.0985     0.4214 &   9.0817 f
+  u_logic/add_2082_U1_9/CI (FA_X1)              0.0985     0.0001 &   9.0818 f
+  u_logic/add_2082_U1_9/CO (FA_X1)              0.0878     0.4119 &   9.4938 f
+  u_logic/add_2082_U1_10/CI (FA_X1)             0.0878     0.0000 &   9.4938 f
+  u_logic/add_2082_U1_10/CO (FA_X1)             0.0882     0.4068 &   9.9006 f
+  u_logic/add_2082_U1_11/CI (FA_X1)             0.0882     0.0000 &   9.9006 f
+  u_logic/add_2082_U1_11/CO (FA_X1)             0.1114     0.4442 &  10.3448 f
+  u_logic/add_2082_U1_12/CI (FA_X1)             0.1114     0.0001 &  10.3449 f
+  u_logic/add_2082_U1_12/CO (FA_X1)             0.0935     0.4274 &  10.7723 f
+  u_logic/add_2082_U1_13/CI (FA_X1)             0.0935     0.0000 &  10.7723 f
+  u_logic/add_2082_U1_13/CO (FA_X1)             0.0873     0.4085 &  11.1808 f
+  u_logic/add_2082_U1_14/CI (FA_X1)             0.0873     0.0000 &  11.1808 f
+  u_logic/add_2082_U1_14/CO (FA_X1)             0.0898     0.4089 &  11.5898 f
+  u_logic/add_2082_U1_15/CI (FA_X1)             0.0898     0.0000 &  11.5898 f
+  u_logic/add_2082_U1_15/CO (FA_X1)             0.0912     0.4124 &  12.0022 f
+  u_logic/add_2082_U1_16/CI (FA_X1)             0.0912     0.0001 &  12.0022 f
+  u_logic/add_2082_U1_16/CO (FA_X1)             0.1196     0.4601 &  12.4623 f
+  u_logic/add_2082_U1_17/CI (FA_X1)             0.1196     0.0002 &  12.4625 f
+  u_logic/add_2082_U1_17/CO (FA_X1)             0.0904     0.4270 &  12.8895 f
+  u_logic/add_2082_U1_18/CI (FA_X1)             0.0904     0.0000 &  12.8895 f
+  u_logic/add_2082_U1_18/CO (FA_X1)             0.0935     0.4163 &  13.3058 f
+  u_logic/add_2082_U1_19/CI (FA_X1)             0.0935     0.0001 &  13.3059 f
+  u_logic/add_2082_U1_19/CO (FA_X1)             0.1005     0.4286 &  13.7344 f
+  u_logic/add_2082_U1_20/CI (FA_X1)             0.1005     0.0001 &  13.7345 f
+  u_logic/add_2082_U1_20/CO (FA_X1)             0.0861     0.4103 &  14.1449 f
+  u_logic/add_2082_U1_21/CI (FA_X1)             0.0861     0.0000 &  14.1449 f
+  u_logic/add_2082_U1_21/CO (FA_X1)             0.1115     0.4433 &  14.5882 f
+  u_logic/add_2082_U1_22/CI (FA_X1)             0.1115     0.0001 &  14.5883 f
+  u_logic/add_2082_U1_22/CO (FA_X1)             0.1157     0.4639 &  15.0522 f
+  u_logic/add_2082_U1_23/CI (FA_X1)             0.1157     0.0002 &  15.0524 f
+  u_logic/add_2082_U1_23/CO (FA_X1)             0.1590     0.5396 &  15.5920 f
+  u_logic/add_2082_U1_24/CI (FA_X1)             0.1590     0.0006 &  15.5925 f
+  u_logic/add_2082_U1_24/CO (FA_X1)             0.0980     0.4597 &  16.0522 f
+  u_logic/add_2082_U1_25/CI (FA_X1)             0.0980     0.0001 &  16.0523 f
+  u_logic/add_2082_U1_25/CO (FA_X1)             0.0940     0.4211 &  16.4734 f
+  u_logic/add_2082_U1_26/CI (FA_X1)             0.0940     0.0001 &  16.4734 f
+  u_logic/add_2082_U1_26/CO (FA_X1)             0.0917     0.4154 &  16.8888 f
+  u_logic/add_2082_U1_27/CI (FA_X1)             0.0917     0.0000 &  16.8889 f
+  u_logic/add_2082_U1_27/CO (FA_X1)             0.1196     0.4603 &  17.3492 f
+  u_logic/add_2082_U1_28/CI (FA_X1)             0.1196     0.0002 &  17.3494 f
+  u_logic/add_2082_U1_28/CO (FA_X1)             0.0890     0.4249 &  17.7743 f
+  u_logic/add_2082_U1_29/CI (FA_X1)             0.0890     0.0000 &  17.7743 f
+  u_logic/add_2082_U1_29/CO (FA_X1)             0.1042     0.4322 &  18.2065 f
+  u_logic/add_2082_U1_30/CI (FA_X1)             0.1042     0.0001 &  18.2066 f
+  u_logic/add_2082_U1_30/CO (FA_X1)             0.1052     0.4420 &  18.6486 f
+  u_logic/add_2082_U1_31/CI (FA_X1)             0.1052     0.0001 &  18.6486 f
+  u_logic/add_2082_U1_31/S (FA_X1)              0.1391     0.6225 &  19.2712 r
+  u_logic/U4699/A (XNOR2_X2)                    0.1391     0.0000 &  19.2712 r
+  u_logic/U4699/ZN (XNOR2_X2)                   0.2719     0.3183 &  19.5895 r
+  u_logic/U4702/A (INV_X4)                      0.2719     0.0002 &  19.5897 r
+  u_logic/U4702/ZN (INV_X4)                     0.0761     0.1289 &  19.7186 f
+  u_logic/U1865/A2 (NOR3_X2)                    0.0761     0.0003 &  19.7189 f
+  u_logic/U1865/ZN (NOR3_X2)                    0.3134     0.4374 &  20.1563 r
+  u_logic/U1864/A4 (NAND4_X1)                   0.3134     0.0003 &  20.1566 r
+  u_logic/U1864/ZN (NAND4_X1)                   0.0942     0.2040 &  20.3606 f
+  u_logic/U1858/B1 (OAI21_X2)                   0.0942     0.0000 &  20.3607 f
+  u_logic/U1858/ZN (OAI21_X2)                   0.1393     0.2003 &  20.5609 r
+  u_logic/U1857/A (OAI221_X1)                   0.1393     0.0001 &  20.5610 r
+  u_logic/U1857/ZN (OAI221_X1)                  0.1641     0.2065 &  20.7675 f
+  u_logic/U1852/A (AOI211_X2)                   0.1641     0.0001 &  20.7676 f
+  u_logic/U1852/ZN (AOI211_X2)                  0.4519     0.6950 &  21.4626 r
+  u_logic/U1851/A4 (NAND4_X1)                   0.4519     0.0004 &  21.4629 r
+  u_logic/U1851/ZN (NAND4_X1)                   0.1123     0.2222 &  21.6851 f
+  u_logic/U1845/A3 (NOR4_X2)                    0.1123     0.0001 &  21.6852 f
+  u_logic/U1845/ZN (NOR4_X2)                    0.3917     0.6095 &  22.2947 r
+  u_logic/U1844/B1 (OAI22_X1)                   0.3917     0.0003 &  22.2950 r
+  u_logic/U1844/ZN (OAI22_X1)                   0.1619     0.1913 &  22.4863 f
+  u_logic/U1843/A (INV_X1)                      0.1619     0.0000 &  22.4863 f
+  u_logic/U1843/ZN (INV_X1)                     0.2592     0.3629 &  22.8492 r
+  u_logic/U1164/B (XOR2_X1)                     0.2592     0.0002 &  22.8494 r
+  u_logic/U1164/Z (XOR2_X1)                     0.1774     0.3636 &  23.2130 r
+  u_logic/U1161/A1 (AOI22_X1)                   0.1774     0.0000 &  23.2130 r
+  u_logic/U1161/ZN (AOI22_X1)                   0.1320     0.1827 &  23.3956 f
+  u_logic/U1146/C1 (OAI211_X1)                  0.1320     0.0001 &  23.3957 f
+  u_logic/U1146/ZN (OAI211_X1)                  0.2512     0.3412 &  23.7369 r
+  u_logic/U1145/A (XOR2_X1)                     0.2512     0.0001 &  23.7370 r
+  u_logic/U1145/Z (XOR2_X1)                     0.5347     0.7456 &  24.4825 r
+  u_logic/U460/A2 (NOR4_X2)                     0.5347     0.0002 &  24.4828 r
+  u_logic/U460/ZN (NOR4_X2)                     0.1823     0.3410 &  24.8237 f
+  u_logic/U458/A2 (OR3_X1)                      0.1823     0.0012 &  24.8249 f
+  u_logic/U458/ZN (OR3_X1)                      0.0615     0.4057 &  25.2306 f
+  u_logic/U443/A1 (NOR4_X1)                     0.0615     0.0001 &  25.2307 f
+  u_logic/U443/ZN (NOR4_X1)                     0.2186     0.1944 &  25.4250 r
+  u_logic/U442/B1 (OAI22_X1)                    0.2186     0.0000 &  25.4251 r
+  u_logic/U442/ZN (OAI22_X1)                    0.1537     0.1707 &  25.5957 f
+  u_logic/FE_PHC465_n5776/A (BUF_X32)           0.1537     0.0000 &  25.5958 f
+  u_logic/FE_PHC465_n5776/Z (BUF_X32)           0.1414     0.6420 &  26.2378 f
+  u_logic/Tki2z4_reg/D (DFFR_X1)                0.1414     0.0000 &  26.2378 f
+  data arrival time                                                  26.2378
+
+  clock HCLK (rise edge)                                  40.0000    40.0000
+  clock source latency                                     0.0000    40.0000
+  HCLK (in)                                     0.0000     0.0000 &  40.0000 r
+  HCLK__L1_I0/A (INV_X32)                       0.0012     0.0010 &  40.0010 r
+  HCLK__L1_I0/ZN (INV_X32)                      0.0110     0.0145 &  40.0156 f
+  HCLK__L2_I0/A (INV_X32)                       0.0111     0.0030 &  40.0186 f
+  HCLK__L2_I0/ZN (INV_X32)                      0.0881     0.0966 &  40.1152 r
+  HCLK__L3_I0/A (INV_X32)                       0.0886     0.0034 &  40.1186 r
+  HCLK__L3_I0/ZN (INV_X32)                      0.0364     0.0731 &  40.1917 f
+  HCLK__L4_I1/A (INV_X32)                       0.0368     0.0048 &  40.1965 f
+  HCLK__L4_I1/ZN (INV_X32)                      0.0897     0.1124 &  40.3089 r
+  u_logic/HCLK__L4_N1 (cortexm0ds_logic)        0.0000     0.0000 &  40.3089 r
+  u_logic/Tki2z4_reg/CK (DFFR_X1)               0.0901     0.0043 &  40.3132 r
+  library setup time                                      -0.2916    40.0216
+  data required time                                                 40.0216
+  -----------------------------------------------------------------------------
+  data required time                                                 40.0216
+  data arrival time                                                 -26.2378
+  -----------------------------------------------------------------------------
+  slack (MET)                                                        13.7838
+
+
+1

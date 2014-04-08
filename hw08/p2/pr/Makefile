@@ -1,6 +1,7 @@
 
 
-MODNAME = CORTEXM0DS
+#MODNAME = CORTEXM0DS
+MODNAME = i_ahb_DW_ahb
 
 all: route
 

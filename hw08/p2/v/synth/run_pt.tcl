@@ -17,10 +17,10 @@ set clkname HCLK
 set modname CORTEXM0DS
 
 # set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
-set PR_DIR    ../../pr/
+set PR_DIR    ../../../p1/pr/
 
 # set variable "type" to either routed or trialrouted
-set type routed
+set type trialrouted
 
 # set variable "corner" to one of the following:
 #   typical     (typical transistors, 1.1  V,  25 degC)
@@ -28,7 +28,7 @@ set type routed
 #   low_temp    (   fast transistors, 1.25 V, -40 degC)
 #   fast        (   fast transistors, 1.25 V,   0 degC)
 #   slow        (   slow transistors, 0.95 V, 125 degC)
-set corner slow
+set corner fast
 
 #set the number of digits to be used for delay results
 set report_default_significant_digits 4
@@ -57,9 +57,9 @@ read_verilog "${PR_DIR}${modname}_${type}.v"
 current_design $modname
 
 link_design
-
 create_clock -name $clkname -period $CLK_PER $clkname
 set_input_delay $IP_DELAY -clock $clkname [remove_from_collection [all_inputs] $clkname]
+source indelay.tcl
 set_output_delay -clock $clkname 0 [all_outputs]
 set_driving_cell -lib_cell "$DR_CELL_NAME" -pin "$DR_CELL_PIN" [remove_from_collection [all_inputs] $clkname]
 

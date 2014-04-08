@@ -1,5 +1,6 @@
 # set variable "modname" to the name of topmost module in design
-set modname CORTEXM0DS
+set modname i_ahb_DW_ahb
+#set modname CORTEXM0DS
 
 # set variable "topmetal" to the highest usable metal layer
 set topmetal 10

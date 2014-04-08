@@ -1,5 +1,6 @@
 
-MODNAME = CORTEXM0DS
+MODNAME = i_ahb_DW_ahb
+#MODNAME = CORTEXM0DS
 RTL_DIR = ../src/rtl
 GATE_DIR = ../src/gate
 PR_DIR = ../../pr
