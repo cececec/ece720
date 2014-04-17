@@ -157,6 +157,12 @@ CORTEXM0DS u_cortexm0ds (
 integer fd, i;
 reg [31:0] data;
 
+//create a VCD file
+initial begin
+  $dumpfile("waves.vcd");
+  $dumpvars;
+end
+
 initial begin
   $display("%t: ----------------------------------------------", $time);
   $display("%t: ARM(r) Cortex(tm)-M0 DesignStart(tm) Testbench", $time);

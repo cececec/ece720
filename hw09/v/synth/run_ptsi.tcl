@@ -79,9 +79,11 @@ report_timing -nosplit -input_pins -transition_time -crosstalk_delta \
       > timing_ptsi_${corner}_${type}.rpt
 report_clock_timing -type summary > timing_ptsi_${corner}_clock.rpt
 report_si_bottleneck
-#report_delay_calculation -crosstalk -from inst1/pin1 -to inst2/pin2
+#report_delay_calculation -crosstalk -from u_logic/U1844/ZN -to u_logic/U1843/B1 > delay_cal_${corner}_${type}_max.rpt
+#report_delay_calculation -crosstalk -from u_logic/U2474/ZN  -to u_logic/A933z4_reg/D  > delay_cal_${corner}_${type}_min.rpt
 report_noise > noise_ptsi_${corner}_${type}.rpt
-#report_noise_calculation -below -high -from inst1/pin1 -to inst2/pin2
+report_noise_calculation -above -low -from u_logic/Wqm2z4_reg/QN -to u_logic/FE_PHC719_n5042/A > noise_ptsi_abovelow_${corner}_${type}.rpt
+report_noise_calculation -below -high -from u_logic/Vmj2z4_reg/QN -to u_logic/FE_PHC716_n4980/A > noise_ptsi_belowhigh_${corner}_${type}.rpt
 
 
 

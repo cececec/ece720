@@ -32,8 +32,8 @@ If required, use the setMultiCpuUsage command to enable multi-CPU processing.
 @(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
 @(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
 @(#)CDS: CPE v09.11-s023
---- Starting "Encounter v09.11-s084_1" on Mon Apr  7 20:11:01 2014 (mem=46.5M) ---
---- Running on grendel11.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.5.1.el6.x86_64) ---
+--- Starting "Encounter v09.11-s084_1" on Tue Apr 15 11:35:56 2014 (mem=46.5M) ---
+--- Running on lib-33034.eos.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
 This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
 Set DBUPerIGU to 1000.
 Set net toggle Scale Factor to 1.00
@@ -47,15 +47,15 @@ Set DBUPerIGU to M2 pitch 380.
 Initializing default via types and wire widths ...
 
 Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
-viaInitial starts at Mon Apr  7 20:11:01 2014
-viaInitial ends at Mon Apr  7 20:11:01 2014
+viaInitial starts at Tue Apr 15 11:35:56 2014
+viaInitial ends at Tue Apr 15 11:35:56 2014
 Reading netlist ...
 Backslashed names will retain backslash and a trailing blank character.
 Reading verilog netlist './CORTEXM0DS_cts.enc.dat/CORTEXM0DS.v.gz'
 Inserting temporary buffers to remove assignment statements.
 
-*** Memory Usage v0.159.2.6.2.1 (Current mem = 224.371M, initial mem = 46.477M) ***
-*** End netlist parsing (cpu=0:00:00.1, real=0:00:01.0, mem=224.4M) ***
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 200.402M, initial mem = 46.484M) ***
+*** End netlist parsing (cpu=0:00:00.1, real=0:00:00.0, mem=200.4M) ***
 Set top cell to CORTEXM0DS.
 Reading max timing library '/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/hw08/p1/pr/../../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_slow_conditional_ecsm.lib' ...
 **WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
@@ -101,7 +101,7 @@ Reading max timing library '/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/g
  read 134 cells in library 'NangateOpenCellLibrary' 
 Reading min timing library '/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/hw08/p1/pr/../../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ecsm.lib' ...
  read 134 cells in library 'NangateOpenCellLibrary' 
-*** End library_loading (cpu=0.06min, mem=22.3M, fe_cpu=0.13min, fe_mem=246.6M) ***
+*** End library_loading (cpu=0.03min, mem=21.2M, fe_cpu=0.06min, fe_mem=221.6M) ***
 Starting recursive module instantiation check.
 No recursion found.
 Building hierarchical netlist for Cell CORTEXM0DS ...
@@ -109,12 +109,12 @@ Building hierarchical netlist for Cell CORTEXM0DS ...
 ** info: there are 270 modules.
 ** info: there are 8316 stdCell insts.
 
-*** Memory Usage v0.159.2.6.2.1 (Current mem = 251.242M, initial mem = 46.477M) ***
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 226.336M, initial mem = 46.484M) ***
 *info - Done with setDoAssign with 7 assigns removed and 0 assigns could not be removed.
 CTE reading timing constraint file '/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/hw08/p1/pr/./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.pt' ...
 CORTEXM0DS
 INFO (CTE): constraints read successfully
-*** Read timing constraints (cpu=0:00:00.1 mem=252.4M) ***
+*** Read timing constraints (cpu=0:00:00.0 mem=227.4M) ***
 Total number of combinational cells: 99
 Total number of sequential cells: 29
 Total number of tristate cells: 6
@@ -157,30 +157,30 @@ Loading mode file ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.mode ...
 *info: Setting hold target slack to 0.150
 *info: Setting setup target slack to 0.000
 *info: Hold target slack is 0.150
-Reading floorplan file - ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.fp.gz (mem = 253.7M).
+Reading floorplan file - ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.fp.gz (mem = 228.7M).
 Set FPlanBox to (0 0 544820 540880)
 Extracting standard cell pins and blockage ...... 
 Pin and blockage extraction finished
-*** End loading floorplan (cpu = 0:00:00.0, mem = 253.7M) ***
+*** End loading floorplan (cpu = 0:00:00.0, mem = 228.7M) ***
 loading place ...
 *** Checked 2 GNC rules.
 *** applyConnectGlobalNets disabled.
 Reading placement file - ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.place.gz.
 ** Reading stdCellPlacement "./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.place.gz" ...
-*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=253.9M) ***
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=229.0M) ***
 Total net length = 1.458e+05 (7.204e+04 7.373e+04) (ext = 9.247e+03)
 *** Checked 2 GNC rules.
 *** Applying global-net connections...
 *** Applied 2 GNC rules (cpu = 0:00:00.0, w/ 0:00:00.0 init)
 loading route ...
 Reading routing file - ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS.route.gz.
-Reading Cadence  routing data (Created by Encounter v09.11-s084_1 on Mon Apr  7 19:47:11 2014 Format: 9.3)...
+Reading Cadence  routing data (Created by Encounter v09.11-s084_1 on Tue Apr 15 11:35:53 2014 Format: 9.3)...
 Suppress "**WARN ..." messages.
 routingBox: (0 0) (544820 540880)
 coreBox:    (80180 80080) (464820 460880)
 Un-suppress "**WARN ..." messages.
 *** Total 9228 nets are successfully restored.
-*** Completed restoreRoute (cpu=0:00:00.2 real=0:00:00.0 mem=262.4M) ***
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=237.4M) ***
 Checking spec file integrity...
 
 Reading clock tree spec file './CORTEXM0DS_cts.enc.dat/CORTEXM0DS.ctstch' ...
@@ -246,25 +246,25 @@ or use the setCTSMode -traceDPinAsLeaf {true|false} command,
 or use the setCTSMode -traceIoPinAsLeaf {true|false} command
 before specifyClockTree command.
 
-*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=267.5M) ***
+*** End specifyClockTree (cpu=0:00:00.0, real=0:00:00.0, mem=242.5M) ***
 source ./CORTEXM0DS_cts.enc.dat/CORTEXM0DS_power_constraints.tcl
 **WARN: (ENCSR-4053):	SRoute option "-noBlockPins" is obsolete and has been replaced by "-connect". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-connect".
 **WARN: (ENCSR-4053):	SRoute option "-noPadRings" is obsolete and has been replaced by "-connect". The obsolete option still works in this release, but to avoid this warning and to ensure compatibility with future releases, update your script to use "-connect".
 No routing obstructions were found in the design.
-*** Begin SPECIAL ROUTE on Mon Apr  7 20:11:07 2014 ***
+*** Begin SPECIAL ROUTE on Tue Apr 15 11:36:00 2014 ***
 Sroute/fcroute version 8.1.46 promoted on 02/17/2009.
 SPECIAL ROUTE ran on directory: /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/hw08/p1/pr
-SPECIAL ROUTE ran on machine: grendel11.ece.ncsu.edu (Linux 2.6.32-431.5.1.el6.x86_64 Xeon 2.00Ghz)
+SPECIAL ROUTE ran on machine: lib-33034.eos.ncsu.edu (Linux 2.6.32-431.11.2.el6.x86_64 x86_64 1.60Ghz)
 
 Begin option processing ...
-(from .sroute_20813.conf) srouteConnectPowerBump set to false
-(from .sroute_20813.conf) routeSpecial set to true
-(from .sroute_20813.conf) srouteConnectBlockPin set to false
-(from .sroute_20813.conf) srouteFollowCorePinEnd set to 3
-(from .sroute_20813.conf) srouteJogControl set to "preferWithChanges differentLayer"
-(from .sroute_20813.conf) sroutePadPinAllPorts set to true
-(from .sroute_20813.conf) sroutePreserveExistingRoutes set to true
-End option processing: cpu: 0:00:00, real: 0:00:00, peak: 464.00 megs.
+(from .sroute_21242.conf) srouteConnectPowerBump set to false
+(from .sroute_21242.conf) routeSpecial set to true
+(from .sroute_21242.conf) srouteConnectBlockPin set to false
+(from .sroute_21242.conf) srouteFollowCorePinEnd set to 3
+(from .sroute_21242.conf) srouteJogControl set to "preferWithChanges differentLayer"
+(from .sroute_21242.conf) sroutePadPinAllPorts set to true
+(from .sroute_21242.conf) sroutePreserveExistingRoutes set to true
+End option processing: cpu: 0:00:00, real: 0:00:00, peak: 442.00 megs.
 
 Reading DB technology information...
 Finished reading DB technology information.
@@ -294,7 +294,7 @@ CPU time for FollowPin 0 seconds
   Number of Stripe ports routed: 0
   Number of Core ports routed: 274
   Number of Followpin connections: 137
-End power routing: cpu: 0:00:00, real: 0:00:00, peak: 477.00 megs.
+End power routing: cpu: 0:00:00, real: 0:00:01, peak: 456.00 megs.
 
 
 
@@ -302,21 +302,21 @@ End power routing: cpu: 0:00:00, real: 0:00:00, peak: 477.00 megs.
  Updating DB with 136 io pins ...
  Updating DB with 39 via definition ...
 
-sroute post-processing starts at Mon Apr  7 20:11:07 2014
+sroute post-processing starts at Tue Apr 15 11:36:01 2014
 The viaGen is rebuilding shadow vias for net VSS.
-sroute post-processing ends at Mon Apr  7 20:11:07 2014
+sroute post-processing ends at Tue Apr 15 11:36:01 2014
 
-sroute post-processing starts at Mon Apr  7 20:11:07 2014
+sroute post-processing starts at Tue Apr 15 11:36:01 2014
 The viaGen is rebuilding shadow vias for net VDD.
-sroute post-processing ends at Mon Apr  7 20:11:07 2014
+sroute post-processing ends at Tue Apr 15 11:36:01 2014
 
 **WARN: (ENCPP-589):	The power planner detected wires that are close to the standard cell area.
 **WARN: (ENCPP-590):	Turn on violation markers and run verifyGeometry to display violation details.
 
 sroute: Total CPU time used = 0:0:0
-sroute: Total Real time used = 0:0:1
-sroute: Total Memory used = 6.03 megs
-sroute: Total Peak Memory used = 273.79 megs
+sroute: Total Real time used = 0:0:2
+sroute: Total Memory used = 7.03 megs
+sroute: Total Peak Memory used = 249.84 megs
 encounter 1> *INFO: Adding fillers to top-module.
 *INFO:   Added 942 filler insts (cell FILLCELL_X32 / prefix FILL).
 *INFO:   Added 950 filler insts (cell FILLCELL_X16 / prefix FILL).
@@ -332,20 +332,20 @@ Placement Density:100.00%(36610/36610)
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=273.8M) ***
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=249.8M) ***
 Start route 25 clock nets ...
 
 changeUseClockNetStatus Option :  -noFixedNetWires 
 *** Changed status on (0) nets in Clock.
-*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=273.8M) ***
+*** End changeUseClockNetStatus (cpu=0:00:00.0, real=0:00:00.0, mem=249.8M) ***
 setAttribute -net * -skip_routing true
 setAttribute -net @CLOCK -skip_routing false
 
 globalDetailRoute
 
-#Start globalDetailRoute on Mon Apr  7 20:11:09 2014
+#Start globalDetailRoute on Tue Apr 15 11:36:02 2014
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 273.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 249.00 (Mb)
 #NanoRoute Version v09.11-s008 NR100226-1806/USR63-UB
 #WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
 #WARNING (NREX-6) No Extended Cap Table was imported, an approximate Extended Cap Table database will be used.
@@ -356,10 +356,10 @@ globalDetailRoute
 #Auto generating G-grids with size=15 tracks, using layer metal2's pitch = 0.140.
 #Using automatically generated G-grids.
 #
-#Data preparation is done on Mon Apr  7 20:11:12 2014
+#Data preparation is done on Tue Apr 15 11:36:05 2014
 #
 #Analyzing routing resource...
-#Routing resource analysis is done on Mon Apr  7 20:11:13 2014
+#Routing resource analysis is done on Tue Apr 15 11:36:05 2014
 #
 #  Resource Analysis:
 #
@@ -382,13 +382,13 @@ globalDetailRoute
 #  25 nets (0.27%) with 1 preferred extra spacing.
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 303.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 271.00 (Mb)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 303.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 271.00 (Mb)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 303.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 271.00 (Mb)
 #
 #
 #  Congestion Analysis: (blocked Gcells are excluded)
@@ -438,20 +438,20 @@ globalDetailRoute
 #Max overcon = 2 tracks.
 #Total overcon = 0.07%.
 #Worst layer Gcell overcon rate = 0.65%.
-#Cpu time = 00:00:02
-#Elapsed time = 00:00:03
+#Cpu time = 00:00:01
+#Elapsed time = 00:00:02
 #Increased memory = 6.00 (Mb)
-#Total memory = 302.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Total memory = 270.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #
 #Start Detail Routing.
 #start initial detail routing ...
 # ECO: 1.3% of the total area was rechecked for DRC, and 40.7% required routing.
 #    number of violations = 0
-#cpu time = 00:00:07, elapsed time = 00:00:08, memory = 307.00 (Mb)
+#cpu time = 00:00:04, elapsed time = 00:00:06, memory = 275.00 (Mb)
 #start 1st optimization iteration ...
 #    number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 307.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 275.00 (Mb)
 #Complete Detail Routing.
 #Total wire length = 5066 um.
 #Total half perimeter of net bounding box = 2325 um.
@@ -487,29 +487,29 @@ globalDetailRoute
 #Total number of violations on LAYER metal9 = 0
 #Total number of violations on LAYER metal10 = 0
 #detailRoute Statistics:
-#Cpu time = 00:00:07
-#Elapsed time = 00:00:08
+#Cpu time = 00:00:04
+#Elapsed time = 00:00:06
 #Increased memory = 0.00 (Mb)
-#Total memory = 302.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Total memory = 270.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #
 #globalDetailRoute statistics:
-#Cpu time = 00:00:10
-#Elapsed time = 00:00:13
-#Increased memory = 27.00 (Mb)
-#Total memory = 300.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Cpu time = 00:00:06
+#Elapsed time = 00:00:09
+#Increased memory = 19.00 (Mb)
+#Total memory = 268.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #Number of warnings = 2
 #Total number of warnings = 2
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Mon Apr  7 20:11:22 2014
+#Complete globalDetailRoute on Tue Apr 15 11:36:11 2014
 #
 setAttribute -net * -skip_routing false
 
 globalDetailRoute
 
-#Start globalDetailRoute on Mon Apr  7 20:11:22 2014
+#Start globalDetailRoute on Tue Apr 15 11:36:11 2014
 #
 #NanoRoute Version v09.11-s008 NR100226-1806/USR63-UB
 #WARNING (NREX-37) No permittivity value was specified in the process LEF file. Default permittivity value 3.900000 will be used.
@@ -519,10 +519,10 @@ globalDetailRoute
 #
 #Start data preparation...
 #
-#Data preparation is done on Mon Apr  7 20:11:22 2014
+#Data preparation is done on Tue Apr 15 11:36:12 2014
 #
 #Analyzing routing resource...
-#Routing resource analysis is done on Mon Apr  7 20:11:23 2014
+#Routing resource analysis is done on Tue Apr 15 11:36:12 2014
 #
 #  Resource Analysis:
 #
@@ -545,19 +545,19 @@ globalDetailRoute
 #  25 nets (0.27%) with 1 preferred extra spacing.
 #
 #
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 304.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 272.00 (Mb)
 #
 #start global routing iteration 1...
-#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 313.00 (Mb)
+#cpu time = 00:00:01, elapsed time = 00:00:01, memory = 281.00 (Mb)
 #
 #start global routing iteration 2...
-#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 314.00 (Mb)
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 282.00 (Mb)
 #
 #start global routing iteration 3...
-#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 314.00 (Mb)
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 282.00 (Mb)
 #
 #start global routing iteration 4...
-#cpu time = 00:00:04, elapsed time = 00:00:04, memory = 315.00 (Mb)
+#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 283.00 (Mb)
 #
 #
 #  Congestion Analysis: (blocked Gcells are excluded)
@@ -613,22 +613,22 @@ globalDetailRoute
 #Max overcon = 10 tracks.
 #Total overcon = 0.69%.
 #Worst layer Gcell overcon rate = 6.52%.
-#Cpu time = 00:00:12
-#Elapsed time = 00:00:12
+#Cpu time = 00:00:08
+#Elapsed time = 00:00:08
 #Increased memory = 2.00 (Mb)
-#Total memory = 302.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Total memory = 270.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #
 #Start Detail Routing.
 #start initial detail routing ...
 #    number of violations = 133
-#cpu time = 00:00:39, elapsed time = 00:00:40, memory = 311.00 (Mb)
+#cpu time = 00:00:27, elapsed time = 00:00:27, memory = 279.00 (Mb)
 #start 1st optimization iteration ...
 #    number of violations = 1
-#cpu time = 00:00:03, elapsed time = 00:00:03, memory = 311.00 (Mb)
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 279.00 (Mb)
 #start 2nd optimization iteration ...
 #    number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 311.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 279.00 (Mb)
 #Complete Detail Routing.
 #Total wire length = 190242 um.
 #Total half perimeter of net bounding box = 153353 um.
@@ -670,26 +670,26 @@ globalDetailRoute
 #Total number of violations on LAYER metal9 = 0
 #Total number of violations on LAYER metal10 = 0
 #detailRoute Statistics:
-#Cpu time = 00:00:43
-#Elapsed time = 00:00:43
+#Cpu time = 00:00:29
+#Elapsed time = 00:00:29
 #Increased memory = 3.00 (Mb)
-#Total memory = 305.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Total memory = 273.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #
 #globalDetailRoute statistics:
-#Cpu time = 00:00:55
-#Elapsed time = 00:00:55
-#Increased memory = 1.00 (Mb)
-#Total memory = 301.00 (Mb)
-#Peak memory = 334.00 (Mb)
+#Cpu time = 00:00:37
+#Elapsed time = 00:00:37
+#Increased memory = 2.00 (Mb)
+#Total memory = 270.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #Number of warnings = 2
 #Total number of warnings = 4
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Mon Apr  7 20:12:17 2014
+#Complete globalDetailRoute on Tue Apr 15 11:36:48 2014
 #
 *info: Setting hold target slack to 0.150
-**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 302.0M **
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 270.0M **
 #Created 135 library cell signatures
 #Created 9242 NETS and 0 SPECIALNETS signatures
 #Created 21599 instance signatures
@@ -751,7 +751,7 @@ Detail RC Extraction called for design CORTEXM0DS.
       Thickness        : 2
       Min Width        : 0.8
       Layer Dielectric : 4.1
-extractDetailRC Option : -outfile ./CORTEXM0DS_PogQUb_20813.rcdb.d  -basic
+extractDetailRC Option : -outfile ./CORTEXM0DS_5juMP8_21242.rcdb.d  -basic
 RC Mode: Detail [Basic CapTable, LEF Resistances]
 Capacitance Scaling Factor   : 1.00000
 Resistance Scaling Factor    : 1.00000
@@ -759,43 +759,43 @@ Coupling Cap. Scaling Factor : 1.00000
 Clock Cap. Scaling Factor    : 1.00000
 Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 312.0M)
-Creating parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for storing RC.
-Extracted 10.0017% (CPU Time= 0:00:00.2  MEM= 312.0M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 272.0M)
+Creating parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for storing RC.
+Extracted 10.0017% (CPU Time= 0:00:00.1  MEM= 272.0M)
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via1_4' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
-Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 312.0M)
-Extracted 30.0025% (CPU Time= 0:00:00.3  MEM= 312.0M)
-Extracted 40.0016% (CPU Time= 0:00:00.3  MEM= 312.0M)
-Extracted 50.002% (CPU Time= 0:00:00.4  MEM= 312.0M)
+Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 272.0M)
+Extracted 30.0025% (CPU Time= 0:00:00.2  MEM= 272.0M)
+Extracted 40.0016% (CPU Time= 0:00:00.2  MEM= 272.0M)
+Extracted 50.002% (CPU Time= 0:00:00.3  MEM= 272.0M)
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via2_5' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
-Extracted 60.0023% (CPU Time= 0:00:00.4  MEM= 312.0M)
-Extracted 70.0014% (CPU Time= 0:00:00.5  MEM= 312.0M)
-Extracted 80.0018% (CPU Time= 0:00:00.6  MEM= 312.0M)
+Extracted 60.0023% (CPU Time= 0:00:00.3  MEM= 272.0M)
+Extracted 70.0014% (CPU Time= 0:00:00.4  MEM= 272.0M)
+Extracted 80.0018% (CPU Time= 0:00:00.4  MEM= 272.0M)
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via3_2' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
-Extracted 90.0022% (CPU Time= 0:00:00.7  MEM= 312.0M)
+Extracted 90.0022% (CPU Time= 0:00:00.5  MEM= 272.0M)
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via4_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via5_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via6_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via7_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via8_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
 **WARN: (ENCEXT-2882):	Unable to find resistance for via 'via9_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
-Extracted 100% (CPU Time= 0:00:00.8  MEM= 312.0M)
+Extracted 100% (CPU Time= 0:00:00.6  MEM= 272.0M)
 Nr. Extracted Resistors     : 161761
 Nr. Extracted Ground Cap.   : 170921
 Nr. Extracted Coupling Cap. : 0
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
-Detail RC Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:01.0  MEM: 311.973M)
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.7  Real Time: 0:00:01.0  MEM: 272.027M)
 Calculate delays in BcWc mode...
-Topological Sorting (CPU = 0:00:00.0, MEM = 321.7M)
+Topological Sorting (CPU = 0:00:00.0, MEM = 281.8M)
 Number of Loop : 0
-Start delay calculation (mem=321.742M)...
+Start delay calculation (mem=281.797M)...
 delayCal using detail RC...
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
 
-RC Database In Completed (CPU Time= 0:00:00.1  MEM= 328.7M)
-Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
-Delay calculation completed. (cpu=0:00:00.9 real=0:00:00.0 mem=331.148M 0)
-*** CDM Built up (cpu=0:00:01.2  real=0:00:01.0  mem= 331.1M) ***
+RC Database In Completed (CPU Time= 0:00:00.1  MEM= 288.7M)
+Closing parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
+Delay calculation completed. (cpu=0:00:00.6 real=0:00:01.0 mem=291.395M 0)
+*** CDM Built up (cpu=0:00:00.8  real=0:00:02.0  mem= 291.4M) ***
 -holdSdfFile {}                            # string, default=""
 -holdSdfScript {}                          # string, default="", private
 
@@ -824,11 +824,11 @@ Delay calculation completed. (cpu=0:00:00.9 real=0:00:00.0 mem=331.148M 0)
 
 Density: 100.000%
 ------------------------------------------------------------
-**optDesign ... cpu = 0:00:03, real = 0:00:04, mem = 332.2M **
-*info: Start fixing DRV (Mem = 332.25M) ...
+**optDesign ... cpu = 0:00:02, real = 0:00:04, mem = 292.3M **
+*info: Start fixing DRV (Mem = 292.36M) ...
 *info: Options = -postRoute -maxCap -maxTran -noMaxFanout -sensitivity -backward -maxIter 1
 *info: Start fixing DRV iteration 1 ...
-*** Starting dpFixDRCViolation (332.3M)
+*** Starting dpFixDRCViolation (292.4M)
 *info: 25 clock nets excluded
 *info: 2 special nets excluded.
 *info: 16 no-driver nets excluded.
@@ -836,20 +836,20 @@ Density: 100.000%
 *info: There are 6 candidate Inverter cells
 Initializing placement sections/sites ...
 Density before buffering = 1.000000
-Start fixing design rules ... (0:00:00.1 333.2M)
-Done fixing design rule (0:00:00.3 333.8M)
+Start fixing design rules ... (0:00:00.1 293.3M)
+Done fixing design rule (0:00:00.2 293.9M)
 
 Summary:
 0 buffer added on 0 net (with 0 driver resized)
 
 Density after buffering = 1.000000 (> 0.950000); stop prematurally!
-*** Completed dpFixDRCViolation (0:00:00.3 333.8M)
+*** Completed dpFixDRCViolation (0:00:00.2 293.9M)
 
 *info:
-*info: Completed fixing DRV (CPU Time = 0:00:00, Mem = 333.83M).
+*info: Completed fixing DRV (CPU Time = 0:00:00, Mem = 293.91M).
 
 ------------------------------------------------------------
-     Summary (cpu=0.01min real=0.00min mem=333.8M)                             
+     Summary (cpu=0.00min real=0.00min mem=293.9M)                             
 ------------------------------------------------------------
 
 +--------------------+---------+
@@ -873,7 +873,7 @@ Density after buffering = 1.000000 (> 0.950000); stop prematurally!
 
 Density: 100.000%
 ------------------------------------------------------------
-**optDesign ... cpu = 0:00:04, real = 0:00:04, mem = 333.8M **
+**optDesign ... cpu = 0:00:02, real = 0:00:04, mem = 293.9M **
 *** Timing Is met
 *** Check timing (0:00:00.0)
 *** Setup timing is met (target slack 0.0ns)
@@ -887,7 +887,7 @@ Density: 100.000%
 
 globalDetailRoute
 
-#Start globalDetailRoute on Mon Apr  7 20:12:21 2014
+#Start globalDetailRoute on Tue Apr 15 11:36:52 2014
 #
 #NanoRoute Version v09.11-s008 NR100226-1806/USR63-UB
 #Loading the last recorded routing design signature
@@ -898,14 +898,14 @@ globalDetailRoute
 #WARNING (NRGR-22) Design is already detail routed.
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
-#Increased memory = 13.00 (Mb)
-#Total memory = 347.00 (Mb)
-#Peak memory = 348.00 (Mb)
+#Increased memory = 5.00 (Mb)
+#Total memory = 299.00 (Mb)
+#Peak memory = 302.00 (Mb)
 #
 #Start Detail Routing.
 #start 1st optimization iteration ...
 #    number of violations = 0
-#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 351.00 (Mb)
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 304.00 (Mb)
 #Complete Detail Routing.
 #Total wire length = 190242 um.
 #Total half perimeter of net bounding box = 153353 um.
@@ -950,8 +950,8 @@ globalDetailRoute
 #Cpu time = 00:00:00
 #Elapsed time = 00:00:00
 #Increased memory = 0.00 (Mb)
-#Total memory = 347.00 (Mb)
-#Peak memory = 352.00 (Mb)
+#Total memory = 299.00 (Mb)
+#Peak memory = 304.00 (Mb)
 #Updating routing design signature
 #Created 135 library cell signatures
 #Created 9242 NETS and 0 SPECIALNETS signatures
@@ -960,16 +960,16 @@ globalDetailRoute
 #globalDetailRoute statistics:
 #Cpu time = 00:00:01
 #Elapsed time = 00:00:01
-#Increased memory = 24.00 (Mb)
-#Total memory = 357.00 (Mb)
-#Peak memory = 357.00 (Mb)
+#Increased memory = 8.00 (Mb)
+#Total memory = 301.00 (Mb)
+#Peak memory = 304.00 (Mb)
 #Number of warnings = 3
 #Total number of warnings = 7
 #Number of fails = 0
 #Total number of fails = 0
-#Complete globalDetailRoute on Mon Apr  7 20:12:23 2014
+#Complete globalDetailRoute on Tue Apr 15 11:36:53 2014
 #
-**optDesign ... cpu = 0:00:05, real = 0:00:06, mem = 357.3M **
+**optDesign ... cpu = 0:00:03, real = 0:00:05, mem = 301.4M **
 -routeWithEco false                      # bool, default=false, user setting
 -routeSelectedNetOnly false              # bool, default=false
 -routeWithTimingDriven false             # bool, default=false, user setting
@@ -1020,7 +1020,7 @@ Detail RC Extraction called for design CORTEXM0DS.
       Thickness        : 2
       Min Width        : 0.8
       Layer Dielectric : 4.1
-extractDetailRC Option : -outfile ./CORTEXM0DS_PogQUb_20813.rcdb.d -maxResLength 200  -basic
+extractDetailRC Option : -outfile ./CORTEXM0DS_5juMP8_21242.rcdb.d -maxResLength 200  -basic
 RC Mode: Detail [Basic CapTable, LEF Resistances]
 Capacitance Scaling Factor   : 1.00000
 Resistance Scaling Factor    : 1.00000
@@ -1028,36 +1028,36 @@ Coupling Cap. Scaling Factor : 1.00000
 Clock Cap. Scaling Factor    : 1.00000
 Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 357.3M)
-Creating parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for storing RC.
-Extracted 10.0017% (CPU Time= 0:00:00.2  MEM= 358.4M)
-Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 358.4M)
-Extracted 30.0025% (CPU Time= 0:00:00.3  MEM= 358.4M)
-Extracted 40.0016% (CPU Time= 0:00:00.3  MEM= 358.4M)
-Extracted 50.002% (CPU Time= 0:00:00.4  MEM= 358.4M)
-Extracted 60.0023% (CPU Time= 0:00:00.4  MEM= 358.4M)
-Extracted 70.0014% (CPU Time= 0:00:00.5  MEM= 358.4M)
-Extracted 80.0018% (CPU Time= 0:00:00.6  MEM= 358.4M)
-Extracted 90.0022% (CPU Time= 0:00:00.7  MEM= 358.4M)
-Extracted 100% (CPU Time= 0:00:00.8  MEM= 358.4M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 301.4M)
+Creating parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for storing RC.
+Extracted 10.0017% (CPU Time= 0:00:00.1  MEM= 301.5M)
+Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 301.5M)
+Extracted 30.0025% (CPU Time= 0:00:00.2  MEM= 301.5M)
+Extracted 40.0016% (CPU Time= 0:00:00.2  MEM= 301.5M)
+Extracted 50.002% (CPU Time= 0:00:00.3  MEM= 301.5M)
+Extracted 60.0023% (CPU Time= 0:00:00.3  MEM= 301.5M)
+Extracted 70.0014% (CPU Time= 0:00:00.4  MEM= 301.5M)
+Extracted 80.0018% (CPU Time= 0:00:00.4  MEM= 301.5M)
+Extracted 90.0022% (CPU Time= 0:00:00.5  MEM= 301.5M)
+Extracted 100% (CPU Time= 0:00:00.6  MEM= 301.5M)
 Nr. Extracted Resistors     : 161761
 Nr. Extracted Ground Cap.   : 170921
 Nr. Extracted Coupling Cap. : 0
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
-Detail RC Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:01.0  MEM: 357.340M)
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.7  Real Time: 0:00:01.0  MEM: 301.445M)
 Calculate delays in BcWc mode...
-Topological Sorting (CPU = 0:00:00.0, MEM = 356.0M)
+Topological Sorting (CPU = 0:00:00.0, MEM = 300.2M)
 Number of Loop : 0
-Start delay calculation (mem=355.957M)...
+Start delay calculation (mem=300.191M)...
 delayCal using detail RC...
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
 
-RC Database In Completed (CPU Time= 0:00:00.1  MEM= 357.0M)
-Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
-Delay calculation completed. (cpu=0:00:00.8 real=0:00:00.0 mem=355.957M 0)
-*** CDM Built up (cpu=0:00:01.2  real=0:00:01.0  mem= 356.0M) ***
+RC Database In Completed (CPU Time= 0:00:00.1  MEM= 300.2M)
+Closing parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
+Delay calculation completed. (cpu=0:00:00.6 real=0:00:00.0 mem=300.191M 0)
+*** CDM Built up (cpu=0:00:00.8  real=0:00:01.0  mem= 300.2M) ***
 Reported timing to dir ./timingReports
-**optDesign ... cpu = 0:00:07, real = 0:00:09, mem = 356.0M **
+**optDesign ... cpu = 0:00:05, real = 0:00:08, mem = 300.2M **
 
 ------------------------------------------------------------
      optDesign Final Summary                             
@@ -1084,9 +1084,9 @@ Reported timing to dir ./timingReports
 
 Density: 100.000%
 ------------------------------------------------------------
-**optDesign ... cpu = 0:00:09, real = 0:00:10, mem = 357.1M **
+**optDesign ... cpu = 0:00:06, real = 0:00:09, mem = 301.2M **
 *** Finished optDesign ***
-**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 357.1M **
+**optDesign ... cpu = 0:00:00, real = 0:00:00, mem = 301.2M **
 #Created 135 library cell signatures
 #Created 9242 NETS and 0 SPECIALNETS signatures
 #Created 21599 instance signatures
@@ -1148,7 +1148,7 @@ Detail RC Extraction called for design CORTEXM0DS.
       Thickness        : 2
       Min Width        : 0.8
       Layer Dielectric : 4.1
-extractDetailRC Option : -outfile ./CORTEXM0DS_PogQUb_20813.rcdb.d -maxResLength 200  -basic
+extractDetailRC Option : -outfile ./CORTEXM0DS_5juMP8_21242.rcdb.d -maxResLength 200  -basic
 RC Mode: Detail [Basic CapTable, LEF Resistances]
 Capacitance Scaling Factor   : 1.00000
 Resistance Scaling Factor    : 1.00000
@@ -1156,23 +1156,23 @@ Coupling Cap. Scaling Factor : 1.00000
 Clock Cap. Scaling Factor    : 1.00000
 Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 368.0M)
-Creating parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for storing RC.
-Extracted 10.0017% (CPU Time= 0:00:00.2  MEM= 370.0M)
-Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 370.0M)
-Extracted 30.0025% (CPU Time= 0:00:00.3  MEM= 370.0M)
-Extracted 40.0016% (CPU Time= 0:00:00.3  MEM= 370.0M)
-Extracted 50.002% (CPU Time= 0:00:00.4  MEM= 370.0M)
-Extracted 60.0023% (CPU Time= 0:00:00.4  MEM= 370.0M)
-Extracted 70.0014% (CPU Time= 0:00:00.5  MEM= 370.0M)
-Extracted 80.0018% (CPU Time= 0:00:00.6  MEM= 370.0M)
-Extracted 90.0022% (CPU Time= 0:00:00.7  MEM= 370.0M)
-Extracted 100% (CPU Time= 0:00:00.8  MEM= 370.0M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 304.1M)
+Creating parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for storing RC.
+Extracted 10.0017% (CPU Time= 0:00:00.1  MEM= 306.1M)
+Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 306.1M)
+Extracted 30.0025% (CPU Time= 0:00:00.2  MEM= 306.1M)
+Extracted 40.0016% (CPU Time= 0:00:00.2  MEM= 306.1M)
+Extracted 50.002% (CPU Time= 0:00:00.3  MEM= 306.1M)
+Extracted 60.0023% (CPU Time= 0:00:00.3  MEM= 306.1M)
+Extracted 70.0014% (CPU Time= 0:00:00.4  MEM= 306.1M)
+Extracted 80.0018% (CPU Time= 0:00:00.4  MEM= 306.1M)
+Extracted 90.0022% (CPU Time= 0:00:00.5  MEM= 306.1M)
+Extracted 100% (CPU Time= 0:00:00.6  MEM= 306.1M)
 Nr. Extracted Resistors     : 161761
 Nr. Extracted Ground Cap.   : 170921
 Nr. Extracted Coupling Cap. : 0
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
-Detail RC Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:02.0  MEM: 367.969M)
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:00.7  Real Time: 0:00:01.0  MEM: 304.078M)
 *info: All cells identified as Buffer and Delay cells:
 *info: --------------------------------------------------
 *info:           BUF_X16         -   NangateOpenCellLibrary
@@ -1186,21 +1186,21 @@ Detail RC Extraction DONE (CPU Time: 0:00:00.9  Real Time: 0:00:02.0  MEM: 367.9
 *info:            BUF_X8         -   NangateOpenCellLibrary
 -holdSdfFile {}                            # string, default=""
 -holdSdfScript {}                          # string, default="", private
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
 
-RC Database In Completed (CPU Time= 0:00:00.1  MEM= 362.2M)
-Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
+RC Database In Completed (CPU Time= 0:00:00.1  MEM= 298.3M)
+Closing parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
 **ERROR: (ENCOPT-310):	Design density (100.00%) exceeds/equals limit (95.00%).
-*** Started fixing hold violations - preprocessing (CPU=0:00:00.0, REAL=0:00:00.0, totSessionCpu=0:01:26, mem=362.2M)
+*** Started fixing hold violations - preprocessing (CPU=0:00:00.0, REAL=0:00:00.0, totSessionCpu=0:00:56.0, mem=298.3M)
 Setting analysis mode to hold ...
 Calculate delays in BcWc mode...
-Topological Sorting (CPU = 0:00:00.0, MEM = 369.2M)
+Topological Sorting (CPU = 0:00:00.0, MEM = 306.8M)
 Number of Loop : 0
-Start delay calculation (mem=369.223M)...
+Start delay calculation (mem=306.836M)...
 *** Calculating scaling factor for min libraries using the default operating condition of each library.
 delayCal using detail RC...
-Delay calculation completed. (cpu=0:00:00.8 real=0:00:01.0 mem=369.223M 0)
-*** CDM Built up (cpu=0:00:01.1  real=0:00:01.0  mem= 369.2M) ***
+Delay calculation completed. (cpu=0:00:00.5 real=0:00:00.0 mem=306.836M 0)
+*** CDM Built up (cpu=0:00:00.7  real=0:00:00.0  mem= 306.8M) ***
 --------------------------------------------------- 
    Hold Violation Summary with Target Slack 
 --------------------------------------------------- 
@@ -1212,7 +1212,7 @@ Delay calculation completed. (cpu=0:00:00.8 real=0:00:01.0 mem=369.223M 0)
 
  TNS and Viol paths do not include clock gating violations.
 --------------------------------------------------- 
-*** Started fixing hold violations, collecting hold timing for buffering (CPU=0:00:02.0, REAL=0:00:02.0, totSessionCpu=0:01:28, mem=371.2M)
+*** Started fixing hold violations, collecting hold timing for buffering (CPU=0:00:01.3, REAL=0:00:01.0, totSessionCpu=0:00:57.3, mem=307.2M)
 Setting analysis mode to setup ...
 Info: 25 clock nets excluded from IPO operation.
 setClockDomains -fromType register -toType register 
@@ -1229,7 +1229,7 @@ setClockDomains -fromType register -toType register
  Worst Slack : 13.489 ns 
  Viol paths  : 0 
 --------------------------------------------------- 
-*** Started fixing hold violations, collecting setup timing (CPU=0:00:04.6, REAL=0:00:04.0, totSessionCpu=0:01:31, mem=371.2M)
+*** Started fixing hold violations, collecting setup timing (CPU=0:00:03.1, REAL=0:00:03.0, totSessionCpu=0:00:59.1, mem=307.3M)
 
 ------------------------------------------------------------
              Initial Summary                             
@@ -1266,7 +1266,7 @@ setClockDomains -fromType register -toType register
 Density: 100.000%
 ------------------------------------------------------------
 Info: 25 clock nets excluded from IPO operation.
-*** Started fixing hold violations (CPU=0:00:04.8, REAL=0:00:05.0, totSessionCpu=0:01:31, mem=371.2M)
+*** Started fixing hold violations (CPU=0:00:03.2, REAL=0:00:03.0, totSessionCpu=0:00:59.3, mem=307.3M)
 Density before buffering = 1.000 (fixHold)
 *info:
 *info: abort hold fixing due to density exceeding 0.950
@@ -1274,9 +1274,9 @@ Starting refinePlace ...
 **ERROR: (ENCSP-2002):	Density too high (100.0%). Stopping detail placement.
 Total net length = 1.534e+05 (7.631e+04 7.712e+04) (ext = 9.585e+03)
 **ERROR: (ENCSP-9022):	Command 'refinePlace' completed with some error(s).
-**optDesign ... cpu = 0:00:07, real = 0:00:07, mem = 371.2M **
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 307.3M **
 Reported timing to dir ./timingReports
-**optDesign ... cpu = 0:00:07, real = 0:00:07, mem = 371.2M **
+**optDesign ... cpu = 0:00:05, real = 0:00:05, mem = 307.3M **
 
 ------------------------------------------------------------
      optDesign Final Summary                             
@@ -1312,7 +1312,7 @@ Reported timing to dir ./timingReports
 
 Density: 100.000%
 ------------------------------------------------------------
-**optDesign ... cpu = 0:00:10, real = 0:00:10, mem = 362.2M **
+**optDesign ... cpu = 0:00:07, real = 0:00:07, mem = 298.7M **
 *** Finished optDesign ***
 Begin checking placement ...
 *info: Placed = 21598
@@ -1373,7 +1373,7 @@ Detail RC Extraction called for design CORTEXM0DS.
       Thickness        : 2
       Min Width        : 0.8
       Layer Dielectric : 4.1
-extractDetailRC Option : -outfile ./CORTEXM0DS_PogQUb_20813.rcdb.d -maxResLength 200  -basic -newAssumeMetFill
+extractDetailRC Option : -outfile ./CORTEXM0DS_5juMP8_21242.rcdb.d -maxResLength 200  -basic -newAssumeMetFill
 Assumed metal fill uses the following parameters:
               Active Spacing      Min. Width
                 [microns]         [microns]
@@ -1404,38 +1404,38 @@ Coupling Cap. Scaling Factor : 1.00000
 Clock Cap. Scaling Factor    : 1.00000
 Clock Res. Scaling Factor    : 1.00000
 Shrink Factor                : 1.00000
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 362.2M)
-Creating parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for storing RC.
-Extracted 10.0017% (CPU Time= 0:00:00.2  MEM= 362.2M)
-Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 362.2M)
-Extracted 30.0025% (CPU Time= 0:00:00.3  MEM= 362.2M)
-Extracted 40.0016% (CPU Time= 0:00:00.3  MEM= 362.2M)
-Extracted 50.002% (CPU Time= 0:00:00.4  MEM= 362.5M)
-Extracted 60.0023% (CPU Time= 0:00:00.5  MEM= 362.9M)
-Extracted 70.0014% (CPU Time= 0:00:00.5  MEM= 363.2M)
-Extracted 80.0018% (CPU Time= 0:00:00.6  MEM= 363.7M)
-Extracted 90.0022% (CPU Time= 0:00:00.7  MEM= 364.0M)
-Extracted 100% (CPU Time= 0:00:00.9  MEM= 364.0M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 298.7M)
+Creating parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for storing RC.
+Extracted 10.0017% (CPU Time= 0:00:00.1  MEM= 298.8M)
+Extracted 20.0021% (CPU Time= 0:00:00.2  MEM= 298.8M)
+Extracted 30.0025% (CPU Time= 0:00:00.2  MEM= 298.8M)
+Extracted 40.0016% (CPU Time= 0:00:00.2  MEM= 298.8M)
+Extracted 50.002% (CPU Time= 0:00:00.3  MEM= 298.8M)
+Extracted 60.0023% (CPU Time= 0:00:00.3  MEM= 298.9M)
+Extracted 70.0014% (CPU Time= 0:00:00.4  MEM= 299.3M)
+Extracted 80.0018% (CPU Time= 0:00:00.4  MEM= 299.8M)
+Extracted 90.0022% (CPU Time= 0:00:00.5  MEM= 300.0M)
+Extracted 100% (CPU Time= 0:00:00.6  MEM= 300.0M)
 Nr. Extracted Resistors     : 161761
 Nr. Extracted Ground Cap.   : 170921
 Nr. Extracted Coupling Cap. : 365396
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
 Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1 and total_c_threshold=0fF.
-Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 362.2M)
-Creating parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb_Filter.rcdb.d/header.seq' for storing RC.
-Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
-Detail RC Extraction DONE (CPU Time: 0:00:01.3  Real Time: 0:00:03.0  MEM: 362.207M)
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 298.8M)
+Creating parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb_Filter.rcdb.d/header.seq' for storing RC.
+Closing parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:01.0  Real Time: 0:00:04.0  MEM: 298.738M)
 Writing Netlist "CORTEXM0DS_routed.v" ...
-Opening parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq' for reading.
+Opening parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq' for reading.
 Dumping Spef file.....
 RC Out has the following PVT Info:
    RC-typical 
 Printing D_NET...
 .................................................. [5000 nets cpu=0:00:00.2]
 ..........................................Done!
-Detail RC Out Completed (CPU Time= 0:00:01.4  MEM= 362.2M)
-Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
+Detail RC Out Completed (CPU Time= 0:00:01.2  MEM= 298.8M)
+Closing parasitic data file './CORTEXM0DS_5juMP8_21242.rcdb.d/header.seq'. 9201 times net's RC data read were performed.
 **WARN: (ENCSYC-1870):	setAnalysisMode -clockPropagation autoDetectClockTree not supported in CTE timing mode, mapping it to setAnalysisMode -clockPropagation sdcControl
 {DETAILMESSAGE}
 
@@ -1465,9 +1465,9 @@ Closing parasitic data file './CORTEXM0DS_PogQUb_20813.rcdb.d/header.seq'. 9201 
 Density: 100.000%
 ------------------------------------------------------------
 Reported timing to dir ./timingReports
-Total CPU time: 2.31 sec
-Total Real time: 3.0 sec
-Total Memory Usage: 371.894531 Mbytes
+Total CPU time: 1.52 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 308.546875 Mbytes
 
 ------------------------------------------------------------
           timeDesign Summary                             
@@ -1485,11 +1485,13 @@ Total Memory Usage: 371.894531 Mbytes
 Density: 100.000%
 ------------------------------------------------------------
 Reported timing to dir ./timingReports
-Total CPU time: 2.01 sec
-Total Real time: 2.0 sec
-Total Memory Usage: 364.914062 Mbytes
+Total CPU time: 1.29 sec
+Total Real time: 1.0 sec
+Total Memory Usage: 300.027344 Mbytes
 Redoing specifyClockTree ...
 Checking spec file integrity...
+**WARN: (ENCSYT-3036):	Design directory ./CORTEXM0DS_routed.enc.dat exists, rename it to ./CORTEXM0DS_routed.enc.dat.tmp.
+If saveDesign succeeds, it will be deleted.
 Writing Netlist "./CORTEXM0DS_routed.enc.dat/CORTEXM0DS.v.gz" ...
 Saving clock tree spec file './CORTEXM0DS_routed.enc.dat/CORTEXM0DS.ctstch' ...
 Saving configuration ...
@@ -1498,15 +1500,15 @@ Saving floorplan ...
 Saving Drc markers ...
 ... No Drc file written since there is no markers found.
 Saving placement ...
-*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=364.9M) ***
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=300.0M) ***
 Saving route ...
-*** Completed saveRoute (cpu=0:00:00.2 real=0:00:01.0 mem=364.9M) ***
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:01.0 mem=300.0M) ***
 *** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
 Creating constraint file...
-Writing DEF file './CORTEXM0DS_routed.def', current time is Mon Apr  7 20:12:49 2014 ...
+Writing DEF file './CORTEXM0DS_routed.def', current time is Tue Apr 15 11:37:14 2014 ...
 unitPerMicron=2000, dbgMicronPerDBU=0.000500, unitPerDBU=1.000000
-DEF file './CORTEXM0DS_routed.def' is written, current time is Mon Apr  7 20:12:50 2014 ...
-run_route.tcl completed successfully (elapsed time: 0h 1m 49s actual)
+DEF file './CORTEXM0DS_routed.def' is written, current time is Tue Apr 15 11:37:15 2014 ...
+run_route.tcl completed successfully (elapsed time: 0h 1m 19s actual)
 
-*** Memory Usage v0.159.2.6.2.1 (Current mem = 364.930M, initial mem = 46.477M) ***
---- Ending "Encounter" (totcpu=0:01:43, real=0:01:53, mem=364.9M) ---
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 300.043M, initial mem = 46.484M) ***
+--- Ending "Encounter" (totcpu=0:01:08, real=0:01:21, mem=300.0M) ---

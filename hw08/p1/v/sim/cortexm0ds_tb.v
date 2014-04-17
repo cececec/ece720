@@ -158,6 +158,10 @@ integer fd, i;
 reg [31:0] data;
 
 initial begin
+  $dumpfile("waves.vcd");
+  $dumpvars;
+end
+initial begin
   $display("%t: ----------------------------------------------", $time);
   $display("%t: ARM(r) Cortex(tm)-M0 DesignStart(tm) Testbench", $time);
   $display("%t: (c) Copyright 2010 ARM Limited", $time);

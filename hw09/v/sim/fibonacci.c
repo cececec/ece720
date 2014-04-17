@@ -122,7 +122,7 @@ __attribute__ ((section("vectors")))
 // Fibonacci program.
 //------------------------------------------------------------------------------
 
-#define ITERATIONS 6
+#define ITERATIONS 10
 
 static int fib(int i) {
   return (i>1) ? fib(i-1)+fib(i-2) : i;

@@ -17,7 +17,7 @@ controlling such use and disclosure.
 #
 #####################################################
 set begintime [clock seconds]
-1397438829
+1397680300
 # setup name of the clock in your design.
 set clkname HCLK
 HCLK
@@ -114,9 +114,6 @@ Information: Merged 2 parallel coupling capacitors to total 8.816e-05 pf
 . (PARA-050)
 Information: Merged 2 parallel coupling capacitors to total 8.816e-05 pf
 	between file nodes 'u_logic/FE_PHN486_n129:6' and 'u_logic/FE_PHN339_n5673:4'
-. (PARA-050)
-Information: Merged 2 parallel coupling capacitors to total 0.00011342 pf
-	between file nodes 'u_logic/n16848:116' and 'u_logic/n993:5'
 . (PARA-050)
 Information: Merged 2 parallel coupling capacitors to total 0.00043655 pf
 	between file nodes 'u_logic/FE_PHN944_n4923:12' and 'u_logic/n953:12'
@@ -265,12 +262,6 @@ Information: Merged 2 parallel coupling capacitors to total 0.00010208 pf
 Information: Merged 2 parallel coupling capacitors to total 9.074e-05 pf
 	between file nodes 'u_logic/n4064:2' and 'u_logic/FE_OFN8_n171:77'
 . (PARA-050)
-Information: Merged 2 parallel coupling capacitors to total 6.686e-05 pf
-	between file nodes 'u_logic/n342:3' and 'u_logic/n5757:3'
-. (PARA-050)
-Information: Merged 2 parallel coupling capacitors to total 6.686e-05 pf
-	between file nodes 'u_logic/n342:4' and 'u_logic/n5757:2'
-. (PARA-050)
 Information: Merged 2 parallel coupling capacitors to total 5.851e-05 pf
 	between file nodes 'SYNOPSYS_UNCONNECTED_483:3' and 'u_logic/n16651:50'
 . (PARA-050)
@@ -395,6 +386,15 @@ Information: Merged 2 parallel coupling capacitors to total 5.851e-05 pf
 Information: Merged 2 parallel coupling capacitors to total 0.0001444 pf
 	between file nodes 'u_logic/n5454:10' and 'u_logic/n13870:10'
 . (PARA-050)
+Information: Merged 2 parallel coupling capacitors to total 0.0001444 pf
+	between file nodes 'u_logic/n5454:12' and 'u_logic/n13870:9'
+. (PARA-050)
+Information: Merged 2 parallel coupling capacitors to total 0.00014745 pf
+	between file nodes 'u_logic/sub_2068_carry_4_:2' and 'u_logic/sub_2068_carry_7_:2'
+. (PARA-050)
+Information: Merged 2 parallel coupling capacitors to total 5.015e-05 pf
+	between file nodes 'u_logic/sub_2068_A_5_:7' and 'u_logic/sub_2068_carry_5_:2'
+. (PARA-050)
 Note - message 'PARA-050' default limit (100) exceeded.  Remainder will be suppressed.
 
 ****************************************
@@ -402,7 +402,7 @@ Report : read_parasitics /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghua
 	-keep_capacitive_coupling
 Design : CORTEXM0DS
 Version: H-2013.06-SP1
-Date   : Sun Apr 13 21:27:13 2014
+Date   : Wed Apr 16 16:31:43 2014
 ****************************************
 
         0 error(s)
@@ -427,6 +427,26 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00944385  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[30] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.0132023  (lib units)]
@@ -442,24 +462,19 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.012623  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[28] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.012623  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[27] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00868029  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRESETn (max-rising)
+	 through port HRDATA[27] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00868029  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRESETn (min-rising)
+	 through port HRDATA[28] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.012623  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[26] (max-rising)
@@ -472,14 +487,14 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00783341  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[29] (max-rising)
+	 through port HRDATA[24] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[29] (min-rising)
+	 through port HRDATA[24] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[25] (max-rising)
@@ -492,6 +507,26 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.0122829  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[21] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.0117476  (lib units)]
@@ -500,51 +535,6 @@ Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[21] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.0117476  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[27] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00868029  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[23] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[23] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[24] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[24] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[20] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00945397  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[22] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[18] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[18] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[19] (max-rising)
@@ -557,14 +547,9 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.011881  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[16] (max-rising)
+	 through port HRDATA[20] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[16] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00945397  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[20] (min-rising)
@@ -572,19 +557,9 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00945397  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[15] (max-rising)
+	 through port HRDATA[18] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[15] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[22] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[17] (max-rising)
@@ -597,14 +572,19 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.0101662  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[12] (max-rising)
+	 through port HRDATA[18] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[12] (min-rising)
+	 through port HRDATA[16] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[16] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[14] (max-rising)
@@ -621,14 +601,14 @@ for the cell timing arc, through port HRDATA[14] (min)
 	 [fall total_cap = 0.0338957, lib_range = [0.0004 0.0256](pF)]
  (RC-011)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[11] (max-rising)
+	 through port HRDATA[15] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[11] (min-rising)
+	 through port HRDATA[15] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[13] (max-rising)
@@ -641,34 +621,34 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.01355  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[10] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00722878  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[7] (max-rising)
+	 through port HRDATA[10] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[7] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[9] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[9] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[5] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00803782  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00722878  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[8] (max-rising)
@@ -681,14 +661,19 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.015203  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[4] (max-rising)
+	 through port HRDATA[9] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[10] (min-rising)
+	 through port HRDATA[9] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00722878  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[6] (max-rising)
@@ -701,54 +686,19 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.018424  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[1] (max-rising)
+	 through port HRDATA[7] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[1] (min-rising)
+	 through port HRDATA[5] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00803782  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[5] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00803782  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[2] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[2] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HREADY (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[4] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[0] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port HRDATA[0] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port NMI (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRDATA[3] (max-rising)
@@ -761,49 +711,44 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00836509  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[14] (max-rising)
+	 through port HRDATA[4] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[14] (min-rising)
+	 through port HRDATA[4] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port HREADY (min-rising)
+	 through port HRDATA[2] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[15] (max-rising)
+	 through port HRDATA[1] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[15] (min-rising)
+	 through port HRDATA[1] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[12] (max-rising)
+	 through port HRDATA[2] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00490545  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port NMI (min-rising)
+	 through port HRDATA[0] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[13] (max-rising)
+	 through port HRDATA[0] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[13] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port HRESP (max-rising)
@@ -820,34 +765,64 @@ for the cell timing arc, through port HRESP (min)
 	 [fall total_cap = 0.0293055, lib_range = [0.0004 0.0256](pF)]
  (RC-011)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[8] (max-rising)
+	 through port HREADY (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[8] (min-rising)
+	 through port HREADY (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00490545  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[12] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00490545  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[9] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[9] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[6] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00617842  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[11] (max-rising)
@@ -860,16 +835,6 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00613008  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[7] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[7] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[10] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00860759  (lib units)]
@@ -880,34 +845,54 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00860759  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[6] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00617842  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[5] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00470867  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[2] (max-rising)
+	 through port IRQ[5] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00601532  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[2] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00601532  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00470867  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[6] (min-rising)
 	 because the library data indicates a non-positive drive resistance.
 	 [r/f inp_slew = 0/0, out_cap = 0.00617842  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[3] (max-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00677984  (lib units)]
- (RC-004)
-Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[3] (min-rising)
-	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00677984  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
 	 through port IRQ[4] (max-rising)
@@ -920,11 +905,27 @@ Warning: Failed to compute C-effective for the timing arc
 	 [r/f inp_slew = 0/0, out_cap = 0.00561159  (lib units)]
  (RC-004)
 Warning: Failed to compute C-effective for the timing arc
-	 through port IRQ[0] (max-rising)
+	 through port IRQ[2] (max-rising)
 	 because the library data indicates a non-positive drive resistance.
-	 [r/f inp_slew = 0/0, out_cap = 0.00789384  (lib units)]
+	 [r/f inp_slew = 0/0, out_cap = 0.00601532  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[2] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00601532  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[3] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00677984  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[3] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00677984  (lib units)]
  (RC-004)
 Note - message 'RC-004' default limit (100) exceeded.  Remainder will be suppressed.
+
 Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
 for the cell timing arc, (NangateOpenCellLibrary/DFFS_X1) u_logic/B1q2z4_reg/CK-->Q (max rising_edge)
 	 [r/f total_cap = 0.0439324/0.0439822, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
@@ -992,20 +993,22 @@ Report : si_bottleneck
 	-max
 Design : CORTEXM0DS
 Version: H-2013.06-SP1
-Date   : Sun Apr 13 21:27:17 2014
+Date   : Wed Apr 16 16:31:47 2014
 ****************************************
 
 Information: report_si_bottleneck found zero net to report. (XTALK-019)
 0
-#report_delay_calculation -crosstalk -from inst1/pin1 -to inst2/pin2
+#report_delay_calculation -crosstalk -from u_logic/U1844/ZN -to u_logic/U1843/B1 > delay_cal_${corner}_${type}_max.rpt
+#report_delay_calculation -crosstalk -from u_logic/U2474/ZN  -to u_logic/A933z4_reg/D  > delay_cal_${corner}_${type}_min.rpt
 report_noise > noise_ptsi_${corner}_${type}.rpt
-#report_noise_calculation -below -high -from inst1/pin1 -to inst2/pin2
+report_noise_calculation -above -low -from u_logic/Wqm2z4_reg/QN -to u_logic/FE_PHC719_n5042/A > noise_ptsi_abovelow_${corner}_${type}.rpt
+report_noise_calculation -below -high -from u_logic/Vmj2z4_reg/QN -to u_logic/FE_PHC716_n4980/A > noise_ptsi_belowhigh_${corner}_${type}.rpt
 set endtime [clock seconds]
-1397438838
+1397680308
 set timestr [timef [expr $endtime-$begintime]]
-0h 0m 9s
+0h 0m 8s
 puts "run_ptsi.tcl completed successfully (elapsed time: $timestr actual)"
-run_ptsi.tcl completed successfully (elapsed time: 0h 0m 9s actual)
+run_ptsi.tcl completed successfully (elapsed time: 0h 0m 8s actual)
 exit
 Information: Defining new variable 'MAX_INS_DELAY'. (CMD-041)
 Information: Defining new variable 'DR_CELL_NAME'. (CMD-041)
@@ -1025,14 +1028,14 @@ Suppressed Messages Summary:
 Id          Severity      Occurrences   Suppressed
 -------------------------------------------------------------------------------
 RC-004      Warning               106            6
-PARA-050    Information          1976         1876
+PARA-050    Information          1766         1666
 Total 2 types of messages are suppressed
 
 Timing updates: 2 (2 implicit, 0 explicit) (0 incremental, 2 full)
 Noise updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full)
-Maximum memory usage for this session: 381.32 MB
+Maximum memory usage for this session: 288.91 MB
 CPU usage for this session: 9 seconds 
-Elapsed time for this session: 19 seconds
+Elapsed time for this session: 10 seconds
 Diagnostics summary: 111 warnings, 130 informationals
 
 Thank you for using pt_shell!
