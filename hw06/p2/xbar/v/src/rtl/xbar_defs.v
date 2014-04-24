@@ -1,0 +1,3 @@
+`define NUMINPUTS 12
+`define NUMOUTPUTS 12
+`define NUMWIDTH 32

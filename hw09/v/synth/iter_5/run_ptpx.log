@@ -1,0 +1,943 @@
+
+                            PrimeTime (R)
+           Version H-2013.06-SP1 for RHEL64 -- Jul 18, 2013
+                Copyright (c) 1988-2013 Synopsys, Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys, Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+###################################################
+#
+# run_ptpx.tcl
+#
+# 4/26/2011 W. Rhett Davis (rhett_davis@ncsu.edu)
+# updated 4/5/2012, 3/28/2014
+#
+#####################################################
+set begintime [clock seconds]
+1397527723
+# setup name of the clock in your design.
+set clkname HCLK
+HCLK
+# set variable "modname" to the name of topmost module in design
+set modname CORTEXM0DS
+CORTEXM0DS
+# set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
+set PR_DIR    ../../pr/
+../../pr/
+# set variable "type" to either routed or trialrouted
+set type routed
+routed
+# set variable "corner" to one of the following:
+#   typical     (typical transistors, 1.1  V,  25 degC)
+#   worst_low   (   slow transistors, 0.95 V, -40 degC)
+#   low_temp    (   fast transistors, 1.25 V, -40 degC)
+#   fast        (   fast transistors, 1.25 V,   0 degC)
+#   slow        (   slow transistors, 0.95 V, 125 degC)
+set corner fast
+fast
+#set the number of digits to be used for delay results
+set report_default_significant_digits 4
+4
+set CLK_PER 40
+40
+set DFF_CKQ 0.638
+0.638
+set MAX_INS_DELAY 1.0
+1.0
+set IP_DELAY [expr $MAX_INS_DELAY + $DFF_CKQ]
+1.638
+set DR_CELL_NAME DFFR_X1
+DFFR_X1
+set DR_CELL_PIN  Q
+Q
+# Define a helpful function for printing out time strings
+proc timef {sec} {
+  set hrs [expr $sec/3600]
+  set sec [expr $sec-($hrs*3600)]
+  set min [expr $sec/60]
+  set sec [expr $sec-($min*60)]
+  return "${hrs}h ${min}m ${sec}s"
+}
+set link_library "NangateOpenCellLibrary_${corner}_conditional_ccs.db *"
+NangateOpenCellLibrary_fast_conditional_ccs.db *
+read_verilog "${PR_DIR}${modname}_${type}.v"
+Loading verilog file '/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/hw09/pr/CORTEXM0DS_routed.v'
+1
+current_design $modname
+{"CORTEXM0DS"}
+link_design
+Loading db file '/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ccs.db'
+Linking design CORTEXM0DS...
+Information: Removing 1 unneeded designs..... (LNK-034)
+Information: 49 (36.57%) library cells are unused in library NangateOpenCellLibrary.....
+Information: total 49 library cells are unused.
+Design 'CORTEXM0DS' was successfully linked.
+1
+create_clock -name $clkname -period $CLK_PER $clkname
+1
+set_input_delay $IP_DELAY -clock $clkname [remove_from_collection [all_inputs] $clkname]
+1
+set_output_delay -clock $clkname 0 [all_outputs]
+1
+set_driving_cell -lib_cell "$DR_CELL_NAME" -pin "$DR_CELL_PIN" [remove_from_collection [all_inputs] $clkname]
+1
+set power_enable_analysis TRUE
+TRUE
+set power_analysis_mode averaged
+averaged
+read_parasitics -format spef "${PR_DIR}${modname}_${type}.spef"
+Information: Log for parasitic commands will be generated in 'parasitics_command.log'. (PARA-107)
+1
+check_timing
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[31] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00944385  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[31] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00944385  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESETn (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00699292  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[27] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00868029  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[30] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0132023  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[30] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0132023  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[29] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012352  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[28] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012623  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[28] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.012623  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[24] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[24] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00570348  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[27] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00868029  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[25] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0122829  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[25] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0122829  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[26] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00783341  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[26] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00783341  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[22] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00670894  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[23] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00651328  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[20] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00945397  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[18] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[18] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00794604  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[21] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0117476  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[21] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0117476  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[17] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0101662  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[17] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0101662  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[19] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.011881  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[19] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.011881  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[15] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[15] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0136406  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[20] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00945397  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[16] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[16] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0171582  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[11] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0103891  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[14] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0343541  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[14] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0343467  (lib units)]
+ (RC-004)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, through port HRDATA[14] (min)
+	 [fall total_cap = 0.0338958, lib_range = [0.0004 0.0256](pF)]
+ (RC-011)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[12] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00649999  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[10] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00722878  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[13] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.01355  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[13] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.01355  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[9] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[7] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00626054  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[8] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.015203  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[8] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.015203  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[5] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00803782  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[10] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00722878  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[6] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.018424  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[6] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.018424  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[9] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0171448  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[4] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[4] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0115762  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[0] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[0] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0108456  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[5] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00803782  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[1] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[1] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0124033  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[3] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00836509  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[3] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00836509  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HREADY (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HREADY (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00504696  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[2] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRDATA[2] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0105513  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESP (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0295025  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port HRESP (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0295025  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[13] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00746795  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port NMI (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0082242  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[14] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00815457  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[10] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00860759  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[15] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00587633  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[12] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00490545  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[12] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00490545  (lib units)]
+ (RC-004)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, through port HRESP (min)
+	 [fall total_cap = 0.0293055, lib_range = [0.0004 0.0256](pF)]
+ (RC-011)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[11] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00613008  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[11] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00613008  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[6] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00617842  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[6] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00617842  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[10] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00860759  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[7] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00522048  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[3] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00677984  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[9] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00616499  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[5] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00470867  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[5] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00470867  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[8] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00758636  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[4] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00561159  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[4] (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00561159  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port IRQ[2] (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.00601532  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port RXEV (max-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0148773  (lib units)]
+ (RC-004)
+Warning: Failed to compute C-effective for the timing arc
+	 through port RXEV (min-rising)
+	 because the library data indicates a non-positive drive resistance.
+	 [r/f inp_slew = 0/0, out_cap = 0.0148773  (lib units)]
+ (RC-004)
+Note - message 'RC-004' default limit (100) exceeded.  Remainder will be suppressed.
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFS_X1) u_logic/B1q2z4_reg/CK-->Q (max rising_edge)
+	 [r/f total_cap = 0.0439325/0.0439823, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFS_X1) u_logic/B1q2z4_reg/CK-->Q (min rising_edge)
+	 [r/f total_cap = 0.0439324/0.0439821, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFS_X1) u_logic/Vdr2z4_reg/CK-->Q (max rising_edge)
+	 [r/f total_cap = 0.0409566/0.0409919, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFS_X1) u_logic/Vdr2z4_reg/CK-->Q (min rising_edge)
+	 [r/f total_cap = 0.0409565/0.0409917, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFR_X1) u_logic/H8l2z4_reg/CK-->Q (max rising_edge)
+	 [r/f total_cap = 0.0334011/0.0333916, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFR_X1) u_logic/H8l2z4_reg/CK-->Q (min rising_edge)
+	 [r/f total_cap = 0.0333872/0.0333646, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFR_X1) u_logic/X0c3z4_reg/CK-->QN (max rising_edge)
+	 [r/f total_cap = 0.0305578/0.0303944, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Warning: An extrapolation far outside the library characterization range has been detected and the delay calculation uses the last library index incremented by 10% 
+for the cell timing arc, (NangateOpenCellLibrary/DFFR_X1) u_logic/X0c3z4_reg/CK-->QN (min rising_edge)
+	 [r/f total_cap = 0.0305113/0.0302347, lib_range = [0.0004 0.0256]/[0.0004 0.0256] (pF)]
+ (RC-011)
+Information: Checking 'no_input_delay'.
+Information: Checking 'no_driving_cell'.
+Warning: There is 1 port with parasitics but with no driving cell.
+
+Information: Checking 'unconstrained_endpoints'.
+Information: Checking 'unexpandable_clocks'.
+Information: Checking 'latch_fanout'.
+Information: Checking 'no_clock'.
+Information: Checking 'partial_input_delay'.
+Information: Checking 'generic'.
+Information: Checking 'loops'.
+Information: Checking 'generated_clocks'.
+Information: Checking 'pulse_clock_non_pulse_clock_merge'.
+Information: Checking 'pll_configuration'.
+0
+update_timing
+1
+report_timing
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : CORTEXM0DS
+Version: H-2013.06-SP1
+Date   : Mon Apr 14 22:08:48 2014
+****************************************
+
+
+  Startpoint: u_logic/Tki2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_logic/Pdi2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  u_logic/Tki2z4_reg/CK (DFFR_X1)                       0.0000     0.0000 r
+  u_logic/Tki2z4_reg/QN (DFFR_X1)                       0.0916 &   0.0916 r
+  u_logic/U4271/ZN (INV_X8)                             0.0452 &   0.1367 f
+  u_logic/U3642/ZN (INV_X4)                             0.0920 &   0.2287 r
+  u_logic/U2991/ZN (NAND2_X4)                           0.0719 &   0.3006 f
+  u_logic/U2569/ZN (INV_X4)                             0.1073 &   0.4080 r
+  u_logic/U3689/ZN (NAND4_X2)                           0.0749 &   0.4829 f
+  u_logic/U3687/ZN (OAI21_X1)                           0.0511 &   0.5340 r
+  u_logic/U3003/ZN (INV_X4)                             0.0395 &   0.5735 f
+  u_logic/U2571/ZN (INV_X4)                             0.0340 &   0.6075 r
+  u_logic/FE_OFCC463_n16956/Z (BUF_X8)                  0.0785 &   0.6859 r
+  u_logic/U4198/ZN (OR2_X1)                             0.0932 &   0.7791 r
+  u_logic/U3656/ZN (INV_X4)                             0.0789 &   0.8580 f
+  u_logic/U2339/ZN (AOI221_X1)                          0.0755 &   0.9336 r
+  u_logic/U2338/ZN (NAND3_X1)                           0.0779 &   1.0115 f
+  u_logic/U1926/ZN (INV_X1)                             0.0529 &   1.0644 r
+  u_logic/U1345/ZN (NOR2_X1)                            0.0353 &   1.0997 f
+  u_logic/add_2082_U1_2/CO (FA_X1)                      0.0757 &   1.1754 f
+  u_logic/add_2082_U1_3/CO (FA_X1)                      0.0635 &   1.2389 f
+  u_logic/add_2082_U1_4/CO (FA_X1)                      0.0631 &   1.3019 f
+  u_logic/add_2082_U1_5/CO (FA_X1)                      0.0645 &   1.3665 f
+  u_logic/add_2082_U1_6/CO (FA_X1)                      0.0747 &   1.4411 f
+  u_logic/add_2082_U1_7/CO (FA_X1)                      0.0648 &   1.5059 f
+  u_logic/add_2082_U1_8/CO (FA_X1)                      0.0646 &   1.5705 f
+  u_logic/add_2082_U1_9/CO (FA_X1)                      0.0629 &   1.6334 f
+  u_logic/add_2082_U1_10/CO (FA_X1)                     0.0651 &   1.6986 f
+  u_logic/add_2082_U1_11/CO (FA_X1)                     0.0619 &   1.7605 f
+  u_logic/add_2082_U1_12/CO (FA_X1)                     0.0610 &   1.8215 f
+  u_logic/add_2082_U1_13/CO (FA_X1)                     0.0612 &   1.8827 f
+  u_logic/add_2082_U1_14/CO (FA_X1)                     0.0632 &   1.9460 f
+  u_logic/add_2082_U1_15/CO (FA_X1)                     0.0628 &   2.0088 f
+  u_logic/add_2082_U1_16/CO (FA_X1)                     0.0674 &   2.0762 f
+  u_logic/add_2082_U1_17/CO (FA_X1)                     0.0636 &   2.1398 f
+  u_logic/add_2082_U1_18/CO (FA_X1)                     0.0655 &   2.2052 f
+  u_logic/add_2082_U1_19/CO (FA_X1)                     0.0640 &   2.2692 f
+  u_logic/add_2082_U1_20/CO (FA_X1)                     0.0618 &   2.3310 f
+  u_logic/add_2082_U1_21/CO (FA_X1)                     0.0632 &   2.3941 f
+  u_logic/add_2082_U1_22/CO (FA_X1)                     0.0671 &   2.4613 f
+  u_logic/add_2082_U1_23/CO (FA_X1)                     0.0632 &   2.5245 f
+  u_logic/add_2082_U1_24/CO (FA_X1)                     0.0610 &   2.5855 f
+  u_logic/add_2082_U1_25/CO (FA_X1)                     0.0620 &   2.6475 f
+  u_logic/add_2082_U1_26/CO (FA_X1)                     0.0612 &   2.7087 f
+  u_logic/add_2082_U1_27/CO (FA_X1)                     0.0606 &   2.7693 f
+  u_logic/add_2082_U1_28/CO (FA_X1)                     0.0635 &   2.8329 f
+  u_logic/add_2082_U1_29/CO (FA_X1)                     0.0617 &   2.8946 f
+  u_logic/add_2082_U1_30/CO (FA_X1)                     0.0619 &   2.9564 f
+  u_logic/add_2082_U1_31/S (FA_X1)                      0.0969 &   3.0533 r
+  u_logic/U4698/ZN (XNOR2_X2)                           0.0491 &   3.1025 r
+  u_logic/U4701/ZN (INV_X4)                             0.0163 &   3.1188 f
+  u_logic/U1864/ZN (NOR3_X1)                            0.0621 &   3.1809 r
+  u_logic/U1863/ZN (NAND4_X1)                           0.0259 &   3.2068 f
+  u_logic/U1857/ZN (OAI21_X1)                           0.0368 &   3.2435 r
+  u_logic/U1856/ZN (OAI221_X1)                          0.0499 &   3.2935 f
+  u_logic/U1851/ZN (AOI211_X1)                          0.0777 &   3.3711 r
+  u_logic/U1850/ZN (NAND4_X1)                           0.0243 &   3.3954 f
+  u_logic/U1844/ZN (NOR4_X1)                            0.0881 &   3.4835 r
+  u_logic/U1843/ZN (OAI22_X1)                           0.0293 &   3.5128 f
+  u_logic/U1842/ZN (INV_X1)                             0.0356 &   3.5485 r
+  u_logic/U1164/Z (XOR2_X1)                             0.0546 &   3.6031 r
+  u_logic/U1161/ZN (AOI22_X2)                           0.0410 &   3.6441 f
+  u_logic/U1146/ZN (OAI211_X1)                          0.0510 &   3.6952 r
+  u_logic/U1145/Z (XOR2_X1)                             0.0736 &   3.7688 r
+  u_logic/U1144/ZN (INV_X1)                             0.0143 &   3.7831 f
+  u_logic/U1141/ZN (OAI22_X1)                           0.0618 &   3.8449 r
+  u_logic/U1140/ZN (AOI222_X2)                          0.0483 &   3.8932 f
+  u_logic/FE_OFCC428_n1479/Z (CLKBUF_X3)                0.0403 &   3.9335 f
+  u_logic/U1125/ZN (OAI221_X1)                          0.0670 &   4.0005 r
+  u_logic/U1120/ZN (NOR2_X4)                            0.0472 &   4.0476 f
+  u_logic/U1113/ZN (AOI22_X1)                           0.0589 &   4.1065 r
+  u_logic/FE_PHC552_n11746/Z (BUF_X16)                  0.0551 &   4.1617 r
+  u_logic/Pdi2z4_reg/D (DFFS_X1)                        0.0001 &   4.1617 r
+  data arrival time                                                4.1617
+
+  clock HCLK (rise edge)                               40.0000    40.0000
+  clock network delay (ideal)                           0.0000    40.0000
+  u_logic/Pdi2z4_reg/CK (DFFS_X1)                                 40.0000 r
+  library setup time                                   -0.0255    39.9745
+  data required time                                              39.9745
+  ------------------------------------------------------------------------------
+  data required time                                              39.9745
+  data arrival time                                               -4.1617
+  ------------------------------------------------------------------------------
+  slack (MET)                                                     35.8127
+
+
+1
+#####################################################################
+#       read switching activity file
+#####################################################################
+read_saif "../sim/waves.saif" -strip_path "cortexm0ds_tb/u_cortexm0ds"
+Information: Checked out license 'PrimeTime-PX' (PT-019)
+
+======================================================================
+Summary:
+Total number of nets = 8879
+Number of annotated nets = 8741 (98.45%)
+Total number of leaf cells = 7960
+Number of fully annotated leaf cells = 7753 (97.40%)
+======================================================================
+
+1
+report_switching_activity -list_not_annotated
+****************************************
+Report : Switching Activity
+	-list_not_annotated
+Design : CORTEXM0DS
+Version: H-2013.06-SP1
+Date   : Mon Apr 14 22:08:49 2014
+****************************************
+
+ Switching Activity Overview Statistics for "CORTEXM0DS"
+----------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From                                                         Not
+Object Type       File (%)          SSA (%)      SCA (%)      Clock (%)    Default (%)     Propagated(%)   Implied(%)      Annotated(%)    Total
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             8741(98.45%)      0(0.00%)     0(0.00%)     1(0.01%)     60(0.68%)       0(0.00%)        64(0.72%)       13(0.15%)       8879
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     0(0.00%)          0(0.00%)     0(0.00%)     1(1.85%)     53(98.15%)      0(0.00%)        0(0.00%)        0(0.00%)        54
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Sequential        1608(99.94%)      0(0.00%)     0(0.00%)     0(0.00%)     0(0.00%)        0(0.00%)        1(0.06%)        0(0.00%)        1609
+Combinational     7133(98.85%)      0(0.00%)     0(0.00%)     0(0.00%)     7(0.10%)        0(0.00%)        63(0.87%)       13(0.18%)       7216
+Memory            0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ Static Probability Overview Statistics for "CORTEXM0DS"
+----------------------------------------------------------------------------------------------------------------------------------------------------
+                  From Activity     From         From         From                                                         Not
+Object Type       File (%)          SSA (%)      SCA (%)      Clock (%)    Default (%)     Propagated(%)   Implied(%)      Annotated(%)    Total
+----------------------------------------------------------------------------------------------------------------------------------------------------
+ Nets             8741(98.45%)      0(0.00%)     0(0.00%)     1(0.01%)     60(0.68%)       0(0.00%)        64(0.72%)       13(0.15%)       8879
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Nets Driven by
+----------------------------------------------------------------------------------------------------------------------------------------------------
+Primary Input     0(0.00%)          0(0.00%)     0(0.00%)     1(1.85%)     53(98.15%)      0(0.00%)        0(0.00%)        0(0.00%)        54
+Tri-State         0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Black Box         0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Sequential        1608(99.94%)      0(0.00%)     0(0.00%)     0(0.00%)     0(0.00%)        0(0.00%)        1(0.06%)        0(0.00%)        1609
+Combinational     7133(98.85%)      0(0.00%)     0(0.00%)     0(0.00%)     7(0.10%)        0(0.00%)        63(0.87%)       13(0.18%)       7216
+Memory            0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+Clock Gate        0(0%)             0(0%)        0(0%)        0(0%)        0(0%)           0(0%)           0(0%)           0(0%)           0
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+List of nonannotated nets :
+	u_logic/hmastlock_o
+	FE_UNCONNECTED_10
+	FE_UNCONNECTED_11
+	FE_UNCONNECTED_6
+	FE_UNCONNECTED_7
+	FE_UNCONNECTED_8
+	FE_UNCONNECTED_9
+	HRDATA[31]
+	HRDATA[30]
+	HRDATA[29]
+	HRDATA[28]
+	HRDATA[27]
+	HRDATA[26]
+	HRESETn
+	HRDATA[21]
+	HRDATA[25]
+	HRDATA[24]
+	HRDATA[22]
+	HRDATA[23]
+	HRDATA[18]
+	HRDATA[19]
+	HRDATA[20]
+	HRDATA[12]
+	HRDATA[11]
+	HRDATA[10]
+	HRDATA[13]
+	HRDATA[14]
+	HRDATA[15]
+	HRDATA[16]
+	HRDATA[17]
+	HRDATA[9]
+	HRDATA[2]
+	HRDATA[3]
+	HRDATA[4]
+	HRDATA[5]
+	HRDATA[6]
+	HRDATA[7]
+	HRDATA[8]
+	HRDATA[0]
+	HRDATA[1]
+	IRQ[13]
+	IRQ[14]
+	HREADY
+	IRQ[15]
+	NMI
+	HRESP
+	IRQ[12]
+	IRQ[11]
+	IRQ[10]
+	IRQ[9]
+	IRQ[8]
+	IRQ[7]
+	IRQ[5]
+	IRQ[6]
+	RXEV
+	IRQ[1]
+	IRQ[2]
+	IRQ[3]
+	IRQ[4]
+	IRQ[0]
+	u_logic/htrans_o[1]
+	u_logic/hsize_o[0]
+	u_logic/haddr_o[0]
+	u_logic/haddr_o[1]
+	u_logic/haddr_o[30]
+	u_logic/haddr_o[29]
+	u_logic/haddr_o[6]
+	u_logic/hprot_o[2]
+	u_logic/haddr_o[31]
+	u_logic/hprot_o[0]
+	u_logic/haddr_o[9]
+	u_logic/haddr_o[15]
+	u_logic/sleeping_o
+
+73 nets with no annotation
+1
+#####################################################################
+#       check/update/report power
+#####################################################################
+check_power
+Information: Checking 'out_of_table_range'.
+Warning: There are 862 out_of_range ramps.
+Warning: There are 30 out_of_range loads.
+Information: Checking 'missing_table'.
+Information: Checking 'missing_function'.
+0
+update_power
+Information: Running averaged power analysis... (PWR-601)
+1
+report_power -hierarchy > power_ptpx_${corner}.rpt
+exit
+Information: Defining new variable 'MAX_INS_DELAY'. (CMD-041)
+Information: Defining new variable 'DR_CELL_NAME'. (CMD-041)
+Information: Defining new variable 'type'. (CMD-041)
+Information: Defining new variable 'PR_DIR'. (CMD-041)
+Information: Defining new variable 'begintime'. (CMD-041)
+Information: Defining new variable 'DR_CELL_PIN'. (CMD-041)
+Information: Defining new variable 'DFF_CKQ'. (CMD-041)
+Information: Defining new variable 'CLK_PER'. (CMD-041)
+Information: Defining new variable 'IP_DELAY'. (CMD-041)
+Information: Defining new variable 'corner'. (CMD-041)
+Information: Defining new variable 'modname'. (CMD-041)
+Information: Defining new variable 'clkname'. (CMD-041)
+Suppressed Messages Summary:
+Id          Severity      Occurrences   Suppressed
+-------------------------------------------------------------------------------
+RC-004      Warning               106            6
+Total 1 type of message is suppressed
+
+Timing updates: 1 (1 implicit, 0 explicit) (0 incremental, 1 full)
+Noise updates: 0 (0 implicit, 0 explicit) (0 incremental, 0 full)
+Maximum memory usage for this session: 433.75 MB
+CPU usage for this session: 6 seconds 
+Elapsed time for this session: 14 seconds
+Diagnostics summary: 111 warnings, 16 informationals
+
+Thank you for using pt_shell!

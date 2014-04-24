@@ -1,0 +1,35 @@
+./main.x
+0 s top.stub0 WRITE 4 10000200
+0 s top.stub1 WRITE 4 100
+10 ns top.mem1 WRITE 0x200
+10 ns top.mem0 WRITE 0x100
+40 ns top.stub0 WRITE 4 10000204
+40 ns top.stub1 WRITE 4 104
+50 ns top.mem1 WRITE 0x204
+50 ns top.mem0 WRITE 0x104
+80 ns top.stub0 READ 4 10000200
+80 ns top.stub1 READ 4 100
+90 ns top.mem1 READ 0x200
+90 ns top.mem0 READ 0x100
+140 ns top.stub0 READ 4 10000204
+140 ns top.stub1 READ 4 104
+150 ns top.mem1 READ 0x204
+150 ns top.mem0 READ 0x104
+200 ns top.stub0 WRITE 4 200
+200 ns top.stub1 WRITE 4 10000100
+210 ns top.mem0 WRITE 0x200
+210 ns top.mem1 WRITE 0x100
+240 ns top.stub0 WRITE 4 204
+240 ns top.stub1 WRITE 4 10000104
+250 ns top.mem0 WRITE 0x204
+250 ns top.mem1 WRITE 0x104
+280 ns top.stub0 READ 4 200
+280 ns top.stub1 READ 4 10000100
+290 ns top.mem0 READ 0x200
+290 ns top.mem1 READ 0x100
+340 ns top.stub0 READ 4 204
+340 ns top.stub1 READ 4 10000104
+350 ns top.mem0 READ 0x204
+350 ns top.stub0 Completed
+350 ns top.mem1 READ 0x104
+350 ns top.stub1 Completed

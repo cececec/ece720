@@ -1,0 +1,50 @@
+time ./Cortex-M3.x -a ../image/fibonacci.axf
+
+Fast Models [8.2.72 (Aug 15 2013)]
+Copyright 2000-2013 ARM Limited.
+All Rights Reserved.
+
+starting...
+fib(0) = 0
+fib(1) = 1
+fib(2) = 1
+fib(3) = 2
+fib(4) = 3
+fib(5) = 5
+fib(6) = 8
+fib(7) = 13
+fib(8) = 21
+fib(9) = 34
+fib(10) = 55
+fib(11) = 89
+fib(12) = 144
+fib(13) = 233
+fib(14) = 377
+fib(15) = 610
+fib(16) = 987
+fib(17) = 1597
+fib(18) = 2584
+fib(19) = 4181
+fib(20) = 6765
+fib(21) = 10946
+fib(22) = 17711
+fib(23) = 28657
+fib(24) = 46368
+finishing...
+SystemC: simulation stopped by user.
+Simulation Time: 75063500 ns
+STATISTICS for addr range 0x0 to 0xffff
+Number of Blocking Reads:  3555139
+Number of Blocking Writes: 15
+Minimum address accessed:  0x0
+Maximum address accessed:  0x8454
+STATISTICS for addr range 0x10000 to 0x1fffffff
+Number of Blocking Reads:  395842
+Number of Blocking Writes: 394251
+Minimum address accessed:  0x1fed8
+Maximum address accessed:  0x1fff8
+STATISTICS for addr range 0x20000000 to 0xffffffff
+Number of Blocking Reads:  0
+Number of Blocking Writes: 359
+Minimum address accessed:  0x40000000
+Maximum address accessed:  0x40000000

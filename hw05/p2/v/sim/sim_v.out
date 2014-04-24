@@ -1,0 +1,85 @@
+vlib work
+vlog ../src/rtl/cortexm0ds_logic.v ../src/rtl/CORTEXM0DS.v cortexm0ds_tb.v
+QuestaSim vlog 10.2b_1 Compiler 2013.06 Jun  7 2013
+-- Compiling module cortexm0ds_logic
+-- Compiling module CORTEXM0DS
+-- Compiling module cortexm0ds_tb
+
+Top level modules:
+	cortexm0ds_tb
+vopt cortexm0ds_tb -o cortexm0ds_tb_opt
+QuestaSim vopt 10.2b_1 Compiler 2013.06 Jun  7 2013
+
+Top level modules:
+	cortexm0ds_tb
+
+Analyzing design...
+-- Loading module cortexm0ds_tb
+-- Loading module CORTEXM0DS
+-- Loading module cortexm0ds_logic
+Optimizing 3 design-units (inlining 2 instances):
+-- Inlining module cortexm0ds_logic(fast)
+-- Inlining module CORTEXM0DS(fast)
+-- Optimizing module cortexm0ds_tb(fast)
+Optimized design name is cortexm0ds_tb_opt
+time vsim cortexm0ds_tb_opt -c -do "run -all"
+Reading /mtitcl/vsim/pref.tcl 
+
+# 10.2b_1
+
+# vsim -do {run -all} -c cortexm0ds_tb_opt 
+# //  Questa Sim
+# //  Version 10.2b_1 linux Jun  7 2013
+# //
+# //  Copyright 1991-2013 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading work.cortexm0ds_tb(fast)
+# run -all 
+#                    0: ----------------------------------------------
+#                    0: ARM(r) Cortex(tm)-M0 DesignStart(tm) Testbench
+#                    0: (c) Copyright 2010 ARM Limited
+#                    0: All Rights Reserved
+#                    0: ----------------------------------------------
+# 
+#                    0: Loading initial memory content...
+#                    0: ...complete
+# 
+#                 1015: Simulation leaving reset
+# starting...
+# fib(0) = 0
+# fib(1) = 1
+# fib(2) = 1
+# fib(3) = 2
+# fib(4) = 3
+# fib(5) = 5
+# fib(6) = 8
+# fib(7) = 13
+# fib(8) = 21
+# fib(9) = 34
+# fib(10) = 55
+# fib(11) = 89
+# fib(12) = 144
+# fib(13) = 233
+# fib(14) = 377
+# fib(15) = 610
+# fib(16) = 987
+# fib(17) = 1597
+# fib(18) = 2584
+# fib(19) = 4181
+# fib(20) = 6765
+# fib(21) = 10946
+# fib(22) = 17711
+# fib(23) = 28657
+# fib(24) = 46368
+# finishing...
+#             82839115: Simulation stop requested by CPU
+# 
+# ** Note: Data structure takes 7134884 bytes of memory
+#          Process time 389.21 seconds
+#          $finish    : cortexm0ds_tb.v(240)
+#    Time: 82839115 ns  Iteration: 1  Instance: /cortexm0ds_tb
