@@ -1,6 +1,0 @@
-*-----------------------------------------------------------------------------
-* XY power pad location file
-* vsrc name X(um) Y(um) LEF/Tech Layer <R=value ohm> <C=value F> <L=value H>
-* Package R,L and C parameters are optional
-*-----------------------------------------------------------------------------
-VDD 6.0 100.0 metal6

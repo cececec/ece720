@@ -1,3 +1,0 @@
-# time command bytes address
- 80 ns READ    0x40   0x00200
-350 ns READ    0x40   0x00380
