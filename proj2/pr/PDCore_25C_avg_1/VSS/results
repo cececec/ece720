@@ -1,0 +1,265 @@
+
+Results for ir (linear filters):
+================================
+
+*
+* Data filtering results for IR drop:
+*	Overall data minimum:        0V
+*	Overall data average: 0.0159584V
+*	Overall data maximum: 0.0206934V
+*
+* Filter 1:  279713  of  279713  data values fell into this filter.
+*	filtered data range:          0V - 0.0206934V
+*	filtered data average: 0.0159584V
+*	   83269 values were in range 1: 0.0181067V - 0.0206934V
+*	   99371 values were in range 2:  0.01552V - 0.0181067V
+*	   52223 values were in range 3: 0.0129334V -  0.01552V
+*	   32406 values were in range 4: 0.0103467V - 0.0129334V
+*	    6277 values were in range 5: 0.00776001V - 0.0103467V
+*	    2673 values were in range 6: 0.00517334V - 0.00776001V
+*	    1957 values were in range 7: 0.00258667V - 0.00517334V
+*	    1537 values were in range 8:        0V - 0.00258667V
+
+
+
+Results for ir (limit filters):
+===============================
+
+*
+* Data filtering results for IR drop:
+*	Overall data minimum:        0V
+*	Overall data average: 0.0159584V
+*	Overall data maximum: 0.0206934V
+*
+* Filter 1:  279713  of  279713  data values fell into this filter.
+*	filtered data range:          0V - 0.0206934V
+*	filtered data average: 0.0159584V
+*	       0 values were in range 1:    0.095V -    0.095V
+*	       0 values were in range 2: 0.0870833V -    0.095V
+*	       0 values were in range 3: 0.0791667V - 0.0870833V
+*	       0 values were in range 4:  0.07125V - 0.0791667V
+*	       0 values were in range 5: 0.0633333V -  0.07125V
+*	       0 values were in range 6: 0.0554167V - 0.0633333V
+*	       0 values were in range 7:   0.0475V - 0.0554167V
+*	  279713 values were in range 8:   -1e-06V -   0.0475V
+
+======> PASSED !
+
+
+Results for reff:
+===============
+
+*
+* Data filtering results for effective resistance:
+*	Overall data minimum:  13.4654Ohm
+*	Overall data average:  35.7566Ohm
+*	Overall data maximum:  63.8404Ohm
+*
+* Filter 1:  43297  of  43297  data values fell into this filter.
+*	filtered data range:    13.4654Ohm -  63.8404Ohm
+*	filtered data average:  35.7566Ohm
+*	    1226 values were in range 1:  57.5435Ohm -  63.8404Ohm
+*	    5114 values were in range 2:  51.2466Ohm -  57.5435Ohm
+*	    5628 values were in range 3:  44.9498Ohm -  51.2466Ohm
+*	    6219 values were in range 4:  38.6529Ohm -  44.9498Ohm
+*	    6280 values were in range 5:   32.356Ohm -  38.6529Ohm
+*	    6533 values were in range 6:  26.0591Ohm -   32.356Ohm
+*	    7453 values were in range 7:  19.7622Ohm -  26.0591Ohm
+*	    4844 values were in range 8:  13.4654Ohm -  19.7622Ohm
+
+
+
+Results for tc:
+===============
+
+*
+* Data filtering results for tap current:
+*	Overall data minimum: -3.69505e-05A
+*	Overall data average: -5.33493e-07A
+*	Overall data maximum:        0A
+*	Total current: -0.0230986A
+*
+* Filter 1:  16747  of  43297  data values fell into this filter.
+*	filtered data range:   -3.69505e-05A - -1.83847e-09A
+*	filtered data average: -1.37927e-06A
+*	       0 values were in range 1:   -1e+09A -   -0.001A
+*	       0 values were in range 2:   -0.001A -  -0.0001A
+*	     282 values were in range 3:  -0.0001A -   -1e-05A
+*	    5620 values were in range 4:   -1e-05A -   -1e-06A
+*	    8021 values were in range 5:   -1e-06A -   -1e-07A
+*	    2704 values were in range 6:   -1e-07A -   -1e-08A
+*	     120 values were in range 7:   -1e-08A -   -1e-09A
+*	       0 values were in range 8:   -1e-09A -   -1e-20A
+
+
+
+Results for rc:
+===============
+
+*
+* Data filtering results for resistor current:
+*	Overall data minimum:        0A
+*	Overall data average: 9.90002e-06A
+*	Overall data maximum: 0.0229928A
+*
+* Filter 1:  873  of  382886  data values fell into this filter.
+*	filtered data range:   0.00050386A - 0.0229928A
+*	filtered data average: 0.00212665A
+*	       1 values were in range 1:    0.016A -    1e+09A
+*	      37 values were in range 2:    0.008A -    0.016A
+*	      40 values were in range 3:    0.004A -    0.008A
+*	     251 values were in range 4:    0.002A -    0.004A
+*	     396 values were in range 5:    0.001A -    0.002A
+*	     148 values were in range 6:   0.0005A -    0.001A
+*	       0 values were in range 7:   -10000A -   -10000A
+*	       0 values were in range 8:   -10000A -   -10000A
+
+
+
+Results for rj:
+===============
+
+*
+* Data filtering results for current density: (J/JMAX)
+*	Overall data minimum:        0
+*	Overall data average: 0.0311411
+*	Overall data maximum:  2.30003
+*
+* Filter 1:  8493  of  382886  data values fell into this filter.
+*	filtered data range:    0.25001 -  2.30003
+*	filtered data average: 0.437395
+*	      86 values were in range 1:        1 -    1e+09
+*	     591 values were in range 2:     0.75 -        1
+*	    1531 values were in range 3:      0.5 -     0.75
+*	    6285 values were in range 4:     0.25 -      0.5
+*	       0 values were in range 5:   -10000 -   -10000
+*	       0 values were in range 6:   -10000 -   -10000
+*	       0 values were in range 7:   -10000 -   -10000
+*	       0 values were in range 8:   -10000 -   -10000
+
+======> FAILED ! (current density violation)
+
+
+Results for iv:
+===============
+
+*
+* Data filtering results for instance based IR drop:
+*	Overall data minimum: 0.000333621V
+*	Overall data average: 0.0165669V
+*	Overall data maximum: 0.0206934V
+*
+* Filter 1:  43297  of  43297  data values fell into this filter.
+*	filtered data range:   0.000333621V - 0.0206934V
+*	filtered data average: 0.0165669V
+*	       0 values were in range 1:    0.095V -    0.095V
+*	       0 values were in range 2: 0.0870833V -    0.095V
+*	       0 values were in range 3: 0.0791667V - 0.0870833V
+*	       0 values were in range 4:  0.07125V - 0.0791667V
+*	       0 values were in range 5: 0.0633333V -  0.07125V
+*	       0 values were in range 6: 0.0554167V - 0.0633333V
+*	       0 values were in range 7:   0.0475V - 0.0554167V
+*	   43297 values were in range 8:   -1e-06V -   0.0475V
+
+
+
+Results for vv:
+===============
+
+*
+* Data filtering results for voltage across vias and contacts:
+*	Overall data minimum: 1.7075e-11V
+*	Overall data average: 4.36437e-06V
+*	Overall data maximum: 0.000296586V
+*
+* Filter 1:  0  of  109976  data values fell into this filter.
+
+
+
+Results for rv:
+===============
+
+*
+* Data filtering results for resistor voltage:
+*	Overall data minimum:        0V
+*	Overall data average: 5.73371e-06V
+*	Overall data maximum: 0.00180751V
+*
+* Filter 1:  382886  of  382886  data values fell into this filter.
+*	filtered data range:          0V - 0.00180751V
+*	filtered data average: 5.73371e-06V
+*	       2 values were in range 1: 0.00158157V - 0.00180751V
+*	      11 values were in range 2: 0.00135564V - 0.00158157V
+*	      41 values were in range 3: 0.0011297V - 0.00135564V
+*	      67 values were in range 4: 0.000903757V - 0.0011297V
+*	     106 values were in range 5: 0.000677818V - 0.000903757V
+*	     153 values were in range 6: 0.000451879V - 0.000677818V
+*	     629 values were in range 7: 0.000225939V - 0.000451879V
+*	  381877 values were in range 8:        0V - 0.000225939V
+
+
+
+Results for vu:
+===============
+
+*
+* Data filtering results for voltage across package model:
+*	Overall data minimum: 2.30986e-10V
+*	Overall data average: 2.30986e-10V
+*	Overall data maximum: 2.30986e-10V
+*
+* Filter 1:  1  of  1  data values fell into this filter.
+*	filtered data range:   2.30986e-10V - 2.30986e-10V
+*	filtered data average: 2.30986e-10V
+*	       0 values were in range 1:     0.01V -    1e+09V
+*	       0 values were in range 2:    0.008V -     0.01V
+*	       0 values were in range 3:    0.006V -    0.008V
+*	       0 values were in range 4:    0.004V -    0.006V
+*	       0 values were in range 5:    0.002V -    0.004V
+*	       1 values were in range 6:        0V -    0.002V
+*	       0 values were in range 7:        0V -        0V
+*	       0 values were in range 8:        0V -        0V
+
+
+
+Results for pi:
+===============
+
+*
+* Data filtering results for power gate I/Idsat:
+*	No data found.
+
+
+
+Results for pv:
+===============
+
+*
+* Data filtering results for power gate voltage:
+*	No data found.
+
+
+
+Results for vc:
+===============
+
+*
+* Data filtering results for voltage source current:
+*	Overall data minimum: 0.0230986A
+*	Overall data average: 0.0230986A
+*	Overall data maximum: 0.0230986A
+*	Total current: 0.0230986A
+*
+* Filter 1:  1  of  1  data values fell into this filter.
+*	filtered data range:   0.0230986A - 0.0230986A
+*	filtered data average: 0.0230986A
+*	       1 values were in range 1: 0.0230986A - 0.0230986A
+*	       0 values were in range 2: 0.0230986A - 0.0230986A
+*	       0 values were in range 3: 0.0230986A - 0.0230986A
+*	       0 values were in range 4: 0.0230986A - 0.0230986A
+*	       0 values were in range 5: 0.0230986A - 0.0230986A
+*	       0 values were in range 6: 0.0230986A - 0.0230986A
+*	       0 values were in range 7: 0.0230986A - 0.0230986A
+*	       0 values were in range 8: 0.0230986A - 0.0230986A
+
+

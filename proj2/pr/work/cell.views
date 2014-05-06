@@ -1,0 +1,6 @@
+type standard fast default
+type macro fast_accurate default
+type io accurate default
+type standard fast
+type macro fast
+type io fast

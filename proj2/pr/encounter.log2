@@ -1,0 +1,643 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : /ncsu/cadence2012/edi/tools/lib/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /ncsu/cadence2012/oa/lib/linux_rhel40_gcc44x_32/opt/liboaPlugIn.so)
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter v09.11-s084_1" on Mon May  5 21:50:13 2014 (mem=46.5M) ---
+--- Running on grendel11.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
+This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+*** Memory pool thread-safe mode activated.
+<CMD> loadConfig design.conf 0
+Reading config file - design.conf
+<CMD> commitConfig
+
+Loading Lef file /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef...
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Mon May  5 21:51:12 2014
+viaInitial ends at Mon May  5 21:51:12 2014
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../v/src/gate/cortex_soc.v'
+Reading verilog netlist '../v/src/gate/AHB_Lite_2s_synth.v'
+Inserting temporary buffers to remove assignment statements.
+Reading verilog netlist '../v/src/gate/DW_memctl.v'
+Reading verilog netlist '../v/src/gate/CORTEXM0DS_final.v'
+Reading verilog netlist '../v/src/gate/DW_ahb.v'
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 288.199M, initial mem = 46.477M) ***
+*** End netlist parsing (cpu=0:00:00.3, real=0:00:01.0, mem=288.2M) ***
+Set top cell to cortex_soc.
+Reading max timing library '/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ecsm.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128760) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128786) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128924) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128941) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129010) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129027) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134192) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134218) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134356) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134373) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134442) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134459) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330053) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330079) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330105) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330131) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330177) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330194) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330211) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330228) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+ read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.03min, mem=11.9M, fe_cpu=0.16min, fe_mem=300.1M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell cortex_soc ...
+*** Netlist is unique.
+** info: there are 142 modules.
+** info: there are 13273 stdCell insts.
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 307.652M, initial mem = 46.477M) ***
+*info - Done with setDoAssign with 45 assigns removed and 0 assigns could not be removed.
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.1 mem=309.0M) ***
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+<CMD> fit
+<CMD> setDrawView fplan
+<CMD> redraw
+<CMD> redraw
+<CMD> zoomSelected
+<CMD> zoomSelected
+<CMD> fit
+<CMD> getMultiCpuUsage -localCpu
+<CMD> setPlaceMode -fp false
+<CMD> placeDesign -prePlaceOpt
+*** Starting placeDesign default flow ***
+*** Start deleteBufferTree ***
+Calculate delays in Single mode...
+Topological Sorting (CPU = 0:00:00.0, MEM = 326.5M)
+Number of Loop : 0
+Start delay calculation (mem=326.477M)...
+Delay calculation completed. (cpu=0:00:00.9 real=0:00:01.0 mem=331.758M 0)
+*** CDM Built up (cpu=0:00:01.6  real=0:00:02.0  mem= 331.8M) ***
+Info: Detect buffers to remove automatically.
+Analyzing netlist ...
+Updating netlist
+*summary: 96 instances (buffers/inverters) removed
+*** Finish deleteBufferTree (0:00:02.1) ***
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v0.892.2.8.2.1 (mem=331.9M)" ...
+*** Build Buffered Sizing Timing Model
+(cpu=0:00:00.4 mem=333.7M) ***
+*** Build Virtual Sizing Timing Model
+(cpu=0:00:00.5 mem=335.7M) ***
+Options: timingDriven ignoreScan ignoreSpare pinGuide gpeffort=medium 
+**WARN: (ENCDB-2082):	Scan chains were not defined, -ignoreScan option will be ignored. 
+Please first define the scan chains before using this option.
+#std cell=13177 #block=0 (0 floating + 0 preplaced) #ioInst=0 #net=14537 #term=53797 #term/net=3.70, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=282
+stdCell: 13177 single + 0 double + 0 multi
+Total standard cell length = 17.4315 (mm), area = 0.0244 (mm^2)
+Average module density = 0.898.
+Density for the design = 0.898.
+       = stdcell_area 91745 (24404 um^2) / alloc_area 102141 (27170 um^2).
+Pin Density = 0.586.
+            = total # of pins 53797 / total Instance area 91745.
+Identified 16 spare or floating instances, with no clusters.
+Found multi-fanin net HRDATA[31]
+Found multi-fanin net HRDATA[30]
+Found multi-fanin net HRDATA[29]
+Found multi-fanin net HRDATA[28]
+Found multi-fanin net HRDATA[27]
+Found multi-fanin net HRDATA[26]
+Found multi-fanin net HRDATA[25]
+Found multi-fanin net HRDATA[24]
+Found multi-fanin net HRDATA[23]
+Found multi-fanin net HRDATA[22]
+......
+Found 33 (out of 14537) multi-fanin nets.
+Iteration  1: Total net bbox = 1.243e-08 (1.68e-09 1.07e-08)
+              Est.  stn bbox = 1.243e-08 (1.68e-09 1.07e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 341.9M
+Iteration  2: Total net bbox = 1.243e-08 (1.68e-09 1.07e-08)
+              Est.  stn bbox = 1.243e-08 (1.68e-09 1.07e-08)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 341.9M
+Iteration  3: Total net bbox = 4.037e+02 (1.87e+02 2.17e+02)
+              Est.  stn bbox = 4.037e+02 (1.87e+02 2.17e+02)
+              cpu = 0:00:00.3 real = 0:00:00.0 mem = 341.9M
+Iteration  4: Total net bbox = 8.795e+04 (2.67e+04 6.12e+04)
+              Est.  stn bbox = 8.795e+04 (2.67e+04 6.12e+04)
+              cpu = 0:00:05.1 real = 0:00:05.0 mem = 341.9M
+Iteration  5: Total net bbox = 1.258e+05 (5.66e+04 6.92e+04)
+              Est.  stn bbox = 1.258e+05 (5.66e+04 6.92e+04)
+              cpu = 0:00:05.6 real = 0:00:06.0 mem = 341.9M
+Iteration  6: Total net bbox = 1.317e+05 (5.67e+04 7.50e+04)
+              Est.  stn bbox = 1.317e+05 (5.67e+04 7.50e+04)
+              cpu = 0:00:05.3 real = 0:00:06.0 mem = 342.5M
+Iteration  7: Total net bbox = 1.500e+05 (6.50e+04 8.49e+04)
+              Est.  stn bbox = 1.785e+05 (7.76e+04 1.01e+05)
+              cpu = 0:00:17.9 real = 0:00:18.0 mem = 340.4M
+Iteration  8: Total net bbox = 1.500e+05 (6.50e+04 8.49e+04)
+              Est.  stn bbox = 1.785e+05 (7.76e+04 1.01e+05)
+              cpu = 0:00:04.7 real = 0:00:05.0 mem = 339.0M
+Iteration  9: Total net bbox = 1.520e+05 (6.90e+04 8.30e+04)
+              Est.  stn bbox = 1.825e+05 (8.32e+04 9.93e+04)
+              cpu = 0:00:04.4 real = 0:00:04.0 mem = 341.1M
+Iteration 10: Total net bbox = 1.520e+05 (6.90e+04 8.30e+04)
+              Est.  stn bbox = 1.825e+05 (8.32e+04 9.93e+04)
+              cpu = 0:00:04.7 real = 0:00:05.0 mem = 339.6M
+Iteration 11: Total net bbox = 1.551e+05 (7.02e+04 8.49e+04)
+              Est.  stn bbox = 1.853e+05 (8.43e+04 1.01e+05)
+              cpu = 0:00:04.6 real = 0:00:04.0 mem = 341.6M
+Iteration 12: Total net bbox = 1.618e+05 (7.58e+04 8.60e+04)
+              Est.  stn bbox = 1.925e+05 (9.04e+04 1.02e+05)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 341.6M
+*** cost = 1.618e+05 (7.58e+04 8.60e+04) (cpu for global=0:00:36.2) real=0:00:36.0***
+Core Placement runtime cpu: 0:00:26.5 real: 0:00:26.0
+Starting refinePlace ...
+move report: placeLevelShifters moves 0 insts, mean move: 0.00 um, max move: 0.00 um
+  Spread Effort: high, pre-route mode. (cpu=0:00:07.7, real=0:00:08.0)
+move report: preRPlace moves 10611 insts, mean move: 0.76 um, max move: 4.82 um
+	max move on inst (u_cortexm0ds/u_logic/U4944): (52.06, 21.00) --> (55.48, 19.60)
+Placement tweakage begins.
+wire length = 1.643e+05 = 7.719e+04 H + 8.709e+04 V
+wire length = 1.550e+05 = 6.902e+04 H + 8.599e+04 V
+Placement tweakage ends.
+move report: wireLenOpt moves 6155 insts, mean move: 1.93 um, max move: 21.86 um
+	max move on inst (u_cortexm0ds/u_logic/U1561): (69.35, 117.60) --> (62.89, 133.00)
+move report: rPlace moves 11548 insts, mean move: 1.40 um, max move: 20.28 um
+	max move on inst (u_cortexm0ds/u_logic/U23): (147.06, 26.60) --> (164.54, 23.80)
+Statistics of distance of Instance movement in detailed placement:
+  maximum (X+Y) =        20.28 um
+  inst (u_cortexm0ds/u_logic/U23) with max move: (147.06, 26.6) -> (164.54, 23.8)
+  mean    (X+Y) =         1.40 um
+Total instances flipped for WireLenOpt: 139
+Total instances flipped, including legalization: 1158
+Total instances moved : 11548
+*** cpu=0:00:08.7   mem=346.7M  mem(used)=5.0M***
+Total net length = 1.551e+05 (6.903e+04 8.609e+04) (ext = 1.486e+04)
+*** End of Placement (cpu=0:00:46.9, real=0:00:47.0, mem=346.7M) ***
+default core: bins with density >  0.75 = 91.7 % ( 132 / 144 )
+*** Free Virtual Timing Model ...(mem=340.9M)
+Starting IO pin assignment...
+Completed IO pin assignment.
+**WARN: (ENCSP-9025):	No scan chain specified/traced.
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0:49, real = 0: 0:49, mem = 340.9M **
+<CMD> loadConfig cortex_soc_routed.enc 0
+**WARN: (ENCSYT-3033):	Cannot loadConfig after commitConfig.  This command is skipped.
+<CMD> commitConfig
+**WARN: (ENCSYT-3034):	commitConfig can only be run once per session.
+ This command is skipped since it's already run by user or by loadConfig command implicitly.
+<CMD> loadConfig cortex_soc_routed.enc 0
+**WARN: (ENCSYT-3033):	Cannot loadConfig after commitConfig.  This command is skipped.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reset to color id 0 for ahb (AHB_Lite_2s) and all their descendants.
+Reset to color id 0 for memctl_v4 (DW_memctl) and all their descendants.
+Reset to color id 0 for u_cortexm0ds (CORTEXM0DS) and all their descendants.
+Free PSO.
+EOS_INFO: EOS cleanup started. (MEM=340.9M)
+EOS_INFO: EOS cleanup completed. (MEM=340.9M)
+**ERROR: (ENCOAX-820):	The OA features are disabled in the current session of Encounter because the oax shared library could not be loaded properly. This could be because your installation was not properly configured. To enable OA features, exit the current session and re-launch Encounter either after fixing your installation by running the Configure Installation phase, or after setting the OA_HOME variable to point to a proper OA installation. Check the "OpenAccess Installation and Configuration Guide" manual for more information.
+
+**ERROR: (ENCOAX-850):	oaxCleanupData command can not be run as OA features are disabled in this session.
+Reading config file - ./cortex_soc_routed.enc.dat/cortex_soc.conf
+*** End library_loading (cpu=0.03min, mem=0.3M, fe_cpu=1.43min, fe_mem=333.7M) ***
+cortex_soc
+Set qxtech_file as /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/FreePDK45/ncsu_basekit/techfile/qrc/qrc.tch
+Loading preference file ./cortex_soc_routed.enc.dat/enc.pref.tcl ...
+Loading mode file ./cortex_soc_routed.enc.dat/cortex_soc.mode ...
+**WARN: (ENCEXT-3410):	Option -assumeMetalFill is recommended only in default extraction mode. It will use the basic cap table instead of extnded cap table in detail or TQRC/IQRC mode.
+loading place ...
+loading route ...
+<CMD> displayClockTree -level 1 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -preRoute 
+max_skew=0 min_skew=0
+<CMD> displayClockTree -level 2 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -preRoute 
+max_skew=0 min_skew=0
+max_term=HCLK__L1_I0/A loc(80300 553840)
+<CMD> displayClockTree -level 3 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -preRoute 
+max_skew=2 min_skew=2
+max_term=HCLK__L2_I0/A loc(290820 537600)
+<CMD> displayClockTree -level 1 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -preRoute 
+max_skew=0 min_skew=0
+<CMD> selectWire 266.3250 25.0200 276.3250 497.4400 8 VSS
+<CMD> redraw
+<CMD> deselectAll
+<CMD> redraw
+<CMD> displayClockTree -level 2 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -preRoute 
+max_skew=0 min_skew=0
+max_term=HCLK__L1_I0/A loc(80300 553840)
+<CMD> redraw
+<CMD> displayClockTree -level 3 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -preRoute 
+max_skew=2 min_skew=2
+max_term=HCLK__L2_I0/A loc(290820 537600)
+<CMD> redraw
+<CMD> displayClockTree -level 4 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -preRoute 
+max_skew=59 min_skew=39
+max_term=HCLK__L3_I0/A loc(382400 531440)
+<CMD> redraw
+<CMD> displayClockTree -level 5 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -preRoute 
+max_skew=56 min_skew=6
+max_term=HCLK__L4_I7/A loc(193160 614320)
+<CMD> redraw
+<CMD> redraw
+<CMD> redraw
+<CMD> setLayerPreference power -isVisible 0
+<CMD> setLayerPreference net -isVisible 0
+<CMD> redraw
+<CMD> displayClockTree -level 1 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -preRoute 
+max_skew=0 min_skew=0
+<CMD> redraw
+<CMD> displayClockTree -level 2 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -preRoute 
+max_skew=0 min_skew=0
+max_term=HCLK__L1_I0/A loc(80300 553840)
+<CMD> displayClockTree -level 3 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -preRoute 
+max_skew=2 min_skew=2
+max_term=HCLK__L2_I0/A loc(290820 537600)
+<CMD> displayClockTree -skew -allLevel -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -preRoute 
+<CMD> redraw
+<CMD> displayClockTree -skew -allLevel -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -preRoute 
+<CMD> displayClockTree -skew -allLevel -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -preRoute 
+<CMD> displayClockTree -level 2 -skew -preRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -preRoute 
+max_skew=0 min_skew=0
+max_term=HCLK__L1_I0/A loc(80300 553840)
+<CMD> displayClockTree -level 2 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -postRoute 
+Extraction called for design 'cortex_soc' of instances=46689 and nets=19153 using extraction engine 'postRoute' at effort level 'low' .
+Detail RC Extraction called for design cortex_soc.
+**WARN: (ENCEXT-6166):	Using capacitance table file without EXTENDED section is not recommended and will result in lower accuracy for clock nets in preRoute extraction and for all nets when using postRoute extraction -effortLevel low. Regeneration of full capacitance table is recommended.
+**WARN: (ENCEXT-3442):	An old version capacitance table file is being used with new extraction engine. To get accuracy improvement with new extraction engine, regenerate the new capacitance table file. Extraction will be done with 'standard' accuracy mode.
+**WARN: (ENCEXT-3032):	Since cap. table file was not provided, it will be created internally with the following process info:
+* Layer Id             : 1 - M1
+      Thickness        : 0.13
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 2 - M2
+      Thickness        : 0.14
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 3 - M3
+      Thickness        : 0.14
+      Min Width        : 0.07
+      Layer Dielectric : 4.1
+* Layer Id             : 4 - M4
+      Thickness        : 0.28
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 5 - M5
+      Thickness        : 0.28
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 6 - M6
+      Thickness        : 0.28
+      Min Width        : 0.14
+      Layer Dielectric : 4.1
+* Layer Id             : 7 - M7
+      Thickness        : 0.8
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 8 - M8
+      Thickness        : 0.8
+      Min Width        : 0.4
+      Layer Dielectric : 4.1
+* Layer Id             : 9 - M9
+      Thickness        : 2
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+* Layer Id             : 10 - M10
+      Thickness        : 2
+      Min Width        : 0.8
+      Layer Dielectric : 4.1
+extractDetailRC Option : -outfile ./cortex_soc_SAVxtm_9424.rcdb.d  -basic -newAssumeMetFill
+Assumed metal fill uses the following parameters:
+              Active Spacing      Min. Width
+                [microns]         [microns]
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M1 is not specified, it will use  0.600 microns.
+  Layer M1        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M2 is not specified, it will use  0.600 microns.
+  Layer M2        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M3 is not specified, it will use  0.600 microns.
+  Layer M3        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M4 is not specified, it will use  0.600 microns.
+  Layer M4        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M5 is not specified, it will use  0.600 microns.
+  Layer M5        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M6 is not specified, it will use  0.600 microns.
+  Layer M6        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M7 is not specified, it will use  0.600 microns.
+  Layer M7        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M8 is not specified, it will use  0.600 microns.
+  Layer M8        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M9 is not specified, it will use  0.600 microns.
+  Layer M9        0.600             0.400 
+**WARN: (ENCEXT-3087):	Fill active spacing for layer M10 is not specified, it will use  0.600 microns.
+  Layer M10        0.600             0.400 
+RC Mode: Detail [Assume Metal Fill, LEF Resistances]
+Capacitance Scaling Factor   : 1.00000
+Resistance Scaling Factor    : 1.00000
+Coupling Cap. Scaling Factor : 1.00000
+Clock Cap. Scaling Factor    : 1.00000
+Clock Res. Scaling Factor    : 1.00000
+Shrink Factor                : 1.00000
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 365.5M)
+Creating parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq' for storing RC.
+Extracted 10.0008% (CPU Time= 0:00:00.3  MEM= 377.1M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via1_4' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 20.0009% (CPU Time= 0:00:00.4  MEM= 381.7M)
+Extracted 30.0009% (CPU Time= 0:00:00.6  MEM= 383.1M)
+Extracted 40.001% (CPU Time= 0:00:00.7  MEM= 384.4M)
+Extracted 50.0011% (CPU Time= 0:00:00.8  MEM= 385.8M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via2_5' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 60.0011% (CPU Time= 0:00:01.0  MEM= 386.7M)
+Extracted 70.0012% (CPU Time= 0:00:01.1  MEM= 387.6M)
+Extracted 80.0013% (CPU Time= 0:00:01.3  MEM= 388.2M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via3_2' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 90.0013% (CPU Time= 0:00:01.5  MEM= 388.3M)
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via4_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via5_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via6_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via7_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+**WARN: (ENCEXT-2882):	Unable to find resistance for via 'via8_0' in capacitance table or LEF files. Check the capacitance table and LEF files. Assigning default value of 4.0 ohms.
+Extracted 100% (CPU Time= 0:00:01.9  MEM= 388.3M)
+Nr. Extracted Resistors     : 297183
+Nr. Extracted Ground Cap.   : 315809
+Nr. Extracted Coupling Cap. : 648812
+Opening parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq' for reading.
+Filtering XCap in 'relativeAndCoupling' mode using values coupling_c_threshold=0.1fF, relative_c_threshold=1 and total_c_threshold=0fF.
+Checking LVS Completed (CPU Time= 0:00:00.1  MEM= 367.5M)
+Creating parasitic data file './cortex_soc_SAVxtm_9424.rcdb_Filter.rcdb.d/header.seq' for storing RC.
+Closing parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq'. 18639 times net's RC data read were performed.
+Opening parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq' for reading.
+Detail RC Extraction DONE (CPU Time: 0:00:02.6  Real Time: 0:00:06.0  MEM: 365.750M)
+Opening parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq' for reading.
+RC Database In Completed (CPU Time= 0:00:00.3  MEM= 401.1M)
+Closing parasitic data file './cortex_soc_SAVxtm_9424.rcdb.d/header.seq'. 18639 times net's RC data read were performed.
+<CMD> deselectAll
+<CMD> fit
+<CMD> displayClockTree -level 1 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -postRoute 
+<CMD> displayClockTree -level 2 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -postRoute 
+<CMD> displayClockTree -level 3 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -level 6 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 6 -skew -postRoute 
+<CMD> displayClockTree -level 7 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 7 -skew -postRoute 
+**ERROR: (ENCCK-284):	The level of clock HCLK is 6
+<CMD> displayClockTree -level 6 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 6 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> deselectAll
+<CMD> fit
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -level 1 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -postRoute 
+<CMD> displayClockTree -level 2 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -postRoute 
+<CMD> displayClockTree -level 3 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -skew -allLevel -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -postRoute 
+<CMD> deselectAll
+<CMD> displayClockTree -skew -allLevel -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -skew -allLevel -postRoute 
+<CMD> displayClockTree -level 1 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -postRoute 
+<CMD> deselectAll
+<CMD> redraw
+<CMD> displayClockTree -level 1 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 1 -skew -postRoute 
+<CMD> displayClockTree -level 2 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 2 -skew -postRoute 
+<CMD> displayClockTree -level 3 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 3 -skew -postRoute 
+<CMD> displayClockTree -level 4 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 4 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> displayClockTree -level 5 -skew -postRoute
+Redoing specifyClockTree ...
+Checking spec file integrity...
+displayClockTree Option :  -level 5 -skew -postRoute 
+<CMD> deselectAll
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 399.195M, initial mem = 46.477M) ***
+--- Ending "Encounter" (totcpu=0:02:07, real=0:19:17, mem=399.2M) ---

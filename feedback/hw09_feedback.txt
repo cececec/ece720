@@ -1,0 +1,14 @@
+ECE720 hw09 Feedback for Huang,Ganqin
+
+(10/10) 1(files) Are the required files submitted, and are they correct?
+(10/10) 1(cap) Were the capacitance values calculated correctly?
+(10/10) 1(noise) Was the noise bump height calculated correctly?
+(15/15) 2 Minimum time to drive 1cm of wire? calculated correctly?
+(10/10) 3(files) Are the required files submitted, and are they correct?
+(10/10) 3(power) Do the simulated power values look correct?
+(20/20) 4 Was the IR-drop screen-shot submitted, and is it correct?
+
+Total:
+(0/0) Late Penalty
+(85/85) Total
+

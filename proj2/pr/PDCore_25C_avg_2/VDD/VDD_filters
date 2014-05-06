@@ -1,0 +1,189 @@
+filter rc 1 1.600000e-02 1.000000e+09
+filter rc 2 8.000000e-03 1.600000e-02
+filter rc 3 4.000000e-03 8.000000e-03
+filter rc 4 2.000000e-03 4.000000e-03
+filter rc 5 1.000000e-03 2.000000e-03
+filter rc 6 5.000000e-04 1.000000e-03
+filter rc 7 off
+filter rc 8 off
+
+filter rj 1 1.000000e+00 1.000000e+09
+filter rj 2 7.500000e-01 1.000000e+00
+filter rj 3 5.000000e-01 7.500000e-01
+filter rj 4 2.500000e-01 5.000000e-01
+filter rj 5 off
+filter rj 6 off
+filter rj 7 off
+filter rj 8 off
+
+filter rv 1 7.042761e-03 8.048869e-03
+filter rv 2 6.036652e-03 7.042761e-03
+filter rv 3 5.030543e-03 6.036652e-03
+filter rv 4 4.024435e-03 5.030543e-03
+filter rv 5 3.018326e-03 4.024435e-03
+filter rv 6 2.012217e-03 3.018326e-03
+filter rv 7 1.006109e-03 2.012217e-03
+filter rv 8 0.000000e+00 1.006109e-03
+
+filter rp 1 off
+filter rp 2 off
+filter rp 3 off
+filter rp 4 off
+filter rp 5 off
+filter rp 6 off
+filter rp 7 off
+filter rp 8 off
+
+filter vc 1 off
+filter vc 2 off
+filter vc 3 off
+filter vc 4 off
+filter vc 5 off
+filter vc 6 off
+filter vc 7 off
+filter vc 8 off
+
+filter vp 1 off
+filter vp 2 off
+filter vp 3 off
+filter vp 4 off
+filter vp 5 off
+filter vp 6 off
+filter vp 7 off
+filter vp 8 off
+
+filter ir 1 off
+filter ir 2 8.550000e-01 8.629167e-01
+filter ir 3 8.629167e-01 8.708333e-01
+filter ir 4 8.708333e-01 8.787500e-01
+filter ir 5 8.787500e-01 8.866667e-01
+filter ir 6 8.866667e-01 8.945833e-01
+filter ir 7 8.945833e-01 9.025000e-01
+filter ir 8 9.025000e-01 9.500010e-01
+
+filter tc 1 1.000000e-03 1.000000e+09
+filter tc 2 1.000000e-04 1.000000e-03
+filter tc 3 1.000000e-05 1.000000e-04
+filter tc 4 1.000000e-06 1.000000e-05
+filter tc 5 1.000000e-07 1.000000e-06
+filter tc 6 1.000000e-08 1.000000e-07
+filter tc 7 1.000000e-09 1.000000e-08
+filter tc 8 1.000000e-20 1.000000e-09
+
+filter er 1 off
+filter er 2 off
+filter er 3 off
+filter er 4 off
+filter er 5 off
+filter er 6 off
+filter er 7 off
+filter er 8 off
+
+filter iv 1 off
+filter iv 2 8.550000e-01 8.629167e-01
+filter iv 3 8.629167e-01 8.708333e-01
+filter iv 4 8.708333e-01 8.787500e-01
+filter iv 5 8.787500e-01 8.866667e-01
+filter iv 6 8.866667e-01 8.945833e-01
+filter iv 7 8.945833e-01 9.025000e-01
+filter iv 8 9.025000e-01 9.500010e-01
+
+filter vv 1 4.500000e-03 1.000000e+09
+filter vv 2 4.000000e-03 4.500000e-03
+filter vv 3 3.500000e-03 4.000000e-03
+filter vv 4 3.000000e-03 3.500000e-03
+filter vv 5 2.500000e-03 3.000000e-03
+filter vv 6 2.000000e-03 2.500000e-03
+filter vv 7 1.500000e-03 2.000000e-03
+filter vv 8 1.000000e-03 1.500000e-03
+
+filter vu 1 1.000000e-02 1.000000e+09
+filter vu 2 8.000000e-03 1.000000e-02
+filter vu 3 6.000000e-03 8.000000e-03
+filter vu 4 4.000000e-03 6.000000e-03
+filter vu 5 2.000000e-03 4.000000e-03
+filter vu 6 0.000000e+00 2.000000e-03
+filter vu 7 off
+filter vu 8 off
+
+filter dc 1 off
+filter dc 2 off
+filter dc 3 off
+filter dc 4 off
+filter dc 5 off
+filter dc 6 off
+filter dc 7 off
+filter dc 8 off
+
+filter dd 1 off
+filter dd 2 off
+filter dd 3 off
+filter dd 4 off
+filter dd 5 off
+filter dd 6 off
+filter dd 7 off
+filter dd 8 off
+
+filter fd 1 off
+filter fd 2 off
+filter fd 3 off
+filter fd 4 off
+filter fd 5 off
+filter fd 6 off
+filter fd 7 off
+filter fd 8 off
+
+filter dr 1 off
+filter dr 2 off
+filter dr 3 off
+filter dr 4 off
+filter dr 5 off
+filter dr 6 off
+filter dr 7 off
+filter dr 8 off
+
+filter ac 1 off
+filter ac 2 off
+filter ac 3 off
+filter ac 4 off
+filter ac 5 off
+filter ac 6 off
+filter ac 7 off
+filter ac 8 off
+
+filter pi 1 off
+filter pi 2 -1.142857e+20 -1.000000e+20
+filter pi 3 -1.285714e+20 -1.142857e+20
+filter pi 4 -1.428571e+20 -1.285714e+20
+filter pi 5 -1.571429e+20 -1.428571e+20
+filter pi 6 -1.714286e+20 -1.571429e+20
+filter pi 7 -1.857143e+20 -1.714286e+20
+filter pi 8 off
+
+filter pv 1 -1.250000e+20 -1.000000e+20
+filter pv 2 -1.500000e+20 -1.250000e+20
+filter pv 3 -1.750000e+20 -1.500000e+20
+filter pv 4 -2.000000e+20 -1.750000e+20
+filter pv 5 -2.250000e+20 -2.000000e+20
+filter pv 6 -2.500000e+20 -2.250000e+20
+filter pv 7 -2.750000e+20 -2.500000e+20
+filter pv 8 off
+
+filter reff 1 6.930171e+01 7.680345e+01
+filter reff 2 6.179997e+01 6.930171e+01
+filter reff 3 5.429823e+01 6.179997e+01
+filter reff 4 4.679649e+01 5.429823e+01
+filter reff 5 3.929474e+01 4.679649e+01
+filter reff 6 3.179300e+01 3.929474e+01
+filter reff 7 2.429126e+01 3.179300e+01
+filter reff 8 1.678952e+01 2.429126e+01
+
+filter rs 1 off
+filter rs 2 off
+filter rs 3 off
+filter rs 4 off
+filter rs 5 off
+filter rs 6 off
+filter rs 7 off
+filter rs 8 off
+

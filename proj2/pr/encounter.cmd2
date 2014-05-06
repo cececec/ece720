@@ -1,0 +1,103 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Mon May  5 21:50:14 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+#@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+#@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+#@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+#@(#)CDS: CPE v09.11-s023
+
+loadConfig design.conf 0
+commitConfig
+fit
+setDrawView fplan
+redraw
+redraw
+zoomSelected
+zoomSelected
+fit
+getMultiCpuUsage -localCpu
+setPlaceMode -fp false
+placeDesign -prePlaceOpt
+loadConfig cortex_soc_routed.enc 0
+commitConfig
+loadConfig cortex_soc_routed.enc 0
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign ./cortex_soc_routed.enc.dat cortex_soc
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+displayClockTree -level 1 -skew -preRoute
+displayClockTree -level 2 -skew -preRoute
+displayClockTree -level 3 -skew -preRoute
+displayClockTree -level 1 -skew -preRoute
+selectWire 266.3250 25.0200 276.3250 497.4400 8 VSS
+redraw
+deselectAll
+redraw
+displayClockTree -level 2 -skew -preRoute
+redraw
+displayClockTree -level 3 -skew -preRoute
+redraw
+displayClockTree -level 4 -skew -preRoute
+redraw
+displayClockTree -level 5 -skew -preRoute
+redraw
+redraw
+redraw
+setLayerPreference power -isVisible 0
+setLayerPreference net -isVisible 0
+redraw
+displayClockTree -level 1 -skew -preRoute
+redraw
+displayClockTree -level 2 -skew -preRoute
+displayClockTree -level 3 -skew -preRoute
+displayClockTree -skew -allLevel -preRoute
+redraw
+displayClockTree -skew -allLevel -preRoute
+displayClockTree -skew -allLevel -preRoute
+displayClockTree -level 2 -skew -preRoute
+displayClockTree -level 2 -skew -postRoute
+deselectAll
+fit
+displayClockTree -level 1 -skew -postRoute
+displayClockTree -level 2 -skew -postRoute
+displayClockTree -level 3 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -level 6 -skew -postRoute
+displayClockTree -level 7 -skew -postRoute
+displayClockTree -level 6 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+deselectAll
+fit
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -level 1 -skew -postRoute
+displayClockTree -level 2 -skew -postRoute
+displayClockTree -level 3 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -skew -allLevel -postRoute
+deselectAll
+displayClockTree -skew -allLevel -postRoute
+displayClockTree -level 1 -skew -postRoute
+deselectAll
+redraw
+displayClockTree -level 1 -skew -postRoute
+displayClockTree -level 2 -skew -postRoute
+displayClockTree -level 3 -skew -postRoute
+displayClockTree -level 4 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+displayClockTree -level 5 -skew -postRoute
+deselectAll

@@ -43,7 +43,7 @@ module cortex_soc (
   hsel_reg,
   s_rd_data,
   s_rd_ready,
-  hclk_2x,
+  hclk_2x
 );
 
 

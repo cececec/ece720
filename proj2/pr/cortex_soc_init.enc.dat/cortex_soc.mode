@@ -1,0 +1,3 @@
+setAnalysisMode -analysisType single -asyncChecks async -checkType setup -clkSrcPath false -clockPropagation forcedIdeal -skew true -virtualIPO false
+setDelayCalMode -engine default
+setIlmMode -highFanoutPort true -loopBack false 

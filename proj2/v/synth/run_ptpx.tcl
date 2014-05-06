@@ -14,7 +14,7 @@ set begintime [clock seconds]
 set clkname HCLK
 
 # set variable "modname" to the name of topmost module in design
-set modname CORTEXM0DS
+set modname cortex_soc
 
 # set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
 set PR_DIR    ../../pr/
@@ -33,7 +33,7 @@ set corner fast
 #set the number of digits to be used for delay results
 set report_default_significant_digits 4
 
-set CLK_PER 40
+set CLK_PER 4.7
 set DFF_CKQ 0.638
 set MAX_INS_DELAY 1.0
 set IP_DELAY [expr $MAX_INS_DELAY + $DFF_CKQ]
@@ -76,7 +76,7 @@ report_timing
 #####################################################################
 #       read switching activity file
 #####################################################################
-read_saif "../sim/waves.saif" -strip_path "cortexm0ds_tb/u_cortexm0ds"
+read_saif "../sim/waves.saif" -strip_path "tb/soc"
 report_switching_activity -list_not_annotated
 
 #####################################################################

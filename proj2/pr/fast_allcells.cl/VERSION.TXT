@@ -1,0 +1,14 @@
+* The organization, structure, and layout of this file are copyrights
+* and confidential and proprietary trade secrets of Cadence Design Systems,
+* subject to the terms and conditions of the license agreement in effect
+* between you and Cadence Design Systems, Inc.  This file and its information
+* may not be disclosed, sold, or otherwise transferred to any third party
+* without the express written consent of Cadence Design Systems, Inc.  Export
+* of any or all of this file in violation of any statute or regulation is
+* strictly prohibited.
+Library Name             : fast_allcells
+Library Major Version    : 4
+Application Name         : libgen
+Application Version      : LibGen Version v09.11-s023_1 (03/04/2010 05:16:59)
+Date Created             : 2014-May-05 19:57:42 (2014-May-05 23:57:42 GMT)
+Date Modified            : 2014-May-05 19:57:44 (2014-May-05 23:57:44 GMT)

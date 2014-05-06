@@ -27,7 +27,6 @@ clean:
 	-rm default.svf
 	-rm fixed_names_init
 	-rm $(MODNAME)_init.v
-	-rm $(GATE_DIR)/$(MODNAME)_final.v
 	-rm *.log
 	-rm *.sdf
 	-rm *.rpt

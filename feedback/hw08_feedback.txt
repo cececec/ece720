@@ -1,0 +1,17 @@
+ECE720 hw08 Feedback for Huang,Ganqin
+
+(5/5) 1(def) Does the CORTEXM0DS_routed.def file look correct?
+(5/5) 1(spef) Does the CORTEXM0DS_routed.spef file look correct?
+(5/5) 1(log) Does the run_route.log file look correct?
+(5/5) 1(tcl) Were the tcl files provided and do they look correct?
+(5/5) 1(rec) Does the iteration record have sufficient detail?
+(10/10) 1(hold) Was the required hold-time margin met?
+(5/5) 1(setup) Was the required setup-time margin met?
+(10/10) 2(spef) Does the i_ahb_DW_ahb_trialrouted.spef file look correct?
+(10/15) 2(indel) Does gen_indelay.tcl generate indelay.tcl correctly?
+(15/15) 2(pt) Does the modified run_pt.tcl script exectute correctly?
+
+Total:
+(0/0) Late Penalty (0 days late)
+(75/80) Total
+

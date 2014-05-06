@@ -1,0 +1,355 @@
+
+INFO (LIBGEN-3379): 
+  LibGen - Cell Library Preprocessor - Version v09.11-s023_1 (03/04/2010
+05:16:59)
+------------------------------------------------------------------------------------
+                  Copyright (c) 2007 Cadence Design Systems, Inc.
+
+
+
+INFO (LIBGEN-3380): Executing 32 bit version on host
+lib-33034.eos.ncsu.edu.
+
+
+INFO (LIBGEN-3381): Starting at 2014-May-05 19:57:42 (2014-May-05 23:57:42
+GMT).
+
+
+*** Command file: /tmp/libgen_31206.cmd ***
+input_type pr_lef
+setvar output_directory_path ./
+setvar generate_port_powerview true
+setvar library_name fast_allcells
+setvar tech_file /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/FreePDK45/ncsu_basekit/techfile/qrc/qrc.tch
+include /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/lefdef.layermap
+generic_power_names 0.95 {VDD}
+generic_ground_names 0.0 {VSS}
+lef_file_list {/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef}
+cell_list {*}
+filler_cell_list {FILL*}
+cell_decap_area {*} 0.100
+setvar default_frequency 200e+06
+
+***End of command file.***
+
+INFO (LIBGEN-3247): Parsing
+/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef.
+
+INFO (LIBGEN-3262): Beginning geometric view generation.
+
+INFO (LIBGEN-3247): Parsing
+/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef.
+
+INFO (LIBGEN-3339): Processing LEF cell AND2_X1, 133 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND2_X2, 132 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND2_X4, 131 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND3_X1, 130 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND3_X2, 129 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND3_X4, 128 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND4_X1, 127 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND4_X2, 126 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AND4_X4, 125 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell ANTENNA_X1, 124 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI211_X1, 123 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI211_X2, 122 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI211_X4, 121 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI21_X1, 120 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI21_X2, 119 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI21_X4, 118 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI221_X1, 117 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI221_X2, 116 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI221_X4, 115 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI222_X1, 114 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI222_X2, 113 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI222_X4, 112 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI22_X1, 111 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI22_X2, 110 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell AOI22_X4, 109 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X1, 108 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X16, 107 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X2, 106 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X32, 105 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X4, 104 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell BUF_X8, 103 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKBUF_X1, 102 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKBUF_X2, 101 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKBUF_X3, 100 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATETST_X1, 99 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATETST_X2, 98 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATETST_X4, 97 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATETST_X8, 96 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATE_X1, 95 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATE_X2, 94 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATE_X4, 93 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell CLKGATE_X8, 92 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFRS_X1, 91 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFRS_X2, 90 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFR_X1, 89 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFR_X2, 88 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFS_X1, 87 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFFS_X2, 86 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFF_X1, 85 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DFF_X2, 84 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DLH_X1, 83 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DLH_X2, 82 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DLL_X1, 81 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell DLL_X2, 80 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FA_X1, 79 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X1, 78 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X16, 77 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X2, 76 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X32, 75 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X4, 74 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell FILLCELL_X8, 73 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell HA_X1, 72 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X1, 71 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X16, 70 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X2, 69 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X32, 68 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X4, 67 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell INV_X8, 66 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell LOGIC0_X1, 65 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell LOGIC1_X1, 64 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell MUX2_X1, 63 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell MUX2_X2, 62 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND2_X1, 61 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND2_X2, 60 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND2_X4, 59 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND3_X1, 58 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND3_X2, 57 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND3_X4, 56 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND4_X1, 55 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND4_X2, 54 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NAND4_X4, 53 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR2_X1, 52 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR2_X2, 51 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR2_X4, 50 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR3_X1, 49 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR3_X2, 48 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR3_X4, 47 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR4_X1, 46 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR4_X2, 45 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell NOR4_X4, 44 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI211_X1, 43 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI211_X2, 42 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI211_X4, 41 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI21_X1, 40 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI21_X2, 39 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI21_X4, 38 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI221_X1, 37 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI221_X2, 36 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI221_X4, 35 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI222_X1, 34 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI222_X2, 33 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI222_X4, 32 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI22_X1, 31 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI22_X2, 30 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI22_X4, 29 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OAI33_X1, 28 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR2_X1, 27 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR2_X2, 26 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR2_X4, 25 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR3_X1, 24 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR3_X2, 23 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR3_X4, 22 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR4_X1, 21 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR4_X2, 20 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell OR4_X4, 19 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFRS_X1, 18 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFRS_X2, 17 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFR_X1, 16 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFR_X2, 15 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFS_X1, 14 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFFS_X2, 13 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFF_X1, 12 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell SDFF_X2, 11 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TBUF_X1, 10 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TBUF_X16, 9 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TBUF_X2, 8 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TBUF_X4, 7 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TBUF_X8, 6 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TINV_X1, 5 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell TLAT_X1, 4 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell XNOR2_X1, 3 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell XNOR2_X2, 2 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell XOR2_X1, 1 more cells to go.
+
+INFO (LIBGEN-3339): Processing LEF cell XOR2_X2, 0 more cells to go.
+
+INFO (LIBGEN-3264): Beginning power view generation.
+
+INFO (LIBGEN-3259): Beginning interface node generation.
+
+INFO (LIBGEN-3261): Beginning port power view generation.
+
+Process Info :
+  User time          = 0 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 47,321,088 bytes
+  Total alloc size   = 15,982,592 bytes
+  In use alloc size  = 9,165,016 bytes
+  Page fault w/o IO  = 5,146
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+INFO (LIBGEN-3265): 
+******* Libgen Summary Information *******
+Flow type was PR_LEF
+Libgen copied 0 cells from existing libraries.
+Libgen processed 134 cells.
+Graybox data was found for 0 cells.
+Obstruction data was found for 103 cells.
+Port powergrid views were created for 134 cells.
+Detailed powergrid views were created for 0 cells.
+Detailed powergrid views were discarded for 0 cells.
+Detailed Dynamic powergrid views were created for 0 cells.
+Abstract powergrid views were created for 0 cells.
+Reduced powergrid views were created for 0 cells.
+Collapsed powergrid views were created for 0 cells.
+******************************************
+
+
+Ending at 2014-May-05 19:57:45 (2014-May-05 23:57:45 GMT).
+  Run duration:          00:00:00 CPU time, 00:00:03 clock time
+
+  Warning messages:      0
+  Error messages:        0
+  Fatal error messages:  0
+
+Exit code 0.
+LibGen exited successfully.

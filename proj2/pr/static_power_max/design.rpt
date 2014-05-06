@@ -1,0 +1,93 @@
+*----------------------------------------------------------------------------------------
+*	Encounter Power System 09.11-s082_1 (32bit) 03/08/2010 17:32 (Linux 2.6)
+*	
+*
+* 	Date & Time:	2014-May-05 20:07:19 (2014-May-06 00:07:19 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: cortex_soc
+*
+*	Liberty Libraries used: 
+*	        /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ecsm.lib
+*	        /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ecsm.lib
+*
+*	Power Domain used: 
+*		Rail:        VDD 	Voltage:       1.25 
+*
+*	Parasitic Files used: 
+*	        cortex_soc_routed.spef
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        waves.tcf
+*	        waves.tcf
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: N.A.
+*
+*       Clock Gates Enable Activity: N.A.
+*
+*       Primary Input Activity: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile design.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:       20.02      69.35%
+Total Switching Power:      7.061      24.45%
+Total Leakage Power:        1.789      6.196%
+Total Power:                28.87 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.422      0.7374      0.3272       4.486       15.54 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                      16.38       5.059        1.45       22.88       79.26 
+Clock (Combinational)             0.2262       1.265     0.01143       1.502       5.203 
+-----------------------------------------------------------------------------------------
+Total                              20.02       7.061       1.789       28.87         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+VDD                      1.25      20.02       7.061       1.789       28.87         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clock                             0.2262       1.265     0.01143       1.502       5.203 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)      0.2262       1.265     0.01143       1.502       5.203 
+-----------------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+* 		Highest Average Power:               HCLK__L1_I0 (INV_X32): 	   0.04619 
+* 		Highest Leakage Power: u_cortexm0ds/u_logic/FE_PHC972_n5755 (BUF_X32): 	 0.0004778 
+* 		Total Cap: 	8.75029e-11 F
+* 		Total instances in design: 17237
+* 		Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+* 		Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

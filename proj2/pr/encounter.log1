@@ -1,0 +1,51 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : /ncsu/cadence2012/edi/tools/lib/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /ncsu/cadence2012/oa/lib/linux_rhel40_gcc44x_32/opt/liboaPlugIn.so)
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter v09.11-s084_1" on Mon May  5 21:44:44 2014 (mem=46.5M) ---
+--- Running on grendel8.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.3.1.el6.x86_64) ---
+This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Encounter terminated by external (TERM) signal.
+*** Memory pool thread-safe mode activated.
+Encounter terminated by internal (SEGV) error/signal...
+
+*** Stack trace:
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 193.621M, initial mem = 46.480M) ***
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 193.621M, initial mem = 46.480M) ***
+--- Ending "Encounter" (totcpu=0:00:40.4, real=0:05:03, mem=193.6M) ---
+--- Ending "Encounter" (totcpu=0:00:40.4, real=0:05:03, mem=193.6M) ---
+
+*** INTERRUPTED *** [signal 1]

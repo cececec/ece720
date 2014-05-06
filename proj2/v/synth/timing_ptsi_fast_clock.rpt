@@ -1,0 +1,40 @@
+****************************************
+Report : clock timing
+	-type summary
+Design : cortex_soc
+Version: H-2013.06-SP1
+Date   : Mon May  5 19:54:37 2014
+****************************************
+
+  Clock: HCLK                                                 
+----------------------------------------------------------------------------
+  Maximum setup launch latency:
+      memctl_v4/U_hiu/U_dfifo_U_dcore_U_sub_fifo_mem_reg_1__18_/CK
+                                                              0.1715   rp-+
+
+  Minimum setup capture latency:
+      memctl_v4/U_miu/U_dsdc_row_cnt_reg_15_/CK               0.1466   rp-+
+
+  Minimum hold launch latency:
+      memctl_v4/U_miu/U_dsdc_row_cnt_reg_15_/CK               0.1466   rp-+
+
+  Maximum hold capture latency:
+      memctl_v4/U_hiu/U_dfifo_U_dcore_U_sub_fifo_mem_reg_1__18_/CK
+                                                              0.1715   rp-+
+
+  Maximum active transition:
+      memctl_v4/U_miu/U_dsdc_bm_row_addr_reg_2__5_/CK         0.0469   rp-+
+
+  Minimum active transition:
+      u_cortexm0ds/u_logic/Dkx2z4_reg/CK                      0.0283   rp-+
+
+  Maximum setup skew:
+      memctl_v4/U_miu/U_dsdc_bm_row_addr_reg_2__5_/CK                  rp-+
+      memctl_v4/U_miu/U_dsdc_bm_num_open_bank_reg_0_/CK       0.0221   rp-+
+
+  Maximum hold skew:
+      memctl_v4/U_miu/U_dsdc_bm_rc_cnt_reg_1__0_/CK                    rp-+
+      memctl_v4/U_miu/U_dsdc_bm_row_addr_reg_2__5_/CK         0.0227   rp-+
+----------------------------------------------------------------------------
+
+1

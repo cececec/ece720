@@ -1,0 +1,49 @@
+Checking out Encounter Power System license ...
+Encounter_Power_System_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter Power System release has been compiled with OA version 22.04-p058.
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter Power System v09.11-s082_1 (32bit) 03/08/2010 17:32 (Linux 2.6)
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s015_1 (32bit) Mar  4 2010 03:21:19 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter Power System v09.11-s082_1" on Mon May  5 14:30:33 2014 (mem=44.0M) ---
+--- Running on grendel8.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.3.1.el6.x86_64) ---
+This version was compiled on Mon Mar 8 17:32:55 PST 2010.
+environment variable TMPDIR is not set.
+
+      set the environment variable TMPDIR to '/tmp'.
+<CMD_INTERNAL> setDrawView place
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+# Encounter Power System 09.11-s082_1
+# read_design
+#   ../../pr/cortex_soc_routed.enc
+#  -physical_data 
+**ERROR: (ENCSYT-6300):	couldn't open "./cortex_soc_routed.enc.dat/cortex_soc.conf": no such file or directory
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 215.273M, initial mem = 44.035M) ***
+--- Ending "Encounter Power System" (totcpu=0:01:35, real=0:05:27, mem=215.3M) ---

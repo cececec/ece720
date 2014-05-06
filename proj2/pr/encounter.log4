@@ -1,0 +1,129 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : /ncsu/cadence2012/edi/tools/lib/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /ncsu/cadence2012/oa/lib/linux_rhel40_gcc44x_32/opt/liboaPlugIn.so)
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter v09.11-s084_1" on Mon May  5 23:04:10 2014 (mem=46.5M) ---
+--- Running on lib-32602.eos.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
+This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(syStackTrace+0x14a)[0xdf50562]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter[0x8d88694]
+[0xf773f410]
+/ncsu/cadence2012/edi/tools/mesalib/lib/libmesaGLm.so(_mesa_initialize_context+0x1a)[0xf5b2b5ba]
+/usr/lib/dri/swrast_dri.so(+0x3002)[0xf47b0002]
+/ncsu/cadence2012/edi/tools/mesalib/lib/libmesaGLm.so(_mesa_use_program+0x0)[0xf5bf3d00]
+========================================
+               pstack
+========================================
+Thread 4 (Thread 0xf477bb70 (LWP 5946)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x007acdd6 in nanosleep () from /lib/libpthread.so.0
+#2  0x0968b876 in rdaiLicRecheck(void*) ()
+#3  0x007a5b39 in start_thread () from /lib/libpthread.so.0
+#4  0x006bcd6e in clone () from /lib/libc.so.6
+Thread 3 (Thread 0xf36c3b70 (LWP 5947)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x006b50c1 in select () from /lib/libc.so.6
+#2  0x0f17332c in NotifierThreadProc ()
+#3  0x007a5b39 in start_thread () from /lib/libpthread.so.0
+#4  0x006bcd6e in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xf2cc2b70 (LWP 5948)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x007ad740 in sigwait () from /lib/libpthread.so.0
+#2  0x08d88adf in ctrlCHandle(void*) ()
+#3  0x007a5b39 in start_thread () from /lib/libpthread.so.0
+#4  0x006bcd6e in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xf561a760 (LWP 5899)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x0067b4ab in waitpid () from /lib/libc.so.6
+#2  0x00614ef3 in do_system () from /lib/libc.so.6
+#3  0x00615282 in system () from /lib/libc.so.6
+#4  0x007ad95d in system () from /lib/libpthread.so.0
+#5  0x0df505c8 in syStackTrace ()
+#6  0x08d88694 in rdaiErrorHandler(int, siginfo*, void*) ()
+#7  <signal handler called>
+#8  0xf5b2b5ba in _mesa_initialize_context () from /ncsu/cadence2012/edi/tools/mesalib/lib/libmesaGLm.so
+#9  0xf47b0002 in ?? () from /usr/lib/dri/swrast_dri.so
+#10 0xf5bf3d00 in ?? () from /ncsu/cadence2012/edi/tools/mesalib/lib/libmesaGLm.so
+========================================
+                gdb
+========================================
+Using: gdb
+[?1034h[Thread debugging using libthread_db enabled]
+[New Thread 0xf561a760 (LWP 5899)]
+[New Thread 0xf2cc2b70 (LWP 5948)]
+[New Thread 0xf36c3b70 (LWP 5947)]
+[New Thread 0xf477bb70 (LWP 5946)]
+0xf773f430 in __kernel_vsyscall ()
+
+Thread 4 (Thread 0xf477bb70 (LWP 5946)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x007acdd6 in nanosleep () from /lib/libpthread.so.0
+#2  0x0968b8ea in rdaiLicRecheck ()
+#3  0x007a5b39 in start_thread () from /lib/libpthread.so.0
+#4  0x006bcd6e in clone () from /lib/libc.so.6
+
+Thread 3 (Thread 0xf36c3b70 (LWP 5947)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x006b50c1 in select () from /lib/libc.so.6
+#2  0x0f17332c in NotifierThreadProc ()
+#3  0x007a5b39 in start_thread () from /lib/libpthread.so.0
+#4  0x006bcd6e in clone () from /lib/libc.so.6
+
+Thread 2 (Thread 0xf2cc2b70 (LWP 5948)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x007ad740 in sigwait () from /lib/libpthread.so.0
+
+Thread 1 (Thread 0xf561a760 (LWP 5899)):
+#0  0xf773f430 in __kernel_vsyscall ()
+#1  0x0067b4ab in waitpid () from /lib/libc.so.6
+#2  0x00614ef3 in do_system () from /lib/libc.so.6
+#3  0x00615282 in system () from /lib/libc.so.6
+#4  0x007b6ff4 in ?? () from /lib/libpthread.so.0
+#5  0x0df505c8 in syStackTrace ()
+#6  0x08d88694 in rdaiErrorHandler ()
+#7  <signal handler called>
+#8  _mesa_initialize_context (ctx=0x1a0c6c80, visual=0x0, share_list=0x0, driverFunctions=0x0, driverContext=0xffc6e424) at main/context.c:1118
+	__PRETTY_FUNCTION__ = "_mesa_initialize_context"
+#9  0xf47b0002 in ?? () from /usr/lib/dri/swrast_dri.so
+#10 0xf5bf3d00 in ?? () at shader/shader_api.c:634 from /ncsu/cadence2012/edi/tools/mesalib/lib/libmesaGLm.so
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+#0  0xf773f430 in __kernel_vsyscall ()
+The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+
+*** INTERRUPTED *** [signal 1]
+5899: No such process

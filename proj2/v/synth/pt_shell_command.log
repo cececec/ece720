@@ -1,0 +1,183 @@
+#@ # 
+#@ # Running pt_shell Version H-2013.06-SP1 for amd64 -- Jul 18, 2013
+#@ # Date:   Mon May  5 19:54:39 2014
+#@ # Run by: ghuang2@lib-33034.eos.ncsu.edu
+#@ 
+
+source /afs/eos.ncsu.edu/dist/synopsys_apps/pts_vH-2013.06-SP1/admin/setup/.synopsys_pt.setup
+#@ # -- Starting source /afs/eos.ncsu.edu/dist/synopsys_apps/pts_vH-2013.06-SP1/admin/setup/.synopsys_pt.setup
+
+#@ #
+#@ # .synopsys_pt.setup: Initialization File for PrimeTime
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparcOS5" || $sh_arch == "hpux10" ||      $sh_arch == "hp32" || $sh_arch == "linux" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you use new variable message
+#@ # tracing for debugging purposes only.
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ alias report_constraints	report_constraint
+#@ alias report_clocks		report_clock
+#@ 
+#@ #
+#@ # The alias for get_clock was added when get_clock_network_objects
+#@ # was introduced, as it conflicts with get_clocks (and get_clock is a
+#@ # typical abbreviation for get_clocks)
+#@ #
+#@ alias get_clock get_clocks
+#@ 
+#@ 
+#@ #
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ 
+#@ # -- End source /afs/eos.ncsu.edu/dist/synopsys_apps/pts_vH-2013.06-SP1/admin/setup/.synopsys_pt.setup
+
+source /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/v/synth/.synopsys_pt.setup
+#@ # -- Starting source /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/v/synth/.synopsys_pt.setup
+
+#@ # rename as .synopsys_dc.setup 
+#@ 
+#@ # Search Path variables  
+#@ set path1 "/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty"
+#@ set search_path "$path1 $search_path";
+#@ 
+#@ set search_path [concat  $search_path [list [format "%s%s"  $synopsys_root "/libraries/syn"]]]
+#@ set search_path [concat  $search_path [list "." [format "%s%s"  $synopsys_root "/dw/sim_ver"]]]
+#@ 
+#@ # Library Variables 
+#@ set synthetic_library [list dw_foundation.sldb]
+#@ set target_library NangateOpenCellLibrary_slow_conditional_ccs.db
+#@ set link_library   [concat  $target_library $synthetic_library]
+#@ 
+#@ set verilogout_no_tri "true"
+#@ 
+#@ # -- End source /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/v/synth/.synopsys_pt.setup
+
+source -echo -verbose run_ptpx.tcl
+#@ # -- Starting source run_ptpx.tcl
+
+#@ ###################################################
+#@ #
+#@ # run_ptpx.tcl
+#@ #
+#@ # 4/26/2011 W. Rhett Davis (rhett_davis@ncsu.edu)
+#@ # updated 4/5/2012, 3/28/2014
+#@ #
+#@ #####################################################
+#@ 
+#@ set begintime [clock seconds]
+#@ 
+#@ 
+#@ # setup name of the clock in your design.
+#@ set clkname HCLK
+#@ 
+#@ # set variable "modname" to the name of topmost module in design
+#@ set modname cortex_soc
+#@ 
+#@ # set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
+#@ set PR_DIR    ../../pr/
+#@ 
+#@ # set variable "type" to either routed or trialrouted
+#@ set type routed
+#@ 
+#@ # set variable "corner" to one of the following:
+#@ #   typical     (typical transistors, 1.1  V,  25 degC)
+#@ #   worst_low   (   slow transistors, 0.95 V, -40 degC)
+#@ #   low_temp    (   fast transistors, 1.25 V, -40 degC)
+#@ #   fast        (   fast transistors, 1.25 V,   0 degC)
+#@ #   slow        (   slow transistors, 0.95 V, 125 degC)
+#@ set corner fast
+#@ 
+#@ #set the number of digits to be used for delay results
+#@ set report_default_significant_digits 4
+#@ 
+#@ set CLK_PER 4.7
+#@ set DFF_CKQ 0.638
+#@ set MAX_INS_DELAY 1.0
+#@ set IP_DELAY [expr $MAX_INS_DELAY + $DFF_CKQ]
+#@ set DR_CELL_NAME DFFR_X1
+#@ set DR_CELL_PIN  Q
+#@ 
+#@ # Define a helpful function for printing out time strings
+#@ proc timef {sec} {
+#@   set hrs [expr $sec/3600]
+#@   set sec [expr $sec-($hrs*3600)]
+#@   set min [expr $sec/60]
+#@   set sec [expr $sec-($min*60)]
+#@   return "${hrs}h ${min}m ${sec}s"
+#@ }
+#@ 
+#@ set link_library "NangateOpenCellLibrary_${corner}_conditional_ccs.db *"
+#@ 
+#@ 
+#@ read_verilog "${PR_DIR}${modname}_${type}.v"
+#@ 
+#@ current_design $modname
+#@ 
+#@ link_design
+#@ 
+#@ create_clock -name $clkname -period $CLK_PER $clkname
+#@ set_input_delay $IP_DELAY -clock $clkname [remove_from_collection [all_inputs] $clkname]
+#@ set_output_delay -clock $clkname 0 [all_outputs]
+#@ set_driving_cell -lib_cell "$DR_CELL_NAME" -pin "$DR_CELL_PIN" [remove_from_collection [all_inputs] $clkname]
+#@ 
+#@ 
+#@ set power_enable_analysis TRUE
+#@ set power_analysis_mode averaged
+#@ 
+#@ read_parasitics -format spef "${PR_DIR}${modname}_${type}.spef"
+#@ 
+#@ check_timing
+#@ read_parasitics -format {SPEF}   { {../../pr/cortex_soc_routed.spef} }
+
+#@ pl_dump -stop_server
+
+#@ update_timing
+#@ report_timing
+#@ 
+#@ #####################################################################
+#@ #       read switching activity file
+#@ #####################################################################
+#@ read_saif "../sim/waves.saif" -strip_path "tb/soc"
+#@ report_switching_activity -list_not_annotated
+#@ 
+#@ #####################################################################
+#@ #       check/update/report power
+#@ #####################################################################
+#@ check_power
+#@ update_power
+#@ report_power -hierarchy > power_ptpx_${corner}.rpt
+#@ 
+#@ exit

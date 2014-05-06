@@ -1,0 +1,21 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : cortex_soc
+Version: H-2013.06-SP1
+Date   : Mon May  5 19:54:43 2014
+****************************************
+
+
+
+                                      Int      Switch   Leak      Total
+Hierarchy                             Power    Power    Power     Power    %
+--------------------------------------------------------------------------------
+cortex_soc                            5.24e-03 1.94e-03 1.90e-03  9.08e-03 100.0
+  ahb (AHB_Lite_2s)                   1.13e-05 2.14e-05 6.87e-06  3.96e-05   0.4
+  memctl_v4 (DW_memctl)               3.01e-03 1.84e-04 1.12e-03  4.31e-03  47.5
+    U_hiu (DW_memctl_hiu)             1.50e-03 8.37e-05 5.92e-04  2.17e-03  23.9
+    U_miu (DW_memctl_miu)             1.43e-03 9.74e-05 5.06e-04  2.03e-03  22.4
+  u_cortexm0ds (CORTEXM0DS)           1.99e-03 2.44e-04 7.68e-04  3.01e-03  33.1
+    u_logic (cortexm0ds_logic)        1.99e-03 2.44e-04 7.68e-04  3.01e-03  33.1
+1

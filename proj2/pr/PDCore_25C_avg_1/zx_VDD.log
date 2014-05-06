@@ -1,0 +1,278 @@
+
+INFO (EXTZX-101) : 
+  Fire & Ice ZX - RC Extractor - Version v09.11-s023_1 (03/04/2010
+05:17:35)
+------------------------------------------------------------------------------
+                 Copyright 2007 Cadence Design Systems, Inc.
+
+
+INFO (EXTZX-126) : Command line:
+ /ncsu/cadence2010/ets/tools.lnx86/anls/bin/32bit/zx -vstorm -cmd
+./work/zx_VDD.cmd
+
+INFO (EXTZX-102) : Starting at 2014-May-05 19:58:07 (2014-May-05 23:58:07 GMT).
+
+WARNING (EXTZCORE-102) : ignore_shorts and port/label cmds are not compatible options.
+ - ignore_shorts will be turned off.
+
+
+INFO (EXTZX-137) : Starting front end processing
+
+INFO (EXTNXT-158) : Set layer mapping from cell lib and command file.
+
+INFO (EXTZCORE-102) : Loading DEF file /tmp/eps_out_31206.def.gz.
+
+INFO (EXTZCORE-102) : Done loading DEF file /tmp/eps_out_31206.def.gz.
+
+INFO (EXTZCORE-102) : Top Cell: cortex_soc
+
+INFO (EXTZCORE-102) : Front end tiling set to 3 Row(s) and 2 Column(s)
+
+INFO (EXTNXT-142) : Design contains 46,689 primitive instances.
+
+INFO (EXTNXT-146) : GDS layer rule maps included all GDS layers with polygons.
+
+INFO (EXTNXT-159) : Time in GDS/DEF Parse 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer via3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal10.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer contact.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer pimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer via2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via2 metal3 metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via3 metal4 metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via6 metal7 metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via5 metal6 metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer nimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via1 metal2 metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via7 metal8 metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via4 metal5 metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-140) : Looking for shorts across duplicate named ports.  Cell: cortex_soc.
+
+INFO (EXTNXT-141) : ...Finished shorted port check.
+
+INFO (EXTZX-138) : Front end processing is complete.
+
+INFO (EXTZCORE-102) : Back end tiling set to 3 Row(s) and 2 Column(s)
+
+INFO (EXTZX-142) : Fracturing wire geometry and passing to back end tiles.
+
+INFO (EXTZX-143) : Wire geometry processing is complete.
+
+INFO (EXTZVIA-104) : Starting via processing.
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via2 (metal3, metal2).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via2: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 64077
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41499
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via3 (metal4, metal3).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via3: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 64077
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41499
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via6 (metal7, metal6).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via6: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 23214
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via5 (metal6, metal5).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via5: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 24009
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via1 (metal2, metal1).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via1: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 68211
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 44202
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via7 (metal8, metal7).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via7: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 9882
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 5265
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via4 (metal5, metal4).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via4: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 24009
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTZVIA-105) : Via processing is complete.
+
+INFO (EXTZX-140) : Starting port processing.
+
+INFO (EXTZCORE-102) : The number of ports on layer metal1 : 46689
+ 
+
+INFO (EXTZCORE-102) : The number of ports on layer metal8 : 1
+ 
+
+INFO (EXTZX-141) : Port processing is complete.
+
+INFO (EXTZCORE-102) : Total number of cleaned rectangles  10018  
+
+INFO (EXTZX-149) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data. 
+    does NOT contain R(w) data.    
+    does NOT contain R(w,s) data.    
+    does NOT contain R(sw,st) data.   
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does NOT contain Floating Metal Fill models. 
+
+INFO (EXTZX-144) : Starting extraction.
+
+INFO (EXTZCORE-102) :  16% 
+
+INFO (EXTZCORE-102) :  33% 
+
+INFO (EXTZCORE-102) :  50% 
+
+INFO (EXTZCORE-102) :  66% 
+
+INFO (EXTZCORE-102) :  83% 
+
+INFO (EXTZCORE-102) :  100% 
+
+INFO (EXTZX-145) : Extraction is complete.
+
+Ending at 2014-May-05 19:58:15 (2014-May-05 23:58:15 GMT).
+  Executed by:           ghuang2
+  Execution host:        lib-33034.eos.ncsu.edu
+  Run duration:          00:00:03 CPU time, 00:00:08 clock time
+  Memory used:           181,018,624 bytes
+  Repaired vias used:    0
+  Unconnected pins:      0
+  Warning messages:      1
+  Error messages:        0
+  Fatal error messages:  0
+
+Exit code 0.
+Fire & Ice ZX exited successfully.

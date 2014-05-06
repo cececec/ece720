@@ -1,0 +1,2124 @@
+/ncsu/cadence2010/ets/tools.lnx86/anls/bin/32bit/vstorm2 -cmd /tmp/vstorm_32049.cmd 
+* vstorm2
+*	Version v09.11-s023_1 (03/04/2010 05:17:34)
+*	Copyright 2007 Cadence Design Systems, Inc.
+*
+*	Run by ghuang2 on Mon May  5 20:07:21 2014
+*	Executing 32 bit version on host: lib-33034.eos.ncsu.edu
+*
+* vstorm2.log
+*
+* Current Process Limit (in bytes):
+*    Data Size	: 4194303k
+*    File Size	: 4194303k
+*    Memory	: 4194303k
+*    Stack Size	: 59392k
+*    Descriptors: 1024 
+*
+Executing: nga_dp_hosts max_cpu=0 mode=local time_out=30 
+Executing: layout_file /tmp/eps_out_32049.def.gz 
+Executing: cell_library fast_allcells.cl 
+Executing: use_cell_view type standard fast 
+Executing: use_cell_view type macro fast 
+Executing: use_cell_view type io fast 
+Executing: net_voltage VDD 0.95 0.855 
+Executing: power_pin_supply_tolerance 0.665 1.235 net=VDD 
+Executing: net_voltage VSS 0 0.095 
+Executing: power_pin_supply_tolerance 0 0.3 net=VSS 
+Executing: power_domain PDCore pwrnet="VDD" gndnet="VSS" 
+Executing: current_data_file scale=1 static_power_max/static_VDD.ptiavg 
+Executing: current_data_file scale=1 static_power_max/static_VSS.ptiavg 
+Executing: power_pin VSS file=/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/VSS.ppl 
+Executing: power_pin VDD file=/afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/VDD.ppl 
+
+Executing: analyze PDCore 0.95 avg 0.10 ir tc rc rj iv vv rv vu pi pv reff vc 
+
+List of cell libraries:
+  fast_allcells.cl
+
+Verification mode: early
+
+Output directory is: ./
+Run directory is: .//PDCore_25C_avg_2/VSS
+
+Re-extraction required: name of the layout file changed.
+
+Running hierarchical path tracer for net VSS ...
+
+Invoking: "mergegrid -ptrace -V -net VSS -def /tmp/eps_out_32049.def.gz -pvl fast_allcells.cl -ptout ./work/VSS" ...
+
+    mergegrid Version v09.11-s023_1 (03/04/2010 05:17:08)
+----------------------------------------------------
+    Copyright 2007 Cadence Design Systems, Inc.
+
+INFO (HPT-6009): 
+Loading DEF file "/tmp/eps_out_32049.def.gz".
+INFO (HPT-6010): 
+The following cell will be used as the top level cell
+"cortex_soc"
+The cell is from the following DEF file.
+"/tmp/eps_out_32049.def.gz"
+
+
+Number of traced nets: 1
+
+
+Process Info :
+  User time          = 0 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 116,641,792 bytes
+  Total alloc size   = 19,611,648 bytes
+  In use alloc size  = 10,337,320 bytes
+  Page fault w/o IO  = 9,369
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Running R extraction for net VSS ...
+
+Invoking: "zx -vstorm -cmd ./work/zx_VSS.cmd" ...
+
+INFO (EXTZX-101) : 
+  Fire & Ice ZX - RC Extractor - Version v09.11-s023_1 (03/04/2010
+05:17:35)
+------------------------------------------------------------------------------
+                 Copyright 2007 Cadence Design Systems, Inc.
+
+
+INFO (EXTZX-126) : Command line:
+ /ncsu/cadence2010/ets/tools.lnx86/anls/bin/32bit/zx -vstorm -cmd
+./work/zx_VSS.cmd
+
+INFO (EXTZX-102) : Starting at 2014-May-05 20:07:23 (2014-May-06 00:07:23 GMT).
+
+WARNING (EXTZCORE-102) : ignore_shorts and port/label cmds are not compatible options.
+ - ignore_shorts will be turned off.
+
+
+INFO (EXTZX-137) : Starting front end processing
+
+INFO (EXTNXT-158) : Set layer mapping from cell lib and command file.
+
+INFO (EXTZCORE-102) : Loading DEF file /tmp/eps_out_32049.def.gz.
+
+Initializing DEF5.6 parser
+
+INFO (EXTZCORE-102) : Done loading DEF file /tmp/eps_out_32049.def.gz.
+
+INFO (EXTZCORE-102) : Top Cell: cortex_soc
+
+INFO (EXTZCORE-102) : Front end tiling set to 3 Row(s) and 2 Column(s)
+
+INFO (EXTNXT-142) : Design contains 46,689 primitive instances.
+
+INFO (EXTNXT-146) : GDS layer rule maps included all GDS layers with polygons.
+
+INFO (EXTNXT-159) : Time in GDS/DEF Parse 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer via3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal10.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer contact.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer pimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer via2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via2 metal3 metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via3 metal4 metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via6 metal7 metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via5 metal6 metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer nimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via1 metal2 metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via7 metal8 metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via4 metal5 metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-140) : Looking for shorts across duplicate named ports.  Cell: cortex_soc.
+
+INFO (EXTNXT-141) : ...Finished shorted port check.
+
+INFO (EXTZX-138) : Front end processing is complete.
+
+Memory statistics: After finishing front end processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 191,848,448 bytes
+  Total alloc size   = 87,687,168 bytes
+  In use alloc size  = 69,593,264 bytes
+  Page fault w/o IO  = 31,409
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZCORE-102) : Back end tiling set to 3 Row(s) and 2 Column(s)
+... Fracture for cell cortex_soc
+
+INFO (EXTZX-142) : Fracturing wire geometry and passing to back end tiles.
+Nxt Layer id : 11 Ict Id : 11 Name : metal1
+Total number of fractured  traps: 4046
+Total number of fractured  traps: 2589
+Nxt Layer id : 12 Ict Id : 12 Name : metal3
+Total number of fractured  traps: 1106
+Total number of fractured  traps: 1106
+Nxt Layer id : 15 Ict Id : 15 Name : metal6
+Total number of fractured  traps: 1106
+Total number of fractured  traps: 1106
+Nxt Layer id : 16 Ict Id : 16 Name : metal8
+Total number of fractured  traps: 7
+Total number of fractured  traps: 7
+Nxt Layer id : 18 Ict Id : 18 Name : metal2
+Total number of fractured  traps: 1106
+Total number of fractured  traps: 1106
+Nxt Layer id : 19 Ict Id : 19 Name : metal4
+Total number of fractured  traps: 1106
+Total number of fractured  traps: 1106
+Nxt Layer id : 20 Ict Id : 20 Name : metal7
+Total number of fractured  traps: 1108
+Total number of fractured  traps: 1108
+Nxt Layer id : 21 Ict Id : 21 Name : metal5
+Total number of fractured  traps: 1106
+Total number of fractured  traps: 1106
+
+INFO (EXTZX-143) : Wire geometry processing is complete.
+
+Memory statistics: After wire processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 191,897,600 bytes
+  Total alloc size   = 87,687,168 bytes
+  In use alloc size  = 68,951,832 bytes
+  Page fault w/o IO  = 31,507
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZVIA-104) : Starting via processing.
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via2 (metal3, metal2).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via2: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 63674
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41238
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via3 (metal4, metal3).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via3: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 63674
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41238
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via6 (metal7, metal6).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via6: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 23068
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11376
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via5 (metal6, metal5).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via5: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 23858
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11376
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via1 (metal2, metal1).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via1: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 67782
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 43924
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via7 (metal8, metal7).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via7: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 9828
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 5238
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via4 (metal5, metal4).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via4: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 23858
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11376
+
+INFO (EXTZVIA-105) : Via processing is complete.
+
+Memory statistics: After via processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 182,665,216 bytes
+  Total alloc size   = 78,454,784 bytes
+  In use alloc size  = 39,535,712 bytes
+  Page fault w/o IO  = 31,542
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZX-140) : Starting port processing.
+... Sending ports for cell cortex_soc, layer metal1
+
+INFO (EXTZCORE-102) : The number of ports on layer metal1 : 46689
+ 
+... Sending ports for cell cortex_soc, layer metal3
+... Sending ports for cell cortex_soc, layer metal9
+... Sending ports for cell cortex_soc, layer metal10
+... Sending ports for cell cortex_soc, layer metal6
+... Sending ports for cell cortex_soc, layer metal8
+
+INFO (EXTZCORE-102) : The number of ports on layer metal8 : 1
+ 
+... Sending ports for cell cortex_soc, layer pimplant
+... Sending ports for cell cortex_soc, layer metal2
+... Sending ports for cell cortex_soc, layer metal4
+... Sending ports for cell cortex_soc, layer metal7
+... Sending ports for cell cortex_soc, layer metal5
+... Sending ports for cell cortex_soc, layer nimplant
+
+INFO (EXTZX-141) : Port processing is complete.
+
+Memory statistics: After port nodes processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 182,665,216 bytes
+  Total alloc size   = 78,454,784 bytes
+  In use alloc size  = 41,874,128 bytes
+  Page fault w/o IO  = 31,546
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZCORE-102) : Total number of cleaned rectangles  9234  
+
+INFO (EXTZX-149) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data. 
+    does NOT contain R(w) data.    
+    does NOT contain R(w,s) data.    
+    does NOT contain R(sw,st) data.   
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does NOT contain Floating Metal Fill models. 
+Nxt Cleanup
+
+INFO (EXTZX-144) : Starting extraction.
+
+INFO (EXTZCORE-102) :  16% 
+
+INFO (EXTZCORE-102) :  33% 
+
+INFO (EXTZCORE-102) :  50% 
+
+INFO (EXTZCORE-102) :  66% 
+
+INFO (EXTZCORE-102) :  83% 
+
+INFO (EXTZCORE-102) :  100% 
+
+INFO (EXTZX-145) : Extraction is complete.
+
+Memory statistics: End of extraction.
+Process Info :
+  User time          = 3 seconds
+  System time        = 1 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:03
+  Virtual mem. size  = 168,591,360 bytes
+  Total alloc size   = 64,356,352 bytes
+  In use alloc size  = 35,376,592 bytes
+  Page fault w/o IO  = 32,142
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Ending at 2014-May-05 20:07:32 (2014-May-06 00:07:32 GMT).
+  Executed by:           ghuang2
+  Execution host:        lib-33034.eos.ncsu.edu
+  Run duration:          00:00:03 CPU time, 00:00:09 clock time
+  Memory used:           168,517,632 bytes
+  Repaired vias used:    0
+  Unconnected pins:      0
+  Warning messages:      1
+  Error messages:        0
+  Fatal error messages:  0
+
+Exit code 0.
+Fire & Ice ZX exited successfully.
+
+Running R extraction required:
+		0.00 user, 0.00 system, and 9.72 real seconds
+
+
+Running power grid merge for net VSS ...
+
+Invoking: "mergegrid -net VSS -o .//PDCore_25C_avg_2/VSS/VSS -def /tmp/eps_out_32049.def.gz -pgdb ./work/VSS -pvl fast_allcells.cl -supply 0  -viewfile ./work/cell.views -usedefpins -scfl ./work/VSS.scfl -silent -partition 1 -temperature 25" ...
+
+    mergegrid Version v09.11-s023_1 (03/04/2010 05:17:08)
+----------------------------------------------------
+    Copyright 2007 Cadence Design Systems, Inc.
+
+DEF File         = /tmp/eps_out_32049.def.gz
+RCDB             = 
+PGDB             = ./work/VSS
+PVLibrary        = fast_allcells.cl
+PowerFile        = 
+PowerFileList    = 
+CurrentFileList  = ./work/VSS.scfl
+PowerScale       = 1
+SupplyVoltage    = 0
+ViewFile         = ./work/cell.views
+DefaultView      = 15
+LayerBiasFile    = 
+IgnoreMacrosFile = 
+Parsing the file /tmp/eps_out_32049.def.gz ...
+Done parsing.
+Message from DEF parser:
+Parsing of components completed.
+DieArea = (0,0) - (602790,1044880)
+DEF distance scale factor = 2000
+number of components = 46689
+number of components processed = 46689
+number of cell types = 89
+PVLibPath = .
+PVLibName = fast_allcells.cl
+WARNING (MGE-22): The type "macro" specified
+for cell view definition didn't match any cell.
+WARNING (MGE-22): The type "io" specified
+for cell view definition didn't match any cell.
+Reading current data from static_power_max/static_VSS.ptiavg (scale_factor=1) ...
+ - reading current for net VSS
+Found current for 17237 instances.
+Total current loaded: 0.0230986A
+PGDBPath   = ./work
+PGDBDesign = VSS
+Merging RC data from ./work/VSS ...
+Number of nets = 1
+
+Technology file layers:
+    CSUBSTRATE
+    nwell
+    pwell
+    nimplant
+    pimplant
+    contact
+    contact
+    metal1
+    via1
+    metal2
+    via2
+    metal3
+    via3
+    metal4
+    via4
+    metal5
+    via5
+    metal6
+    via6
+    metal7
+    via7
+    metal8
+    via8
+    metal9
+    via9
+    metal10
+Cell library layers:
+    CSUBSTRATE	id=0	type=0
+    nwell	id=1	type=9
+    pwell	id=2	type=9
+    nimplant	id=3	type=6
+    pimplant	id=4	type=6
+    contact	id=5	type=2
+    metal1	id=6	type=1
+    via1	id=7	type=2
+    metal2	id=8	type=1
+    via2	id=9	type=2
+    metal3	id=10	type=1
+    via3	id=11	type=2
+    metal4	id=12	type=1
+    via4	id=13	type=2
+    metal5	id=14	type=1
+    via5	id=15	type=2
+    metal6	id=16	type=1
+    via6	id=17	type=2
+    metal7	id=18	type=1
+    via7	id=19	type=2
+    metal8	id=20	type=1
+    via8	id=21	type=2
+    metal9	id=22	type=1
+    via9	id=23	type=2
+    metal10	id=24	type=1
+PGDB layers:
+    metal8	id=0	type=M
+    via7	id=1	type=V
+    metal7	id=2	type=M
+    via6	id=3	type=V
+    metal6	id=4	type=M
+    via5	id=5	type=V
+    metal5	id=6	type=M
+    via4	id=7	type=V
+    metal4	id=8	type=M
+    via3	id=9	type=V
+    metal3	id=10	type=M
+    via2	id=11	type=V
+    metal2	id=12	type=M
+    via1	id=13	type=V
+    metal1	id=14	type=M
+	382888 (382888 counted) resistors
+Merging cell power views for net VSS ...
+
+  10%
+
+  20%
+
+  30%
+
+  40%
+
+  50%
+
+  60%
+
+  70%
+
+  80%
+
+  90%
+
+  100%
+
+Merged power views for 46689 cells.
+Processed 46689 cell internal tap current sources.
+Processed 0 cell internal resistors.
+
+cell name                 #instances   view type
+----------------------------------------------------------------
+OAI22_X2                      186      port
+OAI211_X1                     190      port
+FILLCELL_X32                 4605      port
+NOR3_X1                       139      port
+INV_X16                        41      port
+AOI222_X1                     260      port
+AND3_X1                        20      port
+AOI222_X2                       8      port
+NOR2_X4                         5      port
+AND3_X2                         3      port
+OAI221_X1                     220      port
+AOI221_X1                     340      port
+OAI222_X1                      61      port
+NAND4_X2                       75      port
+NOR4_X2                        23      port
+FILLCELL_X16                 1843      port
+AND2_X2                        42      port
+AND3_X4                        20      port
+DFFS_X1                       695      port
+FILLCELL_X2                  6383      port
+XOR2_X2                        77      port
+OAI21_X2                      205      port
+AND4_X2                         1      port
+FILLCELL_X4                  6394      port
+AOI21_X1                      234      port
+MUX2_X1                         2      port
+AOI221_X2                      40      port
+AOI22_X1                      643      port
+NAND3_X2                      115      port
+INV_X8                         20      port
+OAI222_X2                      83      port
+AND2_X4                        69      port
+DFFR_X1                      1036      port
+NAND3_X1                      241      port
+NAND2_X4                        8      port
+DFFR_X2                       224      port
+OR3_X4                          7      port
+HA_X1                          57      port
+AOI211_X1                      59      port
+AOI22_X2                      750      port
+XNOR2_X1                       25      port
+FILLCELL_X8                  3776      port
+INV_X1                        787      port
+AND2_X1                        39      port
+AOI21_X2                      168      port
+CLKBUF_X2                      41      port
+INV_X4                        666      port
+NAND4_X1                      117      port
+DFFS_X2                        82      port
+OAI33_X1                       50      port
+NAND2_X2                      603      port
+CLKBUF_X3                      23      port
+NOR3_X2                        77      port
+NOR4_X1                        84      port
+OR4_X1                         14      port
+BUF_X2                         91      port
+OAI221_X2                      45      port
+FILLCELL_X1                  6451      port
+BUF_X16                       385      port
+OR4_X2                          9      port
+NOR4_X4                         1      port
+NOR2_X2                       333      port
+BUF_X1                         84      port
+OR4_X4                          3      port
+CLKBUF_X1                    1457      port
+NAND2_X1                      575      port
+OR2_X1                         51      port
+OAI21_X4                        1      port
+BUF_X32                      2301      port
+INV_X2                        284      port
+BUF_X4                        240      port
+OR3_X2                         11      port
+MUX2_X2                       142      port
+AND4_X1                         5      port
+FA_X1                          31      port
+NOR2_X1                       286      port
+OR2_X4                         13      port
+INV_X32                        11      port
+NOR3_X4                         4      port
+OR2_X2                         16      port
+OR3_X1                         17      port
+OAI22_X1                      962      port
+OAI211_X2                      64      port
+BUF_X8                        285      port
+XOR2_X1                        63      port
+OAI21_X1                      335      port
+AND4_X4                        14      port
+XNOR2_X2                       79      port
+AOI211_X2                      64      port
+
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 134,127,616 bytes
+  Total alloc size   = 37,011,456 bytes
+  In use alloc size  = 29,785,080 bytes
+  Page fault w/o IO  = 13,749
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Running power grid merge for net VSS required:
+		0.00 user, 0.00 system, and 12.25 real seconds
+
+List of cell libraries:
+  fast_allcells.cl
+
+Verification mode: early
+
+Output directory is: ./
+Run directory is: .//PDCore_25C_avg_2//VDD
+
+Re-extraction required: name of the layout file changed.
+
+Running hierarchical path tracer for net VDD ...
+
+Invoking: "mergegrid -ptrace -V -net VDD -def /tmp/eps_out_32049.def.gz -pvl fast_allcells.cl -ptout ./work/VDD" ...
+
+    mergegrid Version v09.11-s023_1 (03/04/2010 05:17:08)
+----------------------------------------------------
+    Copyright 2007 Cadence Design Systems, Inc.
+
+INFO (HPT-6009): 
+Loading DEF file "/tmp/eps_out_32049.def.gz".
+INFO (HPT-6010): 
+The following cell will be used as the top level cell
+"cortex_soc"
+The cell is from the following DEF file.
+"/tmp/eps_out_32049.def.gz"
+
+
+Number of traced nets: 1
+
+
+Process Info :
+  User time          = 0 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 116,641,792 bytes
+  Total alloc size   = 19,611,648 bytes
+  In use alloc size  = 10,337,328 bytes
+  Page fault w/o IO  = 9,210
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Running R extraction for net VDD ...
+
+Invoking: "zx -vstorm -cmd ./work/zx_VDD.cmd" ...
+
+INFO (EXTZX-101) : 
+  Fire & Ice ZX - RC Extractor - Version v09.11-s023_1 (03/04/2010
+05:17:35)
+------------------------------------------------------------------------------
+                 Copyright 2007 Cadence Design Systems, Inc.
+
+
+INFO (EXTZX-126) : Command line:
+ /ncsu/cadence2010/ets/tools.lnx86/anls/bin/32bit/zx -vstorm -cmd
+./work/zx_VDD.cmd
+
+INFO (EXTZX-102) : Starting at 2014-May-05 20:07:46 (2014-May-06 00:07:46 GMT).
+
+WARNING (EXTZCORE-102) : ignore_shorts and port/label cmds are not compatible options.
+ - ignore_shorts will be turned off.
+
+
+INFO (EXTZX-137) : Starting front end processing
+
+INFO (EXTNXT-158) : Set layer mapping from cell lib and command file.
+
+INFO (EXTZCORE-102) : Loading DEF file /tmp/eps_out_32049.def.gz.
+
+Initializing DEF5.6 parser
+
+INFO (EXTZCORE-102) : Done loading DEF file /tmp/eps_out_32049.def.gz.
+
+INFO (EXTZCORE-102) : Top Cell: cortex_soc
+
+INFO (EXTZCORE-102) : Front end tiling set to 3 Row(s) and 2 Column(s)
+
+INFO (EXTNXT-142) : Design contains 46,689 primitive instances.
+
+INFO (EXTNXT-146) : GDS layer rule maps included all GDS layers with polygons.
+
+INFO (EXTNXT-159) : Time in GDS/DEF Parse 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer via3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal9.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal10.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer contact.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer pimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via2 metal3 metal2.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:01
+
+INFO (EXTNXT-152) : Starting merge on layer metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via3 metal4 metal3.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via6 metal7 metal6.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via5 metal6 metal5.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer nimplant.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via1 metal2 metal1.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer metal8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via7 metal8 metal7.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-155) : Starting via op. between layers via4 metal5 metal4.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-152) : Starting merge on layer via8.
+
+INFO (EXTNXT-153) : Operation wall time: 00:00:00
+
+INFO (EXTNXT-140) : Looking for shorts across duplicate named ports.  Cell: cortex_soc.
+
+INFO (EXTNXT-141) : ...Finished shorted port check.
+
+INFO (EXTZX-138) : Front end processing is complete.
+
+Memory statistics: After finishing front end processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 196,718,592 bytes
+  Total alloc size   = 92,557,312 bytes
+  In use alloc size  = 73,296,880 bytes
+  Page fault w/o IO  = 32,562
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZCORE-102) : Back end tiling set to 3 Row(s) and 2 Column(s)
+... Fracture for cell cortex_soc
+
+INFO (EXTZX-142) : Fracturing wire geometry and passing to back end tiles.
+Nxt Layer id : 11 Ict Id : 11 Name : metal1
+Total number of fractured  traps: 5501
+Total number of fractured  traps: 3331
+Nxt Layer id : 12 Ict Id : 12 Name : metal3
+Total number of fractured  traps: 1113
+Total number of fractured  traps: 1113
+Nxt Layer id : 15 Ict Id : 15 Name : metal6
+Total number of fractured  traps: 1113
+Total number of fractured  traps: 1113
+Nxt Layer id : 16 Ict Id : 16 Name : metal8
+Total number of fractured  traps: 7
+Total number of fractured  traps: 7
+Nxt Layer id : 18 Ict Id : 18 Name : metal2
+Total number of fractured  traps: 1113
+Total number of fractured  traps: 1113
+Nxt Layer id : 19 Ict Id : 19 Name : metal4
+Total number of fractured  traps: 1113
+Total number of fractured  traps: 1113
+Nxt Layer id : 20 Ict Id : 20 Name : metal7
+Total number of fractured  traps: 1115
+Total number of fractured  traps: 1115
+Nxt Layer id : 21 Ict Id : 21 Name : metal5
+Total number of fractured  traps: 1113
+Total number of fractured  traps: 1113
+
+INFO (EXTZX-143) : Wire geometry processing is complete.
+
+Memory statistics: After wire processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 196,767,744 bytes
+  Total alloc size   = 92,557,312 bytes
+  In use alloc size  = 72,665,128 bytes
+  Page fault w/o IO  = 32,662
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZVIA-104) : Starting via processing.
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via2 (metal3, metal2).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via2: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 64077
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41499
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via3 (metal4, metal3).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via3: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 64077
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 41499
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via6 (metal7, metal6).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via6: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 23214
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via5 (metal6, metal5).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via5: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 24009
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via1 (metal2, metal1).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via1: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 68211
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 44202
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via7 (metal8, metal7).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via7: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 9882
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 5265
+
+INFO (EXTNXT-154) : ... ExtractCellViaR for cell cortex_soc, layer via4 (metal5, metal4).
+
+INFO (EXTZVIA-102) : Cluster distance and size in layer via4: 20000 : Default (2) 
+
+INFO (EXTZVIA-101) : Number of vias in this cut layer: 24009
+
+INFO (EXTZVIA-100) : Number of vias clustered in this cut layer: 11448
+
+INFO (EXTZVIA-105) : Via processing is complete.
+
+Memory statistics: After via processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 186,200,064 bytes
+  Total alloc size   = 81,989,632 bytes
+  In use alloc size  = 39,544,448 bytes
+  Page fault w/o IO  = 32,696
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZX-140) : Starting port processing.
+... Sending ports for cell cortex_soc, layer metal1
+
+INFO (EXTZCORE-102) : The number of ports on layer metal1 : 46689
+ 
+... Sending ports for cell cortex_soc, layer metal3
+... Sending ports for cell cortex_soc, layer metal9
+... Sending ports for cell cortex_soc, layer metal10
+... Sending ports for cell cortex_soc, layer metal6
+... Sending ports for cell cortex_soc, layer metal8
+
+INFO (EXTZCORE-102) : The number of ports on layer metal8 : 1
+ 
+... Sending ports for cell cortex_soc, layer pimplant
+... Sending ports for cell cortex_soc, layer metal2
+... Sending ports for cell cortex_soc, layer metal4
+... Sending ports for cell cortex_soc, layer metal7
+... Sending ports for cell cortex_soc, layer metal5
+... Sending ports for cell cortex_soc, layer nimplant
+
+INFO (EXTZX-141) : Port processing is complete.
+
+Memory statistics: After port nodes processing...
+Process Info :
+  User time          = 2 seconds
+  System time        = 0 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:02
+  Virtual mem. size  = 186,200,064 bytes
+  Total alloc size   = 81,989,632 bytes
+  In use alloc size  = 41,885,424 bytes
+  Page fault w/o IO  = 32,700
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+INFO (EXTZCORE-102) : Total number of cleaned rectangles  10018  
+
+INFO (EXTZX-149) : Manufacturing Data Information :- 
+  DEF/GDS file 
+    does NOT contain MetalFill data. 
+  Techfile  
+    does NOT contain WEE data.     
+    does NOT contain Erosion data. 
+    does NOT contain R(w) data.    
+    does NOT contain R(w,s) data.    
+    does NOT contain R(sw,st) data.   
+    does NOT contain TC(w) data.    
+    does NOT contain T/B enlargement data. 
+    does NOT contain Floating Metal Fill models. 
+Nxt Cleanup
+
+INFO (EXTZX-144) : Starting extraction.
+
+INFO (EXTZCORE-102) :  16% 
+
+INFO (EXTZCORE-102) :  33% 
+
+INFO (EXTZCORE-102) :  50% 
+
+INFO (EXTZCORE-102) :  66% 
+
+INFO (EXTZCORE-102) :  83% 
+
+INFO (EXTZCORE-102) :  100% 
+
+INFO (EXTZX-145) : Extraction is complete.
+
+Memory statistics: End of extraction.
+Process Info :
+  User time          = 3 seconds
+  System time        = 1 seconds
+  Children user time = 0 seconds
+  CPU time          = 00:00:03
+  Virtual mem. size  = 181,092,352 bytes
+  Total alloc size   = 76,857,344 bytes
+  In use alloc size  = 35,374,024 bytes
+  Page fault w/o IO  = 33,238
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Ending at 2014-May-05 20:07:55 (2014-May-06 00:07:55 GMT).
+  Executed by:           ghuang2
+  Execution host:        lib-33034.eos.ncsu.edu
+  Run duration:          00:00:03 CPU time, 00:00:09 clock time
+  Memory used:           181,018,624 bytes
+  Repaired vias used:    0
+  Unconnected pins:      0
+  Warning messages:      1
+  Error messages:        0
+  Fatal error messages:  0
+
+Exit code 0.
+Fire & Ice ZX exited successfully.
+
+Running R extraction required:
+		0.00 user, 0.01 system, and 8.63 real seconds
+
+
+Running power grid merge for net VDD ...
+
+Invoking: "mergegrid -net VDD -o .//PDCore_25C_avg_2//VDD/VDD -def /tmp/eps_out_32049.def.gz -pgdb ./work/VDD -pvl fast_allcells.cl -supply 0.95  -viewfile ./work/cell.views -usedefpins -scfl ./work/VDD.scfl -silent -partition 1 -temperature 25" ...
+
+    mergegrid Version v09.11-s023_1 (03/04/2010 05:17:08)
+----------------------------------------------------
+    Copyright 2007 Cadence Design Systems, Inc.
+
+DEF File         = /tmp/eps_out_32049.def.gz
+RCDB             = 
+PGDB             = ./work/VDD
+PVLibrary        = fast_allcells.cl
+PowerFile        = 
+PowerFileList    = 
+CurrentFileList  = ./work/VDD.scfl
+PowerScale       = 1
+SupplyVoltage    = 0.95
+ViewFile         = ./work/cell.views
+DefaultView      = 15
+LayerBiasFile    = 
+IgnoreMacrosFile = 
+Parsing the file /tmp/eps_out_32049.def.gz ...
+Done parsing.
+Message from DEF parser:
+Parsing of components completed.
+DieArea = (0,0) - (602790,1044880)
+DEF distance scale factor = 2000
+number of components = 46689
+number of components processed = 46689
+number of cell types = 89
+PVLibPath = .
+PVLibName = fast_allcells.cl
+WARNING (MGE-22): The type "macro" specified
+for cell view definition didn't match any cell.
+WARNING (MGE-22): The type "io" specified
+for cell view definition didn't match any cell.
+Reading current data from static_power_max/static_VDD.ptiavg (scale_factor=1) ...
+ - reading current for net VDD
+Found current for 17237 instances.
+Total current loaded: 0.0230986A
+PGDBPath   = ./work
+PGDBDesign = VDD
+Merging RC data from ./work/VDD ...
+Number of nets = 1
+
+Technology file layers:
+    CSUBSTRATE
+    nwell
+    pwell
+    nimplant
+    pimplant
+    contact
+    contact
+    metal1
+    via1
+    metal2
+    via2
+    metal3
+    via3
+    metal4
+    via4
+    metal5
+    via5
+    metal6
+    via6
+    metal7
+    via7
+    metal8
+    via8
+    metal9
+    via9
+    metal10
+Cell library layers:
+    CSUBSTRATE	id=0	type=0
+    nwell	id=1	type=9
+    pwell	id=2	type=9
+    nimplant	id=3	type=6
+    pimplant	id=4	type=6
+    contact	id=5	type=2
+    metal1	id=6	type=1
+    via1	id=7	type=2
+    metal2	id=8	type=1
+    via2	id=9	type=2
+    metal3	id=10	type=1
+    via3	id=11	type=2
+    metal4	id=12	type=1
+    via4	id=13	type=2
+    metal5	id=14	type=1
+    via5	id=15	type=2
+    metal6	id=16	type=1
+    via6	id=17	type=2
+    metal7	id=18	type=1
+    via7	id=19	type=2
+    metal8	id=20	type=1
+    via8	id=21	type=2
+    metal9	id=22	type=1
+    via9	id=23	type=2
+    metal10	id=24	type=1
+PGDB layers:
+    metal8	id=0	type=M
+    via7	id=1	type=V
+    metal7	id=2	type=M
+    via6	id=3	type=V
+    metal6	id=4	type=M
+    via5	id=5	type=V
+    metal5	id=6	type=M
+    via4	id=7	type=V
+    metal4	id=8	type=M
+    via3	id=9	type=V
+    metal3	id=10	type=M
+    via2	id=11	type=V
+    metal2	id=12	type=M
+    via1	id=13	type=V
+    metal1	id=14	type=M
+	386251 (386251 counted) resistors
+Merging cell power views for net VDD ...
+
+  10%
+
+  20%
+
+  30%
+
+  40%
+
+  50%
+
+  60%
+
+  70%
+
+  80%
+
+  90%
+
+  100%
+
+Merged power views for 46689 cells.
+Processed 46689 cell internal tap current sources.
+Processed 0 cell internal resistors.
+
+cell name                 #instances   view type
+----------------------------------------------------------------
+OAI22_X2                      186      port
+OAI211_X1                     190      port
+FILLCELL_X32                 4605      port
+NOR3_X1                       139      port
+INV_X16                        41      port
+AOI222_X1                     260      port
+AND3_X1                        20      port
+AOI222_X2                       8      port
+NOR2_X4                         5      port
+AND3_X2                         3      port
+OAI221_X1                     220      port
+AOI221_X1                     340      port
+OAI222_X1                      61      port
+NAND4_X2                       75      port
+NOR4_X2                        23      port
+FILLCELL_X16                 1843      port
+AND2_X2                        42      port
+AND3_X4                        20      port
+DFFS_X1                       695      port
+FILLCELL_X2                  6383      port
+XOR2_X2                        77      port
+OAI21_X2                      205      port
+AND4_X2                         1      port
+FILLCELL_X4                  6394      port
+AOI21_X1                      234      port
+MUX2_X1                         2      port
+AOI221_X2                      40      port
+AOI22_X1                      643      port
+NAND3_X2                      115      port
+INV_X8                         20      port
+OAI222_X2                      83      port
+AND2_X4                        69      port
+DFFR_X1                      1036      port
+NAND3_X1                      241      port
+NAND2_X4                        8      port
+DFFR_X2                       224      port
+OR3_X4                          7      port
+HA_X1                          57      port
+AOI211_X1                      59      port
+AOI22_X2                      750      port
+XNOR2_X1                       25      port
+FILLCELL_X8                  3776      port
+INV_X1                        787      port
+AND2_X1                        39      port
+AOI21_X2                      168      port
+CLKBUF_X2                      41      port
+INV_X4                        666      port
+NAND4_X1                      117      port
+DFFS_X2                        82      port
+OAI33_X1                       50      port
+NAND2_X2                      603      port
+CLKBUF_X3                      23      port
+NOR3_X2                        77      port
+NOR4_X1                        84      port
+OR4_X1                         14      port
+BUF_X2                         91      port
+OAI221_X2                      45      port
+FILLCELL_X1                  6451      port
+BUF_X16                       385      port
+OR4_X2                          9      port
+NOR4_X4                         1      port
+NOR2_X2                       333      port
+BUF_X1                         84      port
+OR4_X4                          3      port
+CLKBUF_X1                    1457      port
+NAND2_X1                      575      port
+OR2_X1                         51      port
+OAI21_X4                        1      port
+BUF_X32                      2301      port
+INV_X2                        284      port
+BUF_X4                        240      port
+OR3_X2                         11      port
+MUX2_X2                       142      port
+AND4_X1                         5      port
+FA_X1                          31      port
+NOR2_X1                       286      port
+OR2_X4                         13      port
+INV_X32                        11      port
+NOR3_X4                         4      port
+OR2_X2                         16      port
+OR3_X1                         17      port
+OAI22_X1                      962      port
+OAI211_X2                      64      port
+BUF_X8                        285      port
+XOR2_X1                        63      port
+OAI21_X1                      335      port
+AND4_X4                        14      port
+XNOR2_X2                       79      port
+AOI211_X2                      64      port
+
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 0 seconds
+  Children sys time  = 0 seconds
+  Virtual mem. size  = 134,381,568 bytes
+  Total alloc size   = 37,265,408 bytes
+  In use alloc size  = 29,827,560 bytes
+  Page fault w/o IO  = 13,629
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+Running power grid merge for net VDD required:
+		-0.00 user, 0.00 system, and 7.92 real seconds
+
+
+Loading power-grid database: .//PDCore_25C_avg_2/VSS/VSS
+
+  Processing powerpin_location_file: /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/VSS.ppl
+  added voltage source VSS at node 4490
+
+Loading power-grid database: .//PDCore_25C_avg_2//VDD/VDD
+
+  Processing powerpin_location_file: /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/VDD.ppl
+  added voltage source VDD at node 3214
+
+Beginning a steady-state analysis of the circuit.
+
+  Using 4 CPU(s) for matrix factorization
+
+  Starting parallel solve with 1 thread(s)
+
+Steady-state analysis was successful
+The analysis required:
+		 1.46078 user, 1.78773 system, and 4.16053 real seconds
+
+
+
+Results for net VSS:
+
+Loading circuit file: .//PDCore_25C_avg_2//VSS/VSS.mhdr
+
+Beginning the loading of the circuit.
+	   0 Errors encountered during loading.
+	   0 Warnings encountered during loading.
+
+Circuit profile:
+                                                  Current   Voltage
+Layer Name                     Nodes  Resistors   Sources   Sources
+----- --------------------  --------  ---------  --------  --------
+  0   metal8                    5782       5775         0         1
+  1   via7                         0       4590         0         0
+  2   metal7                   16336      15228         0         0
+  3   via6                         0      11692         0         0
+  4   metal6                   18802      17696         0         0
+  5   via5                         0      12482         0         0
+  6   metal5                   12482      11376         0         0
+  7   via4                         0      12482         0         0
+  8   metal4                   44082      42976         0         0
+  9   via3                         0      22436         0         0
+ 10   metal3                   32232      31126         0         0
+ 11   via2                         0      22436         0         0
+ 12   metal2                   66518      65412         0         0
+ 13   via1                         0      23858         0         0
+ 14   metal1                   83481      83323     43297         0
+                            --------  ---------  --------  --------
+ 15   Circuit total           279716     382888     43297         1
+
+Loading the circuit required:
+		0.23 user, 0.02 system, and 0.25 real seconds
+
+
+Total memory utilization:
+	maximum heap memory usage:            80683k
+	current heap memory usage:            56566k
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.02 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+
+Filter 1:  279715  of  279715  data values fell into this filter.
+	filtered data range:   0.000V - 23.903mV
+	filtered data average: 17.088mV
+	  114003 values were in range 1: 20.915mV - 23.903mV
+	   64176 values were in range 2: 17.927mV - 20.915mV
+	   11728 values were in range 3: 14.940mV - 17.927mV
+	   29713 values were in range 4: 11.952mV - 14.940mV
+	   20421 values were in range 5: 8.964mV - 11.952mV
+	   16292 values were in range 6: 5.976mV - 8.964mV
+	   12980 values were in range 7: 2.988mV - 5.976mV
+	   10402 values were in range 8: 0.000V - 2.988mV
+Plotting of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+Scanning of data required:
+		0.01 user, -0.00 system, and 0.01 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+
+Filter 1:  279715  of  279715  data values fell into this filter.
+	filtered data range:   0.000V - 23.903mV
+	filtered data average: 17.088mV
+	       0 values were in range 1: 95.000mV - 95.000mV
+	       0 values were in range 2: 87.083mV - 95.000mV
+	       0 values were in range 3: 79.167mV - 87.083mV
+	       0 values were in range 4: 71.250mV - 79.167mV
+	       0 values were in range 5: 63.333mV - 71.250mV
+	       0 values were in range 6: 55.417mV - 63.333mV
+	       0 values were in range 7: 47.500mV - 55.417mV
+	  279715 values were in range 8: -1.000uV - 47.500mV
+Plotting of data required:
+		0.03 user, -0.00 system, and 0.03 real seconds
+
+
+Data filtering results for effective resistance:
+	Overall data range:   16.094Ohm - 60.741Ohm
+	Overall data average: 35.997Ohm
+Scanning of data required:
+		0.01 user, -0.00 system, and 0.01 real seconds
+
+
+Data filtering results for effective resistance:
+	Overall data range:   16.094Ohm - 60.741Ohm
+	Overall data average: 35.997Ohm
+
+Filter 1:  43297  of  43297  data values fell into this filter.
+	filtered data range:   16.094Ohm - 60.741Ohm
+	filtered data average: 35.997Ohm
+	    3152 values were in range 1: 55.161Ohm - 60.741Ohm
+	    4939 values were in range 2: 49.580Ohm - 55.161Ohm
+	    5144 values were in range 3: 43.999Ohm - 49.580Ohm
+	    5453 values were in range 4: 38.418Ohm - 43.999Ohm
+	    5537 values were in range 5: 32.837Ohm - 38.418Ohm
+	    5603 values were in range 6: 27.256Ohm - 32.837Ohm
+	    5737 values were in range 7: 21.675Ohm - 27.256Ohm
+	    7732 values were in range 8: 16.094Ohm - 21.675Ohm
+Plotting of data required:
+		0.02 user, 0.00 system, and 0.02 real seconds
+
+
+Data filtering results for tap current:
+	Overall data range:   -36.951uA - 0.000A
+	Overall data average: -0.533uA
+	Total current: -23.099mA
+
+Filter 1:  16747  of  43297  data values fell into this filter.
+	filtered data range:   -36.951uA - -1.838nA
+	filtered data average: -1.379uA
+	       0 values were in range 1: -1.000GA - -1.000mA
+	       0 values were in range 2: -1.000mA - -0.100mA
+	     282 values were in range 3: -0.100mA - -10.000uA
+	    5620 values were in range 4: -10.000uA - -1.000uA
+	    8021 values were in range 5: -1.000uA - -0.100uA
+	    2704 values were in range 6: -0.100uA - -10.000nA
+	     120 values were in range 7: -10.000nA - -1.000nA
+	       0 values were in range 8: -1.000nA - -0.000A
+Plotting of data required:
+		0.00 user, -0.00 system, and 0.00 real seconds
+
+
+Data filtering results for resistor current:
+	Overall data range:   0.000A - 23.099mA
+	Overall data average: 12.958uA
+
+Filter 1:  902  of  382888  data values fell into this filter.
+	filtered data range:   0.501mA - 23.099mA
+	filtered data average: 2.313mA
+	       1 values were in range 1: 16.000mA - 1.000GA
+	      62 values were in range 2: 8.000mA - 16.000mA
+	     112 values were in range 3: 4.000mA - 8.000mA
+	      15 values were in range 4: 2.000mA - 4.000mA
+	     323 values were in range 5: 1.000mA - 2.000mA
+	     389 values were in range 6: 0.500mA - 1.000mA
+	       0 values were in range 7: -10.000KA - -10.000KA
+	       0 values were in range 8: -10.000KA - -10.000KA
+Plotting of data required:
+		0.06 user, 0.00 system, and 0.06 real seconds
+
+
+Data filtering results for current density: (J/JMAX)
+	Overall data range:   0.000 - 1.156
+	Overall data average: 42.386m
+
+Filter 1:  14427  of  382888  data values fell into this filter.
+	filtered data range:   0.250 - 1.156
+	filtered data average: 0.434
+	      36 values were in range 1: 1.000 - 1.000G
+	     681 values were in range 2: 0.750 - 1.000
+	    3239 values were in range 3: 0.500 - 0.750
+	   10471 values were in range 4: 0.250 - 0.500
+	       0 values were in range 5: -10.000K - -10.000K
+	       0 values were in range 6: -10.000K - -10.000K
+	       0 values were in range 7: -10.000K - -10.000K
+	       0 values were in range 8: -10.000K - -10.000K
+
+*** Info: model parameter "vcwidth" has been used to
+          calculate the area of one or more via resistors.
+
+Plotting of data required:
+		0.07 user, 0.00 system, and 0.07 real seconds
+
+
+Data filtering results for instance based IR drop:
+	Overall data range:   2.032mV - 23.903mV
+	Overall data average: 19.529mV
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for instance based IR drop:
+	Overall data range:   2.032mV - 23.903mV
+	Overall data average: 19.529mV
+
+Filter 1:  43297  of  43297  data values fell into this filter.
+	filtered data range:   2.032mV - 23.903mV
+	filtered data average: 19.529mV
+	       0 values were in range 1: 95.000mV - 95.000mV
+	       0 values were in range 2: 87.083mV - 95.000mV
+	       0 values were in range 3: 79.167mV - 87.083mV
+	       0 values were in range 4: 71.250mV - 79.167mV
+	       0 values were in range 5: 63.333mV - 71.250mV
+	       0 values were in range 6: 55.417mV - 63.333mV
+	       0 values were in range 7: 47.500mV - 55.417mV
+	   43297 values were in range 8: -1.000uV - 47.500mV
+Plotting of data required:
+		0.02 user, 0.00 system, and 0.02 real seconds
+
+
+Data filtering results for voltage across vias and contacts:
+	Overall data range:   3.133pV - 0.153mV
+	Overall data average: 4.372uV
+
+Filter 1:  0  of  109976  data values fell into this filter.
+Plotting of data required:
+		0.04 user, -0.00 system, and 0.04 real seconds
+
+
+Data filtering results for resistor voltage:
+	Overall data range:   0.000V - 1.831mV
+	Overall data average: 8.384uV
+Scanning of data required:
+		0.05 user, -0.00 system, and 0.05 real seconds
+
+
+Data filtering results for resistor voltage:
+	Overall data range:   0.000V - 1.831mV
+	Overall data average: 8.384uV
+
+Filter 1:  382888  of  382888  data values fell into this filter.
+	filtered data range:   0.000V - 1.831mV
+	filtered data average: 8.384uV
+	      24 values were in range 1: 1.603mV - 1.831mV
+	      33 values were in range 2: 1.374mV - 1.603mV
+	      36 values were in range 3: 1.145mV - 1.374mV
+	      72 values were in range 4: 0.916mV - 1.145mV
+	     131 values were in range 5: 0.687mV - 0.916mV
+	     490 values were in range 6: 0.458mV - 0.687mV
+	    1614 values were in range 7: 0.229mV - 0.458mV
+	  380488 values were in range 8: 0.000V - 0.229mV
+Plotting of data required:
+		0.09 user, 0.00 system, and 0.09 real seconds
+
+
+Data filtering results for voltage across package model:
+	Overall data range:   0.231nV - 0.231nV
+	Overall data average: 0.231nV
+
+Filter 1:  1  of  1  data values fell into this filter.
+	filtered data range:   0.231nV - 0.231nV
+	filtered data average: 0.231nV
+	       0 values were in range 1: 10.000mV - 1.000GV
+	       0 values were in range 2: 8.000mV - 10.000mV
+	       0 values were in range 3: 6.000mV - 8.000mV
+	       0 values were in range 4: 4.000mV - 6.000mV
+	       0 values were in range 5: 2.000mV - 4.000mV
+	       1 values were in range 6: 0.000V - 2.000mV
+	       0 values were in range 7: 0.000V - 0.000V
+	       0 values were in range 8: 0.000V - 0.000V
+Plotting of data required:
+		-0.00 user, -0.00 system, and 0.00 real seconds
+
+
+Data filtering results for power gate I/Idsat:
+	No data found.
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for power gate I/Idsat:
+	No data found.
+Plotting of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for power gate voltage:
+	No data found.
+Scanning of data required:
+		0.01 user, -0.00 system, and 0.01 real seconds
+
+
+Data filtering results for power gate voltage:
+	No data found.
+Plotting of data required:
+		0.01 user, -0.00 system, and 0.01 real seconds
+
+
+Data filtering results for voltage source current:
+	Overall data range:   23.099mA - 23.099mA
+	Overall data average: 23.099mA
+	Total current: 23.099mA
+Scanning of data required:
+		0.00 user, 0.00 system, and 0.00 real seconds
+
+
+Data filtering results for voltage source current:
+	Overall data range:   23.099mA - 23.099mA
+	Overall data average: 23.099mA
+	Total current: 23.099mA
+
+Filter 1:  1  of  1  data values fell into this filter.
+	filtered data range:   23.099mA - 23.099mA
+	filtered data average: 23.099mA
+	       1 values were in range 1: 23.099mA - 23.099mA
+	       0 values were in range 2: 23.099mA - 23.099mA
+	       0 values were in range 3: 23.099mA - 23.099mA
+	       0 values were in range 4: 23.099mA - 23.099mA
+	       0 values were in range 5: 23.099mA - 23.099mA
+	       0 values were in range 6: 23.099mA - 23.099mA
+	       0 values were in range 7: 23.099mA - 23.099mA
+	       0 values were in range 8: 23.099mA - 23.099mA
+Plotting of data required:
+		0.00 user, 0.00 system, and 0.00 real seconds
+
+Perform print pi .//PDCore_25C_avg_2//VSS/pi.report
+Printing of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+
+
+Results for net VDD:
+
+Loading circuit file: .//PDCore_25C_avg_2//VDD/VDD.mhdr
+
+Beginning the loading of the circuit.
+	   0 Errors encountered during loading.
+	   0 Warnings encountered during loading.
+
+Circuit profile:
+                                                  Current   Voltage
+Layer Name                     Nodes  Resistors   Sources   Sources
+----- --------------------  --------  ---------  --------  --------
+  0   metal8                    5816       5809         0         1
+  1   via7                         0       4617         0         0
+  2   metal7                   16437      15322         0         0
+  3   via6                         0      11766         0         0
+  4   metal6                   18921      17808         0         0
+  5   via5                         0      12561         0         0
+  6   metal5                   12561      11448         0         0
+  7   via4                         0      12561         0         0
+  8   metal4                   44361      43248         0         0
+  9   via3                         0      22578         0         0
+ 10   metal3                   32436      31323         0         0
+ 11   via2                         0      22578         0         0
+ 12   metal2                   66939      65826         0         0
+ 13   via1                         0      24009         0         0
+ 14   metal1                   84956      84797     43249         0
+                            --------  ---------  --------  --------
+ 15   Circuit total           282428     386251     43249         1
+
+Loading the circuit required:
+		0.23 user, 0.02 system, and 0.25 real seconds
+
+
+Total memory utilization:
+	maximum heap memory usage:            82696k
+	current heap memory usage:            58077k
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.925V - 0.950V
+	Overall data average: 0.932V
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.925V - 0.950V
+	Overall data average: 0.932V
+
+Filter 1:  282427  of  282427  data values fell into this filter.
+	filtered data range:   0.925V - 0.950V
+	filtered data average: 0.932V
+	   59740 values were in range 1: 0.925V - 0.928V
+	  123092 values were in range 2: 0.928V - 0.931V
+	   31428 values were in range 3: 0.931V - 0.934V
+	    5780 values were in range 4: 0.934V - 0.937V
+	   21168 values were in range 5: 0.937V - 0.941V
+	   16580 values were in range 6: 0.941V - 0.944V
+	   13530 values were in range 7: 0.944V - 0.947V
+	   11109 values were in range 8: 0.947V - 0.950V
+Plotting of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.925V - 0.950V
+	Overall data average: 0.932V
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.925V - 0.950V
+	Overall data average: 0.932V
+
+Filter 1:  282427  of  282427  data values fell into this filter.
+	filtered data range:   0.925V - 0.950V
+	filtered data average: 0.932V
+	       0 values were in range 1: 0.855V - 0.855V
+	       0 values were in range 2: 0.855V - 0.863V
+	       0 values were in range 3: 0.863V - 0.871V
+	       0 values were in range 4: 0.871V - 0.879V
+	       0 values were in range 5: 0.879V - 0.887V
+	       0 values were in range 6: 0.887V - 0.895V
+	       0 values were in range 7: 0.895V - 0.902V
+	  282427 values were in range 8: 0.902V - 0.950V
+Plotting of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+
+Data filtering results for effective resistance:
+	Overall data range:   16.790Ohm - 76.803Ohm
+	Overall data average: 37.845Ohm
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for effective resistance:
+	Overall data range:   16.790Ohm - 76.803Ohm
+	Overall data average: 37.845Ohm
+
+Filter 1:  43249  of  43249  data values fell into this filter.
+	filtered data range:   16.790Ohm - 76.803Ohm
+	filtered data average: 37.845Ohm
+	    1269 values were in range 1: 69.302Ohm - 76.803Ohm
+	     818 values were in range 2: 61.800Ohm - 69.302Ohm
+	    3712 values were in range 3: 54.298Ohm - 61.800Ohm
+	    6323 values were in range 4: 46.796Ohm - 54.298Ohm
+	    7011 values were in range 5: 39.295Ohm - 46.796Ohm
+	    7282 values were in range 6: 31.793Ohm - 39.295Ohm
+	    7260 values were in range 7: 24.291Ohm - 31.793Ohm
+	    9574 values were in range 8: 16.790Ohm - 24.291Ohm
+Plotting of data required:
+		0.02 user, -0.00 system, and 0.02 real seconds
+
+
+Data filtering results for tap current:
+	Overall data range:   0.000A - 44.917uA
+	Overall data average: 0.534uA
+	Total current: 23.099mA
+
+Filter 1:  16709  of  43249  data values fell into this filter.
+	filtered data range:   1.838nA - 44.917uA
+	filtered data average: 1.382uA
+	       0 values were in range 1: 1.000mA - 1.000GA
+	       0 values were in range 2: 0.100mA - 1.000mA
+	     280 values were in range 3: 10.000uA - 0.100mA
+	    5622 values were in range 4: 1.000uA - 10.000uA
+	    8006 values were in range 5: 0.100uA - 1.000uA
+	    2680 values were in range 6: 10.000nA - 0.100uA
+	     121 values were in range 7: 1.000nA - 10.000nA
+	       0 values were in range 8: 0.000A - 1.000nA
+Plotting of data required:
+		0.00 user, 0.00 system, and 0.00 real seconds
+
+
+Data filtering results for resistor current:
+	Overall data range:   0.000A - 23.099mA
+	Overall data average: 12.282uA
+
+Filter 1:  856  of  386251  data values fell into this filter.
+	filtered data range:   0.500mA - 23.099mA
+	filtered data average: 2.375mA
+	       1 values were in range 1: 16.000mA - 1.000GA
+	      66 values were in range 2: 8.000mA - 16.000mA
+	     107 values were in range 3: 4.000mA - 8.000mA
+	      13 values were in range 4: 2.000mA - 4.000mA
+	     298 values were in range 5: 1.000mA - 2.000mA
+	     371 values were in range 6: 0.500mA - 1.000mA
+	       0 values were in range 7: -10.000KA - -10.000KA
+	       0 values were in range 8: -10.000KA - -10.000KA
+Plotting of data required:
+		0.06 user, 0.00 system, and 0.06 real seconds
+
+
+Data filtering results for current density: (J/JMAX)
+	Overall data range:   0.000 - 1.163
+	Overall data average: 39.311m
+
+Filter 1:  13948  of  386251  data values fell into this filter.
+	filtered data range:   0.250 - 1.163
+	filtered data average: 0.386
+	      27 values were in range 1: 1.000 - 1.000G
+	     165 values were in range 2: 0.750 - 1.000
+	    2046 values were in range 3: 0.500 - 0.750
+	   11710 values were in range 4: 0.250 - 0.500
+	       0 values were in range 5: -10.000K - -10.000K
+	       0 values were in range 6: -10.000K - -10.000K
+	       0 values were in range 7: -10.000K - -10.000K
+	       0 values were in range 8: -10.000K - -10.000K
+
+*** Info: model parameter "vcwidth" has been used to
+          calculate the area of one or more via resistors.
+
+Plotting of data required:
+		0.07 user, 0.00 system, and 0.07 real seconds
+
+
+Data filtering results for instance based IR drop:
+	Overall data range:   0.925V - 0.942V
+	Overall data average: 0.929V
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for instance based IR drop:
+	Overall data range:   0.925V - 0.942V
+	Overall data average: 0.929V
+
+Filter 1:  43249  of  43249  data values fell into this filter.
+	filtered data range:   0.925V - 0.942V
+	filtered data average: 0.929V
+	       0 values were in range 1: 0.855V - 0.855V
+	       0 values were in range 2: 0.855V - 0.863V
+	       0 values were in range 3: 0.863V - 0.871V
+	       0 values were in range 4: 0.871V - 0.879V
+	       0 values were in range 5: 0.879V - 0.887V
+	       0 values were in range 6: 0.887V - 0.895V
+	       0 values were in range 7: 0.895V - 0.902V
+	   43249 values were in range 8: 0.902V - 0.950V
+Plotting of data required:
+		0.02 user, 0.00 system, and 0.02 real seconds
+
+
+Data filtering results for voltage across vias and contacts:
+	Overall data range:   50.431pV - 0.152mV
+	Overall data average: 4.034uV
+
+Filter 1:  0  of  110670  data values fell into this filter.
+Plotting of data required:
+		0.04 user, 0.00 system, and 0.04 real seconds
+
+
+Data filtering results for resistor voltage:
+	Overall data range:   0.000V - 8.049mV
+	Overall data average: 8.742uV
+Scanning of data required:
+		0.05 user, 0.00 system, and 0.05 real seconds
+
+
+Data filtering results for resistor voltage:
+	Overall data range:   0.000V - 8.049mV
+	Overall data average: 8.742uV
+
+Filter 1:  386251  of  386251  data values fell into this filter.
+	filtered data range:   0.000V - 8.049mV
+	filtered data average: 8.742uV
+	      20 values were in range 1: 7.043mV - 8.049mV
+	      22 values were in range 2: 6.037mV - 7.043mV
+	      21 values were in range 3: 5.031mV - 6.037mV
+	      30 values were in range 4: 4.024mV - 5.031mV
+	      28 values were in range 5: 3.018mV - 4.024mV
+	      31 values were in range 6: 2.012mV - 3.018mV
+	     115 values were in range 7: 1.006mV - 2.012mV
+	  385984 values were in range 8: 0.000V - 1.006mV
+Plotting of data required:
+		0.09 user, 0.00 system, and 0.09 real seconds
+
+
+Data filtering results for voltage across package model:
+	Overall data range:   0.231nV - 0.231nV
+	Overall data average: 0.231nV
+
+Filter 1:  1  of  1  data values fell into this filter.
+	filtered data range:   0.231nV - 0.231nV
+	filtered data average: 0.231nV
+	       0 values were in range 1: 10.000mV - 1.000GV
+	       0 values were in range 2: 8.000mV - 10.000mV
+	       0 values were in range 3: 6.000mV - 8.000mV
+	       0 values were in range 4: 4.000mV - 6.000mV
+	       0 values were in range 5: 2.000mV - 4.000mV
+	       1 values were in range 6: 0.000V - 2.000mV
+	       0 values were in range 7: 0.000V - 0.000V
+	       0 values were in range 8: 0.000V - 0.000V
+Plotting of data required:
+		0.00 user, -0.00 system, and 0.00 real seconds
+
+
+Data filtering results for power gate I/Idsat:
+	No data found.
+Scanning of data required:
+		0.01 user, -0.00 system, and 0.02 real seconds
+
+
+Data filtering results for power gate I/Idsat:
+	No data found.
+Plotting of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for power gate voltage:
+	No data found.
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for power gate voltage:
+	No data found.
+Plotting of data required:
+		0.01 user, 0.00 system, and 0.01 real seconds
+
+
+Data filtering results for voltage source current:
+	Overall data range:   -23.099mA - -23.099mA
+	Overall data average: -23.099mA
+	Total current: -23.099mA
+Scanning of data required:
+		0.00 user, -0.00 system, and 0.00 real seconds
+
+
+Data filtering results for voltage source current:
+	Overall data range:   -23.099mA - -23.099mA
+	Overall data average: -23.099mA
+	Total current: -23.099mA
+
+Filter 1:  1  of  1  data values fell into this filter.
+	filtered data range:   -23.099mA - -23.099mA
+	filtered data average: -23.099mA
+	       1 values were in range 1: -23.099mA - -23.099mA
+	       0 values were in range 2: -23.099mA - -23.099mA
+	       0 values were in range 3: -23.099mA - -23.099mA
+	       0 values were in range 4: -23.099mA - -23.099mA
+	       0 values were in range 5: -23.099mA - -23.099mA
+	       0 values were in range 6: -23.099mA - -23.099mA
+	       0 values were in range 7: -23.099mA - -23.099mA
+	       0 values were in range 8: -23.099mA - -23.099mA
+Plotting of data required:
+		0.00 user, -0.00 system, and 0.00 real seconds
+
+Perform print pi .//PDCore_25C_avg_2//VDD/pi.report
+Printing of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+
+Running the analysis required:
+		10.48 user, 2.81 system, and 57.95 real seconds
+
+vstorm2 memory consumption for analysis:
+
+Total memory utilization:
+	maximum heap memory usage:            84322k
+	current heap memory usage:            77246k
+
+Total vstorm2 run time for analysis:
+		10.49 user, 2.82 system, and 57.97 real seconds
+
+
+
+
+vstorm2 memory consumption:
+
+Total memory utilization:
+	maximum heap memory usage:            84322k
+	current heap memory usage:            77246k
+
+
+Total vstorm2 run time:
+		10.51 user, 2.83 system, and 58.10 real seconds
+
+Run duration:          00:00:22 CPU time, 00:00:58 clock time
+Memory used:           84322 kbytes
+Warning messages:      6
+Error messages:        0
+
+Process Info :
+  User time          = 10 seconds
+  System time        = 2 seconds
+  Children user time = 12 seconds
+  Children sys time  = 7 seconds
+  Virtual mem. size  = 181,059,584 bytes
+  Total alloc size   = 92,020,736 bytes
+  In use alloc size  = 73,197,840 bytes
+  Page fault w/o IO  = 140,029
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+
+vstorm2 exited successfully.

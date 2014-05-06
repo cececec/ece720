@@ -1,10 +1,10 @@
 # set variable "modname" to the name of topmost module in design
-set modname CORTEXM0DS
+set modname cortex_soc
 
 # set variable "topmetal" to the highest usable metal layer
-set topmetal 10
+set topmetal 8
 
-# set variable "holdslack" to the difference btw. Encounter & PrimeTime hold-times
+# set variable "holdslack 0.15
 set holdslack 0.15
 
 # Define a helpful function for printing out time strings

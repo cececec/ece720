@@ -36,7 +36,7 @@ module tb ();
 // Define parameters for clock period and power-on reset delay
 //------------------------------------------------------------------------------
 
-localparam clk_period = 100;            // Simulation cycles per clock period
+localparam clk_period = 4.7;            // Simulation cycles per clock period
 localparam clk2_period = clk_period / 2;
 localparam por_delay  = 1001;           // Simulation cycles of power-on-reset
 localparam ram_log2   = 18;             // Power of two of RAM words
@@ -221,6 +221,7 @@ initial begin
   #(por_delay) power_on_reset_n = 1'b1;
 end
 
+
 // Synchronize AHB reset, and factor in reset request from the CPU
 reg [1:0] rst_sync;
 always @(posedge sim_clock or negedge power_on_reset_n)
@@ -313,6 +314,11 @@ cortex_soc soc(
 // Initialize memory content from "ram.bin"
 integer fd, i;
 reg [31:0] data;
+
+initial begin
+    $dumpfile("waves.vcd");
+    $dumpvars;
+end
 
 initial begin
   s_rd_ready <= 0;

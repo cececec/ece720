@@ -1,0 +1,120 @@
+Encounter Power System -cmd /dev/null -temp_directory_name /tmp 
+* vstorm2
+*	Version v09.11-s023_1 (03/04/2010 05:14:40)
+*	Copyright 2007 Cadence Design Systems, Inc.
+*
+*	Run by ghuang2 on Mon May  5 23:08:21 2014
+*	Executing 32 bit version on host: grendel11.ece.ncsu.edu
+*
+* vs2api.log
+*
+* Current Process Limit (in bytes):
+*    Data Size	: 4194303k
+*    File Size	: 4194303k
+*    Memory	: 4194303k
+*    Stack Size	: 59392k
+*    Descriptors: 1024 
+*
+Executing: loadstate /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VSS 
+Temp directory is: /tmp
+Loading circuit file: /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VSS/VSS.mhdr
+
+Beginning the loading of the circuit.
+	   0 Errors encountered during loading.
+	   0 Warnings encountered during loading.
+
+Circuit profile:
+                                                  Current   Voltage
+Layer Name                     Nodes  Resistors   Sources   Sources
+----- --------------------  --------  ---------  --------  --------
+  0   metal8                    5782       5775         0         0
+  1   via7                         0       4590         0         0
+  2   metal7                   16336      15228         0         0
+  3   via6                         0      11692         0         0
+  4   metal6                   18802      17696         0         0
+  5   via5                         0      12482         0         0
+  6   metal5                   12482      11376         0         0
+  7   via4                         0      12482         0         0
+  8   metal4                   44082      42976         0         0
+  9   via3                         0      22436         0         0
+ 10   metal3                   32232      31126         0         0
+ 11   via2                         0      22436         0         0
+ 12   metal2                   66518      65412         0         0
+ 13   via1                         0      23858         0         0
+ 14   metal1                   83481      83323     43297         0
+                            --------  ---------  --------  --------
+ 15   Circuit total           279716     382888     43297         0
+
+Loading the circuit required:
+		0.19 user, 0.21 system, and 7.26 real seconds
+
+
+Total memory utilization:
+	maximum heap memory usage:            78436k
+	current heap memory usage:            50692k
+
+* Note: Current sources will not be reset before loading.
+Loading current source data file: /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VSS/VSS.tap
+
+Beginning the loading of current source data.
+
+Total current loaded = 2.309864e-02A
+
+Loading of current data required:
+		0.01 user, 0.01 system, and 0.11 real seconds
+
+*Added new voltage source VSS (0) at node 4490 
+Old total current = 2.309864e-02A
+New total current = -2.309864e-02A
+Executing: filter ir auto 
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.02 real seconds
+
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+
+Filter 1:  279715  of  279715  data values fell into this filter.
+	filtered data range:   0.000V - 23.903mV
+	filtered data average: 17.088mV
+	  114003 values were in range 1: 20.915mV - 23.903mV
+	   64176 values were in range 2: 17.927mV - 20.915mV
+	   11728 values were in range 3: 14.940mV - 17.927mV
+	   29713 values were in range 4: 11.952mV - 14.940mV
+	   20421 values were in range 5: 8.964mV - 11.952mV
+	   16292 values were in range 6: 5.976mV - 8.964mV
+	   12980 values were in range 7: 2.988mV - 5.976mV
+	   10402 values were in range 8: 0.000V - 2.988mV
+Scanning of data required:
+		0.03 user, 0.00 system, and 0.03 real seconds
+
+Executing: filter ir auto 
+
+Data filtering results for IR drop:
+	Overall data range:   0.000V - 23.903mV
+	Overall data average: 17.088mV
+Scanning of data required:
+		0.01 user, 0.00 system, and 0.02 real seconds
+
+
+
+vstorm2 memory consumption:
+
+Total memory utilization:
+	maximum heap memory usage:            78436k
+	current heap memory usage:             1106k
+
+
+Total vstorm2 run time:
+		4.04 user, 2.60 system, and 116.21 real seconds
+
+Warning messages:      0
+Error messages:        0
+
+
+vstorm2 exited successfully.

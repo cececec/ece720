@@ -1,0 +1,65 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : /ncsu/cadence2012/edi/tools/lib/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /ncsu/cadence2012/oa/lib/linux_rhel40_gcc44x_32/opt/liboaPlugIn.so)
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter v09.11-s084_1" on Mon May  5 21:01:47 2014 (mem=46.5M) ---
+--- Running on grendel9.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.1.2.el6.x86_64) ---
+This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Encounter terminated by external (TERM) signal.
+Encounter terminated by external (TERM) signal.
+*** Memory pool thread-safe mode activated.
+Encounter terminated by internal (SEGV) error/signal...
+
+*** Stack trace:
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 200.543M, initial mem = 46.477M) ***
+--- Ending "Encounter" (totcpu=0:00:45.7, real=0:01:15, mem=200.5M) ---
+--- Ending "Encounter" (totcpu=0:00:45.7, real=0:01:15, mem=200.5M) ---
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(syStackTrace+0x14a)[0xdf50562]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter[0x8d88694]
+[0xf77dd410]
+/lib/libc.so.6(exit+0x38)[0x8c40a8]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(_Z16initializeLapackv+0x0)[0x8d88436]
+[0xf77dd410]
+[0xf77dd430]
+/lib/libc.so.6(tcsetattr+0x9b)[0x96f4db]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(_Z9rl_ttyseti+0x10d)[0xc3a589b]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(_Z6elInitPKc+0x5b)[0xc3a33bd]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(_Z18rdaEditCmdLineInitP10Tcl_Interp+0x150)[0x8d6ae32]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(Tcl_AppInit+0x475)[0x8d69073]
+/ncsu/cadence2012/edi/tools/lib/libtq.so(_ZN13TqApplication4execEv+0x13c)[0xf5dca40c]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(_Z7fe_mainiPPc+0x36e)[0x8d6946c]
+/ncsu/cadence2012/edi/tools/fe/bin/32bit/encounter(main+0x79)[0x8d69545]
+/lib/libc.so.6(__libc_start_main+0xe6)[0x8acd26]

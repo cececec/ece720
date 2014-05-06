@@ -1,0 +1,54 @@
+* The organization, structure, and layout of this file are copyrights and
+* confidential and proprietary trade secrets of Cadence Design Systems, Inc.,
+* subject to the terms and conditions of the license agreement in effect
+* between you and Cadence Design Systems, Inc. This file and its information
+* may not be disclosed, sold, or otherwise transferred to any third party
+* without the express written consent of Cadence Design Systems, Inc. Export
+* of any or all of this file in violation of any statute or regulation is
+* strictly prohibited.
+* 
+
+FORMAT: 7.3
+PROJECT: cortex_soc
+NET: VSS 
+CREATOR: mergegrid
+
+CREATED: TODAY
+
+LAYOUT_XMIN: 0
+LAYOUT_YMIN: 0
+LAYOUT_XMAX: 301395
+LAYOUT_YMAX: 522440
+
+NODES: 279714
+NODE_FILE: VSS.mnode
+RESISTORS: 382886
+
+LAYERS: 15
+LAYER: metal8 M 5773 VSS.ml04
+LAYER: via7 V 4590 VSS.ml05
+LAYER: metal7 M 15228 VSS.ml06
+LAYER: via6 V 11692 VSS.ml07
+LAYER: metal6 M 17696 VSS.ml08
+LAYER: via5 V 12482 VSS.ml09
+LAYER: metal5 M 11376 VSS.ml10
+LAYER: via4 V 12482 VSS.ml11
+LAYER: metal4 M 42976 VSS.ml12
+LAYER: via3 V 22436 VSS.ml13
+LAYER: metal3 M 31126 VSS.ml14
+LAYER: via2 V 22436 VSS.ml15
+LAYER: metal2 M 65412 VSS.ml16
+LAYER: via1 V 23858 VSS.ml17
+LAYER: metal1 M 83323 VSS.ml18
+
+CUT_LAYER: none
+GRID_CAP: false
+DIFF_CAP: false
+PINS: VSS.mpin
+INSTANCES: VSS.minst
+I_LOADS:
+NODE_MAP:
+RESISTOR_MAP:
+TILE_FILE: VSS.mtile
+OUTPUT_WLT: drawn
+LAYOUT_SCALE_FACTOR: 1

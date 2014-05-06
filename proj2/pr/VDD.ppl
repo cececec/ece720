@@ -3,4 +3,4 @@
 * vsrc name X(um) Y(um) LEF/Tech Layer <R=value ohm> <C=value F> <L=value H>
 * Package R,L and C parameters are optional
 *-----------------------------------------------------------------------------
-VDD 6.0 100.0 metal6
+VDD 10.5 261.3 metal8

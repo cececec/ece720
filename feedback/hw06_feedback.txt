@@ -1,0 +1,20 @@
+ECE720 hw06 Feedback for Huang,Ganqin
+
+(4/4) 1(a) Was the cost of the initial partition calculated correctly?
+(2/2) 1(b) Are the sizes correct?  Correct admissiblility concludion?
+(2/4) 1(c) Correct gain for swap?
+gain not calculated correctly
+
+(2/2) 1(d) Correct admissibility conclusion for new swap?
+(8/8) 1(e) Is the new partition's cost lower than the previous two?
+(10/10) 2(def) Does the xbar_routed.def file look correct?
+(10/10) 2(log) Does the run_route.log file look correct?
+(10/10) 2(tcl) Were the tcl files provided and do they look correct?
+(10/10) 2(soln) Were the changes to scripts correctly noted in solution doc?
+(10/10) 3(py) Does the python script correctly calculate the histogram?
+(10/10) 3(avg) Is Donath's method correctly use to predict average length?
+
+Total:
+(0/0) Late Penalty (0 days late)
+(78/80) Total
+

@@ -1,0 +1,285 @@
+****************************************
+Report : timing
+	-path_type full_clock_expanded
+	-delay_type min_max
+	-input_pins
+	-max_paths 1
+	-transition_time
+	-crosstalk_delta
+	-sort_by slack
+Design : cortex_soc
+Version: H-2013.06-SP1
+Date   : Mon May  5 19:54:37 2014
+****************************************
+
+
+  Startpoint: u_cortexm0ds/u_logic/D923z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_cortexm0ds/u_logic/D923z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                                DTrans   Trans    Delta     Incr       Path
+  ---------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                         0.0000     0.0000
+  clock source latency                                                           0.0000     0.0000
+  HCLK (in)                                                    0.0000            0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                             0.0000   0.0020   0.0000   0.0017 &   0.0017 r
+  HCLK__L1_I0/ZN (INV_X32)                                     0.0039            0.0059 &   0.0076 f
+  HCLK__L2_I0/A (BUF_X8)                              0.0000   0.0045   0.0000   0.0025 &   0.0101 f
+  HCLK__L2_I0/Z (BUF_X8)                                       0.0221            0.0531 &   0.0632 f
+  HCLK__L3_I1/A (INV_X32)                             0.0000   0.0223   0.0000   0.0027 &   0.0659 f
+  HCLK__L3_I1/ZN (INV_X32)                                     0.0175            0.0247 &   0.0906 r
+  HCLK__L4_I5/A (INV_X32)                             0.0000   0.0191   0.0000   0.0064 &   0.0970 r
+  HCLK__L4_I5/ZN (INV_X32)                                     0.0122            0.0165 &   0.1135 f
+  HCLK__L5_I23/A (INV_X16)                            0.0000   0.0125   0.0000   0.0023 &   0.1158 f
+  HCLK__L5_I23/ZN (INV_X16)                                    0.0306            0.0340 &   0.1498 r
+  u_cortexm0ds/HCLK__L5_N23 (CORTEXM0DS)                       0.0000            0.0000 &   0.1498 r
+  u_cortexm0ds/u_logic/HCLK__L5_N23 (cortexm0ds_logic)         0.0000            0.0000 &   0.1498 r
+  u_cortexm0ds/u_logic/D923z4_reg/CK (DFFS_X1)        0.0000   0.0312   0.0000   0.0047 &   0.1545 r
+  u_cortexm0ds/u_logic/D923z4_reg/QN (DFFS_X1)                 0.0189            0.0654 &   0.2199 f
+  u_cortexm0ds/u_logic/FE_PHC3609_n5327/A (BUF_X16)  -0.0023   0.0189  -0.0014  -0.0014 &   0.2186 f
+  u_cortexm0ds/u_logic/FE_PHC3609_n5327/Z (BUF_X16)            0.0135            0.0558 &   0.2744 f
+  u_cortexm0ds/u_logic/U2782/A1 (OAI22_X1)            0.0000   0.0135   0.0000   0.0000 &   0.2744 f
+  u_cortexm0ds/u_logic/U2782/ZN (OAI22_X1)                     0.0233            0.0309 &   0.3053 r
+  u_cortexm0ds/u_logic/D923z4_reg/D (DFFS_X1)        -0.0025   0.0233  -0.0016  -0.0016 &   0.3037 r
+  data arrival time                                                                         0.3037
+
+  clock HCLK (rise edge)                                                         0.0000     0.0000
+  clock source latency                                                           0.0000     0.0000
+  HCLK (in)                                                    0.0000            0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                             0.0000   0.0020   0.0000   0.0017 &   0.0017 r
+  HCLK__L1_I0/ZN (INV_X32)                                     0.0039            0.0059 &   0.0076 f
+  HCLK__L2_I0/A (BUF_X8)                              0.0000   0.0045   0.0000   0.0025 &   0.0101 f
+  HCLK__L2_I0/Z (BUF_X8)                                       0.0221            0.0531 &   0.0632 f
+  HCLK__L3_I1/A (INV_X32)                             0.0000   0.0224   0.0000   0.0027 &   0.0659 f
+  HCLK__L3_I1/ZN (INV_X32)                                     0.0176            0.0247 &   0.0907 r
+  HCLK__L4_I5/A (INV_X32)                             0.0000   0.0193   0.0000   0.0064 &   0.0971 r
+  HCLK__L4_I5/ZN (INV_X32)                                     0.0122            0.0165 &   0.1136 f
+  HCLK__L5_I23/A (INV_X16)                            0.0000   0.0125   0.0000   0.0023 &   0.1160 f
+  HCLK__L5_I23/ZN (INV_X16)                                    0.0317            0.0343 &   0.1502 r
+  u_cortexm0ds/HCLK__L5_N23 (CORTEXM0DS)                       0.0000            0.0000 &   0.1502 r
+  u_cortexm0ds/u_logic/HCLK__L5_N23 (cortexm0ds_logic)         0.0000            0.0000 &   0.1502 r
+  u_cortexm0ds/u_logic/D923z4_reg/CK (DFFS_X1)        0.0000   0.0326   0.0000   0.0048 &   0.1550 r
+  library hold time                                                              0.0684     0.2234
+  data required time                                                                        0.2234
+  ---------------------------------------------------------------------------------------------------
+  data required time                                                                        0.2234
+  data arrival time                                                                        -0.3037
+  ---------------------------------------------------------------------------------------------------
+  slack (MET)                                                                               0.0803
+
+
+
+  Startpoint: u_cortexm0ds/u_logic/O5t2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_cortexm0ds/u_logic/Na73z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                                   DTrans   Trans    Delta     Incr       Path
+  ------------------------------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                                            0.0000     0.0000
+  clock source latency                                                              0.0000     0.0000
+  HCLK (in)                                                       0.0000            0.0000 &   0.0000 r
+  HCLK__L1_I0/A (INV_X32)                                0.0000   0.0020   0.0000   0.0017 &   0.0017 r
+  HCLK__L1_I0/ZN (INV_X32)                                        0.0039            0.0059 &   0.0076 f
+  HCLK__L2_I0/A (BUF_X8)                                 0.0000   0.0045   0.0000   0.0025 &   0.0101 f
+  HCLK__L2_I0/Z (BUF_X8)                                          0.0221            0.0531 &   0.0632 f
+  HCLK__L3_I0/A (INV_X32)                                0.0000   0.0224   0.0000   0.0025 &   0.0657 f
+  HCLK__L3_I0/ZN (INV_X32)                                        0.0249            0.0299 &   0.0956 r
+  HCLK__L4_I2/A (INV_X32)                                0.0000   0.0300   0.0000   0.0113 &   0.1069 r
+  HCLK__L4_I2/ZN (INV_X32)                                        0.0108            0.0118 &   0.1187 f
+  HCLK__L5_I9/A (INV_X16)                                0.0000   0.0109   0.0000   0.0016 &   0.1202 f
+  HCLK__L5_I9/ZN (INV_X16)                                        0.0287            0.0290 &   0.1493 r
+  u_cortexm0ds/HCLK__L5_N9 (CORTEXM0DS)                           0.0000            0.0000 &   0.1493 r
+  u_cortexm0ds/u_logic/HCLK__L5_N9 (cortexm0ds_logic)             0.0000            0.0000 &   0.1493 r
+  u_cortexm0ds/u_logic/O5t2z4_reg/CK (DFFS_X1)           0.0000   0.0296   0.0000   0.0036 &   0.1529 r
+  u_cortexm0ds/u_logic/O5t2z4_reg/QN (DFFS_X1)                    0.0102            0.0506 &   0.2035 f
+  u_cortexm0ds/u_logic/FE_OFC73_n16806/A (BUF_X4)        0.0000   0.0102   0.0000   0.0000 &   0.2035 f
+  u_cortexm0ds/u_logic/FE_OFC73_n16806/Z (BUF_X4)                 0.0231            0.0488 &   0.2523 f
+  u_cortexm0ds/u_logic/U5699/A (INV_X4)                  0.0000   0.0232   0.0000   0.0032 &   0.2555 f
+  u_cortexm0ds/u_logic/U5699/ZN (INV_X4)                          0.0221            0.0339 &   0.2894 r
+  u_cortexm0ds/u_logic/U3646/A (INV_X4)                  0.0000   0.0223   0.0000   0.0025 &   0.2919 r
+  u_cortexm0ds/u_logic/U3646/ZN (INV_X4)                          0.0261            0.0351 &   0.3270 f
+  u_cortexm0ds/u_logic/U3037/A (INV_X4)                  0.0000   0.0263   0.0000   0.0036 &   0.3306 f
+  u_cortexm0ds/u_logic/U3037/ZN (INV_X4)                          0.0669            0.0739 &   0.4045 r
+  u_cortexm0ds/u_logic/U3651/A2 (NAND2_X2)               0.0006   0.0672   0.0005   0.0057 &   0.4102 r
+  u_cortexm0ds/u_logic/U3651/ZN (NAND2_X2)                        0.0776            0.0966 &   0.5067 f
+  u_cortexm0ds/u_logic/U3034/A (INV_X4)                  0.0185   0.0779   0.0136   0.0176 &   0.5243 f
+  u_cortexm0ds/u_logic/U3034/ZN (INV_X4)                          0.0742            0.1045 &   0.6288 r
+  u_cortexm0ds/u_logic/U3678/B2 (OAI21_X2)               0.0063   0.0749   0.0049   0.0118 &   0.6406 r
+  u_cortexm0ds/u_logic/U3678/ZN (OAI21_X2)                        0.0253            0.0246 &   0.6651 f
+  u_cortexm0ds/u_logic/U3677/A (OAI221_X2)               0.0000   0.0253   0.0000   0.0000 &   0.6652 f
+  u_cortexm0ds/u_logic/U3677/ZN (OAI221_X2)                       0.0555            0.0519 &   0.7171 r
+  u_cortexm0ds/u_logic/U3676/A4 (NOR4_X2)                0.0437   0.0555   0.0352   0.0357 &   0.7528 r
+  u_cortexm0ds/u_logic/U3676/ZN (NOR4_X2)                         0.0420            0.0621 &   0.8149 f
+  u_cortexm0ds/u_logic/U3670/A2 (NAND2_X2)               0.0049   0.0420   0.0039   0.0044 &   0.8193 f
+  u_cortexm0ds/u_logic/U3670/ZN (NAND2_X2)                        0.0297            0.0492 &   0.8685 r
+  u_cortexm0ds/u_logic/U3657/A1 (NOR2_X1)                0.0013   0.0297   0.0010   0.0011 &   0.8696 r
+  u_cortexm0ds/u_logic/U3657/ZN (NOR2_X1)                         0.0321            0.0441 &   0.9137 f
+  u_cortexm0ds/u_logic/U3653/A3 (NAND3_X2)               0.0020   0.0321   0.0016   0.0017 &   0.9154 f
+  u_cortexm0ds/u_logic/U3653/ZN (NAND3_X2)                        0.0434            0.0615 &   0.9769 r
+  u_cortexm0ds/u_logic/U3574/A (INV_X4)                  0.0169   0.0435   0.0128   0.0143 &   0.9912 r
+  u_cortexm0ds/u_logic/U3574/ZN (INV_X4)                          0.0289            0.0389 &   1.0300 f
+  u_cortexm0ds/u_logic/U3068/B1 (AOI222_X1)              0.0028   0.0291   0.0022   0.0041 &   1.0342 f
+  u_cortexm0ds/u_logic/U3068/ZN (AOI222_X1)                       0.0646            0.0883 &   1.1224 r
+  u_cortexm0ds/u_logic/U3066/A3 (NAND4_X2)               0.0449   0.0646   0.0360   0.0361 &   1.1586 r
+  u_cortexm0ds/u_logic/U3066/ZN (NAND4_X2)                        0.0603            0.0755 &   1.2341 f
+  u_cortexm0ds/u_logic/U3065/A (INV_X4)                  0.0183   0.0603   0.0135   0.0152 &   1.2493 f
+  u_cortexm0ds/u_logic/U3065/ZN (INV_X4)                          0.0184            0.0288 &   1.2781 r
+  u_cortexm0ds/u_logic/U1341/A3 (NOR3_X1)                0.0017   0.0184   0.0013   0.0014 &   1.2795 r
+  u_cortexm0ds/u_logic/U1341/ZN (NOR3_X1)                         0.0378            0.0385 &   1.3179 f
+  u_cortexm0ds/u_logic/add_2082_U1_3/A (FA_X1)           0.0039   0.0378   0.0030   0.0031 &   1.3210 f
+  u_cortexm0ds/u_logic/add_2082_U1_3/CO (FA_X1)                   0.0225            0.0788 &   1.3999 f
+  u_cortexm0ds/u_logic/add_2082_U1_4/CI (FA_X1)          0.0000   0.0225   0.0000   0.0001 &   1.4000 f
+  u_cortexm0ds/u_logic/add_2082_U1_4/CO (FA_X1)                   0.0252            0.0716 &   1.4715 f
+  u_cortexm0ds/u_logic/add_2082_U1_5/CI (FA_X1)          0.0023   0.0252   0.0018   0.0019 &   1.4734 f
+  u_cortexm0ds/u_logic/add_2082_U1_5/CO (FA_X1)                   0.0194            0.0639 &   1.5373 f
+  u_cortexm0ds/u_logic/add_2082_U1_6/CI (FA_X1)          0.0000   0.0194   0.0000   0.0000 &   1.5374 f
+  u_cortexm0ds/u_logic/add_2082_U1_6/CO (FA_X1)                   0.0238            0.0683 &   1.6056 f
+  u_cortexm0ds/u_logic/add_2082_U1_7/CI (FA_X1)          0.0025   0.0238   0.0019   0.0020 &   1.6077 f
+  u_cortexm0ds/u_logic/add_2082_U1_7/CO (FA_X1)                   0.0201            0.0643 &   1.6720 f
+  u_cortexm0ds/u_logic/add_2082_U1_8/CI (FA_X1)          0.0000   0.0201   0.0000   0.0000 &   1.6720 f
+  u_cortexm0ds/u_logic/add_2082_U1_8/CO (FA_X1)                   0.0206            0.0636 &   1.7356 f
+  u_cortexm0ds/u_logic/add_2082_U1_9/CI (FA_X1)          0.0000   0.0206   0.0000   0.0001 &   1.7356 f
+  u_cortexm0ds/u_logic/add_2082_U1_9/CO (FA_X1)                   0.0193            0.0618 &   1.7974 f
+  u_cortexm0ds/u_logic/add_2082_U1_10/CI (FA_X1)         0.0000   0.0193   0.0000   0.0000 &   1.7974 f
+  u_cortexm0ds/u_logic/add_2082_U1_10/CO (FA_X1)                  0.0201            0.0625 &   1.8599 f
+  u_cortexm0ds/u_logic/add_2082_U1_11/CI (FA_X1)         0.0000   0.0201   0.0000   0.0000 &   1.8599 f
+  u_cortexm0ds/u_logic/add_2082_U1_11/CO (FA_X1)                  0.0198            0.0622 &   1.9222 f
+  u_cortexm0ds/u_logic/add_2082_U1_12/CI (FA_X1)         0.0000   0.0198   0.0000   0.0000 &   1.9222 f
+  u_cortexm0ds/u_logic/add_2082_U1_12/CO (FA_X1)                  0.0213            0.0645 &   1.9867 f
+  u_cortexm0ds/u_logic/add_2082_U1_13/CI (FA_X1)         0.0024   0.0213   0.0019   0.0019 &   1.9887 f
+  u_cortexm0ds/u_logic/add_2082_U1_13/CO (FA_X1)                  0.0199            0.0630 &   2.0517 f
+  u_cortexm0ds/u_logic/add_2082_U1_14/CI (FA_X1)         0.0000   0.0199   0.0000   0.0000 &   2.0517 f
+  u_cortexm0ds/u_logic/add_2082_U1_14/CO (FA_X1)                  0.0195            0.0617 &   2.1134 f
+  u_cortexm0ds/u_logic/add_2082_U1_15/CI (FA_X1)         0.0000   0.0195   0.0000   0.0000 &   2.1135 f
+  u_cortexm0ds/u_logic/add_2082_U1_15/CO (FA_X1)                  0.0249            0.0699 &   2.1833 f
+  u_cortexm0ds/u_logic/add_2082_U1_16/CI (FA_X1)         0.0023   0.0249   0.0018   0.0020 &   2.1853 f
+  u_cortexm0ds/u_logic/add_2082_U1_16/CO (FA_X1)                  0.0225            0.0684 &   2.2538 f
+  u_cortexm0ds/u_logic/add_2082_U1_17/CI (FA_X1)         0.0009   0.0225   0.0007   0.0007 &   2.2545 f
+  u_cortexm0ds/u_logic/add_2082_U1_17/CO (FA_X1)                  0.0191            0.0622 &   2.3167 f
+  u_cortexm0ds/u_logic/add_2082_U1_18/CI (FA_X1)         0.0000   0.0191   0.0000   0.0000 &   2.3167 f
+  u_cortexm0ds/u_logic/add_2082_U1_18/CO (FA_X1)                  0.0219            0.0651 &   2.3819 f
+  u_cortexm0ds/u_logic/add_2082_U1_19/CI (FA_X1)         0.0023   0.0219   0.0018   0.0018 &   2.3837 f
+  u_cortexm0ds/u_logic/add_2082_U1_19/CO (FA_X1)                  0.0236            0.0689 &   2.4526 f
+  u_cortexm0ds/u_logic/add_2082_U1_20/CI (FA_X1)         0.0019   0.0236   0.0015   0.0016 &   2.4542 f
+  u_cortexm0ds/u_logic/add_2082_U1_20/CO (FA_X1)                  0.0222            0.0675 &   2.5217 f
+  u_cortexm0ds/u_logic/add_2082_U1_21/CI (FA_X1)         0.0009   0.0222   0.0007   0.0008 &   2.5224 f
+  u_cortexm0ds/u_logic/add_2082_U1_21/CO (FA_X1)                  0.0250            0.0713 &   2.5937 f
+  u_cortexm0ds/u_logic/add_2082_U1_22/CI (FA_X1)         0.0016   0.0250   0.0012   0.0014 &   2.5951 f
+  u_cortexm0ds/u_logic/add_2082_U1_22/CO (FA_X1)                  0.0197            0.0641 &   2.6592 f
+  u_cortexm0ds/u_logic/add_2082_U1_23/CI (FA_X1)         0.0000   0.0197   0.0000   0.0000 &   2.6593 f
+  u_cortexm0ds/u_logic/add_2082_U1_23/CO (FA_X1)                  0.0335            0.0829 &   2.7421 f
+  u_cortexm0ds/u_logic/add_2082_U1_24/CI (FA_X1)         0.0081   0.0335   0.0062   0.0066 &   2.7487 f
+  u_cortexm0ds/u_logic/add_2082_U1_24/CO (FA_X1)                  0.0226            0.0722 &   2.8209 f
+  u_cortexm0ds/u_logic/add_2082_U1_25/CI (FA_X1)         0.0000   0.0226   0.0000   0.0001 &   2.8210 f
+  u_cortexm0ds/u_logic/add_2082_U1_25/CO (FA_X1)                  0.0195            0.0629 &   2.8839 f
+  u_cortexm0ds/u_logic/add_2082_U1_26/CI (FA_X1)         0.0000   0.0195   0.0000   0.0000 &   2.8840 f
+  u_cortexm0ds/u_logic/add_2082_U1_26/CO (FA_X1)                  0.0191            0.0610 &   2.9449 f
+  u_cortexm0ds/u_logic/add_2082_U1_27/CI (FA_X1)         0.0000   0.0191   0.0000   0.0000 &   2.9450 f
+  u_cortexm0ds/u_logic/add_2082_U1_27/CO (FA_X1)                  0.0219            0.0652 &   3.0101 f
+  u_cortexm0ds/u_logic/add_2082_U1_28/CI (FA_X1)         0.0000   0.0219   0.0000   0.0001 &   3.0102 f
+  u_cortexm0ds/u_logic/add_2082_U1_28/CO (FA_X1)                  0.0217            0.0660 &   3.0762 f
+  u_cortexm0ds/u_logic/add_2082_U1_29/CI (FA_X1)         0.0008   0.0217   0.0006   0.0007 &   3.0769 f
+  u_cortexm0ds/u_logic/add_2082_U1_29/CO (FA_X1)                  0.0210            0.0647 &   3.1416 f
+  u_cortexm0ds/u_logic/add_2082_U1_30/CI (FA_X1)         0.0023   0.0210   0.0018   0.0019 &   3.1435 f
+  u_cortexm0ds/u_logic/add_2082_U1_30/CO (FA_X1)                  0.0211            0.0648 &   3.2083 f
+  u_cortexm0ds/u_logic/add_2082_U1_31/CI (FA_X1)         0.0000   0.0211   0.0000   0.0001 &   3.2083 f
+  u_cortexm0ds/u_logic/add_2082_U1_31/CO (FA_X1)                  0.0274            0.0744 &   3.2827 f
+  u_cortexm0ds/u_logic/add_2082_U1_32/CI (FA_X1)         0.0045   0.0275   0.0036   0.0038 &   3.2865 f
+  u_cortexm0ds/u_logic/add_2082_U1_32/S (FA_X1)                   0.0265            0.1045 &   3.3910 r
+  u_cortexm0ds/u_logic/U303/A (XOR2_X2)                  0.0026   0.0265   0.0021   0.0022 &   3.3932 r
+  u_cortexm0ds/u_logic/U303/Z (XOR2_X2)                           0.0466            0.0744 &   3.4676 r
+  u_cortexm0ds/u_logic/U1527/A (INV_X4)                  0.0046   0.0466   0.0036   0.0039 &   3.4714 r
+  u_cortexm0ds/u_logic/U1527/ZN (INV_X4)                          0.0185            0.0210 &   3.4924 f
+  u_cortexm0ds/u_logic/U1526/A1 (OAI22_X1)               0.0007   0.0185   0.0006   0.0017 &   3.4941 f
+  u_cortexm0ds/u_logic/U1526/ZN (OAI22_X1)                        0.0662            0.0596 &   3.5538 r
+  u_cortexm0ds/u_logic/U1525/A (INV_X2)                  0.0128   0.0662   0.0101   0.0103 &   3.5640 r
+  u_cortexm0ds/u_logic/U1525/ZN (INV_X2)                          0.0172            0.0092 &   3.5732 f
+  u_cortexm0ds/u_logic/U2345/A (OAI21_X2)                0.0000   0.0172   0.0000   0.0000 &   3.5732 f
+  u_cortexm0ds/u_logic/U2345/ZN (OAI21_X2)                        0.0537            0.0519 &   3.6252 r
+  u_cortexm0ds/u_logic/FE_OFC118_HADDR_31_/A (INV_X4)    0.0215   0.0537   0.0153   0.0166 &   3.6418 r
+  u_cortexm0ds/u_logic/FE_OFC118_HADDR_31_/ZN (INV_X4)            0.0188            0.0190 &   3.6607 f
+  u_cortexm0ds/u_logic/haddr_o[31] (cortexm0ds_logic)             0.0000            0.0000 &   3.6607 f
+  u_cortexm0ds/HADDR[31] (CORTEXM0DS)                             0.0000            0.0000 &   3.6607 f
+  ahb/FE_OFN119_HADDR_31_ (AHB_Lite_2s)                           0.0000            0.0000 &   3.6607 f
+  ahb/FE_OFC119_HADDR_31_/A (INV_X8)                     0.0000   0.0188   0.0000   0.0002 &   3.6610 f
+  ahb/FE_OFC119_HADDR_31_/ZN (INV_X8)                             0.0136            0.0226 &   3.6836 r
+  ahb/U92/A2 (NOR3_X4)                                   0.0010   0.0136   0.0007   0.0015 &   3.6851 r
+  ahb/U92/ZN (NOR3_X4)                                            0.0625            0.0655 &   3.7506 f
+  ahb/U218/A2 (AOI22_X1)                                 0.0041   0.0633   0.0032   0.0104 &   3.7610 f
+  ahb/U218/ZN (AOI22_X1)                                          0.0464            0.0738 &   3.8348 r
+  ahb/U101/A (INV_X4)                                    0.0056   0.0464   0.0044   0.0045 &   3.8392 r
+  ahb/U101/ZN (INV_X4)                                            0.0308            0.0421 &   3.8813 f
+  ahb/HRDATA[23] (AHB_Lite_2s)                                    0.0000            0.0000 &   3.8813 f
+  u_cortexm0ds/HRDATA[23] (CORTEXM0DS)                            0.0000            0.0000 &   3.8813 f
+  u_cortexm0ds/u_logic/hrdata_i[23] (cortexm0ds_logic)            0.0000            0.0000 &   3.8813 f
+  u_cortexm0ds/u_logic/U4229/C1 (AOI222_X1)              0.0000   0.1038   0.0000   0.0015 &   3.8828 f
+  u_cortexm0ds/u_logic/U4229/ZN (AOI222_X1)                       0.0492            0.0928 &   3.9756 r
+  u_cortexm0ds/u_logic/U4228/A (OAI221_X1)               0.0103   0.0492   0.0083   0.0083 &   3.9839 r
+  u_cortexm0ds/u_logic/U4228/ZN (OAI221_X1)                       0.0916            0.1200 &   4.1039 f
+  u_cortexm0ds/u_logic/U3703/A1 (NAND3_X1)               0.0306   0.0916   0.0216   0.0231 &   4.1270 f
+  u_cortexm0ds/u_logic/U3703/ZN (NAND3_X1)                        0.0284            0.0457 &   4.1727 r
+  u_cortexm0ds/u_logic/U3702/A (OAI21_X1)                0.0000   0.0284   0.0000   0.0000 &   4.1728 r
+  u_cortexm0ds/u_logic/U3702/ZN (OAI21_X1)                        0.0212            0.0260 &   4.1987 f
+  u_cortexm0ds/u_logic/U3698/A2 (AOI222_X1)              0.0000   0.0212   0.0000   0.0000 &   4.1987 f
+  u_cortexm0ds/u_logic/U3698/ZN (AOI222_X1)                       0.0541            0.0587 &   4.2575 r
+  u_cortexm0ds/u_logic/U3697/A4 (NAND4_X2)               0.0000   0.0541   0.0000   0.0000 &   4.2575 r
+  u_cortexm0ds/u_logic/U3697/ZN (NAND4_X2)                        0.0348            0.0260 &   4.2835 f
+  u_cortexm0ds/u_logic/U2344/A (INV_X4)                  0.0098   0.0348   0.0074   0.0076 &   4.2911 f
+  u_cortexm0ds/u_logic/U2344/ZN (INV_X4)                          0.0156            0.0248 &   4.3159 r
+  u_cortexm0ds/u_logic/U3362/A2 (NOR2_X2)                0.0000   0.0156   0.0000   0.0003 &   4.3162 r
+  u_cortexm0ds/u_logic/U3362/ZN (NOR2_X2)                         0.0101            0.0126 &   4.3288 f
+  u_cortexm0ds/u_logic/U3361/B (OAI211_X1)               0.0000   0.0101   0.0000   0.0000 &   4.3288 f
+  u_cortexm0ds/u_logic/U3361/ZN (OAI211_X1)                       0.0448            0.0506 &   4.3794 r
+  u_cortexm0ds/u_logic/U3360/A (INV_X4)                  0.0041   0.0448   0.0032   0.0033 &   4.3827 r
+  u_cortexm0ds/u_logic/U3360/ZN (INV_X4)                          0.0232            0.0307 &   4.4135 f
+  u_cortexm0ds/u_logic/U2795/A (AOI221_X1)               0.0028   0.0234   0.0022   0.0048 &   4.4183 f
+  u_cortexm0ds/u_logic/U2795/ZN (AOI221_X1)                       0.0437            0.0646 &   4.4829 r
+  u_cortexm0ds/u_logic/U2794/A (INV_X2)                  0.0039   0.0437   0.0030   0.0030 &   4.4859 r
+  u_cortexm0ds/u_logic/U2794/ZN (INV_X2)                          0.0128            0.0094 &   4.4954 f
+  u_cortexm0ds/u_logic/U2793/A (AOI221_X1)               0.0000   0.0128   0.0000   0.0000 &   4.4954 f
+  u_cortexm0ds/u_logic/U2793/ZN (AOI221_X1)                       0.1374            0.1662 &   4.6615 r
+  u_cortexm0ds/u_logic/FE_OFC384_n118/A (BUF_X4)         0.1531   0.1374   0.1233   0.1247 &   4.7862 r
+  u_cortexm0ds/u_logic/FE_OFC384_n118/Z (BUF_X4)                  0.0164            0.0410 &   4.8271 r
+  u_cortexm0ds/u_logic/U2792/A (INV_X4)                  0.0008   0.0164   0.0007   0.0010 &   4.8281 r
+  u_cortexm0ds/u_logic/U2792/ZN (INV_X4)                          0.0061            0.0072 &   4.8354 f
+  u_cortexm0ds/u_logic/U2791/A (AOI221_X1)               0.0000   0.0061   0.0000   0.0000 &   4.8354 f
+  u_cortexm0ds/u_logic/U2791/ZN (AOI221_X1)                       0.0695            0.0900 &   4.9254 r
+  u_cortexm0ds/u_logic/U4830/A4 (AND4_X4)                0.0529   0.0695   0.0429   0.0432 &   4.9685 r
+  u_cortexm0ds/u_logic/U4830/ZN (AND4_X4)                         0.0511            0.0844 &   5.0530 r
+  u_cortexm0ds/u_logic/U2786/B1 (OAI22_X1)               0.0018   0.0518   0.0014   0.0080 &   5.0610 r
+  u_cortexm0ds/u_logic/U2786/ZN (OAI22_X1)                        0.0375            0.0375 &   5.0985 f
+  u_cortexm0ds/u_logic/Na73z4_reg/D (DFFS_X1)            0.0057   0.0375   0.0045   0.0046 &   5.1031 f
+  data arrival time                                                                            5.1031
+
+  clock HCLK (rise edge)                                                            4.7000     4.7000
+  clock source latency                                                              0.0000     4.7000
+  HCLK (in)                                                       0.0000            0.0000 &   4.7000 r
+  HCLK__L1_I0/A (INV_X32)                                0.0000   0.0020   0.0000   0.0017 &   4.7017 r
+  HCLK__L1_I0/ZN (INV_X32)                                        0.0039            0.0059 &   4.7076 f
+  HCLK__L2_I0/A (BUF_X8)                                 0.0000   0.0045   0.0000   0.0025 &   4.7101 f
+  HCLK__L2_I0/Z (BUF_X8)                                          0.0221            0.0531 &   4.7632 f
+  HCLK__L3_I1/A (INV_X32)                                0.0000   0.0223   0.0000   0.0027 &   4.7659 f
+  HCLK__L3_I1/ZN (INV_X32)                                        0.0175            0.0247 &   4.7906 r
+  HCLK__L4_I5/A (INV_X32)                                0.0000   0.0191   0.0000   0.0064 &   4.7970 r
+  HCLK__L4_I5/ZN (INV_X32)                                        0.0122            0.0165 &   4.8135 f
+  HCLK__L5_I21/A (INV_X16)                               0.0000   0.0125   0.0000   0.0024 &   4.8159 f
+  HCLK__L5_I21/ZN (INV_X16)                                       0.0307            0.0350 &   4.8509 r
+  u_cortexm0ds/HCLK__L5_N21 (CORTEXM0DS)                          0.0000            0.0000 &   4.8509 r
+  u_cortexm0ds/u_logic/HCLK__L5_N21 (cortexm0ds_logic)            0.0000            0.0000 &   4.8509 r
+  u_cortexm0ds/u_logic/Na73z4_reg/CK (DFFS_X1)           0.0000   0.0309   0.0000   0.0021 &   4.8530 r
+  library setup time                                                               -0.0302     4.8229
+  data required time                                                                           4.8229
+  ------------------------------------------------------------------------------------------------------
+  data required time                                                                           4.8229
+  data arrival time                                                                           -5.1031
+  ------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                            -0.2802
+
+
+1

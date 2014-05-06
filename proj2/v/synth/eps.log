@@ -1,0 +1,125 @@
+Checking out Encounter Power System license ...
+Encounter_Power_System_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter Power System release has been compiled with OA version 22.04-p058.
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter Power System v09.11-s082_1 (32bit) 03/08/2010 17:32 (Linux 2.6)
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s015_1 (32bit) Mar  4 2010 03:21:19 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter Power System v09.11-s082_1" on Mon May  5 14:27:04 2014 (mem=44.0M) ---
+--- Running on lib-33034.eos.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
+This version was compiled on Mon Mar 8 17:32:55 PST 2010.
+environment variable TMPDIR is not set.
+
+      set the environment variable TMPDIR to '/tmp'.
+Encounter terminated by internal (SEGV) error/signal...
+*** Stack trace:
+/ncsu/cadence2010/ets/tools/ets/bin/32bit/eps(syStackTrace+0x14a)[0xd304752]
+/ncsu/cadence2010/ets/tools/ets/bin/32bit/eps[0x8d9b236]
+[0xf77b2410]
+/ncsu/cadence2010/ets/tools/mesalib/lib/libmesaGLm.so(_mesa_initialize_context+0x1a)[0xf5ba95ba]
+/usr/lib/dri/swrast_dri.so(+0x3002)[0xf7779002]
+/ncsu/cadence2010/ets/tools/mesalib/lib/libmesaGLm.so(_mesa_use_program+0x0)[0xf5c71d00]
+========================================
+               pstack
+========================================
+Thread 4 (Thread 0xf482bb70 (LWP 8315)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x00a00dd6 in nanosleep () from /lib/libpthread.so.0
+#2  0x08ef51fe in rdaiLicRecheck(void*) ()
+#3  0x009f9b39 in start_thread () from /lib/libpthread.so.0
+#4  0x00935d6e in clone () from /lib/libc.so.6
+Thread 3 (Thread 0xf37acb70 (LWP 8316)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x0092e0c1 in select () from /lib/libc.so.6
+#2  0x0e4b3aec in NotifierThreadProc ()
+#3  0x009f9b39 in start_thread () from /lib/libpthread.so.0
+#4  0x00935d6e in clone () from /lib/libc.so.6
+Thread 2 (Thread 0xf2dabb70 (LWP 8317)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x00a01740 in sigwait () from /lib/libpthread.so.0
+#2  0x08d9b75b in ctrlCHandle(void*) ()
+#3  0x009f9b39 in start_thread () from /lib/libpthread.so.0
+#4  0x00935d6e in clone () from /lib/libc.so.6
+Thread 1 (Thread 0xf5698760 (LWP 8263)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x008f44ab in waitpid () from /lib/libc.so.6
+#2  0x0088def3 in do_system () from /lib/libc.so.6
+#3  0x0088e282 in system () from /lib/libc.so.6
+#4  0x00a0195d in system () from /lib/libpthread.so.0
+#5  0x0d3047b8 in syStackTrace ()
+#6  0x08d9b236 in rdaiErrorHandler(int, siginfo*, void*) ()
+#7  <signal handler called>
+#8  0xf5ba95ba in _mesa_initialize_context () from /ncsu/cadence2010/ets/tools/mesalib/lib/libmesaGLm.so
+#9  0xf7779002 in ?? () from /usr/lib/dri/swrast_dri.so
+#10 0xf5c71d00 in ?? () from /ncsu/cadence2010/ets/tools/mesalib/lib/libmesaGLm.so
+========================================
+                gdb
+========================================
+Using: gdb
+[?1034h[Thread debugging using libthread_db enabled]
+[New Thread 0xf5698760 (LWP 8263)]
+[New Thread 0xf2dabb70 (LWP 8317)]
+[New Thread 0xf37acb70 (LWP 8316)]
+[New Thread 0xf482bb70 (LWP 8315)]
+0xf77b2430 in __kernel_vsyscall ()
+
+Thread 4 (Thread 0xf482bb70 (LWP 8315)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x00a00dd6 in nanosleep () from /lib/libpthread.so.0
+#2  0x08ef51fe in rdaiLicRecheck ()
+#3  0x009f9b39 in start_thread () from /lib/libpthread.so.0
+#4  0x00935d6e in clone () from /lib/libc.so.6
+
+Thread 3 (Thread 0xf37acb70 (LWP 8316)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x0092e0c1 in select () from /lib/libc.so.6
+#2  0x0e4b3aec in NotifierThreadProc ()
+#3  0x009f9b39 in start_thread () from /lib/libpthread.so.0
+#4  0x00935d6e in clone () from /lib/libc.so.6
+
+Thread 2 (Thread 0xf2dabb70 (LWP 8317)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x00a01740 in sigwait () from /lib/libpthread.so.0
+
+Thread 1 (Thread 0xf5698760 (LWP 8263)):
+#0  0xf77b2430 in __kernel_vsyscall ()
+#1  0x008f44ab in waitpid () from /lib/libc.so.6
+#2  0x0088def3 in do_system () from /lib/libc.so.6
+#3  0x0088e282 in system () from /lib/libc.so.6
+#4  0x00a0aff4 in ?? () from /lib/libpthread.so.0
+#5  0x0d3047b8 in syStackTrace ()
+#6  0x08d9b236 in rdaiErrorHandler ()
+#7  <signal handler called>
+#8  _mesa_initialize_context (ctx=0x166930a8, visual=0x0, share_list=0x0, driverFunctions=0x0, driverContext=0xffb06c74) at main/context.c:1118
+	__PRETTY_FUNCTION__ = "_mesa_initialize_context"
+#9  0xf7779002 in ?? () from /usr/lib/dri/swrast_dri.so
+#10 0xf5c71d00 in ?? () at shader/shader_api.c:634 from /ncsu/cadence2010/ets/tools/mesalib/lib/libmesaGLm.so
+Backtrace stopped: previous frame inner to this frame (corrupt stack?)
+#0  0xf77b2430 in __kernel_vsyscall ()
+The program is running.  Quit anyway (and detach it)? (y or n) [answered Y; input not from terminal]
+
+*** INTERRUPTED *** [signal 1]
+8263: No such process

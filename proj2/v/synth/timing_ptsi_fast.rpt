@@ -1,0 +1,166 @@
+Information: Setting rc_cache_min_max_rise_fall_ceff to TRUE. (XTALK-015)
+Warning: Some timing arcs have been disabled for breaking timing loops
+	or because of constant propagation. Use the 'report_disable_timing'
+	command to get the list of these disabled timing arcs. (PTE-003)
+Information: Signal integrity analysis is enabled but the design has no signal integrity data. (XTALK-011)
+Information: Starting crosstalk aware timing iteration 1. (XTALK-001)
+Information: Number of nets evaluated in the previous iteration: 18685. (XTALK-105)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min_max
+	-max_paths 1
+	-sort_by slack
+Design : cortex_soc
+Version: H-2013.06-SP1
+Date   : Mon May  5 19:54:33 2014
+****************************************
+
+
+  Startpoint: u_cortexm0ds/u_logic/Auk2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_cortexm0ds/u_logic/Auk2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                0.0000     0.0000
+  clock network delay (propagated)                      0.1253     0.1253
+  u_cortexm0ds/u_logic/Auk2z4_reg/CK (DFFS_X1)          0.0000     0.1253 r
+  u_cortexm0ds/u_logic/Auk2z4_reg/QN (DFFS_X1)          0.0825     0.2079 f
+  u_cortexm0ds/u_logic/U370/ZN (OAI221_X1)              0.0577     0.2656 r
+  u_cortexm0ds/u_logic/Auk2z4_reg/D (DFFS_X1)           0.0000     0.2656 r
+  data arrival time                                                0.2656
+
+  clock HCLK (rise edge)                                0.0000     0.0000
+  clock network delay (propagated)                      0.1253     0.1253
+  u_cortexm0ds/u_logic/Auk2z4_reg/CK (DFFS_X1)                     0.1253 r
+  library hold time                                     0.0768     0.2021
+  data required time                                               0.2021
+  ------------------------------------------------------------------------------
+  data required time                                               0.2021
+  data arrival time                                               -0.2656
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.0634
+
+
+
+  Startpoint: u_cortexm0ds/u_logic/O5t2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Endpoint: u_cortexm0ds/u_logic/Gci2z4_reg
+               (rising edge-triggered flip-flop clocked by HCLK)
+  Path Group: HCLK
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock HCLK (rise edge)                                0.0000     0.0000
+  clock network delay (propagated)                      0.1167     0.1167
+  u_cortexm0ds/u_logic/O5t2z4_reg/CK (DFFS_X1)          0.0000     0.1167 r
+  u_cortexm0ds/u_logic/O5t2z4_reg/QN (DFFS_X1)          0.0507     0.1674 f
+  u_cortexm0ds/u_logic/FE_OFC73_n16806/Z (BUF_X4)       0.0413     0.2087 f
+  u_cortexm0ds/u_logic/U5699/ZN (INV_X4)                0.0212     0.2299 r
+  u_cortexm0ds/u_logic/U3646/ZN (INV_X4)                0.0190     0.2489 f
+  u_cortexm0ds/u_logic/U3037/ZN (INV_X4)                0.0410     0.2898 r
+  u_cortexm0ds/u_logic/U3651/ZN (NAND2_X2)              0.0460     0.3359 f
+  u_cortexm0ds/u_logic/U3034/ZN (INV_X4)                0.0422     0.3781 r
+  u_cortexm0ds/u_logic/U3678/ZN (OAI21_X2)              0.0196     0.3977 f
+  u_cortexm0ds/u_logic/U3677/ZN (OAI221_X2)             0.0301     0.4278 r
+  u_cortexm0ds/u_logic/U3676/ZN (NOR4_X2)               0.0324     0.4602 f
+  u_cortexm0ds/u_logic/U3670/ZN (NAND2_X2)              0.0369     0.4971 r
+  u_cortexm0ds/u_logic/U3657/ZN (NOR2_X1)               0.0392     0.5363 f
+  u_cortexm0ds/u_logic/U3653/ZN (NAND3_X2)              0.0464     0.5827 r
+  u_cortexm0ds/u_logic/U1899/ZN (OAI22_X1)              0.0314     0.6140 f
+  u_cortexm0ds/u_logic/U1898/ZN (AOI221_X2)             0.0525     0.6665 r
+  u_cortexm0ds/u_logic/U1897/ZN (NAND2_X4)              0.0147     0.6812 f
+  u_cortexm0ds/u_logic/U1896/ZN (INV_X4)                0.0175     0.6988 r
+  u_cortexm0ds/u_logic/U1356/ZN (NOR2_X2)               0.0173     0.7161 f
+  u_cortexm0ds/u_logic/U306/ZN (AND2_X2)                0.0398     0.7559 f
+  u_cortexm0ds/u_logic/add_2082_U1_2/CO (FA_X1)         0.0583     0.8142 f
+  u_cortexm0ds/u_logic/add_2082_U1_3/CO (FA_X1)         0.0622     0.8764 f
+  u_cortexm0ds/u_logic/add_2082_U1_4/CO (FA_X1)         0.0622     0.9386 f
+  u_cortexm0ds/u_logic/add_2082_U1_5/CO (FA_X1)         0.0622     1.0007 f
+  u_cortexm0ds/u_logic/add_2082_U1_6/CO (FA_X1)         0.0622     1.0629 f
+  u_cortexm0ds/u_logic/add_2082_U1_7/CO (FA_X1)         0.0622     1.1251 f
+  u_cortexm0ds/u_logic/add_2082_U1_8/CO (FA_X1)         0.0622     1.1873 f
+  u_cortexm0ds/u_logic/add_2082_U1_9/CO (FA_X1)         0.0622     1.2495 f
+  u_cortexm0ds/u_logic/add_2082_U1_10/CO (FA_X1)        0.0622     1.3117 f
+  u_cortexm0ds/u_logic/add_2082_U1_11/CO (FA_X1)        0.0622     1.3739 f
+  u_cortexm0ds/u_logic/add_2082_U1_12/CO (FA_X1)        0.0622     1.4361 f
+  u_cortexm0ds/u_logic/add_2082_U1_13/CO (FA_X1)        0.0622     1.4983 f
+  u_cortexm0ds/u_logic/add_2082_U1_14/CO (FA_X1)        0.0622     1.5605 f
+  u_cortexm0ds/u_logic/add_2082_U1_15/CO (FA_X1)        0.0622     1.6227 f
+  u_cortexm0ds/u_logic/add_2082_U1_16/CO (FA_X1)        0.0622     1.6849 f
+  u_cortexm0ds/u_logic/add_2082_U1_17/CO (FA_X1)        0.0622     1.7471 f
+  u_cortexm0ds/u_logic/add_2082_U1_18/CO (FA_X1)        0.0622     1.8093 f
+  u_cortexm0ds/u_logic/add_2082_U1_19/CO (FA_X1)        0.0622     1.8714 f
+  u_cortexm0ds/u_logic/add_2082_U1_20/CO (FA_X1)        0.0622     1.9336 f
+  u_cortexm0ds/u_logic/add_2082_U1_21/CO (FA_X1)        0.0622     1.9958 f
+  u_cortexm0ds/u_logic/add_2082_U1_22/CO (FA_X1)        0.0622     2.0580 f
+  u_cortexm0ds/u_logic/add_2082_U1_23/CO (FA_X1)        0.0622     2.1202 f
+  u_cortexm0ds/u_logic/add_2082_U1_24/CO (FA_X1)        0.0622     2.1824 f
+  u_cortexm0ds/u_logic/add_2082_U1_25/CO (FA_X1)        0.0622     2.2446 f
+  u_cortexm0ds/u_logic/add_2082_U1_26/CO (FA_X1)        0.0622     2.3068 f
+  u_cortexm0ds/u_logic/add_2082_U1_27/CO (FA_X1)        0.0622     2.3690 f
+  u_cortexm0ds/u_logic/add_2082_U1_28/CO (FA_X1)        0.0622     2.4312 f
+  u_cortexm0ds/u_logic/add_2082_U1_29/CO (FA_X1)        0.0622     2.4934 f
+  u_cortexm0ds/u_logic/add_2082_U1_30/CO (FA_X1)        0.0622     2.5556 f
+  u_cortexm0ds/u_logic/add_2082_U1_31/CO (FA_X1)        0.0622     2.6178 f
+  u_cortexm0ds/u_logic/add_2082_U1_32/S (FA_X1)         0.1004     2.7181 r
+  u_cortexm0ds/u_logic/U303/Z (XOR2_X2)                 0.0633     2.7814 r
+  u_cortexm0ds/u_logic/U1527/ZN (INV_X4)                0.0129     2.7944 f
+  u_cortexm0ds/u_logic/U1526/ZN (OAI22_X1)              0.0437     2.8380 r
+  u_cortexm0ds/u_logic/U1525/ZN (INV_X2)                0.0094     2.8474 f
+  u_cortexm0ds/u_logic/U2345/ZN (OAI21_X2)              0.0331     2.8805 r
+  u_cortexm0ds/u_logic/FE_OFC118_HADDR_31_/ZN (INV_X4)
+                                                        0.0125     2.8930 f
+  u_cortexm0ds/u_logic/haddr_o[31] (cortexm0ds_logic)   0.0000     2.8930 f
+  u_cortexm0ds/HADDR[31] (CORTEXM0DS)                   0.0000     2.8930 f
+  ahb/FE_OFN119_HADDR_31_ (AHB_Lite_2s)                 0.0000     2.8930 f
+  ahb/FE_OFC119_HADDR_31_/ZN (INV_X8)                   0.0128     2.9059 r
+  ahb/U125/ZN (NOR3_X4)                                 0.0624     2.9683 f
+  ahb/U209/ZN (AOI22_X1)                                0.0690     3.0373 r
+  ahb/U93/ZN (INV_X4)                                   0.0070     3.0443 f
+  ahb/HRDATA[31] (AHB_Lite_2s)                          0.0000     3.0443 f
+  u_cortexm0ds/HRDATA[31] (CORTEXM0DS)                  0.0000     3.0443 f
+  u_cortexm0ds/u_logic/hrdata_i[31] (cortexm0ds_logic)
+                                                        0.0000     3.0443 f
+  u_cortexm0ds/u_logic/U4089/ZN (AOI222_X1)             0.0401     3.0844 r
+  u_cortexm0ds/u_logic/U4088/ZN (OAI211_X1)             0.0287     3.1131 f
+  u_cortexm0ds/u_logic/FE_PSC671_n2057/Z (BUF_X4)       0.0386     3.1516 f
+  u_cortexm0ds/u_logic/FE_OFC511_n2057/Z (BUF_X4)       0.0250     3.1766 f
+  u_cortexm0ds/u_logic/U3704/ZN (AOI22_X1)              0.0426     3.2192 r
+  u_cortexm0ds/u_logic/U3701/ZN (NOR2_X1)               0.0185     3.2377 f
+  u_cortexm0ds/u_logic/U3698/ZN (AOI222_X1)             0.0687     3.3065 r
+  u_cortexm0ds/u_logic/U3697/ZN (NAND4_X2)              0.0226     3.3291 f
+  u_cortexm0ds/u_logic/U2344/ZN (INV_X4)                0.0189     3.3480 r
+  u_cortexm0ds/u_logic/U2341/ZN (AOI211_X2)             0.0400     3.3880 f
+  u_cortexm0ds/u_logic/U3694/ZN (AOI221_X1)             0.0639     3.4519 r
+  u_cortexm0ds/u_logic/U3693/ZN (INV_X2)                0.0086     3.4605 f
+  u_cortexm0ds/u_logic/U3692/ZN (AOI221_X1)             0.0536     3.5141 r
+  u_cortexm0ds/u_logic/FE_PHC711_n28/Z (BUF_X16)        0.0525     3.5665 r
+  u_cortexm0ds/u_logic/U3691/ZN (INV_X1)                0.0186     3.5851 f
+  u_cortexm0ds/u_logic/U3548/ZN (AOI222_X1)             0.0668     3.6519 r
+  u_cortexm0ds/u_logic/U3546/ZN (OAI22_X1)              0.0282     3.6801 f
+  u_cortexm0ds/u_logic/FE_PHC3211_U229_Z_0/Z (BUF_X32)
+                                                        0.0925     3.7727 f
+  u_cortexm0ds/u_logic/FE_PHC1241_U229_Z_0/Z (BUF_X32)
+                                                        0.0947     3.8674 f
+  u_cortexm0ds/u_logic/Gci2z4_reg/D (DFFS_X1)           0.0000     3.8674 f
+  data arrival time                                                3.8674
+
+  clock HCLK (rise edge)                                4.7000     4.7000
+  clock network delay (propagated)                      0.1253     4.8253
+  u_cortexm0ds/u_logic/Gci2z4_reg/CK (DFFS_X1)                     4.8253 r
+  library setup time                                   -0.0262     4.7991
+  data required time                                               4.7991
+  ------------------------------------------------------------------------------
+  data required time                                               4.7991
+  data arrival time                                               -3.8674
+  ------------------------------------------------------------------------------
+  slack (MET)                                                      0.9318
+
+
+1

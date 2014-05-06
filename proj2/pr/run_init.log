@@ -1,0 +1,216 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : /ncsu/cadence2012/edi/tools/lib/libstdc++.so.6: version `GLIBCXX_3.4.9' not found (required by /ncsu/cadence2012/oa/lib/linux_rhel40_gcc44x_32/opt/liboaPlugIn.so)
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.11-s084_1 (32bit) 04/26/2010 12:41 (Linux 2.6)
+@(#)CDS: NanoRoute v09.11-s008 NR100226-1806/USR63-UB (database version 2.30, 93.1.1) {superthreading v1.14}
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s016_1 (32bit) Apr  8 2010 03:34:50 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter v09.11-s084_1" on Mon May  5 19:48:30 2014 (mem=46.5M) ---
+--- Running on lib-33034.eos.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
+This version was compiled on Mon Apr 26 12:41:13 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Sourcing tcl/tk file "run_init.tcl" ...
+Reading config file - design.conf
+
+Loading Lef file /afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/lef/NangateOpenCellLibrary.lef...
+Set DBUPerIGU to M2 pitch 380.
+Initializing default via types and wire widths ...
+
+Power Planner/ViaGen version 8.1.46 promoted on 02/17/2009.
+viaInitial starts at Mon May  5 19:48:30 2014
+viaInitial ends at Mon May  5 19:48:30 2014
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../v/src/gate/cortex_soc.v'
+Reading verilog netlist '../v/src/gate/AHB_Lite_2s_synth.v'
+Inserting temporary buffers to remove assignment statements.
+Reading verilog netlist '../v/src/gate/DW_memctl.v'
+Reading verilog netlist '../v/src/gate/CORTEXM0DS_final.v'
+Reading verilog netlist '../v/src/gate/DW_ahb.v'
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 225.512M, initial mem = 46.484M) ***
+*** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=225.5M) ***
+Set top cell to cortex_soc.
+Reading max timing library '/afs/eos.ncsu.edu/lockers/research/ece/wdavis/tech/nangate/NangateOpenCellLibrary_PDKv1_3_v2009_07/liberty/NangateOpenCellLibrary_fast_conditional_ecsm.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128760) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128786) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128924) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128941) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129010) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129027) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134192) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134218) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134356) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134373) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134442) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134459) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330053) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330079) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330105) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330131) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330177) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330194) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330211) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330228) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+ read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.02min, mem=11.8M, fe_cpu=0.05min, fe_mem=237.3M) ***
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell cortex_soc ...
+*** Netlist is unique.
+** info: there are 142 modules.
+** info: there are 13273 stdCell insts.
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 244.895M, initial mem = 46.484M) ***
+*info - Done with setDoAssign with 45 assigns removed and 0 assigns could not be removed.
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+INFO (CTE): constraints read successfully
+*** Read timing constraints (cpu=0:00:00.0 mem=246.2M) ***
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X2 BUF_X1 BUF_X4 BUF_X8 CLKBUF_X1 CLKBUF_X3 CLKBUF_X2
+Total number of usable buffers: 7
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X2 INV_X1 INV_X16 INV_X32 INV_X4 INV_X8
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: BUF_X16 BUF_X32
+Total number of identified usable delay cells: 2
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+*info: set bottom ioPad orient R0
+Set Using Default Delay Limit as 1000.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF.
+Set Input Pin Transition Delay as 120 ps.
+PreRoute Cap Scale Factor :        1.00
+PreRoute Res Scale Factor :        1.00
+PostRoute Cap Scale Factor :       1.00
+PostRoute Res Scale Factor :       1.00
+PostRoute XCap Scale Factor :      1.00
+
+PreRoute Clock Cap Scale Factor :  1.00	[Derived from postRoute_cap (effortLevel low)]
+PreRoute Clock Res Scale Factor :  1.00	[Derived from postRoute_res (effortLevel low)]
+PostRoute Clock Cap Scale Factor : 1.00	[Derived from postRoute_cap (effortLevel low)]
+PostRoute Clock Res Scale Factor : 1.00	[Derived from postRoute_res (effortLevel low)]
+Adjusting Core to Left to: 40.0900. Core to Bottom to: 40.0400.
+
+
+The power planner created 8 wires.
+
+encounter 1> **WARN: (ENCPP-2008):	AddStripe option -remove_floating_stripe_over_block is ON so all fragmented stripes within a block will be removed.
+  To turn OFF, setAddStripeOption -remove_floating_stripe_over_block 0.
+
+Starting stripe generation ...
+Stripe generation is complete.
+
+The power planner created 10 wires.
+
+encounter 1> **WARN: (ENCSYC-1870):	setAnalysisMode -clockPropagation autoDetectClockTree not supported in CTE timing mode, mapping it to setAnalysisMode -clockPropagation sdcControl
+{DETAILMESSAGE}Set Using Default Delay Limit as 101.
+**WARN: (ENCDC-1629):	The variable rdaUseDefaultDelayLimit was set to 101. This is less than the default 1000 and may result in inaccurate results for high fanout nets. To change the variable, run command setUseDefaultDelayLimit.
+Setting High Fanout Nets ( > 100 ) as ideal temporarily for -prePlace option
+Set Default Net Delay as 0 ps.
+Set Default Net Load as 0 pF.
+Set Input Pin Transition Delay as 1 ps.
+
+------------------------------------------------------------
+          timeDesign Summary                             
+------------------------------------------------------------
+
++--------------------+---------+---------+---------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | in2reg  | reg2out | in2out  | clkgate |
++--------------------+---------+---------+---------+---------+---------+---------+
+|           WNS (ns):|  1.048  |  1.048  |  3.760  |   N/A   |   N/A   |   N/A   |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |   N/A   |   N/A   |   N/A   |
+|    Violating Paths:|    0    |    0    |    0    |   N/A   |   N/A   |   N/A   |
+|          All Paths:|  4299   |  2145   |  3367   |   N/A   |   N/A   |   N/A   |
++--------------------+---------+---------+---------+---------+---------+---------+
+
+Density: 0.000%
+------------------------------------------------------------
+Set Using Default Delay Limit as 1000.
+Resetting back High Fanout Nets as non-ideal
+Set Default Net Delay as 1000 ps.
+Set Input Pin Transition Delay as 120 ps.
+Set Default Net Load as 0.5 pF.
+Reported timing to dir ./timingReports
+Total CPU time: 1.85 sec
+Total Real time: 2.0 sec
+Total Memory Usage: 264.332031 Mbytes
+Writing Netlist "./cortex_soc_init.enc.dat/cortex_soc.v.gz" ...
+Saving configuration ...
+Saving preference file ./cortex_soc_init.enc.dat/enc.pref.tcl ...
+Saving floorplan ...
+Saving Drc markers ...
+... No Drc file written since there is no markers found.
+Saving placement ...
+*** Completed savePlace (cpu=0:00:00.0 real=0:00:00.0 mem=264.3M) ***
+Saving route ...
+*** Completed saveRoute (cpu=0:00:00.0 real=0:00:00.0 mem=264.3M) ***
+*** Completed saveYieldMap (cpu=: 0:00:00.0 real=0:00:00.0 mem=: 0.000M) ***
+Creating constraint file...
+run_init.tcl completed successfully (elapsed time: 0h 0m 4s actual)
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 264.348M, initial mem = 46.484M) ***
+--- Ending "Encounter" (totcpu=0:00:05.1, real=0:00:06.0, mem=264.3M) ---

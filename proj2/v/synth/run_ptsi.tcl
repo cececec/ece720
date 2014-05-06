@@ -14,7 +14,7 @@ set begintime [clock seconds]
 set clkname HCLK
 
 # set variable "modname" to the name of topmost module in design
-set modname CORTEXM0DS
+set modname cortex_soc
 
 # set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
 set PR_DIR    ../../pr/
@@ -33,7 +33,7 @@ set corner fast
 #set the number of digits to be used for delay results
 set report_default_significant_digits 4
 
-set CLK_PER 40
+set CLK_PER 4.7
 set DFF_CKQ 0.638
 set MAX_INS_DELAY 1.0
 set IP_DELAY [expr $MAX_INS_DELAY + $DFF_CKQ]
@@ -80,7 +80,7 @@ report_timing -nosplit -input_pins -transition_time -crosstalk_delta \
 report_clock_timing -type summary > timing_ptsi_${corner}_clock.rpt
 report_si_bottleneck
 #report_delay_calculation -crosstalk -from inst1/pin1 -to inst2/pin2
-report_noise > noise_ptsi_${corner}_${type}.rpt
+report_noise -slack_type area > noise_ptsi_${corner}_${type}.rpt
 #report_noise_calculation -below -high -from inst1/pin1 -to inst2/pin2
 
 

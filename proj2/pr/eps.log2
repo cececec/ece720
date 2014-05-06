@@ -1,0 +1,197 @@
+Checking out Encounter Power System license ...
+Encounter_Power_System_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+This Encounter Power System release has been compiled with OA version 22.04-p058.
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2009.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter Power System v09.11-s082_1 (32bit) 03/08/2010 17:32 (Linux 2.6)
+@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CTE 09.11-s015_1 (32bit) Mar  4 2010 03:21:19 (Linux 2.6.9-78.0.25.ELsmp)
+@(#)CDS: CPE v09.11-s023
+--- Starting "Encounter Power System v09.11-s082_1" on Mon May  5 23:07:12 2014 (mem=44.0M) ---
+--- Running on grendel11.ece.ncsu.edu (x86_64 w/Linux 2.6.32-431.11.2.el6.x86_64) ---
+This version was compiled on Mon Mar 8 17:32:55 PST 2010.
+environment variable TMPDIR is not set.
+
+      set the environment variable TMPDIR to '/tmp'.
+<CMD_INTERNAL> setDrawView place
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+# Encounter Power System 09.11-s082_1
+# read_design
+#   cortex_soc_routed.enc
+#  -physical_data 
+Reading config file - ./cortex_soc_routed.enc.dat/cortex_soc.conf
+**WARN: (ENCSYC-3161):	Ignoring the -syncRelativePath setting in the configuration file. The -syncRelativePath parameter of the set_import_mode command is set to true in ETS by default. All relative paths in the configuration file will be synchronized to the current working directory. To avoid this warning, remove the syncRelativePath setting from the configuration file.
+**WARN: (ENCSYC-141):	User has set -timerMode to 1 so the setting in config file is ignored.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X4' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X1' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI222_X2' is not defined in the library. Either define this value in the library or use set_default_timing_library to pick these values from a default library.
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128760) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128786) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128924) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 128941) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129010) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 129027) The sdf_cond statement(s) in the cell DFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134192) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134218) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134356) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134373) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134442) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 134459) The sdf_cond statement(s) in the cell DFFRS_X2 does not comply with IEEE OVI SDF Standards 3.0 for removal_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330053) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330079) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for hold_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330105) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330131) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for setup_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330177) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330194) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330211) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+**WARN: (TECHLIB-9116):	(NangateOpenCellLibrary_fast_conditional_ecsm.lib, block starting at: 330228) The sdf_cond statement(s) in the cell SDFFRS_X1 does not comply with IEEE OVI SDF Standards 3.0 for recovery_rising arcs.  
+*** End library_loading (cpu=0.03min, mem=12.8M, fe_cpu=0.15min, fe_mem=296.7M) ***
+cortex_soc
+Set qxtech_file as /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/../../../../../../../../research/ece/wdavis/tech/FreePDK45/ncsu_basekit/techfile/qrc/qrc.tch
+Loading preference file ./cortex_soc_routed.enc.dat/enc.pref.tcl ...
+**WARN: (ETS-156):	preference name 'BlockSnapRule' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ConstraintUserXGrid' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ConstraintUserYGrid' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ConstraintUserXOffset' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ConstraintUserYOffset' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'SnapAllCorners' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'UserGridUnit' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'GuideSnapRule' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MinFPModuleSize' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MinFlightLineWidth' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MaxFlightLineNetTerms' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'HighlightColorNumber' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowNumberBlockConnection' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'StrecthRestriction' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'StretchRectilinear' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveRestriction' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'DisplayRelFPlan' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'YieldCostInst' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'YieldCostWire' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'YieldCostVia' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'YieldCostMetal' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'YieldWOArea' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'DisplayFPlanFlightLine' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'DisplayPinName' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ExclusiveFlight' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'FlightLineInMove' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowConnectionInOutNumber' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowConnectionInOutColor' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowFlightLineTermMark' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'DisplayPlaceFlightLine' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'NoBlockFlightLine' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowBothInputConnection' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowNetWeightConnection' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowFlightLineThruPtnPin' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowAttrPopup' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowDelBox' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'SelectByLine' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'SelectStickyMode' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'noInsideMacro' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'ShowFPObjInPlace' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveMacrosWithGuide' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveMacrosWithRegion' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveMacrosWithFence' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveStdCellWithGuide' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveStdCellWithRegion' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MoveStdCellWithFence' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'MovePreplacedStdCellOnly' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapnrStyle' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaptrStyle' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange0' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor0' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange1' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor1' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange2' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor2' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange3' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor3' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange4' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor4' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange5' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor5' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange6' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor6' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange7' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor7' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange8' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor8' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMaprange9' is not supported in ETS.
+**WARN: (ETS-156):	preference name 'CongestionMapcolor9' is not supported in ETS.
+Loading mode file ./cortex_soc_routed.enc.dat/cortex_soc.mode ...
+**WARN: (ENCEXT-3410):	Option -assumeMetalFill is recommended only in default extraction mode. It will use the basic cap table instead of extnded cap table in detail or TQRC/IQRC mode.
+loading place ...
+loading route ...
+<CMD_INTERNAL> redraw etsLayout
+<CMD_INTERNAL> uiSetTool select
+<CMD> view_analysis_results
+**WARN: (ENCPARA-2466):	The temp directory "/tmp" will store the temp files. Please make sure that it has enough disk space and cannot be changed during the same session.
+
+Data filtering for ir in Encounter Power System:
+           0 values were in range1: 0.095 -- 0.095
+           0 values were in range2: 0.0870833 -- 0.095
+           0 values were in range3: 0.0791667 -- 0.0870833
+           0 values were in range4: 0.07125 -- 0.0791667
+           0 values were in range5: 0.0633333 -- 0.07125
+           0 values were in range6: 0.0554167 -- 0.0633333
+           0 values were in range7: 0.0475 -- 0.0554167
+      279715 values were in range8: -1e-06 -- 0.0475
+
+<CMD> view_analysis_results -state_directory /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VSS -enable_violation_browser false -enable_voltage_sources true -temp_directory /tmp -display overlay -plot ir -visible_layer {RD M1 V12 M2 V23 M3 V34 M4 V45 M5 V56 M6 V67 M7 V78 M8 V89 M9 V910 M10} -filter {{1 -1e-06 0.0475} {1 0.0475 0.0554167} {1 0.0554167 0.0633333} {1 0.0633333 0.07125} {1 0.07125 0.0791667} {1 0.0791667 0.0870833} {1 0.0870833 0.095} {1 0.095 0.095}}
+<CMD_INTERNAL> zoomOut
+
+Data filtering for ir in Encounter Power System:
+      114002 values were in range1: 0.0209154 -- 0.0239033
+       64176 values were in range2: 0.0179275 -- 0.0209154
+       11728 values were in range3: 0.0149396 -- 0.0179275
+       29713 values were in range4: 0.0119517 -- 0.0149396
+       20421 values were in range5: 0.00896374 -- 0.0119517
+       16292 values were in range6: 0.00597583 -- 0.00896374
+       12980 values were in range7: 0.00298791 -- 0.00597583
+       10402 values were in range8: 0 -- 0.00298791
+
+<CMD> view_analysis_results -state_directory /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VSS -enable_violation_browser false -enable_voltage_sources true -temp_directory /tmp -display overlay -plot ir -visible_layer {RD M1 V12 M2 V23 M3 V34 M4 V45 M5 V56 M6 V67 M7 V78 M8 V89 M9 V910 M10} -filter {{1 0 0.00298791} {1 0.00298791 0.00597583} {1 0.00597583 0.00896374} {1 0.00896374 0.0119517} {1 0.0119517 0.0149396} {1 0.0149396 0.0179275} {1 0.0179275 0.0209154} {1 0.0209154 0.0239033}}
+
+*** Memory Usage v0.159.2.6.2.1 (Current mem = 411.699M, initial mem = 44.035M) ***
+--- Ending "Encounter Power System" (totcpu=0:00:20.3, real=0:03:09, mem=411.7M) ---

@@ -1,0 +1,159 @@
+Net                           :  VDD
+Temperature                   :  25
+PowerType                     :  avg
+NominalVoltage                :  0.95
+IRLimit                       :  0.855
+TopLevelDieInstance           :  0.855
+
+analysis_output_directory     :  <not set>
+auto_redraw_errors            :  true
+auto_redraw_grid              :  true
+block_boundary_voltage_file   :  <not set>
+calculate_parasitics          :  false
+cell_area_capacitance         :  0
+cluster_def_via_array         :  true
+crc_tap_transient_flag        :  3
+crc_tap_loading_flag          :  0
+create_label_from_vsrc        :  false
+debug_level                   :  0
+decap_window_size             :  200
+decap_density_c1              :  true
+decap_density_c2              :  false
+decap_density_gridcap         :  false
+decap_dont_touch_file         :  <not set>
+decap_eco_file                :  <not set>
+decap_exclude_static_violation_area:  true
+decap_exclude_area            :  <not set>
+decap_feasibility_aware       :  0
+disable_parallel_extraction   :  false
+coupled_analysis_iteration_number:  1
+wr_only                       :  0
+wr_add_c2_current_flag        :  0
+wr_add_c1_current_flag        :  1
+decap_max_leakage             :  1e+06
+decap_merge_eco               :  true
+decap_removal_method          :  2
+decap_removal_mode            :  <not set>
+decap_requested_method        :  2
+decap_timing_aware            :  false
+decap_worst_case_ir_limit     :  -1
+default_input_duty_cycle      :  0.5
+default_input_activity        :  0.2
+default_package_capacitor     :  0
+default_package_inductor      :  0
+default_package_resistor      :  0
+default_transition_time       :  0
+def_merge_supply_shorts       :  false
+density_grid_size             :  25000
+dynamic_trigger_file          :  <not set>
+em_part_check_current         :  false
+em_part_current_threshold     :  1e-10
+enable_movie_generation       :  false
+enable_port_grouping          :  true
+die_model_num_targeted_ports  :  200
+honor_package_grouping        :  true
+error_on_op_analysis          :  false
+explore_cell_internals        :  false
+extractor                     :  <not set>
+extractor_include             :  <not set>
+fe_instance_data_file         :  <not set>
+fe_layermap                   :  <not set>
+fe_output                     :  false
+fe_output_nonmanhattan_geometry:  true
+fe_pgdb                       :  <not set>
+fe_eco_output                 :  false
+generate_path_analysis_waveform:  false
+generate_abstract_die_model   :  false
+generate_die_model            :  <not set>
+halt_on_net_with_no_cell_connections:  true
+hierarchy_char                :  <not set>
+ignore_port_em_violations     :  0
+instance_voltage_waveform_file:  <not set>
+interactive                   :  false
+internal_nodes_visible        :  true
+internal_resistors_visible    :  true
+iv_use_timing_window_only     :  false
+iv_use_switching_window_only  :  false
+layout_scale                  :  1
+libgen_executable             :  <not set>
+libgen_include                :  <not set>
+gns_design_lib                :  <not set>
+library_name                  :  fast_allcells.cl
+lifetime                      :  10
+log_file                      :  <not set>
+max_error_messages            :  100
+max_cpu                       :  1
+max_resistor_length           :  800
+max_viacluster_mode           :  false
+max_warning_messages          :  100
+merge_util                    :  <not set>
+merge_uti_file                :  false
+nga_disable_unmapped_vsrcs_with_package:  true
+nga_enabled                   :  true
+nga_factor_num_cpu            :  0
+nga_dynamic_era_mode          :  false
+nga_max_partitions            :  1
+nga_lsf_queue                 :  <not set>
+nga_lsf_select                :  <not set>
+nga_lsf_args                  :  <not set>
+nga_rsh_time_out              :  0
+nga_sge_queue                 :  <not set>
+nga_custom_script             :  <not set>
+operation_mode                :  <not set>
+output_directory_name         :  ./
+output_wlt                    :  <not set>
+pad_cell_file                 :  <not set>
+pin_char                      :  <not set>
+power_calculator              :  <not set>
+power_calculator_include      :  <not set>
+power_calculator_parallel     :  true
+power_gate_file               :  <not set>
+power_gate_off_file           :  <not set>
+power_grid_fix                :  false
+powerpin_location_file        :  /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/VDD.ppl
+powerpin_location_file_fe     :  <not set>
+powerpin_format_fe            :  false
+powerup_analysis              :  false
+powerup_block_analysis        :  false
+powerup_block_net_map         :  <not set>
+package_model_file            :  <not set>
+debug_packagemodel            :  true
+package_terminal_mapping_file :  <not set>
+precision_digits              :  4
+prpgv_x_offset                :  0
+prpgv_y_offset                :  0
+qx_rcdb                       :  false
+rc_extraction_check           :  true
+record_results_start_time     :  0
+remove_temporary_files        :  true
+repeat_transient_die_model_simulation:  <not set>
+report_msmv_format            :  false
+report_via_current_direction  :  false
+save_transient_states         :  false
+save_voltage_waveforms        :  false
+sdc_file                      :  <not set>
+solver_memory_option          :  0
+temperature                   :  25
+top_cell                      :  <not set>
+use_avg_power_for_ic          :  true
+use_average_power_for_op      :  false
+use_capacitor_adjustment      :  true
+use_current_data_from_pgv     :  false
+use_def_pins                  :  false
+use_gds_annotate_attributes   :  false
+use_hpt                       :  true
+use_hpt_for_group_net         :  true
+use_hpt_leqnets_info          :  true
+use_port_voltage_for_iv       :  false
+use_toplevel_pins             :  false
+use_pinrlc_with_package       :  false
+reff_ignore_disconnected_pins :  false
+use_existing_power_data       :  true
+use_existing_rcdb             :  true
+vsrc_search_distance          :  50
+vstorm1_compatibility         :  false
+work_directory_name           :  <not set>
+write_bbv_pwl                 :  true
+write_decap_filler_voltage    :  false
+current_data_start_time       :  0
+analysis_start_time           :  0

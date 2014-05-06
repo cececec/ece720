@@ -1,0 +1,131 @@
+
+Loading power-grid database: .//PDCore_25C_avg_1/VSS/VSS
+PGDB has 0 partition(s)
+
+partition[0] : nNodes(279713) nRes(382886) nPorts(0)
+  added voltage source VSS at node 766
+
+Loading power-grid database: .//PDCore_25C_avg_1//VDD/VDD
+PGDB has 0 partition(s)
+
+partition[0] : nNodes(282427) nRes(386251) nPorts(0)
+  added voltage source VDD at node 79
+
+Beginning a steady-state analysis of the circuit.
+
+Create matrix ...
+  Using 4 CPU(s) for matrix factorization
+
+
+	Time required: 0.07099 user, 0.621906 system, and 1.12383 real seconds
+
+
+Loading current source data file: .//PDCore_25C_avg_1/VSS/VSS.tap
+Total current loaded = 0.0230986A
+
+
+Loading current source data file: .//PDCore_25C_avg_1//VDD/VDD.tap
+Total current loaded = -0.0230986A
+
+  Starting parallel solve with 1 thread(s)
+
+Compute macromodel ...
+
+Computing macromodel for block 1 ...
+
+Computing macromodel for block 2 ...
+
+Time required:  0.192971 user, 1.13083 system, and 2.12045 real seconds
+
+Build reduced system ...
+*** Reduced system: 357967  (size), 564962 (number of elements)
+
+
+	Time required:  0.054992 user, 0.050992 system, and 0.127364 real seconds
+
+Compute reduced RHS ...
+
+	Time required:  0.057991 user, 0.006999 system, and 0.065668 real seconds
+
+Solve reduced system ...
+Using 4 processors for parallel matrix solve
+
+
+	Time required:  0.828874 user, 0.073988 system, and 0.438247 real seconds
+
+Compute internal solutions ...
+
+	Time required:  0.058991 user, 0.006 system, and 0.065106 real seconds
+
+get flat result .
+
+Total run time:  1.22481 user, 1.27381 system, and 2.85252 real seconds
+
+Steady-state analysis was successful
+The analysis required:
+		 1.3358 user, 1.90471 system, and 4.03012 real seconds
+
+
+#--------------------------------------------------
+#Before deleting instance data for net VSS
+#--------------------------------------------------
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 12 seconds
+  Children sys time  = 7 seconds
+  Virtual mem. size  = 101,863,424 bytes
+  Total alloc size   = 15,011,840 bytes
+  In use alloc size  = 14,269,352 bytes
+  Page fault w/o IO  = 56,568
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+#--------------------------------------------------
+#After deleting instance data for net VSS
+#--------------------------------------------------
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 12 seconds
+  Children sys time  = 7 seconds
+  Virtual mem. size  = 101,863,424 bytes
+  Total alloc size   = 15,011,840 bytes
+  In use alloc size  = 14,269,696 bytes
+  Page fault w/o IO  = 56,575
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+#--------------------------------------------------
+#Before deleting instance data for net VDD
+#--------------------------------------------------
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 12 seconds
+  Children sys time  = 7 seconds
+  Virtual mem. size  = 101,863,424 bytes
+  Total alloc size   = 15,011,840 bytes
+  In use alloc size  = 14,269,352 bytes
+  Page fault w/o IO  = 56,577
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes
+
+#--------------------------------------------------
+#After deleting instance data for net VDD
+#--------------------------------------------------
+Process Info :
+  User time          = 1 seconds
+  System time        = 1 seconds
+  Children user time = 12 seconds
+  Children sys time  = 7 seconds
+  Virtual mem. size  = 101,863,424 bytes
+  Total alloc size   = 15,011,840 bytes
+  In use alloc size  = 14,269,696 bytes
+  Page fault w/o IO  = 56,579
+  Page fault w/  IO  = 0
+  No. of swaps       = 0
+  Page size          = 4,096 bytes

@@ -1,0 +1,88 @@
+#######################################################
+#                                                     #
+#  Encounter Command Logging File                     #
+#  Created on Mon May  5 19:59:36 2014                #
+#                                                     #
+#######################################################
+
+#@(#)CDS: Encounter Power System v09.11-s082_1 (32bit) 03/08/2010 17:32 (Linux 2.6)
+#@(#)CDS: CeltIC v09.11-s011_1 (32bit) 03/04/2010 09:23:40 (Linux 2.6.9-78.0.25.ELsmp)
+#@(#)CDS: CTE 09.11-s015_1 (32bit) Mar  4 2010 03:21:19 (Linux 2.6.9-78.0.25.ELsmp)
+#@(#)CDS: CPE v09.11-s023
+
+setDrawView place
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+read_design -physical_data cortex_soc_routed.enc
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+redraw etsLayout
+uiSetTool select
+selectWire 15.0700 283.1150 59.2200 283.1850 3 {haddr_s[3]}
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+zoomSelected
+fit
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 266.3250 25.0200 276.3250 497.4400 8 VSS
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+deselectAll
+selectWire 266.3250 25.0200 276.3250 497.4400 8 VSS
+deselectAll
+selectWire 5.0450 5.0200 15.0450 517.4400 8 VDD
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+read_design -physical_data cortex_soc_routed.enc
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+panCenter -92.115 417.314
+fit
+redraw etsLayout
+uiSetTool select
+start_gui
+windowSelect -8.899 530.753 312.349 -11.738
+deselectAll
+windowSelect -37.668 536.918 349.337 -18.588
+deselectAll
+setLayerPreference M8 -color #d07d09
+redraw
+setLayerPreference M8Cont -color #d07205
+redraw
+setLayerPreference M8Cont -color #eba432
+redraw
+redraw
+windowSelect -39.722 531.438 -36.983 499.930
+windowSelect -31.503 519.793 -29.448 503.355
+panCenter -47.257 472.531
+fit
+view_analysis_results
+view_analysis_results -state_directory /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VDD -enable_violation_browser false -enable_voltage_sources true -temp_directory /tmp -display overlay -plot ir -visible_layer {RD M1 V12 M2 V23 M3 V34 M4 V45 M5 V56 M6 V67 M7 V78 M8 V89 M9 V910 M10} -filter {{1 0.9025 0.950001} {1 0.894583 0.9025} {1 0.886667 0.894583} {1 0.87875 0.886667} {1 0.870833 0.87875} {1 0.862917 0.870833} {1 0.855 0.862917} {1 0.855 0.855}}
+zoomOut
+zoomOut
+windowSelect -92.341 590.113 462.419 -120.508
+panCenter 380.526 35.353
+panCenter 610.355 -190.513
+deselectAll
+fit
+zoomOut
+zoomOut
+view_analysis_results -state_directory /afs/eos.ncsu.edu/lockers/workspace/ece/ece720/001/ghuang2/gitrepo/proj2/pr/PDCore_25C_avg_2/VDD -enable_violation_browser false -enable_voltage_sources true -temp_directory /tmp -display overlay -plot ir -visible_layer {RD M1 V12 M2 V23 M3 V34 M4 V45 M5 V56 M6 V67 M7 V78 M8 V89 M9 V910 M10} -filter {{1 0.946833 0.95} {1 0.943667 0.946833} {1 0.9405 0.943667} {1 0.937334 0.9405} {1 0.934167 0.937334} {1 0.931001 0.934167} {1 0.927834 0.931001} {1 0.924667 0.927834}}
+fit
+zoomOut
+zoomOut
+exit

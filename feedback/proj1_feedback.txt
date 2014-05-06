@@ -1,0 +1,22 @@
+Subject: ECE720 Project 1 Feedback for "Huang,Ganqin"
+
+Satisfying Design Objectives:
+(8.869175979/10) Primary: Match RTL & TLM Simulation times
+(8.33428255/10) Secondary: Maximize cyc-per-sec perf.
+Code Submission:
+(15/15) Satisfying constraints
+(15/15) Consistency with report
+Report:
+(20/20) Completeness (did you answer all questions)
+(12.64152561/15) Technical Depth (quality of your answers)
+(15/15) Clarity & Readability (see report guidelines)
+
+Total:
+(0/0)     Late Penalty
+(94.84498414/100)   Total
+(96.84498414/100)   Final Grade (Scaled By 2)
+
+Grading Notes:
+Matching within 1% for all cases examined… looks pretty darn good
+
+

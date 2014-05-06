@@ -15,13 +15,14 @@ loadConfig design.conf
 
 # Create Initial Floorplan
 #floorplan -s 10 10 40 40 40 40
-floorplan -su 1.0 0.95 40 40 40 40
+#AspectRation Density 
+floorplan -su 2.0 0.25 40 40 40 40
 
 # Create Power structures
 
-addRing -spacing_bottom 10 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 10 -layer_bottom metal5 -width_right 10 -around core -center 1 -layer_top metal5 -spacing_right 10 -spacing_left 10 -layer_right metal6 -layer_left metal6 -nets { VSS VDD }
+addRing -spacing_bottom 10 -width_left 10 -width_bottom 10 -width_top 10 -spacing_top 10 -layer_bottom metal7 -width_right 10 -around core -center 1 -layer_top metal7 -spacing_right 10 -spacing_left 10 -layer_right metal8 -layer_left metal8 -nets { VSS VDD }
 
-addStripe  -set_to_set_distance 40 -spacing 5 -xleft_offset 20 -layer metal6 -width 5 -nets { VSS VDD }
+addStripe  -set_to_set_distance 40 -spacing 5 -xleft_offset 20 -layer metal8 -width 5 -nets { VSS VDD }
 
 setAnalysisMode -checkType setup -asyncChecks async -skew true -clockPropagation autoDetectClockTree
 buildTimingGraph

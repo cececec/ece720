@@ -1,0 +1,26 @@
+Information: Starting crosstalk aware static noise analysis. (NOISE-014)
+Information: Activating steady state resistance estimation mode for library NangateOpenCellLibrary. (NOISE-001)
+****************************************
+Report : noise
+	-slack_type area
+Design : cortex_soc
+Version: H-2013.06-SP1
+Date   : Mon May  5 19:54:38 2014
+****************************************
+
+ analysis mode: report_at_source
+ slack type: area
+
+ noise_region: above_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+ u_cortexm0ds/u_logic/U281/C2 (HRDATA[8])
+                          0.0549    0.4953    0.0003
+
+ noise_region: below_high
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+ u_cortexm0ds/u_logic/U5629/B1 (u_cortexm0ds/u_logic/n4723)
+                          0.6720    0.5322   -0.0216
+
+1

@@ -14,7 +14,7 @@ set begintime [clock seconds]
 set clkname HCLK
 
 # set variable "modname" to the name of topmost module in design
-set modname CORTEXM0DS
+set modname cortex_soc
 
 # set variable "PR_DIR" to the HDL & SPEF directory w.r.t synthesis directory
 set PR_DIR    ../../pr/
@@ -28,12 +28,12 @@ set type routed
 #   low_temp    (   fast transistors, 1.25 V, -40 degC)
 #   fast        (   fast transistors, 1.25 V,   0 degC)
 #   slow        (   slow transistors, 0.95 V, 125 degC)
-set corner slow
+set corner fast
 
 #set the number of digits to be used for delay results
 set report_default_significant_digits 4
 
-set CLK_PER 40
+set CLK_PER 5
 set DFF_CKQ 0.638
 set MAX_INS_DELAY 1.0
 set IP_DELAY [expr $MAX_INS_DELAY + $DFF_CKQ]

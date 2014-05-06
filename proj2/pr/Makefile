@@ -1,13 +1,13 @@
 
 
-MODNAME = CORTEXM0DS
+MODNAME = cortex_soc
 
 all: route
 
 INIT = $(MODNAME)_init.enc.dat/$(MODNAME).route.gz
 .PHONY: init
 init: $(INIT)
-$(INIT): design.conf design.tc run_init.tcl ../v/src/gate/$(MODNAME)_final.v
+$(INIT): design.conf design.tc run_init.tcl ../v/src/gate/$(MODNAME).v
 	tcsh -c "add cadence2012 ; \
         encounter -nowin -overwrite -replay run_init.tcl |& tee run_init.log"
 
@@ -46,7 +46,6 @@ eps: $(ROUTE)
 
 clean:
 	-rm clock.ctsrpt
-	-rm clock.ctstch
 	-rm $(MODNAME).cts_trace
 	-rm cts.rguide
 	-rm clock.ctsntf
